@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="hero">
-      <h1>kravse.dev</h1>
+      <h1 class="code">((...ಠ_ಠ) => `${ಠ_ಠ}`)(`kravse.dev`)</h1>
       <p>A work in progress by <a href="https://www.github.com/kravse">Jared&nbsp;Krause</a>.</p>
     </div>
   </div>

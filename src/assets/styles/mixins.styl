@@ -1,0 +1,30 @@
+media($condition)
+  helper($condition)
+    unless $media_cache[$condition]
+      $media_cache[$condition] = ()
+    push($media_cache[$condition], block)
+
+  +helper($condition)
+    {selector() + ''}
+      {block}
+
+$media_cache = {}
+$media_aliases = {
+  min-lg: 'only screen and (min-width : 1025px)'
+  lg: 'only screen and (max-width : 1024px)'
+  min-md: 'only screen and (min-width : 992px)'
+  md: 'only screen and (max-width : 991px)'
+  min-sm: 'only screen and (min-width : 768px)'
+  sm: 'only screen and (max-width : 767px)'
+  min-xs: 'only screen and (min-width : 576px)'
+  xs: 'only screen and (max-width : 575px)'
+  retina: '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)'
+  print: 'only print'
+}
+
+dump_media_cache()
+  for $media, $blocks in $media_cache
+    $media = unquote($media_aliases[$media] || $media)
+    @media $media
+      for $block in $blocks
+        {$block}

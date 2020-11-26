@@ -16,19 +16,4 @@ export default Vue.extend({
   },
 });
 </script>
-
-<style lang="stylus">
-.home
-  height: 100vh
-  display: flex
-  justify-content: center
-  align-items: center
-
-  .hero
-    padding: 20px;
-
-  h1
-    margin-top: 0
-  p
-    margin-bottom: 0
-</style>
+<style src="@/assets/styles/home.styl" lang="stylus"></style>

@@ -1,35 +1,51 @@
-// var colors = [
-//   "#f94144",
-//   "#f3722c",
-//   "#f8961e",
-//   "#f9844a",
-//   "#90be6d",
-//   "#43aa8b",
-//   "#4d908e",
-//   "#577590",
-//   "#277da1"]
 
 body
   color #4d6c88
-  font-family: 'Share Tech Mono', monospace, "Courier New", Courier, monospace;
+  font-family: $base-font
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   font-weight: 400
+  font-size: 15px
+
+  +media('md')
+    font-size: 13px
+
+  +media('xs')
+    font-size: 11px
 
   .code
-    // font-family: 'Syne Mono', "Courier New", Courier, monospace
-    font-family: 'Share Tech Mono', monospace, "Courier New", Courier, monospace;
+    font-family: $title-font
 a
   color: #43aa8b
 
   &:hover
     color: darken(#43aa8b, 30%)
 
+h1, h2, h3, h4, h5, h6, .title
+  // font-family: $title-font
+
+.uppercase
+  text-transform: uppercase
+
+h1, .h1
+  font-size: 2.1em
+
+h2, .h2
+  font-size: 1.4em
+
+h3, .h3
+  font-size: 1.2em
+
+
 canvas
   position: absolute
   top: 0
   left: 0
-  z-index: -1;
+  z-index: -1
   width: 100%
   height: 100%
   opacity: 0.5
+
+section
+  max-width: 750px
+  width: 100%

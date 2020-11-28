@@ -2,8 +2,12 @@
   <div class="home">
     <div class="hero">
       <h1 class="code">{{typedTitle}}<span :class="[typingDone ? 'blink' : '', 'cursor']"></span></h1>
-      <p>A work in progress by <a href="https://www.github.com/kravse">Jared&nbsp;Krause</a>.</p>
+      <p class="subtitle"><a href="mailto:jared@kravse.dev">jared@kravse.dev</a>. <a href="https://www.github.com/kravse">Github</a>. <a href="https://www.twitter.com/kravse">Twitter</a>.</p>
     </div>
+    <section>
+      <h3>Hi.</h3>
+      <p>I'm a senior web developer with experience leading teams, collaborating cross-functionally and creating user-centered web applications. I'm passionate about people, which is why I focus on creating accessible web experiences that anyone can use. I write modular, component-based, reusable code to build websites that are beautiful, responsive and scalable. I currently work with VueJS & React, but I have experience with Angular, Backbone, WordPress and many other tools.</p>
+    </section>
   </div>
 </template>
 

@@ -7,10 +7,12 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>Life is better with JavaScript.</strong>
     </noscript>
+  </head>
+  <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
@@ -21,8 +23,9 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-FVB5GTCMWY');
+    if (location.origin === 'https://kravse.dev') {
+      gtag('js', new Date());
+      gtag('config', 'G-FVB5GTCMWY');
+    }
   </script>
 </html>

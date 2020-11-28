@@ -16,5 +16,5 @@ export default Vue.extend({
   name: 'footer',
 });
 </script>
-<style src="./footer.styl" lang="stylus"></style>
+<style scoped src="./footer.styl" lang="stylus"></style>
 

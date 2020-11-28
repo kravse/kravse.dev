@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="hero">
-      <h1 class="code h2">{{typedTitle}}<span :class="[typingDone ? 'blink' : '', 'cursor']"></span></h1>
+      <h1 class="code h2">{{typedTitle}}<span :class="[blink ? 'blink' : '', 'cursor']"></span></h1>
       <!-- <h2 class="subtitle h3">I write <a href="https://vuejs.org/">VueJS</a>, <a href="">React</a>, <a href="">NodeJS</a>, <a href="">Typescript</a></h2> -->
       <!-- <p class="sub">
         Make a subtitle
@@ -65,15 +65,19 @@ export default Vue.extend({
         '((...ಠ_ಠ)=>`${ಠ_ಠ}`)("kravse.dev")'
       ],
       typedTitle: "",
-      typingDone: false
+      blink: false
     }
   },
   computed: {},
   created: function () {
-    this.type()
+    this.blink = true
+    setTimeout(()=> {
+      this.type()
+    },1000)
   },
   methods: {
     type: function () {
+      this.blink = false;
       let i = 0;
       let currentString = this.typingExperience[i];
       const interval = setInterval(() => {
@@ -84,13 +88,12 @@ export default Vue.extend({
         } else if (this.typedTitle.length === currentString.length) {
           if (this.typedTitle.length === this.titleText.length) {
             clearInterval(interval)
-            this.typingDone = true;
+            this.blink = true;
           } else {
             i++
             currentString = this.typingExperience[i];
           }
         }
-        if (this.typingDone) clearInterval(interval)
       }, 110)
     }
   }

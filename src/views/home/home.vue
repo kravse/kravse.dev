@@ -1,7 +1,11 @@
 <template>
   <div class="home">
     <div class="hero">
-      <h1 class="code h2">{{typedTitle}}<span :class="[blink ? 'blink' : '', 'cursor']"></span></h1>
+      <h1 class="code h2">
+        {{typedTitle}}
+        <span :class="[blink ? 'blink' : '', 'cursor']"></span>
+        <span class="spacer">&nbsp;</span>
+      </h1>
       <!-- <h2 class="subtitle h3">I write <a href="https://vuejs.org/">VueJS</a>, <a href="">React</a>, <a href="">NodeJS</a>, <a href="">Typescript</a></h2> -->
       <!-- <p class="sub">
         Make a subtitle

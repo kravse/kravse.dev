@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="hero">
-      <h1 class="code">{{typedTitle}}<span :class="[typingDone ? 'blink' : '', 'cursor']"></span></h1>
+      <h1 class="code">{{typedTitle}}<span :class="[blink ? 'blink' : '', 'cursor']"></span></h1>
       <p>A work in progress by <a href="https://www.github.com/kravse">Jared&nbsp;Krause</a>.</p>
     </div>
   </div>
@@ -23,15 +23,18 @@ export default Vue.extend({
         '((...ಠ_ಠ)=>`${ಠ_ಠ}`)("kravse.dev")'
       ],
       typedTitle: "",
-      typingDone: false
+      blink: true
     }
   },
   computed: {},
   created: function () {
-    this.type()
+    setTimeout(()=> {
+      this.type()
+    },1000)
   },
   methods: {
     type: function () {
+      this.blink = false;
       let i = 0;
       let currentString = this.typingExperience[i];
       const interval = setInterval(() => {
@@ -42,13 +45,12 @@ export default Vue.extend({
         } else if (this.typedTitle.length === currentString.length) {
           if (this.typedTitle.length === this.titleText.length) {
             clearInterval(interval)
-            this.typingDone = true;
+            this.blink = true;
           } else {
             i++
             currentString = this.typingExperience[i];
           }
         }
-        if (this.typingDone) clearInterval(interval)
       }, 110)
     }
   }

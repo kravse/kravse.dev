@@ -1,7 +1,11 @@
 <template>
   <div class="home">
     <div class="hero">
-      <h1 class="code">{{typedTitle}}<span :class="[blink ? 'blink' : '', 'cursor']"></span></h1>
+      <h1 class="code">
+        {{typedTitle}}
+        <span :class="[blink ? 'blink' : '', 'cursor']"></span>
+        <span class="spacer">&nbsp;</span>
+      </h1>
       <p>A work in progress by <a href="https://www.github.com/kravse">Jared&nbsp;Krause</a>.</p>
     </div>
   </div>

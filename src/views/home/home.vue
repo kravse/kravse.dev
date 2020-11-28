@@ -8,8 +8,8 @@
       </p> -->
     </div>
     <section>
-      <h3 class="h0">Hi! I'm Jared.</h3>
-      <p>I'm a web developer. I use javascript to build websites, browser extensions, slack apps, and other stuff. I'm passionate about people, acccessibility, design. </p>
+      <h3 class="h0">Hi!</h3>
+      <p>My name is Jared. I'm a web developer. I use javascript to build websites, browser extensions, slack apps, and other stuff. I'm passionate about people, acccessibility, design. </p>
     </section>
     <section>
       <h3 class="h0">Tools I use.</h3>

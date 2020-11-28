@@ -45,6 +45,23 @@ body
   p
     font-size: 1em
 
+  p, ul, blockquote
+    margin-bottom: 0.5em
+    margin-top: 0.5em
+
+  ul
+    list-style: none
+
+    li
+      &:before
+        content: "≡"
+        color: $orange-light
+        font-weight: bold
+        display: inline-block
+        width: 1em
+        font-size: 0.8em
+        margin-left: -0.8em
+
 #app
   display: flex
   flex-direction: column
@@ -61,7 +78,7 @@ body
 a
   font-family: $title-font
   // text-transform: uppercase
-  color: $green-blue
+  color: $green-blue // green-blue
 
   &:hover
     color: darken($green-blue, 30%)
@@ -78,3 +95,4 @@ canvas
 section
   max-width: $mid-width
   width: 100%
+  padding: 20px 0

@@ -15,6 +15,7 @@ body
   .code
     font-family: $title-font
     color $dark-blue
+    font-weight: 600
 
   h1, h2, h3, h4, h5, h6, .title
     font-family: $title-font
@@ -63,6 +64,12 @@ body
         margin-left: -0.8em
 
 #app
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  overflow: scroll
   display: flex
   flex-direction: column
   align-items: center
@@ -72,6 +79,7 @@ body
     width: 90%
     display: flex
     justify-content: space-between
+    align-items: center
     flex-direction: column
     min-height: min-content
 

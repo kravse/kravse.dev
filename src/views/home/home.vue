@@ -1,22 +1,23 @@
 <template>
   <div class="home">
     <div class="hero">
-      <h1 class="code h2">
+      <h1 class="h0">Jared Krause</h1>
+      <code class="code h2">
         {{typedTitle}}
         <span :class="[blink ? 'blink' : '', 'cursor']"></span>
         <span class="spacer">&nbsp;</span>
-      </h1>
+      </code>
       <!-- <h2 class="subtitle h3">I write <a href="https://vuejs.org/">VueJS</a>, <a href="">React</a>, <a href="">NodeJS</a>, <a href="">Typescript</a></h2> -->
       <!-- <p class="sub">
         Make a subtitle
       </p> -->
     </div>
     <section>
-      <h3 class="h0">Hi!</h3>
-      <p>My name is Jared. I'm a web developer. I use javascript to build websites, browser extensions, slack apps, and other stuff. I'm passionate about people, acccessibility, design. </p>
+      <h3 class="h1">Hi!</h3>
+      <p>My name is Jared. I'm a web developer. I use javascript to build websites, browser extensions, slack apps, and other stuff. I'm passionate about people, acccessibility, and design. </p>
     </section>
     <section>
-      <h3 class="h0">Tools I use.</h3>
+      <h3 class="h1">Tools I use.</h3>
       <div class="lists">
         <div>
           <h4>JavaScript</h4>

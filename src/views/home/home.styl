@@ -1,0 +1,57 @@
+@import '~@/assets/styles/mixins'
+@import '~@/assets/styles/variables'
+
+@keyframes caret
+  50%
+    border-color: transparent
+
+.home
+  section
+    margin-bottom: 40px
+    border-bottom: 3px solid $dark-blue
+
+
+  .hero
+    padding: 75px 0 35px
+    width: $mid-width
+
+  h1
+    overflow: hidden
+    white-space: nowrap
+    padding: 5px 0;
+    margin: 0 0 5px;
+    display: flex
+    align-items: center
+    line-height: 1.2em
+
+    .cursor
+      margin: -0.1em 0 0 0.2em
+      height: 1.2em
+      display: inline-block
+      border-right: .5em solid
+      color: $green-blue
+
+      &.blink
+        animation: caret .8s step-end infinite alternate
+
+  .sub
+    margin: 0
+    font-size: 1em
+    font-weight: 400
+
+  .lists
+    display: flex
+
+    h4
+      margin: 0 0 0 5px
+
+    ul
+      padding: 0 0 0 20px
+      margin: 5px 30px 5px 0
+
+      li
+        margin-bottom: 5px
+        font-family: $base-font
+
+
+dump_media_cache()

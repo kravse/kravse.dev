@@ -1,41 +1,70 @@
-
 body
-  color #4d6c88
+  color $dark-blue
   font-family: $base-font
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   font-weight: 400
-  font-size: 15px
+  font-size: 18px
 
   +media('md')
-    font-size: 13px
+    font-size: 15px
 
   +media('xs')
-    font-size: 11px
+    font-size: 12px
 
   .code
     font-family: $title-font
+    color $dark-blue
+
+  h1, h2, h3, h4, h5, h6, .title
+    font-family: $title-font
+    color: $green-blue
+
+  .uppercase
+    text-transform: uppercase
+
+  .h0
+    font-size: 3.2em
+
+  h1, .h1
+    font-size: 2em
+    margin: 0.5em 0
+
+  h2, .h2
+    font-size: 1.4em
+    margin: 0.3em 0
+
+  h3, .h3
+    font-size: 1.2em
+    margin: 0.2em 0
+
+  h4, .h4
+    font-size: 1.1em
+    margin: 0.1em 0
+
+  p
+    font-size: 1em
+
+#app
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  .app-inner
+    height: 99vh
+    width: 90%
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    min-height: min-content
+
 a
-  color: #43aa8b
+  font-family: $title-font
+  // text-transform: uppercase
+  color: $green-blue
 
   &:hover
-    color: darken(#43aa8b, 30%)
-
-h1, h2, h3, h4, h5, h6, .title
-  // font-family: $title-font
-
-.uppercase
-  text-transform: uppercase
-
-h1, .h1
-  font-size: 2.1em
-
-h2, .h2
-  font-size: 1.4em
-
-h3, .h3
-  font-size: 1.2em
-
+    color: darken($green-blue, 30%)
 
 canvas
   position: absolute
@@ -47,5 +76,5 @@ canvas
   opacity: 0.5
 
 section
-  max-width: 750px
+  max-width: $mid-width
   width: 100%

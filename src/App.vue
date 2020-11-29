@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <site-notification/>
+    <!-- <site-notification/> -->
     <div class="app-inner">
       <!-- <div id="nav">
         <router-link to="/">Home</router-link> |
@@ -14,13 +14,13 @@
 <script>
 import Vue from 'vue';
 import footer from '@/components/footer/footer.vue'
-import notification from '@/components/notification/notification.vue'
+// import notification from '@/components/notification/notification.vue'
 
 export default Vue.extend({
   name: 'App',
   components: {
     'site-footer': footer,
-    'site-notification': notification
+    // 'site-notification': notification
   },
   computed: {
   }

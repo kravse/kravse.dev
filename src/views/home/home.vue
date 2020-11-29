@@ -1,19 +1,19 @@
 <template>
   <div class="home">
     <div class="hero">
-      <!-- <code class="code h2">
+      <h1 class="h0">Jared Krause</h1>
+      <code class="code h2">
         {{typedTitle}}
         <span :class="[blink ? 'blink' : '', 'cursor']"></span>
         <span class="spacer">&nbsp;</span>
-      </code> -->
+      </code>
       <!-- <h2 class="subtitle h3">I write <a href="https://vuejs.org/">VueJS</a>, <a href="">React</a>, <a href="">NodeJS</a>, <a href="">Typescript</a></h2> -->
       <!-- <p class="sub">
         Make a subtitle
       </p> -->
     </div>
     <section>
-      <!-- <h3 class="h1">Hi!</h3> -->
-      <h1 class="h0">Jared Krause</h1>
+      <h3 class="h1">Hi!</h3>
       <p>I'm a web developer currently living in <strong>Toronto</strong>.</p>
       <p>I build modern, scalable web applications with <strong @mouseover="$store.dispatch('updateNotification', 'VueJS is a magical JavaScript Framework.')">VueJS</strong> & <strong>React</strong>. I tend to focus on writing component-based, reusable code.</p>
       <p>I &lt;3 <strong>JavaScript</strong>. Lately I've been building <strong>Node.js</strong> apps, <strong>Slack bots</strong>, <strong>browser extensions</strong>, <strong>CloudFlare workers</strong> and a bunch of other cool stuff.</p>
@@ -52,16 +52,16 @@ export default Vue.extend({
   name: 'Home',
   data() {
     return {
-      // titleText: '((...ಠ_ಠ)=>`${ಠ_ಠ}`)("kravse.dev")',
-      // typingExperience: [
-      //   '((siteName)=>',
-      //   '((',
-      //   '((ಠ_ಠ',
-      //   '((',
-      //   '((...ಠ_ಠ)=>`${ಠ_ಠ}`)("kravse.dev")'
-      // ],
-      // typedTitle: "",
-      // blink: false,
+      titleText: '((...ಠ_ಠ)=>`${ಠ_ಠ}`)("kravse.dev")',
+      typingExperience: [
+        '((siteName)=>',
+        '((',
+        '((ಠ_ಠ',
+        '((',
+        '((...ಠ_ಠ)=>`${ಠ_ಠ}`)("kravse.dev")'
+      ],
+      typedTitle: "",
+      blink: false,
       skillSets: {
         "frameworks": [
           "VueJS",
@@ -115,34 +115,34 @@ export default Vue.extend({
     }
   },
   computed: {},
-  // created: function () {
-  //   this.blink = true
-  //   setTimeout(()=> {
-  //     this.type()
-  //   },1000)
-  // },
-  // methods: {
-  //   type: function () {
-  //     this.blink = false;
-  //     let i = 0;
-  //     let currentString = this.typingExperience[i];
-  //     const interval = setInterval(() => {
-  //       if (this.typedTitle.length < currentString.length) {
-  //         this.typedTitle = currentString.slice(0, this.typedTitle.length + 1)
-  //       } else if (this.typedTitle.length > currentString.length) {
-  //         this.typedTitle = this.typedTitle.slice(0, this.typedTitle.length - 1)
-  //       } else if (this.typedTitle.length === currentString.length) {
-  //         if (this.typedTitle.length === this.titleText.length) {
-  //           clearInterval(interval)
-  //           this.blink = true;
-  //         } else {
-  //           i++
-  //           currentString = this.typingExperience[i];
-  //         }
-  //       }
-  //     }, 110)
-  //   }
-  // }
+  created: function () {
+    this.blink = true
+    setTimeout(()=> {
+      this.type()
+    },1000)
+  },
+  methods: {
+    type: function () {
+      this.blink = false;
+      let i = 0;
+      let currentString = this.typingExperience[i];
+      const interval = setInterval(() => {
+        if (this.typedTitle.length < currentString.length) {
+          this.typedTitle = currentString.slice(0, this.typedTitle.length + 1)
+        } else if (this.typedTitle.length > currentString.length) {
+          this.typedTitle = this.typedTitle.slice(0, this.typedTitle.length - 1)
+        } else if (this.typedTitle.length === currentString.length) {
+          if (this.typedTitle.length === this.titleText.length) {
+            clearInterval(interval)
+            this.blink = true;
+          } else {
+            i++
+            currentString = this.typingExperience[i];
+          }
+        }
+      }, 110)
+    }
+  }
 });
 </script>
 <style scoped src="./home.styl" lang="stylus"></style>

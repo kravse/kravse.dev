@@ -13,7 +13,7 @@
 <script>
 import Vue from 'vue';
 export default Vue.extend({
-  name: 'footer',
+  name: 'site-footer',
 });
 </script>
 <style scoped src="./footer.styl" lang="stylus"></style>

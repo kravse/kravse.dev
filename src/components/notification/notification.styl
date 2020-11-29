@@ -1,49 +1,39 @@
 @import '~@/assets/styles/mixins'
 @import '~@/assets/styles/variables'
 
-@keyframes caret
-  50%
-    border-color: transparent
-
-
 #notification
   position: fixed
   z-index: 5
-  top: 0
+  bottom: 0
   left: 0
-  width: 100%
   display: flex
   justify-content: center
+  border: 10px solid transparent
 
   .notification-inner
-    width: 100%
     background: $dark-blue
-    padding: 5px
+    color: $soft-yellow
+    line-height: 1.5em
+    text-align: left
+    padding: 35px 25px
+    transform: translateY(0)
+    transition: transform 0.2s ease// , width 0.2s ease
+    opacity: 1
+    // transform: perspective(23rem)
 
-  code
-    overflow: hidden
-    white-space: nowrap
-    padding: 5px 0;
-    margin: 0;
-    display: flex
-    align-items: center
-    line-height: 1.2em
-    font-size: 1em
-    color: #fce3a6
-
-    .spacer
+    &.fade-enter-active, &.fade-leave-active
+      transform: translateY(100%)
       opacity: 0
-      width: 0
-      overflow: 0
 
-    .cursor
-      margin: -0.1em 0 0 0.2em
-      height: 1.2em
-      display: inline-block
-      border-right: .5em solid
-      color: $salmon
+    &.fade-enter, &.fade-leave-to
+      opacity: 1
 
-      &.blink
-        animation: caret .5s step-end infinite alternate
+    &.centered
+      font-size: 1.5em
+      text-align: center
+
+    p
+      margin: 0
+      padding: 0
 
 dump_media_cache()

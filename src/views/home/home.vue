@@ -3,7 +3,7 @@
     <div class="hero">
       <h1 class="h0">Jared Krause</h1>
       <code class="code h2">
-        {{typedTitle}}
+        <notify-item msg="ಠ_ಠ is a valid identifier according to ECMAScript 6.">{{typedTitle}}</notify-item>
         <span :class="[blink ? 'blink' : '', 'cursor']"></span>
         <span class="spacer">&nbsp;</span>
       </code>
@@ -15,9 +15,9 @@
     <section>
       <h3 class="h1">Hi!</h3>
       <p>I'm a web developer currently living in <strong>Toronto</strong>.</p>
-      <p>I build modern, scalable web applications with <strong @mouseover="$store.dispatch('updateNotification', 'VueJS is a magical JavaScript Framework.')">VueJS</strong> & <strong>React</strong>. I tend to focus on writing component-based, reusable code.</p>
-      <p>I &lt;3 <strong>JavaScript</strong>. Lately I've been building <strong>Node.js</strong> apps, <strong>Slack bots</strong>, <strong>browser extensions</strong>, <strong>CloudFlare workers</strong> and a bunch of other cool stuff.</p>
-      <p>Oh, and I also have experience leading teams.</p>
+      <p>I build modern, scalable web applications with <notify-item msg="Vue (pronounced /vjuː/, like view) is a progressive JavaScript framework for building user interfaces.">Vue.js</notify-item> & <notify-item msg="React is a JavaScript library for building component based UIs.">React</notify-item>. I tend to focus on writing component-based, reusable code.</p>
+      <p>I &lt;3 <notify-item msg="💻 && 🌐 === 😍">JavaScript</notify-item>. Lately I've been building <notify-item msg="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.">Node.js</notify-item> apps, <notify-item msg="Slackbots are interactive apps built with the Slack's Event & Web APIs.">Slack bots</notify-item>, <notify-item msg="Browser extensions are small programs that add new features to your browser and personalize your browsing experience.">browser extensions</notify-item>, <notify-item msg="CloudFlare workers are snippets of serverless code that run in between the browser and webhost.">CloudFlare workers</notify-item> and a bunch of other cool stuff.</p>
+      <p>I also have experience leading teams.</p>
       <!-- <p>I'm passionate about people, which is why I focus on creating accessible web experiences that anyone can use. I write modular, component-based, reusable code to build websites that are beautiful, responsive and scalable.</p> -->
     </section>
     <section>
@@ -38,7 +38,7 @@
         <div v-for="(skills, key) in skillSets" :key="key" class="list">
           <!-- <h4 class="h5">let {{key}} = </h4> -->
           <ul>
-            <span class="let">let {{key}}</span> = [<li v-for="skill in skills" :key="skill">{{skill}},</li>];
+            <span class="let">let <strong>{{key}}</strong></span> = [<li v-for="skill in skills" :key="skill">{{skill}},</li>];
           </ul>
         </div>
       </div>
@@ -48,6 +48,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import notify from '@/components/notify-item/notify-item.vue';
 export default Vue.extend({
   name: 'Home',
   data() {
@@ -64,7 +65,7 @@ export default Vue.extend({
       blink: false,
       skillSets: {
         "frameworks": [
-          "VueJS",
+          "Vue.js",
           "React",
           "Angular",
           "Backbone",
@@ -74,13 +75,14 @@ export default Vue.extend({
           "jQuery",
           "CoffeeScript"
         ],
-        "dev": [
+        "buildTools": [
           "WebPack",
           "Babel",
           "Unix",
           "Git",
           "RVM",
           "npm",
+          "Bower",
           "Gulp",
           "Grunt",
           "MAMP",
@@ -97,22 +99,29 @@ export default Vue.extend({
         "backEnd": [
           "Node.js",
           "Express",
-          "Nodemon",
           "SQL",
           "PHP",
           "Python",
           "Java"
         ],
-        "services": [
+        "WebHosting": [
           "Netlify",
-          "Github",
-          "Bitbucket",
           "Cloudflare",
           "AWS",
+          "Ghost",
+          "Shopify"
+        ],
+        "design": [
+          "Sketch",
+          "Photoshop",
+          "Zeplin",
         ],
 
       }
     }
+  },
+  components: {
+    'notify-item': notify
   },
   computed: {},
   created: function () {

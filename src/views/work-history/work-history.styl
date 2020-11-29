@@ -27,32 +27,39 @@
       display: flex
       align-items: flex-start
       margin-bottom: 10px
+
       &:before
-        // content: ""
         content: "==="
         margin-top: 0.2em
         color: $orange-light
         font-weight: bold
         display: inline-block
-        width: 2.5em
         font-size: 0.8em
         margin-left: -0.8em
         transform: translateX(-5px)
 
   .work-content
     position: relative
-    overflow: hidden
+    // overflow: hidden
 
-    .copy
+    .slide
       position: relative
       opacity: 0
       background: $dark-blue
-      padding: 40px 30px
       height: 100vh
-      width: 80vw
+      width: 65vw
       animation: fadein 0s 0.4s ease forwards
       z-index: 0
       overflow-y: scroll
+      display: flex
+      justify-content: center
+
+      .copy
+        padding: 40px 30px 100px
+        width: $mid-width
+
+        h3
+          margin-top: 20px
 
     &::before
       content: ''

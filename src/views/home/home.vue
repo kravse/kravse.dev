@@ -77,9 +77,13 @@
         <section>
           <h3 class="h1">About Me</h3>
           <div class="clump">
-            <p class="sm">
-              I love boardgames
+            <p>
+              I love boardgames. I write reviews of games on <a href="https://instagram.com/bored.gamer">Instagram</a>.
             </p>
+            <p>
+              I'm a <notify-item msg="street">street photographer</notify-item>. I've got a portfolio of my work up at <a href="https://www.kravse.com">kravse.com</a>
+            </p>
+            <p>I travel whenever I can. I've visited 33 countries (and counting!).</p>
           </div>
         </section>
         <section>

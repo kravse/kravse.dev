@@ -23,7 +23,8 @@ export default Vue.extend({
         vpn: `A simple tool to encrypt your internet traffic and keep your online activity private.`,
         typescript: `TypeScript is an open-source language that builds on JavaScript by adding static type definitions.`,
         python: `Python is an interpreted, high-level and general-purpose programming language.`,
-        threejs: `Three.js allows the creation of GPU-accelerated 3D animations using JavaScript.`
+        threejs: `Three.js allows the creation of GPU-accelerated 3D animations using JavaScript.`,
+        street: `Street photography, also sometimes called candid photography, is photography conducted for art or enquiry that features unmediated chance encounters and random incidents within public places.`
       }
     }
   },

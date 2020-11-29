@@ -10,7 +10,11 @@ body
     font-size: 15px
 
   +media('xs')
-    font-size: 12px
+    font-size: 13px
+
+  strong
+    color: darken($dark-blue, 10%)
+    font-weight: 600
 
   .code
     font-family: $title-font
@@ -20,6 +24,7 @@ body
   h1, h2, h3, h4, h5, h6, .title
     font-family: $title-font
     color: $green-blue
+    margin-top: 0
 
   .uppercase
     text-transform: uppercase
@@ -29,39 +34,54 @@ body
 
   h1, .h1
     font-size: 2em
-    margin: 0.5em 0
+    margin: 0 0 0.5em
 
   h2, .h2
     font-size: 1.4em
-    margin: 0.3em 0
+    margin: 0 0 0.2em
 
   h3, .h3
     font-size: 1.2em
-    margin: 0.2em 0
+    margin: 0 0 0.15em
 
   h4, .h4
     font-size: 1.1em
-    margin: 0.1em 0
+    margin: 0 0 0.1em
+
+  h5, .h5
+    font-size: 1em
+    margin: 0 0 0.08em
 
   p
     font-size: 1em
+    margin-bottom: 1.5em
 
-  p, ul, blockquote
+  ul, blockquote
     margin-bottom: 0.5em
     margin-top: 0.5em
 
   ul
     list-style: none
+    padding: 0 0 0 14px
+    margin: 5px 30px 0 0
 
     li
-      &:before
-        content: "≡"
-        color: $orange-light
-        font-weight: bold
-        display: inline-block
-        width: 1em
-        font-size: 0.8em
-        margin-left: -0.8em
+      display: flex
+      align-items: center
+      margin-bottom: 5px
+      margin-left: 15px
+      font-family: $base-font
+      font-size: 0.8em
+
+      // &:before
+      //   content: ""
+      //   // content: "==="
+      //   color: $orange-light
+      //   font-weight: bold
+      //   display: inline-block
+      //   width: 2em
+      //   font-size: 0.5em
+      //   margin-left: -0.8em
 
 #app
   position: fixed
@@ -77,6 +97,7 @@ body
   .app-inner
     height: 99vh
     width: 90%
+    padding-top: 6vh;
     display: flex
     justify-content: space-between
     align-items: center
@@ -84,7 +105,7 @@ body
     min-height: min-content
 
 a
-  font-family: $title-font
+  // font-family: $title-font
   // text-transform: uppercase
   color: $green-blue // green-blue
 
@@ -103,4 +124,4 @@ canvas
 section
   max-width: $mid-width
   width: 100%
-  padding: 20px 0
+  padding: 35px 0

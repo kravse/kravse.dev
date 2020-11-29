@@ -10,18 +10,18 @@
   width: 100%
 
   section
-    margin-bottom: 40px
+    // margin-bottom: 40px
     border-bottom: 3px solid $orange-light
-
-  .hero
-    padding: 25px 0 0
-
-    h1, code
-      margin-left: -0.1em
 
     h1
       margin-bottom: 0
       font-size: 4.5em
+      margin-left: -0.1em
+
+  .hero
+    // padding: 25px 0 0
+
+
 
     code
       overflow: hidden
@@ -57,17 +57,18 @@
     display: flex
     flex-wrap: wrap
 
-    h4
-      margin: 0 0 0 5px
-      color: $dark-blue
-
-    ul
-      padding: 0 0 0 20px
-      margin: 15px 30px 0 0
-
-      li
+    .list
+      margin: 10px 0
+      span.let
+        display:inline-block
         margin-bottom: 5px
-        font-family: $base-font
+      ul, li
+        font-family: $title-font
+
+    h4
+      margin: 0 0 0 7px
+      // color: $dark-blue
+
 
 
 dump_media_cache()

@@ -20,6 +20,11 @@
     transform: translateX(0)
     transition: transform 0.3s cubic-bezier(.74, .06, .4, .92)// , width 0.2s ease
     max-width: 40vw
+    +media('md')
+      max-width: 60vw
+
+    +media('xs')
+      max-width: 80vw
 
     .text
       position: relative

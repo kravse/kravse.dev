@@ -15,7 +15,7 @@ body
     font-size: 15px
 
   +media('xs')
-    font-size: 13px
+    font-size: 12px
 
   strong
     color: darken($font-color, 10%)
@@ -57,15 +57,18 @@ body
     margin: 0 0 0.1em
 
   h5, .h5
-    font-size: 1em
+    font-size: 1.2em
     margin: 0 0 0.08em
 
   p
-    font-size: 1em
+    font-size: 1.1em
     margin-bottom: 1.5em
 
     &.sm
       font-size: 0.8em
+
+      +media('xs')
+        font-size: 1em
 
   ul, blockquote
     margin-bottom: 0.5em
@@ -82,7 +85,7 @@ body
       margin-bottom: 5px
       margin-left: 15px
       font-family: $base-font
-      font-size: 0.8em
+      font-size: 1.1em
 
       // &:before
       //   content: ""
@@ -110,7 +113,9 @@ body
       &:active
         border-color: lighten($orange-light, 20%)
         color: lighten($orange-light, 20%)
-
+.xs
+  +media('min-xs')
+    display: none
 #app
   width: 100vw
   height: 100vh

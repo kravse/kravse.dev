@@ -17,6 +17,7 @@
           <p>I build modern, scalable web applications with <notify-item msg="vue">Vue.js</notify-item> & <notify-item msg="react">React</notify-item>. I tend to focus on writing component-based, reusable code.</p>
           <p>I &lt;3 <notify-item msg="js">JavaScript</notify-item>. Lately I've been building <notify-item msg="node">Node.js</notify-item> apps, <notify-item msg="slackbots">Slack bots</notify-item>, <notify-item msg="browserExtensions">browser extensions</notify-item>, <notify-item msg="cloudflareWorkers">CloudFlare workers</notify-item> and a bunch of other cool stuff.</p>
           <p>I also have experience leading teams.</p>
+          <p>If you want to chat, email at <a href="mailto:jared@kravse.dev">jared@kravse.dev</a></p>
         </section>
         <section>
           <h3 class="h1">Work</h3>
@@ -28,7 +29,7 @@
           <div class="clump">
             <h4 class="h3">Work</h4>
             <h5 class="standard-color">
-              <strong>TunnelBear Website</strong> [<a href="https://www.tunnelbear.com">tunnelbear.com</a>]
+              <strong>TunnelBear Website</strong><br class="xs"> [<a href="https://www.tunnelbear.com">tunnelbear.com</a>]
             </h5>
             <p class="sm">
               I'm the tech lead for the team that built and maintains the TunnelBear website.
@@ -36,7 +37,7 @@
               of users a month.
             </p>
             <h5 class="standard-color">
-              <strong>TunnelBear Browser Extension</strong> [<a href="https://addons.mozilla.org/en-US/firefox/addon/tunnelbear-vpn-firefox/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/tunnelbear-vpn/omdakjcmkglenbhjadbccaookpfjihpa">Chrome</a>]
+              <strong>TunnelBear Browser Extension</strong><br class="xs"> [<a href="https://addons.mozilla.org/en-US/firefox/addon/tunnelbear-vpn-firefox/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/tunnelbear-vpn/omdakjcmkglenbhjadbccaookpfjihpa">Chrome</a>]
             </h5>
             <p class="sm">
               Core developer for the TunnelBear browser client. Built with <notify-item msg="vue">VueJS</notify-item>, <notify-item msg="typescript">TypeScript</notify-item>, <notify-item msg="webpack">WebPack</notify-item>. Put a <notify-item msg="vpn">VPN</notify-item> in your browser!
@@ -45,7 +46,7 @@
           <div class="clump">
             <h4 class="h3">Play</h4>
             <h5 class="standard-color">
-              <strong>Slack Responder Bot</strong> [<a href="https://github.com/kravse/slack-responder-bot">Github</a>]
+              <strong>Slack Responder Bot</strong><br class="xs"> [<a href="https://github.com/kravse/slack-responder-bot">Github</a>]
             </h5>
             <p class="sm">
               A service based Slack app that responds to user input. Built with <notify-item msg="node">Node</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="typescript">TypeScript</notify-item>.
@@ -54,7 +55,7 @@
 
           <div class="clump">
             <h5 class="standard-color">
-              <strong>Sound Less Dumb</strong> [<a href="https://soundlessdumb.com">soundlessdumb.com</a>, <a href="https://github.com/kravse/soundlessdumb.com">Github</a>]
+              <strong>Sound Less Dumb</strong><br class="xs"> [<a href="https://soundlessdumb.com">soundlessdumb.com</a>, <a href="https://github.com/kravse/soundlessdumb.com">Github</a>]
             </h5>
             <p class="sm">
               This is a silly project I built with <notify-item msg="react">React</notify-item> & <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="python">Python</notify-item>. It creates funny and nonsensical translations of sentences.
@@ -65,25 +66,13 @@
 
           <div class="clump">
             <h5 class="standard-color">
-              <strong>This website!</strong> [<a href="https://github.com/kravse/kravse.dev">Github</a>]
+              <strong>This website!</strong><br class="xs"> [<a href="https://github.com/kravse/kravse.dev">Github</a>]
             </h5>
             <p class="sm">
               I built and designed this website with <notify-item msg="vue">VueJS</notify-item> and <notify-item msg="webpack">Webpack</notify-item>.
               It's hosted, served and continuously deployed as a static bundle through <notify-item msg="netlify">Netlify</notify-item>.
               The background animation is done with <notify-item msg="threejs">Three.js</notify-item>.
             </p>
-          </div>
-        </section>
-        <section>
-          <h3 class="h1">Hobbies</h3>
-          <div class="clump">
-            <p>
-              I love boardgames. I write reviews of games on <a href="https://instagram.com/bored.gamer">Instagram</a>.
-            </p>
-            <p>
-              I'm a <notify-item msg="street">street photographer</notify-item>. I've got a portfolio of my work up at <a href="https://www.kravse.com">kravse.com</a>
-            </p>
-            <p>I travel whenever I can. I've visited 33 countries (and counting!).</p>
           </div>
         </section>
         <section>
@@ -96,6 +85,18 @@
                 <span class="let">let <strong>{{key}}</strong></span> = [<li v-for="skill in skills" :key="skill">{{skill}},</li>];
               </ul>
             </div>
+          </div>
+        </section>
+        <section>
+          <h3 class="h1">Hobbies</h3>
+          <div class="clump">
+            <p>
+              I love boardgames. I write reviews of games on <a href="https://instagram.com/bored.gamer">Instagram</a>.
+            </p>
+            <p>
+              I'm a <notify-item msg="street">street photographer</notify-item>. I've got a portfolio of my work up at <a href="https://www.kravse.com">kravse.com</a>
+            </p>
+            <p>I travel whenever I can. I've visited 33 countries (and counting!).</p>
           </div>
         </section>
       </div>

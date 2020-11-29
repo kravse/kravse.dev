@@ -22,8 +22,9 @@
     color: $soft-yellow
 
   ul
+    margin-right: 0
+
     li
-      font-size: 0.9em
       display: flex
       align-items: flex-start
       margin-bottom: 10px
@@ -40,7 +41,6 @@
 
   .work-content
     position: relative
-    // overflow: hidden
 
     .slide
       position: relative
@@ -54,9 +54,18 @@
       display: flex
       justify-content: center
 
+      +media('md')
+        width: 80vw
+
+      +media('xs')
+        width: 85vw
+
       .copy
         padding: 40px 30px 100px
         width: $mid-width
+
+        +media('xs')
+          padding: 25px 20px 50px
 
         h3
           margin-top: 20px

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="overlay ? 'stuck' : ''">
     <div class="app-inner">
       <!-- <div id="nav">
         <router-link to="/">Home</router-link> |
@@ -23,6 +23,9 @@ export default Vue.extend({
     'site-notification': notification
   },
   computed: {
+    overlay: function () {
+      return this.$route.name !== 'home'
+    }
   }
 });
 </script>

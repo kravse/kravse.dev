@@ -23,8 +23,11 @@ body
 
   h1, h2, h3, h4, h5, h6, .title
     font-family: $title-font
-    color: $green-blue
+    color: $accent
     margin-top: 0
+
+    &.standard-color
+      color: $font-color
 
   .uppercase
     text-transform: uppercase
@@ -56,6 +59,9 @@ body
     font-size: 1em
     margin-bottom: 1.5em
 
+    &.sm
+      font-size: 0.8em
+
   ul, blockquote
     margin-bottom: 0.5em
     margin-top: 0.5em
@@ -83,16 +89,35 @@ body
       //   font-size: 0.5em
       //   margin-left: -0.8em
 
+  button, .btn
+    background: transparent
+    border: 2px solid $accent
+    cursor: pointer
+    color: $accent
+    padding: 5px 10px
+    font-size: 0.8em
+    text-decoration: none
+
+    &:hover
+      border-color: $orange-light
+      color: $orange-light
+
+      &:active
+        border-color: lighten($orange-light, 20%)
+        color: lighten($orange-light, 20%)
+
 #app
-  position: fixed
-  top: 0
-  left: 0
   width: 100vw
   height: 100vh
   overflow: scroll
   display: flex
   flex-direction: column
   align-items: center
+
+  &.stuck
+    overflow: hidden
+    .app-inner
+      overflow: hidden
 
   .app-inner
     height: 99vh
@@ -104,16 +129,17 @@ body
     flex-direction: column
     min-height: min-content
 
+
 a
   // font-family: $title-font
   // text-transform: uppercase
   color: $green-blue // green-blue
 
   &:hover
-    color: darken($green-blue, 30%)
+    color: $orange-light
 
 canvas
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   z-index: -1

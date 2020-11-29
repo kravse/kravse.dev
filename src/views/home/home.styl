@@ -9,9 +9,25 @@
   max-width: $mid-width
   width: 100%
 
+  &.stuck
+    height: 100vh
+    overflow: hidden
+
+    .inner
+      opacity: 0
+
   section
     // margin-bottom: 40px
     border-bottom: 3px solid $orange-light
+
+    .clump
+      margin-bottom: 20px
+      h4
+        margin-top: 30px
+      h4, h5
+        margin-bottom: 10px
+      p
+        margin: 0 10px 20px
 
   .hero
     // padding: 25px 0 0
@@ -64,7 +80,6 @@
 
     h4
       margin: 0 0 0 7px
-
 
 
 dump_media_cache()

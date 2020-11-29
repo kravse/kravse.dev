@@ -1,54 +1,110 @@
 <template>
-  <div class="home">
-    <div class="hero">
-      <h1 class="h0">Jared Krause</h1>
-      <code class="code h2">
-        <notify-item msg="ಠ_ಠ is a valid identifier according to ECMAScript 6.">{{typedTitle}}</notify-item>
-        <span :class="[blink ? 'blink' : '', 'cursor']"></span>
-        <span class="spacer">&nbsp;</span>
-      </code>
-      <!-- <h2 class="subtitle h3">I write <a href="https://vuejs.org/">VueJS</a>, <a href="">React</a>, <a href="">NodeJS</a>, <a href="">Typescript</a></h2> -->
-      <!-- <p class="sub">
-        Make a subtitle
-      </p> -->
-    </div>
-    <section>
-      <h3 class="h1">Hi!</h3>
-      <p>I'm a web developer currently living in <strong>Toronto</strong>.</p>
-      <p>I build modern, scalable web applications with <notify-item msg="Vue (pronounced /vjuː/, like view) is a progressive JavaScript framework for building user interfaces.">Vue.js</notify-item> & <notify-item msg="React is a JavaScript library for building component based UIs.">React</notify-item>. I tend to focus on writing component-based, reusable code.</p>
-      <p>I &lt;3 <notify-item msg="💻 && 🌐 === 😍">JavaScript</notify-item>. Lately I've been building <notify-item msg="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.">Node.js</notify-item> apps, <notify-item msg="Slackbots are interactive apps built with the Slack's Event & Web APIs.">Slack bots</notify-item>, <notify-item msg="Browser extensions are small programs that add new features to your browser and personalize your browsing experience.">browser extensions</notify-item>, <notify-item msg="CloudFlare workers are snippets of serverless code that run in between the browser and webhost.">CloudFlare workers</notify-item> and a bunch of other cool stuff.</p>
-      <p>I also have experience leading teams.</p>
-      <!-- <p>I'm passionate about people, which is why I focus on creating accessible web experiences that anyone can use. I write modular, component-based, reusable code to build websites that are beautiful, responsive and scalable.</p> -->
-    </section>
-    <section>
-      <h3 class="h1">Serious Projects</h3>
-      <p><a href="https://www.tunnelbear.com">tunnelbear.com</a></p>
-      <p>TunnelBear For Browser. [<a href="https://addons.mozilla.org/en-US/firefox/addon/tunnelbear-vpn-firefox/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/tunnelbear-vpn/omdakjcmkglenbhjadbccaookpfjihpa">Chrome</a>]</p>
-
-    </section>
-    <section>
-      <h3 class="h1">Silly Projects</h3>
-      <p><a href="https://soundlessdumb.com">soundlessdumb.com</a></p>
-
-    </section>
-    <section>
-      <h3 class="h1">Toolbox.</h3>
-      <!-- <p>This list isn't exhaustive, but I mostly just learn as I go anyway.</p> -->
-      <div class="lists">
-        <div v-for="(skills, key) in skillSets" :key="key" class="list">
-          <!-- <h4 class="h5">let {{key}} = </h4> -->
-          <ul>
-            <span class="let">let <strong>{{key}}</strong></span> = [<li v-for="skill in skills" :key="skill">{{skill}},</li>];
-          </ul>
+  <div>
+    <work-history v-if="workHistory"/>
+    <div :class="['home', workHistory ? 'stuck': '']">
+      <div class="inner">
+        <div class="hero">
+          <h1 class="h0">Jared Krause</h1>
+          <code class="code h2">
+            <notify-item msg="ಠ_ಠ is a valid identifier according to ECMAScript 6.">{{typedTitle}}</notify-item>
+            <span :class="[blink ? 'blink' : '', 'cursor']"></span>
+            <span class="spacer">&nbsp;</span>
+          </code>
         </div>
+        <section>
+          <h3 class="h1">Hi!</h3>
+          <p>I'm a web developer currently living in <strong>Toronto</strong>.</p>
+          <p>I build modern, scalable web applications with <notify-item msg="vue">Vue.js</notify-item> & <notify-item msg="react">React</notify-item>. I tend to focus on writing component-based, reusable code.</p>
+          <p>I &lt;3 <notify-item msg="js">JavaScript</notify-item>. Lately I've been building <notify-item msg="node">Node.js</notify-item> apps, <notify-item msg="slackbots">Slack bots</notify-item>, <notify-item msg="browserExtensions">browser extensions</notify-item>, <notify-item msg="cloudflareWorkers">CloudFlare workers</notify-item> and a bunch of other cool stuff.</p>
+          <p>I also have experience leading teams.</p>
+        </section>
+        <section>
+          <h3 class="h1">Work</h3>
+          <p>You can view my full work history <router-link class="btn" :to="{name: 'work-history'}">here</router-link>.</p>
+        </section>
+        <section>
+          <h3 class="h1">Recent Projects</h3>
+
+          <div class="clump">
+            <h4 class="h3">Work</h4>
+            <h5 class="standard-color">
+              <strong>TunnelBear Website</strong> [<a href="https://www.tunnelbear.com">tunnelbear.com</a>]
+            </h5>
+            <p class="sm">
+              I'm the tech lead for the team that built and maintains the TunnelBear website.
+              This is built on <notify-item msg="vue">VueJS</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="babel">Babel</notify-item>, hosted with <notify-item msg="netlify">Netlify</notify-item>, and serves millions
+              of users a month.
+            </p>
+            <h5 class="standard-color">
+              <strong>TunnelBear Browser Extension</strong> [<a href="https://addons.mozilla.org/en-US/firefox/addon/tunnelbear-vpn-firefox/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/tunnelbear-vpn/omdakjcmkglenbhjadbccaookpfjihpa">Chrome</a>]
+            </h5>
+            <p class="sm">
+              Core developer for the TunnelBear browser client. Built with <notify-item msg="vue">VueJS</notify-item>, <notify-item msg="typescript">TypeScript</notify-item>, <notify-item msg="webpack">WebPack</notify-item>. Put a <notify-item msg="vpn">VPN</notify-item> in your browser!
+            </p>
+          </div>
+          <div class="clump">
+            <h4 class="h3">Play</h4>
+            <h5 class="standard-color">
+              <strong>Slack Responder Bot</strong> [<a href="https://github.com/kravse/slack-responder-bot">Github</a>]
+            </h5>
+            <p class="sm">
+              A service based Slack app that responds to user input. Built with <notify-item msg="node">Node</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="typescript">TypeScript</notify-item>.
+            </p>
+          </div>
+
+          <div class="clump">
+            <h5 class="standard-color">
+              <strong>Sound Less Dumb</strong> [<a href="https://soundlessdumb.com">soundlessdumb.com</a>, <a href="https://github.com/kravse/soundlessdumb.com">Github</a>]
+            </h5>
+            <p class="sm">
+              This is a silly project I built with <notify-item msg="react">React</notify-item> & <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="python">Python</notify-item>. It creates funny and nonsensical translations of sentences.
+              Initially this project relied on the Merriam-Webster API, but due to daily usage limits,
+              I used Python to generate chunked thesaurus files and lazy load them with Webpack.
+            </p>
+          </div>
+
+          <div class="clump">
+            <h5 class="standard-color">
+              <strong>This website!</strong> [<a href="https://github.com/kravse/kravse.dev">Github</a>]
+            </h5>
+            <p class="sm">
+              I built and designed this website with <notify-item msg="vue">VueJS</notify-item> and <notify-item msg="webpack">Webpack</notify-item>.
+              It's hosted, served and continuously deployed as a static bundle through <notify-item msg="netlify">Netlify</notify-item>.
+              The background animation is done with <notify-item msg="threejs">Three.js</notify-item>.
+            </p>
+          </div>
+        </section>
+        <section>
+          <h3 class="h1">About Me</h3>
+          <div class="clump">
+            <p class="sm">
+              I love boardgames
+            </p>
+          </div>
+        </section>
+        <section>
+          <h3 class="h1">Toolbox.</h3>
+          <!-- <p>This list isn't exhaustive, but I mostly just learn as I go anyway.</p> -->
+          <div class="lists">
+            <div v-for="(skills, key) in skillSets" :key="key" class="list">
+              <!-- <h4 class="h5">let {{key}} = </h4> -->
+              <ul>
+                <span class="let">let <strong>{{key}}</strong></span> = [<li v-for="skill in skills" :key="skill">{{skill}},</li>];
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import notify from '@/components/notify-item/notify-item.vue';
+import workHistory from '@/views/work-history/work-history.vue';
+import skills from './assets/skills'
+
 export default Vue.extend({
   name: 'Home',
   data() {
@@ -63,65 +119,13 @@ export default Vue.extend({
       ],
       typedTitle: "",
       blink: false,
-      skillSets: {
-        "frameworks": [
-          "Vue.js",
-          "React",
-          "Angular",
-          "Backbone",
-          "WordPress",
-          "Drupal",
-          "TypeScript",
-          "jQuery",
-          "CoffeeScript"
-        ],
-        "buildTools": [
-          "WebPack",
-          "Babel",
-          "Unix",
-          "Git",
-          "RVM",
-          "npm",
-          "Bower",
-          "Gulp",
-          "Grunt",
-          "MAMP",
-        ],
-        "frontEnd": [
-          "HTML5",
-          "Pug",
-          "Stylus",
-          "LESS",
-          "SASS/SCSS",
-          "Bootstrap",
-          "Foundation",
-        ],
-        "backEnd": [
-          "Node.js",
-          "Express",
-          "SQL",
-          "PHP",
-          "Python",
-          "Java"
-        ],
-        "WebHosting": [
-          "Netlify",
-          "Cloudflare",
-          "AWS",
-          "Ghost",
-          "Shopify"
-        ],
-        "design": [
-          "Sketch",
-          "Photoshop",
-          "Zeplin",
-        ],
-
-      }
+      workHistory: this.$route.name === 'work-history',
+      skillSets: skills
     }
   },
   components: {
-    'notify-item': notify
+    'notify-item': notify,
+    'work-history': workHistory
   },
   computed: {},
   created: function () {
@@ -151,7 +155,13 @@ export default Vue.extend({
         }
       }, 110)
     }
+  },
+  watch:{
+    $route (to){
+      this.workHistory = to.name === 'work-history';
+    }
   }
+
 });
 </script>
 <style scoped src="./home.styl" lang="stylus"></style>

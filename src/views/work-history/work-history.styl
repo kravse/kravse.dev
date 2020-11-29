@@ -1,0 +1,82 @@
+@import '~@/assets/styles/mixins'
+@import '~@/assets/styles/variables'
+
+#work
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 10
+  transform: translateX(0)
+  transition: transform 0.3s cubic-bezier(.74, .06, .4, .92)// , width 0.2s ease
+
+  .home-button
+    position: absolute
+    top: 5px
+    left: 100%
+    margin-left: 10px
+    color: $dark-blue
+    text-decoration: none
+    font-size: 3em
+
+  h1, h2, h3, h4, h5, h6, p, ul, li, strong
+    color: $soft-yellow
+
+  ul
+    li
+      font-size: 0.9em
+      display: flex
+      align-items: flex-start
+      margin-bottom: 10px
+      &:before
+        // content: ""
+        content: "==="
+        margin-top: 0.2em
+        color: $orange-light
+        font-weight: bold
+        display: inline-block
+        width: 2.5em
+        font-size: 0.8em
+        margin-left: -0.8em
+        transform: translateX(-5px)
+
+  .work-content
+    position: relative
+    overflow: hidden
+
+    .copy
+      position: relative
+      opacity: 0
+      background: $dark-blue
+      padding: 40px 30px
+      height: 100vh
+      width: 80vw
+      animation: fadein 0s 0.4s ease forwards
+      z-index: 0
+      overflow-y: scroll
+
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      height: 100%
+      width: 80vw
+      background-color: $green-blue
+      animation: animateIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards
+
+  // &.fade-enter-active,
+  &.fade-leave-active
+    transition: transform 0.5s ease translateY(100%)
+    // opacity: 0
+    transform: translateX(-100%)
+
+  // &.fade-enter,
+  &.fade-leave-to
+    // opacity: 0
+    transform: translateX(-100%)
+
+
+
+dump_media_cache()

@@ -11,22 +11,46 @@
   border: 10px solid transparent
 
   .notification-inner
-    background: $dark-blue
+    position: relative
     color: $soft-yellow
     line-height: 1.5em
     text-align: left
-    padding: 35px 25px
-    transform: translateY(0)
-    transition: transform 0.2s ease// , width 0.2s ease
     opacity: 1
-    // transform: perspective(23rem)
+    overflow: hidden
+    transform: translateX(0)
+    transition: transform 0.3s cubic-bezier(.74, .06, .4, .92)// , width 0.2s ease
+    max-width: 40vw
 
-    &.fade-enter-active, &.fade-leave-active
-      transform: translateY(100%)
+    .text
+      position: relative
+      background: $dark-blue
+      z-index: 0
       opacity: 0
+      padding: 20px 30px
+      animation: fadein 0s 0.4s ease forwards
 
-    &.fade-enter, &.fade-leave-to
-      opacity: 1
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      height: 100%
+      background-color: $green-blue
+      animation: animateIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards
+
+
+    // &.fade-enter-active,
+    &.fade-leave-active
+      transition: transform 0.5s ease translateY(100%)
+      // opacity: 0
+      transform: translateX(-100%)
+
+    // &.fade-enter,
+    &.fade-leave-to
+      // opacity: 0
+      transform: translateX(-100%)
 
     &.centered
       font-size: 1.5em

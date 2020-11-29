@@ -2,7 +2,7 @@
   <div id="notification">
     <transition name="fade">
       <div :class="['notification-inner', centered ? 'centered': '']" v-if="notification">
-        <p>{{notification}}</p>
+        <p class="text">{{notification}}</p>
       </div>
     </transition>
   </div>

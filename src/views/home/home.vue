@@ -75,7 +75,7 @@
           </div>
         </section>
         <section>
-          <h3 class="h1">About Me</h3>
+          <h3 class="h1">Hobbies</h3>
           <div class="clump">
             <p>
               I love boardgames. I write reviews of games on <a href="https://instagram.com/bored.gamer">Instagram</a>.

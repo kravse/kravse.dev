@@ -13,7 +13,7 @@
               millions of users each month.</p></li>
               <li><p>Core web developer and SME for CloudFlare workers, DNS configuration, reverse proxies
               and Netlify web hosting with CI/CD. </p></li>
-              <li><p>Spearheaded the migration & refactor of web suite to JAM Stack using VueJS and Webpack.</p></li>
+              <li><p>Spearheaded the migration & refactor of web suite to JAM Stack using Vue.js and Webpack.</p></li>
               <li><p>Lead developer of the TunnelBear Chrome & Firefox browser extensions.</p></li>
               <li><p>Responsible for hiring and mentoring junior developers, including code reviews with a focus on
               clean, scalable and reusable code.</p></li>
@@ -69,7 +69,7 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'work-history',
-  mounted: function ():void {
+  mounted: function (): void {
      window.scrollTo(0, 0)
   },
 

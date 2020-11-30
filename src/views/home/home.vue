@@ -32,14 +32,14 @@
             </h5>
             <p class="sm">
               I'm the tech lead for the team that built and maintains the TunnelBear website.
-              This is built on <notify-item msg="vue">VueJS</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="babel">Babel</notify-item>, hosted with <notify-item msg="netlify">Netlify</notify-item>, and serves millions
+              This is built on <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="babel">Babel</notify-item>, hosted with <notify-item msg="netlify">Netlify</notify-item>, and serves millions
               of users a month.
             </p>
             <h5 class="standard-color">
               <strong>TunnelBear Browser Extension</strong><br class="xs"> [<a href="https://addons.mozilla.org/en-US/firefox/addon/tunnelbear-vpn-firefox/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/tunnelbear-vpn/omdakjcmkglenbhjadbccaookpfjihpa">Chrome</a>]
             </h5>
             <p class="sm">
-              I'm the core developer for the TunnelBear browser client. Built with <notify-item msg="vue">VueJS</notify-item>, <notify-item msg="typescript">TypeScript</notify-item>, <notify-item msg="webpack">Webpack</notify-item>. Put a <notify-item msg="vpn">VPN</notify-item> in your browser! This extension is used by hundreds of thousands of users globally.
+              I'm the core developer for the TunnelBear browser client. Built with <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="typescript">TypeScript</notify-item>, <notify-item msg="webpack">Webpack</notify-item>. Put a <notify-item msg="vpn">VPN</notify-item> in your browser! This extension is used by hundreds of thousands of users globally.
             </p>
           </div>
           <div class="clump">
@@ -48,7 +48,7 @@
               <strong>Slack Responder Bot</strong><br class="xs"> [<a href="https://github.com/kravse/slack-responder-bot">Github</a>]
             </h5>
             <p class="sm">
-              A work in progress, this is a service based Slack app that responds to user input. Built with <notify-item msg="node">Node</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="typescript">TypeScript</notify-item>.
+              A work in progress, this is a service based Slack app that responds to user input. Built with <notify-item msg="node">Node.js</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="typescript">TypeScript</notify-item>.
             </p>
           </div>
 
@@ -68,7 +68,7 @@
               <strong>This website!</strong><br class="xs"> [<a href="https://github.com/kravse/kravse.dev">Github</a>]
             </h5>
             <p class="sm">
-              I built and designed this website with <notify-item msg="vue">VueJS</notify-item> and <notify-item msg="webpack">Webpack</notify-item>.
+              I built and designed this website with <notify-item msg="vue">Vue.js</notify-item> and <notify-item msg="webpack">Webpack</notify-item>.
               It's hosted, served and continuously deployed as a static bundle through <notify-item msg="netlify">Netlify</notify-item>.
               The background animation is done with <notify-item msg="threejs">Three.js</notify-item>.
             </p>
@@ -130,14 +130,14 @@ export default Vue.extend({
     'work-history': workHistory
   },
   computed: {},
-  created: function ():void {
+  created: function (): void {
     this.blink = true
     setTimeout(()=> {
       this.type()
     },1000)
   },
   methods: {
-    type: function ():void {
+    type: function (): void {
       this.blink = false;
       let i = 0;
       let currentString = this.typingExperience[i];
@@ -159,7 +159,7 @@ export default Vue.extend({
     }
   },
   watch:{
-    $route (to):void{
+    $route (to): void{
       this.workHistory = to.name === 'work-history';
     }
   }

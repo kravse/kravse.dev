@@ -13,7 +13,7 @@
         </div>
         <section>
           <h3 class="h1">Hi!</h3>
-          <p>I'm a web developer currently living in <strong>Toronto</strong>.</p>
+          <p>I'm a web developer currently living in Toronto.</p>
           <p>I build modern, scalable web applications with <notify-item msg="vue">Vue.js</notify-item> & <notify-item msg="react">React</notify-item>. I tend to focus on writing component-based, reusable code.</p>
           <p>I &lt;3 <notify-item msg="js">JavaScript</notify-item>. Lately I've been building <notify-item msg="node">Node.js</notify-item> apps, <notify-item msg="slackbots">Slack bots</notify-item>, <notify-item msg="browserExtensions">browser extensions</notify-item>, <notify-item msg="cloudflareWorkers">CloudFlare workers</notify-item> and a bunch of other cool stuff.</p>
           <p>I have experience leading teams and mentoring developers.</p>
@@ -25,7 +25,6 @@
         </section>
         <section>
           <h3 class="h1">Recent Projects</h3>
-
           <div class="clump">
             <h4 class="h3">Work</h4>
             <h5 class="standard-color">
@@ -40,7 +39,7 @@
               <strong>TunnelBear Browser Extension</strong><br class="xs"> [<a href="https://addons.mozilla.org/en-US/firefox/addon/tunnelbear-vpn-firefox/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/tunnelbear-vpn/omdakjcmkglenbhjadbccaookpfjihpa">Chrome</a>]
             </h5>
             <p class="sm">
-              Core developer for the TunnelBear browser client. Built with <notify-item msg="vue">VueJS</notify-item>, <notify-item msg="typescript">TypeScript</notify-item>, <notify-item msg="webpack">WebPack</notify-item>. Put a <notify-item msg="vpn">VPN</notify-item> in your browser!
+              I'm the core developer for the TunnelBear browser client. Built with <notify-item msg="vue">VueJS</notify-item>, <notify-item msg="typescript">TypeScript</notify-item>, <notify-item msg="webpack">WebPack</notify-item>. Put a <notify-item msg="vpn">VPN</notify-item> in your browser! This extension is used by hundreds of thousands of users globally.
             </p>
           </div>
           <div class="clump">
@@ -49,7 +48,7 @@
               <strong>Slack Responder Bot</strong><br class="xs"> [<a href="https://github.com/kravse/slack-responder-bot">Github</a>]
             </h5>
             <p class="sm">
-              A service based Slack app that responds to user input. Built with <notify-item msg="node">Node</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="typescript">TypeScript</notify-item>.
+              A work in progress, this is a service based Slack app that responds to user input. Built with <notify-item msg="node">Node</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="typescript">TypeScript</notify-item>.
             </p>
           </div>
 
@@ -58,7 +57,7 @@
               <strong>Sound Less Dumb</strong><br class="xs"> [<a href="https://soundlessdumb.com">soundlessdumb.com</a>, <a href="https://github.com/kravse/soundlessdumb.com">Github</a>]
             </h5>
             <p class="sm">
-              This is a silly project I built with <notify-item msg="react">React</notify-item> & <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="python">Python</notify-item>. It creates funny and nonsensical translations of sentences.
+              This is a project that creates funny and nonsensical translations of sentences. I built it with <notify-item msg="react">React</notify-item> & <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="python">Python</notify-item>.
               Initially this project relied on the Merriam-Webster API, but due to daily usage limits,
               I used Python to generate chunked thesaurus files and lazy load them with Webpack.
             </p>
@@ -82,7 +81,7 @@
             <div v-for="(skills, key) in skillSets" :key="key" class="list">
               <!-- <h4 class="h5">let {{key}} = </h4> -->
               <ul>
-                <span class="let">let <strong>{{key}}</strong></span> = [<li v-for="skill in skills" :key="skill">{{skill}},</li>];
+                <h4 class="title"><span class="let">let <strong>{{key}}</strong></span> =</h4> [<li v-for="skill in skills" :key="skill">{{skill}},</li>];
               </ul>
             </div>
           </div>
@@ -90,12 +89,12 @@
         <section>
           <h3 class="h1">Hobbies</h3>
           <p>
-            I love boardgames. I write reviews of games on <a href="https://instagram.com/bored.gamer">Instagram</a>.
+            I love boardgames. My favourites are <notify-item msg="nemoswar">Nemo's War</notify-item> and <notify-item msg="spiritisland">Spirit Island</notify-item>. I write reviews of games on <a href="https://instagram.com/bored.gamer">Instagram</a>.
           </p>
           <p>
-            I'm a <notify-item msg="street">street photographer</notify-item>. I've got a portfolio of my work up at <a href="https://www.kravse.com">kravse.com</a>
+            I'm a <notify-item msg="street">street photographer</notify-item>. I love to take candid and documentary style photos. I've got a portfolio of my work up at <a href="https://www.kravse.com">kravse.com</a>
           </p>
-          <p>I travel whenever I can. I've visited 33 countries (and counting!).</p>
+          <p>I travel whenever I can. I've visited 33 countries (and counting!). Some of my favourite destinations have been Morocco, China, Sweden, and India.</p>
         </section>
       </div>
     </div>

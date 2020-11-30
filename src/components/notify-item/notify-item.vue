@@ -25,7 +25,9 @@ export default Vue.extend({
         python: `Python is an interpreted, high-level and general-purpose programming language.`,
         threejs: `Three.js allows the creation of GPU-accelerated 3D animations using JavaScript.`,
         street: `Street photography, also sometimes called candid photography, is photography conducted for art or enquiry that features unmediated chance encounters and random incidents within public places.`,
-        title: `ಠ_ಠ is a valid identifier according to ECMAScript 6.`
+        title: `ಠ_ಠ is a valid identifier according to ECMAScript 6.`,
+        nemoswar: `A solitaire game set in the world of Jules Verne's classic novel Twenty Thousand Leagues Under the Sea.`,
+        spiritisland: `Spirit Island is a complex and thematic cooperative game set on an island full of spirits.`
       }
     }
   },

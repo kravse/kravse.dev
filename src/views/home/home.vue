@@ -39,7 +39,7 @@
               <strong>TunnelBear Browser Extension</strong><br class="xs"> [<a href="https://addons.mozilla.org/en-US/firefox/addon/tunnelbear-vpn-firefox/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/tunnelbear-vpn/omdakjcmkglenbhjadbccaookpfjihpa">Chrome</a>]
             </h5>
             <p class="sm">
-              I'm the core developer for the TunnelBear browser client. Built with <notify-item msg="vue">VueJS</notify-item>, <notify-item msg="typescript">TypeScript</notify-item>, <notify-item msg="webpack">WebPack</notify-item>. Put a <notify-item msg="vpn">VPN</notify-item> in your browser! This extension is used by hundreds of thousands of users globally.
+              I'm the core developer for the TunnelBear browser client. Built with <notify-item msg="vue">VueJS</notify-item>, <notify-item msg="typescript">TypeScript</notify-item>, <notify-item msg="webpack">Webpack</notify-item>. Put a <notify-item msg="vpn">VPN</notify-item> in your browser! This extension is used by hundreds of thousands of users globally.
             </p>
           </div>
           <div class="clump">

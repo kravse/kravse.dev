@@ -9,31 +9,25 @@
             <h3 class="h2">Web Team Lead at TunnelBear</h3>
             <h5>2017 - Present</h5>
             <ul>
-              <li><p>Senior web developer and team lead for the TunnelBear and RememBear
-              web team with a significant focus on UX and accessibility in order to serve
+              <li><p>Web tech lead for TunnelBear and RememBear with a significant focus on UX and accessibility in order to serve
               millions of users each month.</p></li>
-              <li><p>Hire and mentor junior developers and perform code reviews to help them
-              create clean, organized and reusable code.</p></li>
-              <li><p>Advocate for the needs of web users in cross-functional team meetings to
-              ensure all initiatives are user focused.</p></li>
-              <li><p>Responsible for architecting RememBear.com including choosing the
-              JavaScript framework, creating the component-based codebase, and
-              creating the global CSS architecture.</p></li>
-              <li><p>Built entire RememBear.com website including user account portal, payment
-              flows, payment card forms, support form and marketing landing pages.</p></li>
-              <li><p>Architected the migration of the JavaScript codebase of TunnelBear.com from
-              AngularJS to VueJS in order to duplicate the codebase for future products.</p></li>
-              <li><p>Identified opportunity to collaborate with the support team to rebuild their
-              internal support console, addressing pain points and designing a new optimized user experience.</p></li>
+              <li><p>Core web developer and SME for CloudFlare workers, DNS configuration, reverse proxies
+              and Netlify web hosting with CI/CD. </p></li>
+              <li><p>Spearheaded the migration & refactor of web suite to JAM Stack using VueJS and Webpack.</p></li>
+              <li><p>Lead developer of the TunnelBear Chrome & Firefox browser extensions.</p></li>
+              <li><p>Responsible for hiring and mentoring junior developers, including code reviews with a focus on
+              clean, scalable and reusable code.</p></li>
+              <li><p>Provide leadership on key decisions regarding JavaScript frameworks, build tools, testing,
+              site scalability and architecture.</p></li>
             </ul>
             <h3 class="h2">Web Developer at TunnelBear</h3>
             <h5>2016 - 2017</h5>
             <ul>
-              <li><p>Responsible for new features and maintenance of TunnelBear.com AngularJS
+              <li><p>Responsible for new features and maintenance of TunnelBear.com AngularJS, Node.js and Express
               web application.</p></li>
               <li><p>Collaborated with marketing lead to design and deploy UX and user flow
               experiments to optimize customer conversions on TunnelBear.com.</p></li>
-              <li><p>Independently built BearsMyIP.com, a website that currently lets 50,000+
+              <li><p>Built BearsMyIP.com, a website that currently lets 50,000+
               customers each month verify their IP address.</p></li>
               <li><p>Designed and built a JavaScript framework for marketing landing pages that
               reduced the build time per campaign by 90%.</p></li>

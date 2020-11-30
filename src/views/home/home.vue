@@ -6,7 +6,7 @@
         <div class="hero">
           <h1 class="h0">Jared Krause</h1>
           <code class="code h2">
-            <notify-item msg="ಠ_ಠ is a valid identifier according to ECMAScript 6.">{{typedTitle}}</notify-item>
+            <notify-item msg="title">{{typedTitle}}</notify-item>
             <span :class="[blink ? 'blink' : '', 'cursor']"></span>
             <span class="spacer">&nbsp;</span>
           </code>

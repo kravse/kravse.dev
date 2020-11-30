@@ -73,11 +73,18 @@
     .list
       margin-right: 35px
       margin-bottom: 30px
-      width: 150px
+      width: 185px
+
+      +media('md')
+        width: 135px
+
+      +media('xs')
+        margin-right: 15px
 
       span.let
         display:inline-block
         margin-bottom: 5px
+        white-space: nowrap
 
       ul, li, p
         font-size: 1em

@@ -79,7 +79,7 @@
           <div class="lists">
             <div v-for="(skills, key) in skillSets" :key="key" class="list">
               <h4 class="title">
-                <span class="let"><strong>{{key}}</strong></span> = [
+                <span class="let"><strong>{{key}}</strong> = [</span>
               </h4>
               <ul><li v-for="skill in skills" :key="skill"><p>{{skill}},</p></li></ul>
               <h4 class="title">];</h4>

@@ -21,7 +21,7 @@
         </section>
         <section>
           <h3 class="h1">Work</h3>
-          <p>You can view my full work history <router-link class="btn" :to="{name: 'work-history'}">here</router-link>.</p>
+          <p>View my full <router-link class="btn" :to="{name: 'work-history'}">work history</router-link>.</p>
         </section>
         <section>
           <h3 class="h1">Recent Projects</h3>
@@ -78,9 +78,11 @@
           <h3 class="h1">Toolbox</h3>
           <div class="lists">
             <div v-for="(skills, key) in skillSets" :key="key" class="list">
-              <ul>
-                <h4 class="title"><span class="let">let <strong>{{key}}</strong></span> =</h4> [<li v-for="skill in skills" :key="skill"><p>{{skill}},</p></li>];
-              </ul>
+              <h4 class="title">
+                <span class="let">let <strong>{{key}}</strong></span> = [
+              </h4>
+              <ul><li v-for="skill in skills" :key="skill"><p>{{skill}},</p></li></ul>
+              <h4 class="title">];</h4>
             </div>
           </div>
         </section>

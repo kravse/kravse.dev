@@ -9,7 +9,6 @@
   transform: translateX(0)
   transition: transform 0.3s cubic-bezier(.74, .06, .4, .92)
 
-
   .home-button
     position: absolute
     top: 0
@@ -22,7 +21,7 @@
     width: 20vw;
 
     &:hover
-      color: $accent
+      color: $alt-accent
 
   h1, h2, h3, h4, h5, h6, p, ul, li, strong
     color: lighten($bg-color, 25%)
@@ -38,7 +37,7 @@
       &:before
         content: "==="
         margin-top: 0.1em
-        color: $light-accent
+        color: $alt-accent
         font-weight: bold
         display: inline-block
         font-size: 0.9em
@@ -80,7 +79,7 @@
         padding: 40px 30px
 
         +media('xs')
-          padding: 20px 5px
+          padding: 40px 15px 60px
 
         h3
           margin-top: 20px

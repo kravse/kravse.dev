@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="Jared Krause is a Toronto based web developer specializing in Vue.js, React, and Node.js." />
+    <meta name="author" content="Jared Krause">
+    <meta name="keywords" content="jared, krause, toronto, ontario, kravse.dev, javascript, JavaScript, developer, vuejs, vue, nodejs, react">
     <!-- Twitter cards -->
-    <meta name="twitter:card" content="summary_large_image" ref="twitterCard">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@kravse">
     <meta name="twitter:title" content="kravse.dev">
     <meta name="twitter:image" content="https://kravse.dev/share.png">
     <meta name="twitter:description" content="Jared Krause is a Toronto based web developer specializing in Vue.js, React, and Node.js.">
     <meta name="twitter:creator" content="@kravse">
-    <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="kravse.dev">
-    <meta itemprop="description" content="Jared Krause is a Toronto based web developer specializing in Vue.js, React, and Node.js.">
-    <meta itemprop="image" content="https://kravse.dev/share.png">
 
     <!-- Open Graph data / FB -->
     <meta property="og:title" content="kravse.dev" />
@@ -32,27 +30,27 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <noscript>
-      <strong>Life is better with JavaScript.</strong>
-    </noscript>
   </head>
   <body>
+    <noscript>
+      Life is better with JavaScript.
+    </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script src="./three.min.js"></script>
+    <script src="./bg.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVB5GTCMWY"></script>
+    <script>
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.className = 'dark'
+      }
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      if (location.origin === 'https://kravse.dev') {
+        gtag('js', new Date());
+        gtag('config', 'G-FVB5GTCMWY');
+      }
+    </script>
   </body>
-  <script src="./three.min.js"></script>
-  <script src="./bg.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVB5GTCMWY"></script>
-  <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.body.className = 'dark'
-    }
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    if (location.origin === 'https://kravse.dev') {
-      gtag('js', new Date());
-      gtag('config', 'G-FVB5GTCMWY');
-    }
-  </script>
 </html>

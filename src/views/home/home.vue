@@ -16,7 +16,7 @@
           <p>I'm a web developer currently living in <strong>Toronto</strong>.</p>
           <p>I build modern, scalable web applications with <notify-item msg="vue">Vue.js</notify-item> & <notify-item msg="react">React</notify-item>. I tend to focus on writing component-based, reusable code.</p>
           <p>I &lt;3 <notify-item msg="js">JavaScript</notify-item>. Lately I've been building <notify-item msg="node">Node.js</notify-item> apps, <notify-item msg="slackbots">Slack bots</notify-item>, <notify-item msg="browserExtensions">browser extensions</notify-item>, <notify-item msg="cloudflareWorkers">CloudFlare workers</notify-item> and a bunch of other cool stuff.</p>
-          <p>I also have experience leading teams.</p>
+          <p>I have experience leading teams and mentoring developers.</p>
           <p>If you want to chat, email at <a href="mailto:jared@kravse.dev">jared@kravse.dev</a></p>
         </section>
         <section>

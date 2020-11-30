@@ -1,14 +1,15 @@
 var scene = new THREE.Scene();
-scene.background = new THREE.Color("#f9c74f");
 var camera = new THREE.PerspectiveCamera(-40, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-var renderer = new THREE.WebGLRenderer();
+var renderer = new THREE.WebGLRenderer({alpha: true});
+renderer.setClearColor(0x000000, 0); // the default
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 var geometry = new THREE.SphereGeometry(4, 10, 10);
 var material = new THREE.MeshBasicMaterial({
-  color: "#f9844a",
+  // color: "#fcc1a4",
+  color: "#f2dcb8",
   wireframe: true
 });
 var sphere = new THREE.Mesh(geometry, material);

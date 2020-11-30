@@ -1,0 +1,65 @@
+@import '~@/assets/styles/mixins'
+@import '~@/assets/styles/variables'
+
+#notification
+  position: fixed
+  z-index: 5
+  bottom: 0
+  left: 0
+  display: flex
+  justify-content: center
+  border: 10px solid transparent
+
+  .notification-inner
+    position: relative
+    color: $light-text
+    line-height: 1.5em
+    text-align: left
+    opacity: 1
+    overflow: hidden
+    transform: translateX(0)
+    transition: transform 0.3s cubic-bezier(.74, .06, .4, .92)
+    max-width: 40vw
+
+    +media('md')
+      max-width: 60vw
+
+    +media('xs')
+      max-width: 80vw
+
+    .text
+      position: relative
+      background: $bg-dark
+      z-index: 0
+      opacity: 0
+      padding: 20px 30px
+      animation: fadein 0s 0.4s ease forwards
+
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      height: 100%
+      background-color: $accent
+      animation: animateIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards
+
+
+    &.fade-leave-active
+      transition: transform 0.5s ease
+      transform: translateX(-100%)
+
+    &.fade-leave-to
+      transform: translateX(-100%)
+
+    &.centered
+      font-size: 1.5em
+      text-align: center
+
+    p
+      margin: 0
+      padding: 0
+
+dump_media_cache()

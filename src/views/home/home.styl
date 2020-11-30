@@ -1,0 +1,83 @@
+@import '~@/assets/styles/mixins'
+@import '~@/assets/styles/variables'
+
+@keyframes caret
+  50%
+    border-color: transparent
+
+.home
+  max-width: $mid-width
+  width: 100%
+
+  &.stuck
+    height: 100vh
+    overflow: hidden
+
+    .inner
+      opacity: 0
+
+  section
+    border-bottom: 3px solid $alt-accent
+
+    .clump
+      margin-bottom: 20px
+      h4
+        margin-top: 30px
+      h4, h5
+        margin-bottom: 10px
+      p
+        margin: 0 10px 20px
+
+  .hero
+    h1
+      margin-bottom: 0
+      margin-left: -0.1em
+
+    code
+      overflow: hidden
+      white-space: nowrap
+      padding: 5px 0;
+      margin: 0;
+      display: flex
+      align-items: center
+      line-height: 1.2em
+      font-size: 1em
+
+      .spacer
+        opacity: 0
+        width: 0
+
+      .cursor
+        margin: -0.1em 0 0 0.2em
+        height: 1.2em
+        display: inline-block
+        border-right: .5em solid
+        color: $alt-accent
+
+        &.blink
+          animation: caret .5s step-end infinite alternate
+
+  .sub
+    margin: 0
+    font-size: 1em
+    font-weight: 400
+
+  .lists
+    display: flex
+    flex-wrap: wrap
+
+    .title
+      color $font-color
+
+    .list
+      margin: 10px 0
+
+      span.let
+        display:inline-block
+        margin-bottom: 5px
+
+      ul, li, p
+        font-family: $title-font
+
+
+dump_media_cache()

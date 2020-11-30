@@ -1,4 +1,4 @@
-# kravse.dev
+# kravse.dev website
 
 ## Project setup
 ```

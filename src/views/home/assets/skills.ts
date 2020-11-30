@@ -39,7 +39,7 @@ export const skills = {
     "Python",
     "Java"
   ],
-  "WebHosting": [
+  "webHosting": [
     "Netlify",
     "Cloudflare",
     "AWS",

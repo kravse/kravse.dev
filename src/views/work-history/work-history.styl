@@ -57,9 +57,10 @@
       width: 65vw
       animation: fadein 0s 0.4s ease forwards
       z-index: 0
-      overflow-y: scroll
       display: flex
       justify-content: center
+      overflow-y: scroll
+      padding: 40px 30px 100px
 
       +media('md')
         width: 80vw
@@ -68,8 +69,10 @@
         width: 85vw
 
       .copy
-        padding: 40px 30px 100px
-        width: $mid-width
+        position: absolute
+        top: 0
+        max-width: $mid-width
+        padding: 40px 30px
 
         +media('xs')
           padding: 25px 20px 50px

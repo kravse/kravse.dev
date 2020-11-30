@@ -14,7 +14,7 @@ export default Vue.extend({
         react: `React is a JavaScript library for building component based UIs.`,
         js: `💻 && 🌐 === 😍`,
         node: `Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.`,
-        slackbots: `Slackbots are interactive apps built with the Slack's Event & Web APIs.`,
+        slackbots: `Slackbots are interactive apps built with Slack's Event & Web APIs.`,
         browserExtensions: `Browser extensions are small programs that add new features to your browser and personalize your browsing experience.`,
         cloudflareWorkers: `CloudFlare workers are snippets of serverless code that run in between the browser and webhost.`,
         webpack: `Webpack is a static module bundler for modern JavaScript applications.`,

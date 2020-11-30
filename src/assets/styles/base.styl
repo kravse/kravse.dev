@@ -62,14 +62,15 @@ body
     margin: 0 0 0.8em
 
   p
-    font-size: 1.1em
+    font-size: 1em
     margin-bottom: 0.75em
+    line-height: 1.3em
 
-    &.sm
-      font-size: 0.8em
+    // &.sm
+    //   font-size: 1em
 
-      +media('xs')
-        font-size: 1em
+    //   +media('xs')
+    //     font-size: 1em
 
   ul, blockquote
     margin-bottom: 0.5em
@@ -91,7 +92,7 @@ body
       // &:before
       //   content: ""
       //   // content: "==="
-      //   color: $orange-light
+      //   color: $alt-accent
       //   font-weight: bold
       //   display: inline-block
       //   width: 2em
@@ -108,12 +109,12 @@ body
     text-decoration: none
 
     &:hover
-      border-color: $orange-light
-      color: $orange-light
+      border-color: $alt-accent
+      color: $alt-accent
 
       &:active
-        border-color: lighten($orange-light, 20%)
-        color: lighten($orange-light, 20%)
+        border-color: lighten($alt-accent, 20%)
+        color: lighten($alt-accent, 20%)
 .xs
   +media('min-xs')
     display: none
@@ -142,12 +143,10 @@ body
 
 
 a
-  // font-family: $title-font
-  // text-transform: uppercase
-  color: $green-blue // green-blue
+  color: $accent
 
   &:hover
-    color: $orange-light
+    color: $alt-accent
 
 canvas
   position: fixed

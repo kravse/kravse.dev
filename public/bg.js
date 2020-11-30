@@ -8,7 +8,8 @@ document.body.appendChild(renderer.domElement);
 
 var geometry = new THREE.SphereGeometry(4, 10, 10);
 var material = new THREE.MeshBasicMaterial({
-  color: "#fcc1a4",
+  // color: "#fcc1a4",
+  color: "#f2dcb8",
   wireframe: true
 });
 var sphere = new THREE.Mesh(geometry, material);

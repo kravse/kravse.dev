@@ -5,8 +5,9 @@
         <a href="https://www.github.com/kravse">Code</a>
         <a href="https://www.twitter.com/kravse">Tweets</a>
         <a href="https://www.kravse.com">Photos</a>
+        <a href="mailto:jared@kravse.dev">jared@kravse.dev</a>
       </p>
-      <p><a href="mailto:jared@kravse.dev">jared@kravse.dev</a></p>
+      <p class="copyright">Jared Krause © {{new Date().getFullYear()}}</p>
     </section>
   </div>
 </template>

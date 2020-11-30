@@ -10,7 +10,7 @@ export const skills = {
     "jQuery",
     "CoffeeScript"
   ],
-  "buildTools": [
+  "dev": [
     "WebPack",
     "Babel",
     "Unix",
@@ -39,7 +39,7 @@ export const skills = {
     "Python",
     "Java"
   ],
-  "webHosting": [
+  "hosting": [
     "Netlify",
     "Cloudflare",
     "AWS",

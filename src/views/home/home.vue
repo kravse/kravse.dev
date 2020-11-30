@@ -76,7 +76,7 @@
           </div>
         </section>
         <section>
-          <h3 class="h1">Toolbox.</h3>
+          <h3 class="h1">Toolbox</h3>
           <!-- <p>This list isn't exhaustive, but I mostly just learn as I go anyway.</p> -->
           <div class="lists">
             <div v-for="(skills, key) in skillSets" :key="key" class="list">

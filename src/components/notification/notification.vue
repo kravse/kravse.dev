@@ -22,11 +22,6 @@ export default Vue.extend({
     notification: function () {
       return this.$store.state.notification
     }
-  },
-  // created: function () {
-  // },
-  methods: {
-
   }
 });
 </script>

@@ -1,5 +1,5 @@
 body
-  color $font-color
+  color: $font-color
   font-family: $base-font
   background: $bg-color
   height: 100vh
@@ -39,7 +39,10 @@ body
     text-transform: uppercase
 
   .h0
-    font-size: 3.2em
+    font-size: 4.5em
+
+    +media('xs')
+      font-size: 3em
 
   h1, .h1
     font-size: 2em
@@ -66,12 +69,6 @@ body
     margin-bottom: 0.75em
     line-height: 1.3em
 
-    // &.sm
-    //   font-size: 1em
-
-    //   +media('xs')
-    //     font-size: 1em
-
   ul, blockquote
     margin-bottom: 0.5em
     margin-top: 0.5em
@@ -81,6 +78,9 @@ body
     padding: 0 0 0 14px
     margin: 5px 30px 0 0
 
+    +media('xs')
+      padding-left: 0
+
     li
       display: flex
       align-items: center
@@ -89,15 +89,8 @@ body
       font-family: $base-font
       font-size: 1.1em
 
-      // &:before
-      //   content: ""
-      //   // content: "==="
-      //   color: $alt-accent
-      //   font-weight: bold
-      //   display: inline-block
-      //   width: 2em
-      //   font-size: 0.5em
-      //   margin-left: -0.8em
+      p
+        margin: 0
 
   button:not(.unstyled), .btn:not(.unstyled)
     background: $bg-color

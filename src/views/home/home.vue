@@ -17,7 +17,7 @@
           <p>I build modern, scalable web applications with <notify-item msg="vue">Vue.js</notify-item> & <notify-item msg="react">React</notify-item>. I tend to focus on writing component-based, reusable code.</p>
           <p>I &lt;3 <notify-item msg="js">JavaScript</notify-item>. Lately I've been building <notify-item msg="node">Node.js</notify-item> apps, <notify-item msg="slackbots">Slack bots</notify-item>, <notify-item msg="browserExtensions">browser extensions</notify-item>, <notify-item msg="cloudflareWorkers">CloudFlare workers</notify-item> and a bunch of other cool stuff.</p>
           <p>I have experience leading teams and mentoring developers.</p>
-          <p>If you want to chat, email at <a href="mailto:jared@kravse.dev">jared@kravse.dev</a></p>
+          <p>If you want to chat, email me at <a href="mailto:jared@kravse.dev">jared@kravse.dev</a></p>
         </section>
         <section>
           <h3 class="h1">Work</h3>
@@ -76,12 +76,10 @@
         </section>
         <section>
           <h3 class="h1">Toolbox</h3>
-          <!-- <p>This list isn't exhaustive, but I mostly just learn as I go anyway.</p> -->
           <div class="lists">
             <div v-for="(skills, key) in skillSets" :key="key" class="list">
-              <!-- <h4 class="h5">let {{key}} = </h4> -->
               <ul>
-                <h4 class="title"><span class="let">let <strong>{{key}}</strong></span> =</h4> [<li v-for="skill in skills" :key="skill">{{skill}},</li>];
+                <h4 class="title"><span class="let">let <strong>{{key}}</strong></span> =</h4> [<li v-for="skill in skills" :key="skill"><p>{{skill}},</p></li>];
               </ul>
             </div>
           </div>

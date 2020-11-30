@@ -12,7 +12,7 @@ export default Vue.extend({
       msgs: {
         vue: `Vue (pronounced /vjuː/, like view) is a progressive JavaScript framework for building user interfaces.`,
         react: `React is a JavaScript library for building component based UIs.`,
-        js: `💻 && 🌐 === 😍`,
+        js: `"b" + "a" + +"a" + "a"; // -> "baNaNa"`,
         node: `Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.`,
         slackbots: `Slackbots are interactive apps built with Slack's Event & Web APIs.`,
         browserExtensions: `Browser extensions are small programs that add new features to your browser and personalize your browsing experience.`,
@@ -36,8 +36,6 @@ export default Vue.extend({
   },
   computed: {
   },
-  // created: function () {
-  // },
   methods: {
     setMessage: function () {
       this.$store.dispatch('updateNotification', this.msgs[this.msg])

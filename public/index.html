@@ -45,6 +45,9 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVB5GTCMWY"></script>
   <script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.className = 'dark'
+    }
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     if (location.origin === 'https://kravse.dev') {

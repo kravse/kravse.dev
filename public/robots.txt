@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://kravse.dev/sitemap_main.xml
+

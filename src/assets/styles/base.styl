@@ -2,8 +2,6 @@ body
   color: $font-color
   font-family: $base-font
   background: $bg-color
-  height: 100vh
-  overflow: hidden
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   font-weight: 400
@@ -112,19 +110,12 @@ body
     display: none
 #app
   width: 100vw
-  height: 100vh
   overflow: scroll
   display: flex
   flex-direction: column
   align-items: center
 
-  &.stuck
-    overflow: hidden
-    .app-inner
-      overflow: hidden
-
   .app-inner
-    height: 99vh
     width: 90%
     padding-top: 6vh;
     display: flex

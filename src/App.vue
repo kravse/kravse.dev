@@ -19,7 +19,7 @@ export default Vue.extend({
     'site-notification': notification
   },
   computed: {
-    overlay: function ():Boolean {
+    overlay: function (): boolean {
       return this.$route.name !== 'home'
     }
   }

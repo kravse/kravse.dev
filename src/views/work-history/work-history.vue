@@ -6,7 +6,7 @@
         <div class="slide">
           <div class="copy">
             <h2 class="h0">Work History</h2>
-            <h3 class="h2">Web Team Lead at TunnelBear</h3>
+            <h3 class="h2">Web Tech Lead at TunnelBear</h3>
             <h5>2017 - Present</h5>
             <ul>
               <li><p>Web tech lead for TunnelBear and RememBear with a significant focus on UX and accessibility in order to serve

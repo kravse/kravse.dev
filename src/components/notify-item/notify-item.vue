@@ -1,5 +1,5 @@
 <template>
-  <button @mouseenter="msg && msgs[msg] && setMessage()" @mouseleave="eraseMessage()">
+  <button class="unstyled" @mouseenter="msg && msgs[msg] && setMessage()" @mouseleave="eraseMessage()">
     <slot></slot>
   </button>
 </template>

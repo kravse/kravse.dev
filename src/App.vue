@@ -7,7 +7,7 @@
     <site-notification/>
   </div>
 </template>
-<script>
+<script lang="ts">
 import Vue from 'vue';
 import footer from '@/components/footer/footer.vue'
 import notification from '@/components/notification/notification.vue'
@@ -19,7 +19,7 @@ export default Vue.extend({
     'site-notification': notification
   },
   computed: {
-    overlay: function () {
+    overlay: function ():Boolean {
       return this.$route.name !== 'home'
     }
   }

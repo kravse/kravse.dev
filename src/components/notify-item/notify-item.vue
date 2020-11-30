@@ -40,7 +40,7 @@ export default Vue.extend({
     setMessage: function () {
       this.$store.dispatch('updateNotification', this.msgs[this.msg])
     },
-    eraseMessage: function () {
+    eraseMessage: function (){
       this.$store.dispatch('updateNotification', '')
     }
   }

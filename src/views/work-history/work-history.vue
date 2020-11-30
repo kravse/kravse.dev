@@ -69,10 +69,7 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'work-history',
-  data() {
-    return {}
-  },
-  mounted: function () {
+  mounted: function ():void {
      window.scrollTo(0, 0)
   },
 

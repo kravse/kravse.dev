@@ -130,14 +130,14 @@ export default Vue.extend({
     'work-history': workHistory
   },
   computed: {},
-  created: function () {
+  created: function ():void {
     this.blink = true
     setTimeout(()=> {
       this.type()
     },1000)
   },
   methods: {
-    type: function () {
+    type: function ():void {
       this.blink = false;
       let i = 0;
       let currentString = this.typingExperience[i];
@@ -159,7 +159,7 @@ export default Vue.extend({
     }
   },
   watch:{
-    $route (to){
+    $route (to):void{
       this.workHistory = to.name === 'work-history';
     }
   }

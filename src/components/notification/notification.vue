@@ -7,7 +7,7 @@
     </transition>
   </div>
 </template>
-<script>
+<script lang="ts">
 import Vue from 'vue';
 export default Vue.extend({
   name: 'notification',
@@ -16,10 +16,10 @@ export default Vue.extend({
     }
   },
   computed: {
-    centered: function () {
+    centered: function ():Boolean {
       return this.notification && this.notification.length < 20
     },
-    notification: function () {
+    notification: function ():String {
       return this.$store.state.notification
     }
   }

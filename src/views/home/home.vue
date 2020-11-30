@@ -1,7 +1,7 @@
 <template>
   <div>
     <work-history v-if="workHistory"/>
-    <div :class="['home', workHistory ? 'stuck': '']">
+    <div :class="['home', workHistory ? 'stuck': '']" :aria-hidden="workHistory ? 'true' : 'false'">
       <div class="inner">
         <div class="hero">
           <h1 class="h0">Jared Krause</h1>

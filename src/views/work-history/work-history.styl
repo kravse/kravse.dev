@@ -9,14 +9,20 @@
   transform: translateX(0)
   transition: transform 0.3s cubic-bezier(.74, .06, .4, .92)// , width 0.2s ease
 
+
   .home-button
     position: absolute
-    top: 5px
+    top: 0
     left: 100%
-    margin-left: 10px
+    padding-left: 10px
     color: $dark-blue
     text-decoration: none
     font-size: 3em
+    height: 100%;
+    width: 20vw;
+
+    &:hover
+      color: $accent
 
   h1, h2, h3, h4, h5, h6, p, ul, li, strong
     color: $soft-yellow
@@ -41,6 +47,7 @@
 
   .work-content
     position: relative
+    z-index: 2
 
     .slide
       position: relative

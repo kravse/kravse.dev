@@ -1,6 +1,7 @@
 <template>
   <transition name="fade">
     <div id="work">
+      <router-link :to="{name: 'home'}" class="click-close"></router-link>
       <div class="work-content">
         <div class="slide">
           <div class="copy">

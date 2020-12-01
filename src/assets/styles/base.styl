@@ -128,11 +128,15 @@ body
   +media('min-xs')
     display: none
 #app
+  position: relative
   width: 100vw
   overflow: scroll
   display: flex
   flex-direction: column
   align-items: center
+
+  &.stuck
+    position: static
 
   .app-inner
     width: 90%
@@ -142,7 +146,6 @@ body
     align-items: center
     flex-direction: column
     min-height: min-content
-
 
 a
   color: $accent

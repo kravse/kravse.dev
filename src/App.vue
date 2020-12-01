@@ -4,8 +4,10 @@
       <router-view/>
       <site-footer/>
     </div>
-    <site-notification/>
-    <they-live/>
+    <template v-if="!overlay">
+      <site-notification/>
+      <they-live/>
+    </template>
   </div>
 </template>
 <script lang="ts">

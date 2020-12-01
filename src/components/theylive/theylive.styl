@@ -1,9 +1,5 @@
 @import '~@/assets/styles/mixins'
 @import '~@/assets/styles/variables'
-#theylive
-  display: flex
-  width: 100%
-  justify-content: flex-end
 
 img
   position: fixed
@@ -15,10 +11,13 @@ img
   z-index: 1000
 
 button.theylive
+  position: absolute
+  bottom: 5px
+  right: 20px
   display: block
   width: 20px
   height: 20px
-  opacity: 0.5
+  opacity: 0.7
   border: 0
   outline: 0
   background: transparent
@@ -28,7 +27,7 @@ button.theylive
   background-size: contain
   background-position: center center
   background-repeat: no-repeat
-  margin: 0 20px 5px 0
+  // margin: 0 20px 5px 0
 
   &:hover
     opacity: 1

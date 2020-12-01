@@ -15,10 +15,9 @@ export default Vue.extend({
   },
   methods: {
     theylive: function () {
-      // background: url('./assets/theylive2.gif')
-      this.theylivegif = true; // = `./assets/theylive.gif?t='+ new Date().getTime())}")`;
+      this.theylivegif = true
       setTimeout(() => {
-        this.theylivegif = false;
+        this.theylivegif = false
       }, 1500)
     }
   }

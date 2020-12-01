@@ -1,7 +1,7 @@
 <template>
-  <div id="theylive" aria-hidden="true">
-    <button @click="theylive()" class="theylive">They Live</button>
-    <img alt="" :src="require('./assets/theylive.gif') + '?t=' + new Date().getTime()" v-if="theylivegif">
+  <div id="theyLive" aria-hidden="true">
+    <button @click="theyLive()" class="theyLive">They Live</button>
+    <img alt="" @load="closeTheyLive()" :src="require('./assets/they-live.gif') + '?t=' + new Date().getTime()" v-if="theyLiveGif">
   </div>
 </template>
 <script>
@@ -10,14 +10,16 @@ export default Vue.extend({
   name: 'they-live',
   data() {
     return {
-      theylivegif: ''
+      theyLiveGif: ''
     }
   },
   methods: {
-    theylive: function () {
-      this.theylivegif = true
+    theyLive: function () {
+      this.theyLiveGif = true
+    },
+    closeTheyLive: function () {
       setTimeout(() => {
-        this.theylivegif = false
+        this.theyLiveGif = false
       }, 1500)
     }
   }

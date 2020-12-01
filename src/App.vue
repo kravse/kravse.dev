@@ -4,19 +4,24 @@
       <router-view/>
       <site-footer/>
     </div>
-    <site-notification/>
+    <template v-if="!overlay">
+      <site-notification/>
+      <they-live/>
+    </template>
   </div>
 </template>
 <script lang="ts">
 import Vue from 'vue';
 import footer from '@/components/footer/footer.vue'
 import notification from '@/components/notification/notification.vue'
+import theylive from '@/components/theylive/theylive.vue'
 
 export default Vue.extend({
   name: 'App',
   components: {
     'site-footer': footer,
-    'site-notification': notification
+    'site-notification': notification,
+    'they-live': theylive
   },
   computed: {
     overlay: function (): boolean {

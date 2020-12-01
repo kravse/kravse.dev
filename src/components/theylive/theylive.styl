@@ -1,0 +1,35 @@
+@import '~@/assets/styles/mixins'
+@import '~@/assets/styles/variables'
+
+img
+  position: fixed
+  display: block
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+  z-index: 1000
+
+button.theylive
+  position: absolute
+  bottom: 5px
+  right: 20px
+  display: block
+  width: 20px
+  height: 20px
+  opacity: 0.7
+  border: 0
+  outline: 0
+  background: transparent
+  overflow: hidden
+  text-indent: -1000px
+  background-image: url('./assets/theylive.png')
+  background-size: contain
+  background-position: center center
+  background-repeat: no-repeat
+  // margin: 0 20px 5px 0
+
+  &:hover
+    opacity: 1
+
+dump_media_cache()

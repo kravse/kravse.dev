@@ -5,6 +5,12 @@
     X-XSS-Protection = "1; mode=block"
 
 [[redirects]]
+  from = "/blog/*"
+  to = "https://leenashitposts.substack.com/p/coming-soon/:splat"
+  force = true
+  status= 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200

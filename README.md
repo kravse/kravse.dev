@@ -1,6 +1,8 @@
 # kravse.dev website
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e8680466-0c1e-4e1a-a9e9-c12cf2b760cb/deploy-status)](https://app.netlify.com/sites/kravse-dev/deploys)
 
+[https://kravse.dev](https://kravse.dev)
+
 ## Project setup
 ```
 npm install

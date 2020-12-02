@@ -28,29 +28,23 @@
     <link rel="canonical" href="https://kravse.dev" />
     <link rel="icon" type="image/png" href="./favicon.png" width=32px>
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
     <noscript>
-      Life is better with JavaScript.
+      <div class="noscript-msg">
+        <h2 class="h3">Concerned about privacy? Me too.</h2>
+        <p>This website doesn't track you, serve ads, or make requests to external APIs or resources. Enabling JavaScript will allow you to see some cool local animations and interactions.</p>
+        <p>I also recommend <a href="https://privacybadger.org/">Privacy Badger</a>, <a href="https://ublockorigin.com/">uBlock Origin</a> and supporting <a href="https://www.eff.org/">Eff.org</a></a>.</p>
+      </div>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
     <script src="./three.min.js"></script>
     <script src="./sprinkles.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVB5GTCMWY"></script>
     <script>
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.className = 'dark'
       }
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      if (location.origin === 'https://kravse.dev') {
-        gtag('js', new Date());
-        gtag('config', 'G-FVB5GTCMWY');
-      }
     </script>
   </body>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
 </html>

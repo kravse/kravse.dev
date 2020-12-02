@@ -6,7 +6,7 @@
 
 [[redirects]]
   from = "/p/coming-soon//*"
-  to = "https://leenashitposts.substack.com/:splat"
+  to = "https://leenashitposts.substack.com/p/coming-soon/:splat"
   force = true
   status= 200
 

@@ -101,7 +101,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue';
 import notify from '@/components/notify-item/notify-item.vue';
 import workHistory from '@/views/work-history/work-history.vue';
@@ -130,14 +130,14 @@ export default Vue.extend({
     'work-history': workHistory
   },
   computed: {},
-  created: function (): void {
+  created: function (){
     this.blink = true
     setTimeout(()=> {
       this.type()
     },1000)
   },
   methods: {
-    type: function (): void {
+    type: function (){
       this.blink = false;
       let i = 0;
       let currentString = this.typingExperience[i];
@@ -159,11 +159,12 @@ export default Vue.extend({
     }
   },
   watch:{
-    $route (to): void{
+    $route (to){
       this.workHistory = to.name === 'work-history';
     }
   }
 
 });
 </script>
+
 <style scoped src="./home.styl" lang="stylus"></style>

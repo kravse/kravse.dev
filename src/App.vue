@@ -10,7 +10,7 @@
     </template>
   </div>
 </template>
-<script lang="ts">
+<script>
 import Vue from 'vue';
 import footer from '@/components/footer/footer.vue'
 import notification from '@/components/notification/notification.vue'
@@ -24,7 +24,7 @@ export default Vue.extend({
     'they-live': theylive
   },
   computed: {
-    overlay: function (): boolean {
+    overlay: function () {
       return this.$route.name !== 'home'
     }
   }

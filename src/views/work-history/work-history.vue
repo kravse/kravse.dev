@@ -63,12 +63,12 @@
   </transition>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue';
 
 export default Vue.extend({
   name: 'work-history',
-  mounted: function (): void {
+  mounted: function () {
      window.scrollTo(0, 0)
   },
 

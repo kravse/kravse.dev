@@ -73,7 +73,7 @@
               <strong>js-type-text</strong><br class="xs"> [<a href="https://npmjs.com/package/js-type-text">npm</a>, <a href="https://github.com/kravse/js-type-text">Github</a>]
             </h5>
             <p class="sm">
-              This is an NPM package that generates a typing animation. It's a framework agnostic typing animation package built with vanilla JavaScript. Works with Vue.js, React, and everything else.
+              This is an <notify-item msg="npm">npm</notify-item> package that generates a typing animation. It's a framework agnostic typing animation package built with vanilla JavaScript. Works with Vue.js, React, and everything else.
             </p>
           </div>
         </section>
@@ -109,6 +109,7 @@ import Vue from 'vue';
 import notify from '@/components/notify-item/notify-item.vue';
 import workHistory from '@/views/work-history/work-history.vue';
 import skills from './assets/skills'
+import NotifyItem from '../../components/notify-item/notify-item.vue';
 
 export default Vue.extend({
   name: 'Home',
@@ -131,6 +132,7 @@ export default Vue.extend({
   components: {
     'notify-item': notify,
     'work-history': workHistory
+    NotifyItem
   },
   computed: {},
   created: function (){

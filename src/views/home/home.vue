@@ -60,6 +60,12 @@
             <p class="sm">
               I'm the core developer for the TunnelBear browser client. Built with <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="typescript">TypeScript</notify-item>, <notify-item msg="webpack">Webpack</notify-item>. Put a <notify-item msg="vpn">VPN</notify-item> in your browser! This extension is used by hundreds of thousands of users globally.
             </p>
+            <h5 class="standard-color">
+              <strong>Let It Snow</strong><br class="xs"> [<a href="">Firefox</a>, <a href="">Chrome</a>, <a href="https://github.com/kravse/let-it-snow">Github</a>]
+            </h5>
+            <p class="sm">
+              A fun little wintertime extension that adds snow to your browser window.
+            </p>
           </div>
           <div class="clump">
             <h4 class="h3">Other stuff</h4>

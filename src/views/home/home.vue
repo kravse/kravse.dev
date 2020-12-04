@@ -109,7 +109,6 @@ import Vue from 'vue';
 import notify from '@/components/notify-item/notify-item.vue';
 import workHistory from '@/views/work-history/work-history.vue';
 import skills from './assets/skills'
-import NotifyItem from '../../components/notify-item/notify-item.vue';
 
 export default Vue.extend({
   name: 'Home',
@@ -132,7 +131,6 @@ export default Vue.extend({
   components: {
     'notify-item': notify,
     'work-history': workHistory
-    NotifyItem
   },
   computed: {},
   created: function (){

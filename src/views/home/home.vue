@@ -83,7 +83,8 @@
             <p class="sm">
               I built and designed this website with <notify-item msg="vue">Vue.js</notify-item> and <notify-item msg="webpack">Webpack</notify-item> because I feel like it's weird when web developers don't have... websites.
               It's hosted, served and continuously deployed as a static bundle through <notify-item msg="netlify">Netlify</notify-item>...It's scalable so if it ever gets popular, I'll be ready.
-              The background animation something I whipped up with <notify-item msg="threejs">Three.js</notify-item>.
+              The background animation something I whipped up with <notify-item msg="threejs">Three.js</notify-item>. I care about privacy so this website doesnt track you or set cookies, it doesn't
+              request any third party assets or libraries, it makes no API requests, and it's fully functional with or without JavaScript.
             </p>
           </div>
         </section>

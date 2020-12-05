@@ -23,5 +23,9 @@ if (process.env.NODE_ENV == 'production') {
     staticDir: path.join(__dirname, 'dist'),
     // Required - Routes to render.
     routes: ['/', '/work-history'],
+    postProcess(renderedRoute) {
+      renderedRoute.html = renderedRoute.html.replace(/jared\@kravse\.dev/g, `Jared AT kravse DOT dev`)
+      return renderedRoute
+    },
   }))
 }

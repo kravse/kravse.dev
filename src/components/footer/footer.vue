@@ -5,7 +5,7 @@
         <a href="https://www.github.com/kravse">Github</a>
         <a href="https://www.twitter.com/kravse">Tweets</a>
         <a href="https://www.kravse.com">Photos</a>
-        <a href="mailto:jared@kravse.dev">jared@kravse.dev</a>
+        <a :href="`mailt`+`o:jare`+`d@k`+`ravs`+`e.de`+`v`">{{`jare`+`d@k`+`rav`+`se.`+`de`+`v`}}</a>
       </p>
       <p class="copyright">Jared Krause © {{new Date().getFullYear()}}</p>
     </section>

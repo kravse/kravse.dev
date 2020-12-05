@@ -53,7 +53,7 @@
               <li><p>Upgraded all computer operating systems for City of Brampton employees.</p></li>
               <li><p>Installed and configured computer hardware for fire stations, police stations
               and community centers.</p></li>
-              <li><p>Provided on-site technical support and quality assurance for City of Brampton Employees</p></li>
+              <li><p>Provided on-site technical support and quality assurance for City of Brampton Employees.</p></li>
             </ul>
           </div>
         </div>

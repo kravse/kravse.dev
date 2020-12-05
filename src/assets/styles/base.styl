@@ -57,32 +57,34 @@ body
     &.standard-color
       color: $font-color
 
+    &.h0
+      font-size: 4.5em
+
+      +media('md')
+        font-size: 3.5em
+
+      +media('xs')
+        font-size: 3em
+
   .uppercase
     text-transform: uppercase
 
-  .h0
-    font-size: 4.5em
 
-    +media('md')
-      font-size: 3.5em
-
-    +media('xs')
-      font-size: 3em
 
   h1, .h1
-    font-size: 2em
+    font-size: 2.5em
     margin: 0 0 0.5em
 
   h2, .h2
-    font-size: 1.4em
+    font-size: 2em
     margin: 0 0 0.2em
 
   h3, .h3
-    font-size: 1.32em
+    font-size: 1.5em
     margin: 0 0 0.15em
 
   h4, .h4
-    font-size: 1.25em
+    font-size: 1.3em
     margin: 0 0 0.1em
 
   h5, .h5
@@ -93,6 +95,15 @@ body
     font-size: 1em
     margin-bottom: 0.75em
     line-height: 1.3em
+
+  p.sm
+    font-size: 0.8em
+
+    +media('md')
+      font-size: 0.9em
+
+    +media('xs')
+      font-size: 1em
 
   ul, blockquote
     margin-bottom: 0.5em

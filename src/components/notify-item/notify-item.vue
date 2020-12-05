@@ -12,6 +12,7 @@ export default Vue.extend({
       msgs: {
         vue: `Vue (pronounced /vjuː/, like view) is a progressive JavaScript framework for building user interfaces.`,
         react: `React is a JavaScript library for building component based UIs.`,
+        jamstack: `A modern web development architecture based on client-side JavaScript, reusable APIs, and Markup`,
         js: `"b" + "a" + +"a" + "a"; // -> "baNaNa"`,
         node: `Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.`,
         slackbots: `Slackbots are interactive apps built with Slack's Event & Web APIs.`,

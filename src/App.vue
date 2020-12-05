@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class="[overlay ? 'stuck' : '']">
+  <div v_cloak id="app" :class="[overlay ? 'stuck' : '']">
     <div class="app-inner">
       <router-view/>
       <site-footer/>

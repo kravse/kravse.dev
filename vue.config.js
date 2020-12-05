@@ -24,6 +24,7 @@ if (process.env.NODE_ENV == 'production') {
     // Required - Routes to render.
     routes: ['/', '/work-history'],
     postProcess(renderedRoute) {
+      renderedRoute.html = renderedRoute.html.replace(/v_cloak/g, "v-cloak")
       renderedRoute.html = renderedRoute.html.replace(/jared\@kravse\.dev/g, `Jared AT kravse DOT dev`)
       return renderedRoute
     },

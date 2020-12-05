@@ -26,7 +26,7 @@
         <section>
           <h3 class="h1">Recent Projects</h3>
           <div class="clump">
-            <h4 class="h3">Work</h4>
+            <h4 class="h3">Websites</h4>
             <h5 class="standard-color">
               <strong>TunnelBear Website</strong><br class="xs"> [<a href="https://www.tunnelbear.com">tunnelbear.com</a>]
             </h5>
@@ -36,24 +36,6 @@
               of users a month.
             </p>
             <h5 class="standard-color">
-              <strong>TunnelBear Browser Extension</strong><br class="xs"> [<a href="https://addons.mozilla.org/en-US/firefox/addon/tunnelbear-vpn-firefox/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/tunnelbear-vpn/omdakjcmkglenbhjadbccaookpfjihpa">Chrome</a>]
-            </h5>
-            <p class="sm">
-              I'm the core developer for the TunnelBear browser client. Built with <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="typescript">TypeScript</notify-item>, <notify-item msg="webpack">Webpack</notify-item>. Put a <notify-item msg="vpn">VPN</notify-item> in your browser! This extension is used by hundreds of thousands of users globally.
-            </p>
-          </div>
-          <div class="clump">
-            <h4 class="h3">Play</h4>
-            <h5 class="standard-color">
-              <strong>Slack Responder Bot</strong><br class="xs"> [<a href="https://github.com/kravse/slack-responder-bot">Github</a>]
-            </h5>
-            <p class="sm">
-              A work in progress, this is a service based Slack app that responds to user input. Built with <notify-item msg="node">Node.js</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="typescript">TypeScript</notify-item>.
-            </p>
-          </div>
-
-          <div class="clump">
-            <h5 class="standard-color">
               <strong>Sound Less Dumb</strong><br class="xs"> [<a href="https://soundlessdumb.com">soundlessdumb.com</a>, <a href="https://github.com/kravse/soundlessdumb.com">Github</a>]
             </h5>
             <p class="sm">
@@ -61,9 +43,6 @@
               Initially this project relied on the Merriam-Webster API, but due to daily usage limits,
               I used Python to generate chunked thesaurus files and lazy load them with Webpack.
             </p>
-          </div>
-
-          <div class="clump">
             <h5 class="standard-color">
               <strong>This website!</strong><br class="xs"> [<a href="https://github.com/kravse/kravse.dev">Github</a>]
             </h5>
@@ -71,6 +50,30 @@
               I built and designed this website with <notify-item msg="vue">Vue.js</notify-item> and <notify-item msg="webpack">Webpack</notify-item>.
               It's hosted, served and continuously deployed as a static bundle through <notify-item msg="netlify">Netlify</notify-item>.
               The background animation is done with <notify-item msg="threejs">Three.js</notify-item>.
+            </p>
+          </div>
+          <div class="clump">
+            <h4 class="h3">Browser Extensions</h4>
+            <h5 class="standard-color">
+              <strong>TunnelBear Browser Extension</strong><br class="xs"> [<a href="https://addons.mozilla.org/en-US/firefox/addon/tunnelbear-vpn-firefox/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/tunnelbear-vpn/omdakjcmkglenbhjadbccaookpfjihpa">Chrome</a>]
+            </h5>
+            <p class="sm">
+              I'm the core developer for the TunnelBear browser client. Built with <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="typescript">TypeScript</notify-item>, <notify-item msg="webpack">Webpack</notify-item>. Put a <notify-item msg="vpn">VPN</notify-item> in your browser! This extension is used by hundreds of thousands of users globally.
+            </p>
+          </div>
+          <div class="clump">
+            <h4 class="h3">Other stuff</h4>
+            <h5 class="standard-color">
+              <strong>Slack Responder Bot</strong><br class="xs"> [<a href="https://github.com/kravse/slack-responder-bot">Github</a>]
+            </h5>
+            <p class="sm">
+              A work in progress, this is a service based Slack app that responds to user input. Built with <notify-item msg="node">Node.js</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="typescript">TypeScript</notify-item>.
+            </p>
+            <h5 class="standard-color">
+              <strong>js-type-text</strong><br class="xs"> [<a href="https://npmjs.com/package/js-type-text">npm</a>, <a href="https://github.com/kravse/js-type-text">Github</a>]
+            </h5>
+            <p class="sm">
+              This is an <notify-item msg="npm">npm</notify-item> package that generates a typing animation. It's a framework agnostic typing animation package built with vanilla JavaScript. Works with Vue.js, React, and everything else.
             </p>
           </div>
         </section>

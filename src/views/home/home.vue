@@ -75,7 +75,7 @@
               <strong>js-type-text</strong><br class="xs"> [<a href="https://npmjs.com/package/js-type-text">npm</a>, <a href="https://github.com/kravse/js-type-text">Github</a>]
             </h5>
             <p class="sm">
-              This is an npm package that generates a typing animation. I decided to turn the animated title of this website into an open sourced <notify-item msg="npm">npm</notify-item> package so other people can use it. It's a tiny little JavaScript API that generates a typing animation through a callback function. It's a framework agnostic typing animation package built with vanilla JavaScript. Works with Vue.js, React, and everything else.
+              This is an <notify-item msg="npm">npm package</notify-item> that generates a typing animation. I decided to turn the animated title of this website into an open sourced npm package so other people can use it. It's a tiny little JavaScript API that generates a typing animation through a callback function. It's a framework agnostic typing animation package built with vanilla JavaScript. Works with Vue.js, React, and everything else.
             </p>
             <h5 class="standard-color">
               <strong>This website!</strong><br class="xs"> [<a href="https://github.com/kravse/kravse.dev">Github</a>]

@@ -109,7 +109,7 @@
             I'm a <notify-item msg="street">street photographer</notify-item>. I love to take candid and documentary photos. I've got a portfolio of my work up at <a target="_blank" href="https://www.kravse.com">kravse.com</a>.
           </p>
           <p>I travel whenever I can. I've visited 33 countries (and counting!). Some of my favourite destinations have been Morocco, China, Sweden, and India.</p>
-          <p>I really enjoy hiking. This year I've been enjoying exploring Tommy Thompson, Algonquin Park, and the Bruce Trail.</p>
+          <p>I really enjoy hiking. This year I've been exploring Tommy Thompson, Algonquin Park, and the Bruce Trail.</p>
         </section>
       </div>
     </div>

@@ -72,7 +72,7 @@
               Even though this project is ridiculous, I learned a lot about how to efficiently serve data.
             </p>
             <h5 class="standard-color">
-              <strong>Let It Snow &#10052;</strong><br class="xs"> [<a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/let-it-snow-addon/">Firefox</a>, <a target="_blank" href="https://github.com/kravse/let-it-snow">Github</a>]
+              <strong>Let It Snow &#10052;</strong><br class="xs"> [<a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/let-it-snow-addon/">Firefox</a>, <a target="_blank" href="https://chrome.google.com/webstore/detail/let-it-snow/himjfahoodiglodlcapifigneoepnkbk">Chrome</a>, <a target="_blank" href="https://github.com/kravse/let-it-snow">Github</a>]
             </h5>
             <p class="sm">
               This is a silly lightweight browser extension that adds a snow animation overlay to Firefox or Chrome. I was feeling particularly festive one evening and built it, and keep coming back to it to add features.

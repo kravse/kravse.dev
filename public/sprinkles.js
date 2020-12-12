@@ -10,6 +10,7 @@ var Main = (function() {
     window.addEventListener("blur", resetFavicon);
     threeJS();
   }
+
   var resetFavicon = function () {
     clearInterval(interval);
     favicon.href = faviconImg;

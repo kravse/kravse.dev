@@ -49,12 +49,18 @@
             </p>
           </div>
           <div class="clump">
-            <h3>Open Source</h3>
+            <h3>Projects & Open Source</h3>
             <h5 class="standard-color">
-              <strong>Let It Snow &#10052;</strong><br class="xs"> [<a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/let-it-snow-addon/">Firefox</a>, <a target="_blank" href="https://github.com/kravse/let-it-snow">Github</a>]
+              <strong>Fantasy Falcon</strong><br class="xs"> [<a target="_blank" href="https://www.fantasyfalcon.com">Website</a>]
             </h5>
             <p class="sm">
-              This is a silly lightweight browser extension that adds a snow animation overlay to Firefox or Chrome. I was feeling particularly festive one evening and built it, and keep coming back to it to add features.
+              Fantasy Falcon is a analytics tool that organizes and displays data to fantasy sports fans. It's an ongoing project I'm working on with some friends. It's built with <notify-item msg="typescript">TypeScript</notify-item> and <notify-item msg="firebase">FireBase</notify-item>.
+            </p>
+            <h5 class="standard-color">
+              <strong>js-type-text</strong><br class="xs"> [<a target="_blank" href="https://npmjs.com/package/js-type-text">npm</a>, <a target="_blank" href="https://github.com/kravse/js-type-text">Github</a>]
+            </h5>
+            <p class="sm">
+              This is an <notify-item msg="npm">npm package</notify-item> that generates a typing animation. I decided to turn the animated title of this website into an open sourced npm package so other people can use it. It's a tiny little JavaScript API that generates a typing animation through a callback function. It's a framework agnostic typing animation package built with vanilla JavaScript. Works with Vue.js, React, and everything else.
             </p>
             <h5 class="standard-color">
               <strong>Sound Less Dumb</strong><br class="xs"> [<a target="_blank" href="https://soundlessdumb.com">soundlessdumb.com</a>, <a target="_blank" href="https://github.com/kravse/soundlessdumb.com">Github</a>]
@@ -66,16 +72,16 @@
               Even though this project is ridiculous, I learned a lot about how to efficiently serve data.
             </p>
             <h5 class="standard-color">
+              <strong>Let It Snow &#10052;</strong><br class="xs"> [<a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/let-it-snow-addon/">Firefox</a>, <a target="_blank" href="https://github.com/kravse/let-it-snow">Github</a>]
+            </h5>
+            <p class="sm">
+              This is a silly lightweight browser extension that adds a snow animation overlay to Firefox or Chrome. I was feeling particularly festive one evening and built it, and keep coming back to it to add features.
+            </p>
+            <h5 class="standard-color">
               <strong>Slack Responder Bot</strong><br class="xs"> [<a target="_blank" href="https://github.com/kravse/slack-responder-bot">Github</a>]
             </h5>
             <p class="sm">
               This is a <notify-item msg="slackbots">Slack App</notify-item> that asks users questions. It's a work in progress. It's going to be a bot that asks users about their day, because I think it might encourage people to think through some of the heaviness of the workday. It's built with <notify-item msg="node">Node.js</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="typescript">TypeScript</notify-item>.
-            </p>
-            <h5 class="standard-color">
-              <strong>js-type-text</strong><br class="xs"> [<a target="_blank" href="https://npmjs.com/package/js-type-text">npm</a>, <a target="_blank" href="https://github.com/kravse/js-type-text">Github</a>]
-            </h5>
-            <p class="sm">
-              This is an <notify-item msg="npm">npm package</notify-item> that generates a typing animation. I decided to turn the animated title of this website into an open sourced npm package so other people can use it. It's a tiny little JavaScript API that generates a typing animation through a callback function. It's a framework agnostic typing animation package built with vanilla JavaScript. Works with Vue.js, React, and everything else.
             </p>
             <h5 class="standard-color">
               <strong>This website!</strong><br class="xs"> [<a target="_blank" href="https://github.com/kravse/kravse.dev">Github</a>]

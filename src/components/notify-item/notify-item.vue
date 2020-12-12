@@ -29,7 +29,8 @@ export default Vue.extend({
         title: `ಠ_ಠ is a valid identifier according to ECMAScript 6.`,
         npm: `npm is the package manager for Node.js. Its an open source project to help JavaScript developers easily share packaged modules of code.`,
         nemoswar: `Nemo's War is a solitaire game set in the world of Jules Verne's classic novel Twenty Thousand Leagues Under the Sea.`,
-        spiritisland: `Spirit Island is a complex and thematic cooperative game set on an island full of spirits.`
+        spiritisland: `Spirit Island is a complex and thematic cooperative game set on an island full of spirits.`,
+        firebase: `Firebase is a platform for creating mobile and web applications.`
       }
     }
   },

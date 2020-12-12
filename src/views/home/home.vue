@@ -66,7 +66,7 @@
               <strong>Sound Less Dumb</strong><br class="xs"> [<a target="_blank" href="https://soundlessdumb.com">soundlessdumb.com</a>, <a target="_blank" href="https://github.com/kravse/soundlessdumb.com">Github</a>]
             </h5>
             <p class="sm">
-              This website was a joke that evolved into something cool. It's a little <notify-item msg="react">React</notify-item> project that transforms user inputs into funny and nonsensical sentences.
+              This website is a little <notify-item msg="react">React</notify-item> project that transforms user inputs into funny and nonsensical sentences.
               Initially I used the Merriam-Webster API to translate inputs, but after <a target="_blank" href="https://twitter.com/kravse/status/1185320735964880897">tweeting about it</a> I found the requests were surpassing their daily usage limits, so I
               used <notify-item msg="python">Python</notify-item> to generate chunked thesaurus files and lazy load them with <notify-item msg="react">Webpack</notify-item>.
               Even though this project is ridiculous, I learned a lot about how to efficiently serve data.

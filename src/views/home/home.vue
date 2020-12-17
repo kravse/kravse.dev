@@ -21,7 +21,7 @@
         </section>
         <section>
           <h2>Work</h2>
-          <p>View my full <router-link class="btn work-history" :to="{name: 'work-history'}">work history</router-link>.</p>
+          <p>View my full <router-link class="btn work-history" :to="{name: 'home'}">work history</router-link></p>
         </section>
         <section>
           <h2>Recent Projects</h2>

@@ -129,6 +129,7 @@ body
         margin: 0
 
   button:not(.unstyled), .btn:not(.unstyled)
+    display: inline-block
     background: $bg-color
     border: 2px solid $accent
     cursor: pointer
@@ -136,13 +137,21 @@ body
     padding: 3px 7px
     text-decoration: none
 
+    &:not(:active)
+      border-bottom-width: 4px
+      border-right-width: 3px
+      border-bottom-left-radius: 4px
+      border-top-right-radius: 4px
+
     &:hover
       border-color: $alt-accent
       color: $alt-accent
 
       &:active
-        border-color: lighten($alt-accent, 20%)
-        color: lighten($alt-accent, 20%)
+        outline: 0
+        margin-bottom: 2px
+        transform: translate(3px, 4px)
+
 .xs
   +media('min-xs')
     display: none

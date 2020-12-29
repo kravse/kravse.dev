@@ -54,7 +54,7 @@
               <strong>Fantasy Falcon</strong><br class="xs"> [<a target="_blank" href="https://www.fantasyfalcon.com">Website</a>]
             </h5>
             <p class="sm">
-              Fantasy Falcon is a analytics tool that organizes and displays data to fantasy sports fans. It's an ongoing project I'm working on with some friends. It's built with <notify-item msg="typescript">TypeScript</notify-item> and <notify-item msg="firebase">FireBase</notify-item>.
+              Fantasy Falcon is an analytics tool that organizes and displays data to fantasy sports fans. It's an ongoing project I'm working on with some friends. It's built with <notify-item msg="typescript">TypeScript</notify-item> and <notify-item msg="firebase">FireBase</notify-item>.
             </p>
             <h5 class="standard-color">
               <strong>js-type-text</strong><br class="xs"> [<a target="_blank" href="https://npmjs.com/package/js-type-text">npm</a>, <a target="_blank" href="https://github.com/kravse/js-type-text">Github</a>]
@@ -115,7 +115,7 @@
             I'm a <notify-item msg="street">street photographer</notify-item>. I love to take candid and documentary photos. I've got a portfolio of my work up at <a target="_blank" href="https://www.kravse.com">kravse.com</a>.
           </p>
           <p>I travel whenever I can. I've visited 33 countries (and counting!). Some of my favourite destinations have been Morocco, China, Sweden, and India.</p>
-          <p>I really enjoy hiking. This year I've been exploring Tommy Thompson, Algonquin Park, and the Bruce Trail.</p>
+          <p>I really enjoy back-country camping and hiking. This year I've been exploring Tommy Thompson Park, Algonquin Park, and the Bruce Trail.</p>
         </section>
       </div>
     </div>

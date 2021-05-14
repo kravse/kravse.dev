@@ -9,6 +9,7 @@
             <h5>2021 - Present</h5>
             <ul>
               <li><p>Web developer working on the Cohere natural language API.</p></li>
+              <li><p>Building interactive web UIs and websites with TypeScript, React, and Svelte.</p></li>
               <li><p>Built the Cohere JavaScript SDK.</p></li>
             </ul>
             <h3 class="h2">Web Tech Lead at TunnelBear</h3>

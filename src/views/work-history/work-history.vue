@@ -12,7 +12,7 @@
               <li><p>Building interactive web UIs and websites with TypeScript, React, and Svelte.</p></li>
               <li><p>Built the Cohere JavaScript SDK.</p></li>
             </ul>
-            <h3 class="h2">Web Tech Lead at TunnelBear</h3>
+            <h3 class="h2">Sr. Web Developer at TunnelBear</h3>
             <h5>2017 - 2021</h5>
             <ul>
               <li><p>Web tech lead for TunnelBear and RememBear with a significant focus on UX and accessibility in order to serve

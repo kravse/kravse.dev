@@ -31,13 +31,13 @@
               <strong>TunnelBear Website</strong><br class="xs"> [<a target="_blank" href="https://www.tunnelbear.com">tunnelbear.com</a>]
             </h5>
             <p class="sm">
-               I'm the tech lead for the web team at TunnelBear. Our suite of websites serve millions of users a month,
+               I'm worked as a technical lead on the web team at TunnelBear. Our suite of websites serve millions of users a month,
                so it’s important for them to be fast, lightweight, accessible and scalable. Through my time at TunnelBear
                I’ve spearheaded the adoption of <notify-item msg="jamstack">JAM Stack</notify-item> and offloaded DNS and network complexity to Cloudflare’s edge.
                Our frontend websites are now efficiently distributed globally as tiny bundles of static code using a fully
-               serverless architecture. Our deploys and testing are automated, so my team and I can focus all of our effort
-               into coding new features instead of struggling with environments or deploys. I’m really proud of what I’ve built
-               here, and I’ve learned a lot by testing the limits of JavaScript frameworks, <notify-item msg="cloudflareWorkers">edge workers</notify-item>,
+               serverless architecture. Our deploys and testing were automated, so my team and I could focus all of our effort
+               into coding new features instead of struggling with environments or deploys. I’m really proud of what I built
+               there, and I’ve learned a lot by testing the limits of JavaScript frameworks, <notify-item msg="cloudflareWorkers">edge workers</notify-item>,
                serverless architecture, automation, and testing.
             </p>
             <h5 class="standard-color">

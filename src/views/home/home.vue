@@ -14,9 +14,9 @@
         <section>
           <h2>Hi!</h2>
           <p>I'm a web developer currently living in Toronto.</p>
-          <p>I build modern, scalable websites and <notify-item msg="browserExtensions">browser extensions</notify-item> with <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="react">React</notify-item> and <notify-item msg="node">Node.js</notify-item> that serve millions of users a month.</p>
+          <p>I build modern, scalable websites and <notify-item msg="browserExtensions">browser extensions</notify-item> with <notify-item msg="svelte">Svelte</notify-item>, <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="react">React</notify-item> and <notify-item msg="typescript">TypeScript</notify-item> that serve millions of users a month.</p>
           <p>I &lt;3 <notify-item msg="js">JavaScript</notify-item>, so I tend to tinker with open source projects in my spare time, building fun little tools, games, or even just websites that make me laugh. </p>
-          <p>I have experience leading teams and mentoring developers.</p>
+          <p>I have experience leading teams and love to mentor new developers.</p>
           <p>If you want to chat, you can email me at <a :href="`mailto:ja` + `red@k` + `ravs` + `e.dev`">{{`jar` + `ed@` + `krav` + `se.dev`}}</a>.</p>
         </section>
         <section>
@@ -28,14 +28,22 @@
           <div class="clump">
             <h3>Work</h3>
             <h5 class="standard-color">
+              <strong>Cohere Platform</strong><br class="xs"> [<a target="_blank" href="https://cohere.ai">cohere.ai</a>]
+            </h5>
+            <p class="sm">
+               I'm a senior software developer on the team that is building the Cohere Platform. The Cohere Platform provides access to language models that read billions of web pages and learn to understand the meaning, sentiment, and intent of the words we use.
+               My role involves developing and maintaining the platform (built on <notify-item msg="svelte">Svelte</notify-item> & <notify-item msg="typescript">TypeScript</notify-item>) that enables users to interact with the natural language processing that our API provides,
+               as well as maintaining the <notify-item msg="node">Node.js</notify-item> <notify-item msg="sdk">SDK</notify-item>, and <notify-item msg="react">React</notify-item> marketing sites.
+            </p>
+            <h5 class="standard-color">
               <strong>TunnelBear Website</strong><br class="xs"> [<a target="_blank" href="https://www.tunnelbear.com">tunnelbear.com</a>]
             </h5>
             <p class="sm">
-               I'm worked as a technical lead on the web team at TunnelBear. Our suite of websites serve millions of users a month,
-               so it’s important for them to be fast, lightweight, accessible and scalable. Through my time at TunnelBear
-               I’ve spearheaded the adoption of <notify-item msg="jamstack">JAM Stack</notify-item> and offloaded DNS and network complexity to Cloudflare’s edge.
-               Our frontend websites are now efficiently distributed globally as tiny bundles of static code using a fully
-               serverless architecture. Our deploys and testing were automated, so my team and I could focus all of our effort
+               I worked as a technical lead on the web team at TunnelBear. The TunnelBear suite of websites served millions of users a month,
+               so it was important for them to be fast, lightweight, accessible and scalable. Through my time at TunnelBear
+               I spearheaded the adoption of <notify-item msg="jamstack">JAM Stack</notify-item> and offloaded DNS and network complexity to Cloudflare’s edge.
+               I transformed our frontend to a place where it was efficiently distributed globally as tiny bundles of static code using a fully
+               serverless architecture. I integrated automated deployment and testing, so my team and I could focus all of our effort
                into coding new features instead of struggling with environments or deploys. I’m really proud of what I built
                there, and I’ve learned a lot by testing the limits of JavaScript frameworks, <notify-item msg="cloudflareWorkers">edge workers</notify-item>,
                serverless architecture, automation, and testing.
@@ -44,12 +52,24 @@
               <strong>TunnelBear Browser Extension</strong><br class="xs"> [<a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/tunnelbear-vpn-firefox/">Firefox</a>, <a target="_blank" href="https://chrome.google.com/webstore/detail/tunnelbear-vpn/omdakjcmkglenbhjadbccaookpfjihpa">Chrome</a>]
             </h5>
             <p class="sm">
-              I'm the core developer for the TunnelBear browser client. It's a <notify-item msg="vpn">VPN</notify-item> that runs in Chrome, Firefox and Opera and serves hundreds of thousands of users globally.
+              I was the core developer for the TunnelBear browser client, A <notify-item msg="vpn">VPN</notify-item> that runs in Chrome, Firefox and Opera and serves hundreds of thousands of users globally.
               It's built with <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="typescript">TypeScript</notify-item> and <notify-item msg="webpack">Webpack</notify-item>, with a focus on security, privacy and accessibility.
             </p>
           </div>
           <div class="clump">
             <h3>Projects & Open Source</h3>
+            <h5 class="standard-color">
+              <strong>cohere-ai</strong><br class="xs"> [<a target="_blank" href="https://www.npmjs.com/package/cohere-ai">npm</a>, <a target="_blank" href="https://github.com/cohere-ai/cohere-node">Github</a>]
+            </h5>
+            <p class="sm">
+              A <notify-item msg="node">Node.js</notify-item> <notify-item msg="sdk">SDK</notify-item> with <notify-item msg="typescript">TypeScript</notify-item> support for the Cohere API. This SDK allows Node.js users to interact easily with the Cohere API in their own applications.
+            </p>
+            <h5 class="standard-color">
+              <strong>The Good Winds</strong><br class="xs"> [<a target="_blank" href="https://www.thegoodwinds.com">Website</a>]
+            </h5>
+            <p class="sm">
+              The Good Winds is a website and app that helps users plan their <notify-item msg="discgolf">Disc Golf</notify-item> sessions despite changing weather conditions. Built with Vue.js and Python.
+            </p>
             <h5 class="standard-color">
               <strong>Fantasy Falcon</strong><br class="xs"> [<a target="_blank" href="https://www.fantasyfalcon.com">Website</a>]
             </h5>
@@ -70,18 +90,6 @@
               Initially I used the Merriam-Webster API to translate inputs, but after <a target="_blank" href="https://twitter.com/kravse/status/1185320735964880897">tweeting about it</a> I found the requests were surpassing their daily usage limits, so I
               used <notify-item msg="python">Python</notify-item> to generate chunked thesaurus files and lazy load them with <notify-item msg="react">Webpack</notify-item>.
               Even though this project is ridiculous, I learned a lot about how to efficiently serve data.
-            </p>
-            <h5 class="standard-color">
-              <strong>Let It Snow &#10052;</strong><br class="xs"> [<a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/let-it-snow-addon/">Firefox</a>, <a target="_blank" href="https://chrome.google.com/webstore/detail/let-it-snow/himjfahoodiglodlcapifigneoepnkbk">Chrome</a>, <a target="_blank" href="https://github.com/kravse/let-it-snow">Github</a>]
-            </h5>
-            <p class="sm">
-              This is a silly lightweight browser extension that adds a snow animation overlay to Firefox or Chrome. I was feeling particularly festive one evening and built it, and keep coming back to it to add features.
-            </p>
-            <h5 class="standard-color">
-              <strong>Slack Responder Bot</strong><br class="xs"> [<a target="_blank" href="https://github.com/kravse/slack-responder-bot">Github</a>]
-            </h5>
-            <p class="sm">
-              This is a <notify-item msg="slackbots">Slack App</notify-item> that asks users questions. It's a work in progress. It's going to be a bot that asks users about their day, because I think it might encourage people to think through some of the heaviness of the workday. It's built with <notify-item msg="node">Node.js</notify-item>, <notify-item msg="webpack">Webpack</notify-item> and <notify-item msg="typescript">TypeScript</notify-item>.
             </p>
             <h5 class="standard-color">
               <strong>This website!</strong><br class="xs"> [<a target="_blank" href="https://github.com/kravse/kravse.dev">Github</a>]
@@ -111,6 +119,7 @@
           <p>
             I love boardgames so much that I play them solo in addition to playing with friends. My favourites are <notify-item msg="nemoswar">Nemo's War</notify-item> and <notify-item msg="spiritisland">Spirit Island</notify-item>. I write reviews of games on <a target="_blank" href="https://instagram.com/bored.gamer">Instagram</a>.
           </p>
+          <p>I'm really enjoy indie and alt comics, stuff like <notify-item msg="spider">Transmetropolitan</notify-item> and Sandman.
           <p>
             I'm a <notify-item msg="street">street photographer</notify-item>. I love to take candid and documentary photos. I've got a portfolio of my work up at <a target="_blank" href="https://www.kravse.com">kravse.com</a>.
           </p>

@@ -15,9 +15,11 @@ export default Vue.extend({
         jamstack: `A modern web development architecture based on client-side JavaScript, reusable APIs, and Markup`,
         js: `"b" + "a" + +"a" + "a"; // -> "baNaNa"`,
         node: `Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.`,
+        sdk: `A software development toolkit (SDK) is a set of software tools and programs provided by hardware and software vendors that developers can use to build applications for specific platforms.`,
         slackbots: `Slack Apps are interactive apps built with Slack's Event & Web APIs.`,
         browserExtensions: `Browser extensions are small programs that add new features to your browser and personalize your browsing experience.`,
         cloudflareWorkers: `CloudFlare workers are snippets of serverless code that run in between the browser and webhost.`,
+        discgolf: `Disc golf is a flying disc sport in which players throw a disc at a target; it is played using rules similar to golf.`,
         webpack: `Webpack is a static module bundler for modern JavaScript applications.`,
         netlify: `Netlify is a service that automates the deployment of static bundles. It's great for sites built using the JAM Stack (JavaScript, APIs and Markup).`,
         babel: `Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.`,
@@ -30,6 +32,8 @@ export default Vue.extend({
         npm: `npm is the package manager for Node.js. Its an open source project to help JavaScript developers easily share packaged modules of code.`,
         nemoswar: `Nemo's War is a solitaire game set in the world of Jules Verne's classic novel Twenty Thousand Leagues Under the Sea.`,
         spiritisland: `Spirit Island is a complex and thematic cooperative game set on an island full of spirits.`,
+        svelte: `Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app.`,
+        spider: `Transmetropolitan is a cyberpunk transhumanist comic book series about a gonzo journalist that fights corruption.`,
         firebase: `Firebase is a platform for creating mobile and web applications.`
       }
     }

@@ -119,7 +119,7 @@
           <p>
             I love boardgames so much that I play them solo in addition to playing with friends. My favourites are <notify-item msg="nemoswar">Nemo's War</notify-item> and <notify-item msg="spiritisland">Spirit Island</notify-item>. I write reviews of games on <a target="_blank" href="https://instagram.com/bored.gamer">Instagram</a>.
           </p>
-          <p>I'm really enjoy indie and alt comics, stuff like <notify-item msg="spider">Transmetropolitan</notify-item> and Sandman.
+          <p>I really enjoy indie and alt comics, stuff like Eightball, Vertigo's <notify-item msg="spider">Transmetropolitan</notify-item>.
           <p>
             I'm a <notify-item msg="street">street photographer</notify-item>. I love to take candid and documentary photos. I've got a portfolio of my work up at <a target="_blank" href="https://www.kravse.com">kravse.com</a>.
           </p>

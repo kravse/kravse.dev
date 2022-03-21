@@ -33,11 +33,11 @@ export const skills = {
   ],
   "backEnd": [
     "Node.js",
-    "Express",
-    "SQL",
-    "PHP",
+    "Go",
     "Python",
-    "Java"
+    "SQL",
+    "Express",
+    "PHP"
   ],
   "hosting": [
     "Netlify",

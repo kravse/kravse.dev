@@ -32,10 +32,10 @@ export const skills = {
     "Foundation"
   ],
   "backEnd": [
-    "Node.js",
     "Go",
     "Python",
-    "SQL",
+    "SQL & Postgres",
+    "Node.js",
     "Express",
     "PHP"
   ],

@@ -2,13 +2,10 @@ export const skills = {
   "frameworks": [
     "Vue.js",
     "React",
+    "Svelte & Sveltekit",
     "Angular",
     "Backbone",
-    "WordPress",
-    "Drupal",
-    "TypeScript",
-    "jQuery",
-    "CoffeeScript"
+    "Drupal"
   ],
   "buildTools": [
     "WebPack",
@@ -24,10 +21,11 @@ export const skills = {
   ],
   "frontEnd": [
     "HTML5",
-    "Pug",
-    "Stylus",
-    "LESS",
-    "SASS/SCSS",
+    "SASS/LESS/SCSS/Stylus",
+    "TypeScript",
+    "WordPress",
+    "jQuery",
+    "Tailwind",
     "Bootstrap",
     "Foundation"
   ],
@@ -42,12 +40,14 @@ export const skills = {
   "hosting": [
     "Netlify",
     "Cloudflare",
+    "Cloud SQL",
     "AWS",
     "Ghost",
     "Shopify"
   ],
   "design": [
     "Sketch",
+    "Figma",
     "Photoshop",
     "Zeplin"
   ]

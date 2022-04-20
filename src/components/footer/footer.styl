@@ -15,5 +15,38 @@ section
 
     &.copyright
       font-size: 0.9em
+.date
+  position: relative
+  cursor: ne-resize
+  +media('xs')
+    cursor: nw-resize
 
+  &:hover
+    span
+      &.hov
+        position: absolute
+        display: block
+
+  span.hov
+    display: none
+    font-size: 0.8em
+    top: -70px
+    left: 80%
+    transform: rotate(-10deg)
+    background: $bg-dark
+    color: $light
+    padding: 4px 10px
+
+    +media('xs')
+      transform: rotate(10deg)
+      left: auto
+      right: 80%
+
+    del
+      white-space: nowrap
+
+    .code
+      color: $light
+      white-space: nowrap
+      font-size: 1.1em
 dump_media_cache()

@@ -7,7 +7,11 @@
         <a href="https://www.kravse.com">Photos</a>
         <a :href="`mailt`+`o:jare`+`d@k`+`ravs`+`e.de`+`v`">{{`jare`+`d@k`+`rav`+`se.`+`de`+`v`}}</a>
       </p>
-      <p class="copyright">Jared Krause © {{new Date().getFullYear()}}</p>
+      <p class="copyright">Jared Krause ©
+        <span class="date">
+          <span>{{new Date().getFullYear()}}</span>
+          <span class="hov"> //&nbsp;<del>TODO: Make this dynamic</del> <span class="code">new Date().getFullYear();</span></span>
+      </span></p>
     </section>
   </div>
 </template>

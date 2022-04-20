@@ -148,7 +148,7 @@ export default Vue.extend({
     return {
       titleText: '((...ಠ_ಠ)=>`${ಠ_ಠ}`)("kravse.dev")',
       typingExperience: [
-        '((siteName)=>',
+        '((hmmmmm)=>',
         '((',
         '((ಠ_ಠ',
         '((',

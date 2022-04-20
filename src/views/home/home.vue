@@ -13,10 +13,11 @@
         </div>
         <section>
           <h2>Hi!</h2>
-          <p>I'm a web developer currently living in Toronto.</p>
-          <p>I build modern, scalable websites and <notify-item msg="browserExtensions">browser extensions</notify-item> with <notify-item msg="svelte">Svelte</notify-item>, <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="react">React</notify-item> and <notify-item msg="typescript">TypeScript</notify-item> that serve millions of users a month.</p>
+          <p>I'm a full stack developer currently living in Toronto.</p>
+          <p>I create modern interactive web applications that serve millions of users a month with <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="svelte">Svelte</notify-item>, or <notify-item msg="react">React</notify-item> (and of course <notify-item msg="typescript">TypeScript</notify-item>).</p>
+          <p>I also build and maintain scalable APIs with <notify-item msg="node">Node.js</notify-item>, <notify-item msg="python">Python</notify-item> or <notify-item msg="go">Go</notify-item> (and <notify-item msg="postgres">Postgres</notify-item>). Occasionally I work on <notify-item msg="browserExtensions">browser extensions</notify-item>, build <notify-item msg="sdk">SDKs</notify-item>, and publish <notify-item msg="npm">npm packages</notify-item>.</p>
           <p>I &lt;3 <notify-item msg="js">JavaScript</notify-item>, so I tend to tinker with open source projects in my spare time, building fun little tools, games, or even just websites that make me laugh. </p>
-          <p>I have experience leading teams and love to mentor new developers.</p>
+          <p>I've also got experience leading teams and love to mentor junior developers.</p>
           <!--p>If you want to chat, you can email me at <a :href="`mailto:ja` + `red@k` + `ravs` + `e.dev`">{{`jar` + `ed@` + `krav` + `se.dev`}}</a>.</p-->
         </section>
         <section>
@@ -31,9 +32,13 @@
               <strong>Cohere Platform</strong><br class="xs"> [<a target="_blank" href="https://cohere.ai">cohere.ai</a>]
             </h5>
             <p class="sm">
-               I'm a senior software developer on the team that is building the Cohere Platform. The Cohere Platform provides access to language models that read billions of web pages and learn to understand the meaning, sentiment, and intent of the words we use.
-               My role involves developing and maintaining the platform (built on <notify-item msg="svelte">Svelte</notify-item> & <notify-item msg="typescript">TypeScript</notify-item>) that enables users to interact with the natural language processing that our API provides,
-               as well as maintaining the <notify-item msg="node">Node.js</notify-item> <notify-item msg="sdk">SDK</notify-item>, and <notify-item msg="react">React</notify-item> marketing sites.
+              I'm a senior full stack software developer on the team behind the Cohere Platform.
+              My responsibilities are divided between three key products:
+              web applications (<notify-item msg="svelte">Svelte</notify-item>, <notify-item msg="react">React</notify-item>, & <notify-item msg="typescript">TypeScript</notify-item>),
+              API & endpoints (<notify-item msg="go">Go</notify-item>, <notify-item msg="upperdb">UpperDB</notify-item>, <notify-item msg="postgres">Postgres</notify-item>)
+              and SDKs (<notify-item msg="node">Node.js</notify-item>, <notify-item msg="python">Python</notify-item>).
+              In combination, these products provide Cohere users with unprecedented access to AI and Natural Language Processing,
+              allowing them to build software that can understand the meaning, sentiment, and intent of the words humans use.
             </p>
             <h5 class="standard-color">
               <strong>TunnelBear Website</strong><br class="xs"> [<a target="_blank" href="https://www.tunnelbear.com">tunnelbear.com</a>]
@@ -119,7 +124,7 @@
           <p>
             I love boardgames so much that I play them solo in addition to playing with friends. My favourites are <notify-item msg="nemoswar">Nemo's War</notify-item> and <notify-item msg="spiritisland">Spirit Island</notify-item>. I write reviews of games on <a target="_blank" href="https://instagram.com/bored.gamer">Instagram</a>.
           </p>
-          <p>I really enjoy indie and alt comics, stuff like Eightball, Vertigo's <notify-item msg="spider">Transmetropolitan</notify-item>.
+          <p>I really enjoy indie and alt comics, stuff like <notify-item msg="eightball">Eightball</notify-item>, <notify-item msg="blackhole">Black Hole</notify-item>, or <notify-item msg="hate">Hate</notify-item>.
           <p>
             I'm a <notify-item msg="street">street photographer</notify-item>. I love to take candid and documentary photos. I've got a portfolio of my work up at <a target="_blank" href="https://www.kravse.com">kravse.com</a>.
           </p>
@@ -135,7 +140,7 @@
 import Vue from 'vue';
 import notify from '@/components/notify-item/notify-item.vue';
 import workHistory from '@/views/work-history/work-history.vue';
-import skills from './assets/skills'
+import skills from './assets/skills';
 
 export default Vue.extend({
   name: 'Home',

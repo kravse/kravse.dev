@@ -5,12 +5,13 @@
         <div class="slide">
           <div class="copy">
             <h2 class="h0">Work History</h2>
-            <h3 class="h2">Sr. Web Developer at Cohere AI</h3>
+            <h3 class="h2">Sr. Software Developer at Cohere AI</h3>
             <h5>2021 - Present</h5>
             <ul>
-              <li><p>Senior Software Developer working on the Cohere Platform.</p></li>
+              <li><p>Senior Full Stack Software Developer responsible for web apps, API, and SDKs.</p></li>
               <li><p>Building interactive web UIs and websites with TypeScript, React, and Svelte.</p></li>
-              <li><p>Built the Cohere JavaScript SDK.</p></li>
+              <li><p>Building scalable backend APIs with Go, Upper/db and Postgres.</p></li>
+              <li><p>Built the Cohere Node.js SDK.</p></li>
             </ul>
             <h3 class="h2">Sr. Web Developer at TunnelBear</h3>
             <h5>2017 - 2021</h5>
@@ -47,12 +48,6 @@
               <li><p>Created custom themes for clients on Shopify, Squarespace, and Wordpress.</p></li>
               <li><p>Worked closely with senior developers, project managers and designers to
               scope, define and develop projects from start to finish.</p></li>
-            </ul>
-            <h3 class="h2">IT Analyst at TD Bank Group</h3>
-            <h5>2009 - 2011</h5>
-            <ul>
-              <li><p>Provided technical support and bug tested internal web applications.</p></li>
-              <li><p>Facilitated associate onboarding to web applications.</p></li>
             </ul>
             <h3 class="h2">Tech Support at City of Brampton</h3>
             <h5>2008</h5>

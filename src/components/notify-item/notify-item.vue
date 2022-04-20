@@ -24,17 +24,22 @@ export default Vue.extend({
         netlify: `Netlify is a service that automates the deployment of static bundles. It's great for sites built using the JAM Stack (JavaScript, APIs and Markup).`,
         babel: `Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.`,
         vpn: `A simple tool to encrypt your internet traffic and keep your online activity private.`,
+        go: `Go is a statically typed, compiled programming language designed at Google`,
         typescript: `TypeScript is an open-source language that builds on JavaScript by adding static type definitions.`,
         python: `Python is an interpreted, high-level and general-purpose programming language.`,
         threejs: `Three.js allows the creation of GPU-accelerated 3D animations using JavaScript.`,
         street: `Street photography, also sometimes called candid photography, is photography conducted for art or enquiry that features unmediated chance encounters and random incidents within public places.`,
-        title: `ಠ_ಠ is a valid identifier according to ECMAScript 6.`,
+        title: `ಠ_ಠ is a valid identifier according to ECMAScript 6. So this snippet compiles and runs.`,
         npm: `npm is the package manager for Node.js. Its an open source project to help JavaScript developers easily share packaged modules of code.`,
         nemoswar: `Nemo's War is a solitaire game set in the world of Jules Verne's classic novel Twenty Thousand Leagues Under the Sea.`,
         spiritisland: `Spirit Island is a complex and thematic cooperative game set on an island full of spirits.`,
         svelte: `Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app.`,
-        spider: `Transmetropolitan is a cyberpunk transhumanist comic book series about a gonzo journalist that fights corruption.`,
-        firebase: `Firebase is a platform for creating mobile and web applications.`
+        firebase: `Firebase is a platform for creating mobile and web applications.`,
+        upperdb: `Upper/db is a productive data access layer (DAL) for Go.`,
+        postgres: `PostgreSQL is a free and open-source relational database management system.`,
+        eightball: `Eightball is a comic book by Daniel Clowes and published by Fantagraphics Books. It ran from 1989 to 2004.`,
+        hate: `Hate is a comic book by writer-artist Peter Bagge. First published by Fantagraphics in 1990 it ran for 30 issues, and was one of the best-selling alternative comics of the 1990s.`,
+        blackhole: `Black Hole is a twelve-issue horror comic book written and illustrated by Charles Burns.`
       }
     }
   },

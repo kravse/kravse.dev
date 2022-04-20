@@ -17,7 +17,7 @@
           <p>I build modern, scalable websites and <notify-item msg="browserExtensions">browser extensions</notify-item> with <notify-item msg="svelte">Svelte</notify-item>, <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="react">React</notify-item> and <notify-item msg="typescript">TypeScript</notify-item> that serve millions of users a month.</p>
           <p>I &lt;3 <notify-item msg="js">JavaScript</notify-item>, so I tend to tinker with open source projects in my spare time, building fun little tools, games, or even just websites that make me laugh. </p>
           <p>I have experience leading teams and love to mentor new developers.</p>
-          <p>If you want to chat, you can email me at <a :href="`mailto:ja` + `red@k` + `ravs` + `e.dev`">{{`jar` + `ed@` + `krav` + `se.dev`}}</a>.</p>
+          <!--p>If you want to chat, you can email me at <a :href="`mailto:ja` + `red@k` + `ravs` + `e.dev`">{{`jar` + `ed@` + `krav` + `se.dev`}}</a>.</p-->
         </section>
         <section>
           <h2>Work</h2>

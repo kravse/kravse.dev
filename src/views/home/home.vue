@@ -151,8 +151,8 @@ export default Vue.extend({
         'functio',
         '',
         '((',
-        '((ಠ_ಠ',
-        '((',
+        // '((ಠ_ಠ',
+        // '((',
         '((...ಠ_ಠ)=>`${ಠ_ಠ}`)("kravse.dev")'
       ],
       typedTitle: "",

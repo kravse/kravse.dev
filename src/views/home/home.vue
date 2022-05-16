@@ -35,7 +35,7 @@
               I'm a senior full stack software developer on the team behind the Cohere Platform.
               My responsibilities are divided between three key products:
               web applications (<notify-item msg="svelte">Svelte</notify-item>, <notify-item msg="react">React</notify-item>, & <notify-item msg="typescript">TypeScript</notify-item>),
-              API & endpoints (<notify-item msg="go">Go</notify-item>, <notify-item msg="upperdb">UpperDB</notify-item>, <notify-item msg="postgres">Postgres</notify-item>)
+              API & endpoints (<notify-item msg="go">Go</notify-item>, <notify-item msg="postgres">Postgres</notify-item>)
               and SDKs (<notify-item msg="node">Node.js</notify-item>, <notify-item msg="python">Python</notify-item>).
               In combination, these products provide Cohere users with unprecedented access to AI and Natural Language Processing,
               allowing them to build software that can understand the meaning, sentiment, and intent of the words humans use.

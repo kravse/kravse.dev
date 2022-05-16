@@ -10,7 +10,7 @@
             <ul>
               <li><p>Senior Full Stack Software Developer responsible for web apps, API, and SDKs.</p></li>
               <li><p>Building interactive web UIs and websites with TypeScript, React, and Svelte.</p></li>
-              <li><p>Building scalable backend APIs with Go, Upper/db and Postgres.</p></li>
+              <li><p>Building scalable backend APIs with Go and Postgres.</p></li>
               <li><p>Built the Cohere Node.js SDK.</p></li>
             </ul>
             <h3 class="h2">Sr. Web Developer at TunnelBear</h3>

@@ -14,7 +14,7 @@
         <section>
           <h2>Hi!</h2>
           <p>I'm a full stack developer currently living in Toronto.</p>
-          <p>I create modern interactive web applications that serve millions of users a month with <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="svelte">Svelte</notify-item>, or <notify-item msg="react">React</notify-item> (and of course <notify-item msg="typescript">TypeScript</notify-item>).</p>
+          <p>I create modern interactive web applications that serve millions of users a month with <notify-item msg="react">React</notify-item> and Next.js, <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="svelte">Svelte</notify-item>, and of course <notify-item msg="typescript">TypeScript</notify-item>.</p>
           <p>I also build and maintain scalable APIs with <notify-item msg="node">Node.js</notify-item>, <notify-item msg="python">Python</notify-item> or <notify-item msg="go">Go</notify-item> (and <notify-item msg="postgres">Postgres</notify-item>). Occasionally I work on <notify-item msg="browserExtensions">browser extensions</notify-item>, build <notify-item msg="sdk">SDKs</notify-item>, and publish <notify-item msg="npm">npm packages</notify-item>.</p>
           <p>I &lt;3 <notify-item msg="js">JavaScript</notify-item>, so I tend to tinker with open source projects in my spare time, building fun little tools, games, or even just websites that make me laugh. </p>
           <p>I've also got experience leading teams and love to mentor junior developers.</p>

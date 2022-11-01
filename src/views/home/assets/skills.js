@@ -1,7 +1,7 @@
 export const skills = {
   "frameworks": [
     "Vue.js",
-    "React",
+    "React & Next.js",
     "Svelte & Sveltekit",
     "Angular",
     "Backbone",

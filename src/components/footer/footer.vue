@@ -3,8 +3,7 @@
     <section>
       <p>
         <a href="https://www.github.com/kravse">Github</a>
-        <a href="https://www.twitter.com/kravse">Tweets</a>
-        <a rel="me" href="https://infosec.exchange/@kravse">Toots</a>
+        <a rel="me" href="https://infosec.exchange/@kravse">Mastodon</a>
         <a href="https://www.kravse.com">Photos</a>
         <a :href="`mailt`+`o:jare`+`d@k`+`ravs`+`e.de`+`v`">{{`jare`+`d@k`+`rav`+`se.`+`de`+`v`}}</a>
       </p>

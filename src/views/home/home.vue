@@ -29,7 +29,7 @@
           <div class="clump">
             <h3>Work</h3>
             <h5 class="standard-color">
-              <strong>Cohere Platform</strong><br class="xs"> [<a target="_blank" href="https://cohere.ai">cohere.ai</a>]
+              <strong>Cohere Platform</strong><br class="xs"> [<a target="_blank" href="https://cohere.com">cohere.com</a>, <a target="_blank" href="https://dashboard.cohere.ai">dashboard.cohere.ai</a>]
             </h5>
             <p class="sm">
               I'm a senior full stack software developer on the team behind the Cohere Platform.

@@ -32,7 +32,7 @@
             </h3>
             <h5><a href="https://www.apidays.global/" target="_blank">APIDays Interface</a> - June 2023</h5>
             <p class="sm">
-              A presentation on hacks and attacks in the rapidly growing NLP and LLM space, as well as common API use-cases for these AI technologies and how security is evolving within the space. 
+              A presentation I did with my friend Adam Dawson on hacks and attacks in the rapidly growing NLP and LLM space, as well as common API use-cases for these AI technologies and how security is evolving within the space. 
             </p>
           </div>
         </section>

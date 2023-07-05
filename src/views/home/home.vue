@@ -30,7 +30,7 @@
             <h3>
               Language AI Security at the API level: Avoiding Hacks, Injections and Breaches
             </h3>
-            <h5 class="standard-color">June 2023 [@ <a href="https://www.apidays.global/" target="_blank">APIDays Interface</a>]</h5>
+            <h5 class="standard-color">June 2023<br>[@ <a href="https://www.apidays.global/" target="_blank">APIDays Interface</a>]</h5>
             <p class="sm">
               A presentation I did with my friend Adam Dawson on hacks and attacks in the rapidly growing NLP and LLM space, as well as common API use-cases for these AI technologies and how security is evolving within the space. 
             </p>

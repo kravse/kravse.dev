@@ -28,7 +28,7 @@
         <div class="clump">
             <h2>Conferences & Talks</h2>
             <h3>
-              <strong>Language AI Security at the API level: Avoiding Hacks, Injections and Breaches</strong><br class="xs">
+              Language AI Security at the API level: Avoiding Hacks, Injections and Breaches
             </h3>
             <h5 class="standard-color"><a href="https://www.apidays.global/" target="_blank">APIDays Interface</a> - June 2023</h5>
             <p class="sm">

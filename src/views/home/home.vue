@@ -61,6 +61,15 @@
               It's built with <notify-item msg="vue">Vue.js</notify-item>, <notify-item msg="typescript">TypeScript</notify-item> and <notify-item msg="webpack">Webpack</notify-item>, with a focus on security, privacy and accessibility.
             </p>
           </div>
+           <div class="clump">
+            <h3>Conferences & Talks</h3>
+            <h5 class="standard-color">
+              <strong>Language AI Security at the API level: Avoiding Hacks, Injections and Breaches</strong><br class="xs"> [<a href="https://www.apidays.global/" target="_blank">APIDays Interface</a> - June 2023]
+            </h5>
+            <p class="sm">
+              A presentation on hacks and attacks in the rapidly growing NLP and LLM space, as well as common API use-cases for these AI technologies and how security is evolving within the space. 
+            </p>
+          </div>
           <div class="clump">
             <h3>Projects & Open Source</h3>
             <h5 class="standard-color">

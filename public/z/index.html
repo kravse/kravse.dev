@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script>
+      var sl_v = {
+        p: function () {
+          this._v || this._i(),
+            this._v.setAttribute("loop", "loop"),
+            (this._v.muted = !0),
+            this._v.play();
+        },
+        _i: function () {
+          (this._v = document.createElement("video")),
+            this._v.setAttribute("width", "10"),
+            this._v.setAttribute("height", "10"),
+            (this._v.style.position = "absolute");
+          (this._v.style.top = "-10px"), (this._v.style.left = "-10px");
+          var t = document.createElement("source");
+          t.setAttribute("src", "./mb.mp4"),
+            t.setAttribute("type", "video/mp4"),
+            this._v.appendChild(t);
+          var e = document.createElement("source");
+          e.setAttribute("src", "./mb.ogv"),
+            e.setAttribute("type", "video/ogg"),
+            this._v.appendChild(e),
+            document.body.appendChild(this._v);
+        },
+        _video: null,
+      };
+    </script>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh; display: flex; align-items: center">
+      <h1 style="margin: 0 auto; display: block">zzzz...</h1>
+    </div>
+  </body>
+  <script>
+    sl_v.p();
+  </script>
+</html>

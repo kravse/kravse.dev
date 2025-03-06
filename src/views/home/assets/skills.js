@@ -40,6 +40,7 @@ export const skills = {
   ],
   "hosting": [
     "Netlify",
+    "Vercel",
     "Cloudflare",
     "Cloud SQL",
     "AWS",

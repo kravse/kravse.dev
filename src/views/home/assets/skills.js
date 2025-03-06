@@ -21,7 +21,7 @@ export const skills = {
   ],
   "frontEnd": [
     "HTML5",
-    "SASS/LESS/SCSS/Stylus",
+    "SASS/SCSS/Stylus",
     "TypeScript",
     "WordPress",
     "jQuery",

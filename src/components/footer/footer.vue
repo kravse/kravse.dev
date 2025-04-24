@@ -5,7 +5,7 @@
         <a href="https://www.github.com/kravse">Github</a>
         <a href="https://www.kravse.com">Photos</a>
         <a href="https://www.linkedin.com/in/jarednkrause/">LinkedIn</a>
-        <a :href="`mailt`+`o:jare`+`d@k`+`ravs`+`e.de`+`v`">{{`jare`+`d@k`+`rav`+`se.`+`de`+`v`}}</a>
+        <a :href="`mailt`+`o:krav`+`se@`+`duc`+`k.c`+`om`">{{`krav`+`se@`+`duc`+`k.c`+`om`}}</a>
       </p>
       <p class="copyright">Jared Krause ©
         <span class="date">

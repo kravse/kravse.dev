@@ -211,7 +211,6 @@ export default Vue.extend({
       this.workHistory = to.name === 'work-history';
     }
   }
-
 });
 </script>
 

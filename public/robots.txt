@@ -3,3 +3,5 @@ Sitemap: https://kravse.dev/sitemap_index.xml
 
 Disallow: /z
 Disallow: /z/
+Disallow: /arkham
+Disallow: /arkham/

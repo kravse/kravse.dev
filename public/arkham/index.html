@@ -194,6 +194,13 @@
       font-family: ui-sans-serif, system-ui, sans-serif;
     }
 
+    .controls-secondary {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
     .search-wrap {
       position: relative;
       flex: 1 1 240px;
@@ -306,7 +313,8 @@
       color: var(--muted);
     }
 
-    .stat {
+    .stat,
+    .stat-toggle {
       background: var(--panel);
       border: 1px solid var(--border);
       border-radius: 999px;
@@ -703,6 +711,168 @@
       padding: 3rem 1rem;
       font-family: ui-sans-serif, system-ui, sans-serif;
     }
+
+    @media (max-width: 640px) {
+      header {
+        padding: 0.85rem 0.75rem 0.7rem;
+      }
+
+      .header-top {
+        align-items: center;
+        gap: 0.65rem;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+        margin-bottom: 0.1rem;
+        letter-spacing: 0.02em;
+      }
+
+      .subtitle {
+        margin-bottom: 0.65rem;
+        font-size: 0.72rem;
+        line-height: 1.35;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .controls {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.5rem;
+      }
+
+      .search-wrap {
+        flex: initial;
+        min-width: 0;
+        width: 100%;
+      }
+
+      .controls-secondary {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 0.5rem;
+        align-items: center;
+        width: 100%;
+      }
+
+      .sort-control {
+        min-width: 0;
+        gap: 0.4rem;
+      }
+
+      .sort-label {
+        font-size: 0.72rem;
+      }
+
+      #sort {
+        width: 100%;
+        min-width: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      .show-hidden-toggle {
+        justify-self: end;
+        font-size: 0.72rem;
+        gap: 0.35rem;
+      }
+
+      input[type="search"],
+      select {
+        padding: 0.55rem 0.7rem;
+        font-size: 16px;
+      }
+
+      .search-wrap input[type="search"] {
+        padding-right: 2rem;
+      }
+
+      main {
+        padding: 0.65rem;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.4rem;
+        margin-top: 0.65rem;
+        font-size: 0.72rem;
+      }
+
+      .stat,
+      .stat-toggle {
+        width: 100%;
+        padding: 0.38rem 0.5rem;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.45rem;
+      }
+
+      .card {
+        border-radius: 8px;
+      }
+
+      .card-body {
+        padding: 0.35rem 0.3rem 0.45rem;
+        gap: 0.15rem;
+      }
+
+      .title {
+        font-size: 0.58rem;
+        line-height: 1.2;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .date {
+        font-size: 0.52rem;
+      }
+
+      .meta,
+      .card-footer {
+        display: none;
+      }
+
+      .owned-badge,
+      .hidden-badge {
+        font-size: 0.45rem;
+        padding: 0.1rem 0.25rem;
+        margin-bottom: 0.05rem;
+      }
+
+      .edit-book-btn,
+      .hide-book-btn {
+        width: 1.35rem;
+        height: 1.35rem;
+        top: 0.25rem;
+        opacity: 1;
+      }
+
+      .edit-book-btn {
+        right: 0.25rem;
+      }
+
+      .hide-book-btn {
+        left: 0.25rem;
+      }
+
+      .edit-book-btn svg,
+      .hide-book-btn svg {
+        width: 0.7rem;
+        height: 0.7rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -741,19 +911,21 @@
         <input id="search" type="search" placeholder="Search title, author, cover artist, date…" aria-label="Search books">
         <button type="button" id="search-clear" class="search-clear" aria-label="Clear search" hidden>&times;</button>
       </div>
-      <div class="sort-control">
-        <label class="sort-label" for="sort">Sort</label>
-        <select id="sort" aria-label="Sort books">
-          <option value="default">Bibliography order</option>
-          <option value="date-desc">Newest first</option>
-          <option value="date-asc" selected>Oldest first</option>
-          <option value="title">Title A–Z</option>
-        </select>
+      <div class="controls-secondary">
+        <div class="sort-control">
+          <label class="sort-label" for="sort">Sort</label>
+          <select id="sort" aria-label="Sort books">
+            <option value="default">Bibliography order</option>
+            <option value="date-desc">Newest first</option>
+            <option value="date-asc" selected>Oldest first</option>
+            <option value="title">Title A–Z</option>
+          </select>
+        </div>
+        <label class="show-hidden-toggle" id="show-hidden-wrap" hidden>
+          <input id="show-hidden" type="checkbox">
+          Show hidden
+        </label>
       </div>
-      <label class="show-hidden-toggle" id="show-hidden-wrap" hidden>
-        <input id="show-hidden" type="checkbox">
-        Show hidden
-      </label>
     </div>
     <div class="stats" id="stats"></div>
   </header>

@@ -74,7 +74,7 @@ window.MY_COLLECTION = [
   {
     "title": "The Horror From The Hills",
     "author": "Frank Belknap Long",
-    "year": "1962",
+    "year": "1963",
     "status": "shelf"
   },
   {
@@ -118,12 +118,6 @@ window.MY_COLLECTION = [
     "author": "H.P. Lovecraft",
     "year": "1965",
     "status": "shelf"
-  },
-  {
-    "title": "The Dark Brotherhood and Other Pieces",
-    "author": "H.P Lovecraft and August Derleth",
-    "year": "1966",
-    "status": "order"
   },
   {
     "title": "Deep Waters",

@@ -41,6 +41,41 @@
       position: sticky;
       top: 0;
       z-index: 10;
+      transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    body.viewing-collection {
+      background: radial-gradient(circle at top, #2a2418 0%, #100e0b 58%);
+    }
+
+    body.viewing-collection header {
+      border-bottom-color: rgba(210, 178, 128, 0.38);
+      background: rgba(28, 24, 18, 0.94);
+      box-shadow:
+        inset 0 1px 0 rgba(232, 212, 168, 0.08),
+        0 8px 28px rgba(201, 162, 39, 0.1);
+    }
+
+    body.viewing-collection .subtitle {
+      color: #e8d4a8;
+    }
+
+    body.viewing-collection main {
+      background: linear-gradient(180deg, rgba(201, 162, 39, 0.04) 0%, transparent 12rem);
+    }
+
+    body.viewing-hidden {
+      background: radial-gradient(circle at top, #1a1d24 0%, #0b0c10 58%);
+    }
+
+    body.viewing-hidden header {
+      border-bottom-color: rgba(154, 163, 178, 0.32);
+      background: rgba(18, 20, 26, 0.94);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+    }
+
+    body.viewing-hidden .subtitle {
+      color: #c4c9d4;
     }
 
     .header-top {
@@ -302,6 +337,30 @@
       background: rgba(201, 162, 39, 0.12);
     }
 
+    .stat.owned-stat.stat-toggle.active {
+      color: #fff3d6;
+      border-color: rgba(224, 196, 148, 0.72);
+      background: rgba(201, 162, 39, 0.28);
+      box-shadow:
+        0 0 0 1px rgba(201, 162, 39, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.07);
+    }
+
+    .stat.hidden-stat {
+      color: #c4c9d4;
+      border-color: rgba(154, 163, 178, 0.28);
+      background: rgba(154, 163, 178, 0.08);
+    }
+
+    .stat.hidden-stat.stat-toggle.active {
+      color: #eef1f6;
+      border-color: rgba(154, 163, 178, 0.55);
+      background: rgba(154, 163, 178, 0.16);
+      box-shadow:
+        0 0 0 1px rgba(154, 163, 178, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+
     main {
       padding: 1.5rem;
     }
@@ -501,11 +560,17 @@
 
     .edit-dialog-actions {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: center;
       gap: 0.5rem;
       margin-top: 0.35rem;
       padding-top: 0.75rem;
       border-top: 1px solid var(--border);
+    }
+
+    .edit-dialog-actions-right {
+      display: flex;
+      gap: 0.5rem;
     }
 
     .edit-dialog-actions button {
@@ -523,6 +588,18 @@
       background: rgba(201, 162, 39, 0.18);
       border-color: rgba(210, 178, 128, 0.35);
       color: #e8d4a8;
+    }
+
+    .edit-delete-btn {
+      color: #efb4b4;
+      border-color: rgba(200, 120, 120, 0.35);
+      background: rgba(120, 40, 40, 0.14);
+    }
+
+    .edit-delete-btn:hover:not(:disabled) {
+      color: #ffd6d6;
+      border-color: rgba(220, 120, 120, 0.5);
+      background: rgba(140, 45, 45, 0.22);
     }
 
     .edit-dialog-actions button:disabled {
@@ -633,7 +710,7 @@
     <div class="header-top">
       <div class="header-intro">
         <h1>Arkham House Covers</h1>
-        <p class="subtitle">Bibliography gallery scraped from Wikipedia</p>
+        <p class="subtitle" id="page-subtitle">Bibliography gallery scraped from Wikipedia</p>
       </div>
       <div class="help-anchor" id="help-anchor">
         <button
@@ -715,8 +792,11 @@
           <input id="edit-cover-file" name="cover" type="file" accept="image/*">
         </label>
         <div class="edit-dialog-actions">
-          <button type="button" id="edit-cancel" data-close-edit>Cancel</button>
-          <button type="submit" id="edit-save">Save</button>
+          <button type="button" id="edit-delete" class="edit-delete-btn">Delete book</button>
+          <div class="edit-dialog-actions-right">
+            <button type="button" id="edit-cancel" data-close-edit>Cancel</button>
+            <button type="submit" id="edit-save">Save</button>
+          </div>
         </div>
       </form>
     </div>
@@ -735,6 +815,7 @@
     const editDialog = document.getElementById("edit-dialog");
     const editBookForm = document.getElementById("edit-book-form");
     const editCancelBtn = document.getElementById("edit-cancel");
+    const editDeleteBtn = document.getElementById("edit-delete");
     const editSaveBtn = document.getElementById("edit-save");
     const editTitleInput = document.getElementById("edit-title");
     const editAuthorInput = document.getElementById("edit-author");
@@ -748,11 +829,14 @@
     const helpAnchor = document.getElementById("help-anchor");
     const showHiddenWrap = document.getElementById("show-hidden-wrap");
     const showHiddenInput = document.getElementById("show-hidden");
+    const pageSubtitle = document.getElementById("page-subtitle");
     const readOnly = window.READ_ONLY === true;
     let collection = [];
     let serveEnabled = false;
     let editingBookId = null;
     let missingCoversOnly = false;
+    let collectionOnly = false;
+    let hiddenOnly = false;
 
     books.forEach((book) => {
       if (book.hidden === undefined) {
@@ -904,7 +988,6 @@
       const withCovers = all.filter((book) => bookHasCover(book)).length;
       const withoutCovers = all.length - withCovers;
       const ownedCount = all.filter((book) => findCollectionMatch(book)).length;
-      const ownedVisible = visible.filter((book) => findCollectionMatch(book)).length;
       const hiddenCount = all.filter((book) => book.hidden).length;
       const coversLabel = missingCoversOnly
         ? `${withoutCovers} without covers`
@@ -912,9 +995,8 @@
       stats.innerHTML = [
         `<span class="stat">${visible.length} shown</span>`,
         `<span class="stat">${all.length} total</span>`,
-        `<span class="stat owned-stat">${ownedVisible} owned shown</span>`,
-        `<span class="stat owned-stat">${ownedCount} in your collection</span>`,
-        hiddenCount ? `<span class="stat">${hiddenCount} hidden</span>` : "",
+        `<button type="button" class="stat owned-stat stat-toggle${collectionOnly ? " active" : ""}" id="collection-filter-toggle" aria-pressed="${collectionOnly}">${ownedCount} in your collection</button>`,
+        hiddenCount ? `<button type="button" class="stat hidden-stat stat-toggle${hiddenOnly ? " active" : ""}" id="hidden-filter-toggle" aria-pressed="${hiddenOnly}">${hiddenCount} hidden</button>` : "",
         `<button type="button" class="stat stat-toggle${missingCoversOnly ? " active" : ""}" id="covers-filter-toggle" aria-pressed="${missingCoversOnly}">${coversLabel}</button>`,
       ].join("");
     }
@@ -923,7 +1005,8 @@
       const query = searchInput.value.trim();
       const showHidden = showHiddenInput.checked;
       return sortBooks(books, sortSelect.value)
-        .filter((book) => showHidden || !book.hidden)
+        .filter((book) => (hiddenOnly ? book.hidden : showHidden || !book.hidden))
+        .filter((book) => !collectionOnly || findCollectionMatch(book))
         .filter((book) => !missingCoversOnly || !bookHasCover(book))
         .filter((book) => matchesSearch(book, query));
     }
@@ -1092,11 +1175,33 @@
     function render() {
       const visible = getVisibleBooks();
 
+      document.body.classList.toggle("viewing-collection", collectionOnly && !hiddenOnly);
+      document.body.classList.toggle("viewing-hidden", hiddenOnly && !collectionOnly);
+      if (pageSubtitle) {
+        if (collectionOnly && hiddenOnly) {
+          pageSubtitle.textContent = "Viewing hidden books in your collection — click a stat again to show all books";
+        } else if (collectionOnly) {
+          pageSubtitle.textContent = "Viewing your collection — click the stat again to show all books";
+        } else if (hiddenOnly) {
+          pageSubtitle.textContent = "Viewing hidden books — click the stat again to show all books";
+        } else {
+          pageSubtitle.textContent = "Bibliography gallery scraped from Wikipedia";
+        }
+      }
+
       renderStats(visible, books);
 
       if (!visible.length) {
         let message = "No books match your search.";
-        if (missingCoversOnly) {
+        if (collectionOnly) {
+          message = searchInput.value.trim()
+            ? "No books in your collection match your search."
+            : "No books in your collection to show (they may all be hidden).";
+        } else if (hiddenOnly) {
+          message = searchInput.value.trim()
+            ? "No hidden books match your search."
+            : "No hidden books to show.";
+        } else if (missingCoversOnly) {
           message = searchInput.value.trim()
             ? "No books without covers match your search."
             : "All books have covers.";
@@ -1147,6 +1252,48 @@
       editingBookId = null;
       editDialog.hidden = true;
       editBookForm.reset();
+    }
+
+    async function deleteBook() {
+      if (!editingBookId) {
+        return;
+      }
+
+      const book = books.find((entry) => entry.id === editingBookId);
+      const title = book?.title || "this book";
+      const confirmed = window.confirm(
+        `Delete "${title}" permanently? This removes it from books.json and deletes its local cover file.`
+      );
+      if (!confirmed) {
+        return;
+      }
+
+      editDeleteBtn.disabled = true;
+      editSaveBtn.disabled = true;
+
+      try {
+        const response = await fetch(`/api/books/${editingBookId}`, {
+          method: "DELETE",
+        });
+        const payload = await response.json();
+        if (!response.ok) {
+          throw new Error(payload.error || "Could not delete book");
+        }
+
+        const bookIndex = books.findIndex((entry) => entry.id === editingBookId);
+        if (bookIndex !== -1) {
+          books.splice(bookIndex, 1);
+        }
+
+        closeEditDialog();
+        render();
+      } catch (error) {
+        console.error(error);
+        window.alert(`Could not delete book: ${error.message}`);
+      } finally {
+        editDeleteBtn.disabled = false;
+        editSaveBtn.disabled = false;
+      }
     }
 
     async function saveBookEdits(event) {
@@ -1252,6 +1399,7 @@
     });
 
     editBookForm.addEventListener("submit", saveBookEdits);
+    editDeleteBtn.addEventListener("click", deleteBook);
     editCancelBtn.addEventListener("click", closeEditDialog);
     editDialog.querySelectorAll("[data-close-edit]").forEach((element) => {
       element.addEventListener("click", closeEditDialog);
@@ -1310,6 +1458,16 @@
     showHiddenInput.addEventListener("change", render);
 
     stats.addEventListener("click", (event) => {
+      if (event.target.closest("#collection-filter-toggle")) {
+        collectionOnly = !collectionOnly;
+        render();
+        return;
+      }
+      if (event.target.closest("#hidden-filter-toggle")) {
+        hiddenOnly = !hiddenOnly;
+        render();
+        return;
+      }
       if (event.target.closest("#covers-filter-toggle")) {
         missingCoversOnly = !missingCoversOnly;
         render();

@@ -2079,7 +2079,7 @@ window.BOOKS = [
     "title": "The Fourth Book of Jorkens",
     "author": "Lord Dunsany",
     "coverArtist": null,
-    "publicationDate": "1947",
+    "publicationDate": "1948",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Fourth_Book_of_Jorkens",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e7/Fourth_book_of_jorkens_first.jpg",
     "coverImageFile": "covers/the-fourth-book-of-jorkens-183.jpg",

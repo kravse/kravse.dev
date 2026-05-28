@@ -738,6 +738,29 @@
       margin-top: 0.35rem;
     }
 
+    .book-detail-wiki-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.65rem;
+      padding: 0.65rem 1.1rem;
+      border: 1px solid rgba(210, 178, 128, 0.35);
+      border-radius: 999px;
+      background: rgba(201, 162, 39, 0.16);
+      color: #e8d4a8;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .book-detail-wiki-btn:hover {
+      background: rgba(201, 162, 39, 0.24);
+      border-color: rgba(224, 196, 148, 0.5);
+      color: #fff3d6;
+    }
+
     body.book-detail-open {
       overflow: hidden;
     }
@@ -1594,8 +1617,8 @@
         ? `<span class="owned-badge">${owned.status === "order" ? "On order" : "In collection"}</span>`
         : "";
       const hiddenBadge = book.hidden ? `<span class="hidden-badge">Hidden</span>` : "";
-      const wikiLink = book.wikipediaUrl
-        ? `<div class="card-footer"><a href="${book.wikipediaUrl}" target="_blank" rel="noopener">Wikipedia</a></div>`
+      const wikiButton = book.wikipediaUrl
+        ? `<a class="book-detail-wiki-btn" href="${book.wikipediaUrl}" target="_blank" rel="noopener">Wikipedia</a>`
         : "";
 
       bookDetailBody.innerHTML = `
@@ -1606,7 +1629,7 @@
         ${book.author ? `<p class="meta"><strong>Author:</strong> ${book.author}</p>` : ""}
         ${book.coverArtist ? `<p class="meta"><strong>Cover:</strong> ${book.coverArtist}</p>` : ""}
         ${book.decade ? `<p class="meta"><strong>Decade:</strong> ${book.decade}</p>` : ""}
-        ${wikiLink}
+        ${wikiButton}
       `;
 
       bookDetailDialog.hidden = false;

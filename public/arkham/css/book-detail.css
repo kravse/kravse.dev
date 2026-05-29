@@ -277,10 +277,10 @@
 
 .book-detail-description {
   width: 100%;
-  flex: 0 0 6.6rem;
-  height: 6.6rem;
-  min-height: 6.6rem;
-  max-height: 6.6rem;
+  flex: 0 0 6.27rem;
+  height: 6.27rem;
+  min-height: 6.27rem;
+  max-height: 6.27rem;
   margin-top: auto;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -464,7 +464,7 @@ body.book-detail-open {
     flex: 0 1 auto;
     height: auto;
     min-height: 0;
-    max-height: min(13.2rem, 36vh);
+    max-height: min(12.54rem, 34.2vh);
     margin-top: 0.15rem;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;

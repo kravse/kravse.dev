@@ -11,7 +11,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Evermore_(anthology)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a4/Evermore_%28cover%29.jpg",
     "coverImageFile": "covers/evermore-anthology-9.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 10,
@@ -25,7 +26,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Other_Worlds_Than_Ours",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/d/db/Other_worlds_than_ours.jpg",
     "coverImageFile": "covers/other-worlds-than-ours-10.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 11,
@@ -39,7 +41,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Cave_of_a_Thousand_Tales",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/04/Cave_of_a_thousand_tales.jpg",
     "coverImageFile": "covers/cave-of-a-thousand-tales-11.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 12,
@@ -53,7 +56,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Selected_Letters_of_Clark_Ashton_Smith",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4b/Selected_letters_CAS.jpg",
     "coverImageFile": "covers/selected-letters-of-clark-ashton-smith-12.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 13,
@@ -67,7 +71,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Cleansing_(novel)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f6/Cleansing_harvey.jpg",
     "coverImageFile": "covers/the-cleansing-novel-13.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 14,
@@ -81,7 +86,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Far_Side_of_Nowhere",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/06/Far_side_of_nowhere.jpg",
     "coverImageFile": "covers/the-far-side-of-nowhere-14.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 15,
@@ -95,7 +101,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Book_of_the_Dead_(memoir)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Book_of_the_dead_price.jpg",
     "coverImageFile": "covers/book-of-the-dead-memoir-15.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 16,
@@ -105,11 +112,12 @@ window.BOOKS = [
     "title": "Arkham's Masters of Horror",
     "author": "Peter Ruber",
     "coverArtist": "Tony Patrick, design by Martin Hertzel",
-    "publicationDate": "2000)",
+    "publicationDate": "2000",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Arkham's_Masters_of_Horror",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/3f/Arkham_masters_of_horror.jpg",
     "coverImageFile": "covers/arkhams-masters-of-horror-16.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 17,
@@ -123,7 +131,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/In_the_Stone_House",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/34/In_the_stone_house.jpg",
     "coverImageFile": "covers/in-the-stone-house-17.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 18,
@@ -137,7 +146,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Sixty_Years_of_Arkham_House",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/05/Sixty_years_of_arkham_house.jpg",
     "coverImageFile": "covers/sixty-years-of-arkham-house-18.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 19,
@@ -151,7 +161,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dragonfly_(Durbin_novel)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/02/Dragonfly_durbin.jpg",
     "coverImageFile": "covers/dragonfly-durbin-novel-19.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 20,
@@ -161,11 +172,12 @@ window.BOOKS = [
     "title": "New Horizons",
     "author": "August Derleth",
     "coverArtist": "Stephen E. Fabian",
-    "publicationDate": "1998 (1999)",
+    "publicationDate": "1999",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/New_Horizons_(book)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/32/New_horizons.jpg",
     "coverImageFile": "covers/new-horizons-book-20.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 21,
@@ -179,7 +191,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Lovecraft_Remembered",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7f/Lovecraft_remembered.jpg",
     "coverImageFile": "covers/lovecraft-remembered-21.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 22,
@@ -193,7 +206,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Flowers_from_the_Moon_and_Other_Lunacies",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2c/Flowers_from_the_moon.jpg",
     "coverImageFile": "covers/flowers-from-the-moon-and-other-lunacies-22.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 23,
@@ -203,11 +217,12 @@ window.BOOKS = [
     "title": "Voyages by Starlight",
     "author": "Ian R. MacLeod",
     "coverArtist": "Nicholas Jainschigg",
-    "publicationDate": "1996",
+    "publicationDate": "1997",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Voyages_by_Starlight",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/1/1e/Voyages_by_starlight.jpg",
     "coverImageFile": "covers/voyages-by-starlight-23.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 24,
@@ -221,7 +236,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Synthesis_%26_Other_Virtual_Realities",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/9/9c/Synthesis_and_other_virtual_realities.jpg",
     "coverImageFile": "covers/synthesis-other-virtual-realities-24.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 25,
@@ -235,7 +251,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Cthulhu_2000",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fc/Cthulhu_2000.jpg",
     "coverImageFile": "covers/cthulhu-2000-25.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 26,
@@ -245,11 +262,12 @@ window.BOOKS = [
     "title": "Miscellaneous Writings",
     "author": "H. P. Lovecraft",
     "coverArtist": "James Turner",
-    "publicationDate": "1995",
+    "publicationDate": "1994",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Miscellaneous_Writings",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fe/Miscellaneous_writings.jpg",
     "coverImageFile": "covers/miscellaneous-writings-26.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 27,
@@ -263,7 +281,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Breath_of_Suspension",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fe/Breath_of_suspension.jpg",
     "coverImageFile": "covers/the-breath-of-suspension-27.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 28,
@@ -277,7 +296,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Aliens_of_Earth",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/1/1a/Aliens_of_earth.jpg",
     "coverImageFile": "covers/the-aliens-of-earth-28.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 29,
@@ -291,7 +311,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Alone_with_the_Horrors%3A_The_Great_Short_Fiction_of_Ramsey_Campbell_1961%E2%80%931991",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c3/Alone_with_the_horrors.jpg",
     "coverImageFile": "covers/alone-with-the-horrors-the-great-short-fiction-of-ramsey-campbell-1961-1991-29.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 30,
@@ -305,7 +326,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Meeting_in_Infinity",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/63/Meeting_in_infinity.jpg",
     "coverImageFile": "covers/meeting-in-infinity-30.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 31,
@@ -319,7 +341,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Lord_Kelvin's_Machine",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/07/Lord_kelvins_machine.jpg",
     "coverImageFile": "covers/lord-kelvins-machine-31.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 32,
@@ -333,7 +356,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Gravity's_Angels",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e8/Gravitys_angels.jpg",
     "coverImageFile": "covers/gravitys-angels-32.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 33,
@@ -347,7 +371,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Ends_of_the_Earth_(Science_fiction_Stories)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5c/The_Ends_of_the_Earth_%28anthology%29_coverart.jpg",
     "coverImageFile": "covers/the-ends-of-the-earth-science-fiction-stories-33.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 34,
@@ -357,11 +382,12 @@ window.BOOKS = [
     "title": "Her Smoke Rose Up Forever",
     "author": "James Tiptree, Jr.",
     "coverArtist": "Andrew Smith",
-    "publicationDate": "June 1990",
+    "publicationDate": "1990",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Her_Smoke_Rose_Up_Forever",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Her_smoke_rose_up_forever.jpg",
     "coverImageFile": "covers/her-smoke-rose-up-forever-34.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 35,
@@ -371,11 +397,12 @@ window.BOOKS = [
     "title": "Tales of the Cthulhu Mythos",
     "author": "H. P. Lovecraft and others",
     "coverArtist": "Lee Brown Coye",
-    "publicationDate": "1969",
+    "publicationDate": "1980",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Tales_of_the_Cthulhu_Mythos%3A_Golden_Anniversary_Anthology",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Tales_of_the_Cthulhu_Mythos.jpg",
     "coverImageFile": "covers/tales-of-the-cthulhu-mythos-golden-anniversary-anthology-35.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 36,
@@ -389,7 +416,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Crystal_Express",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a0/Crystal_express.jpg",
     "coverImageFile": "covers/crystal-express-36.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 37,
@@ -399,11 +427,12 @@ window.BOOKS = [
     "title": "The Horror in the Museum and Other Revisions",
     "author": "H. P. Lovecraft",
     "coverArtist": "Gahan Wilson (original), Raymond Bayless (revised)",
-    "publicationDate": "1970 (original), 1989 (revised)",
+    "publicationDate": "1970",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Horror_in_the_Museum_and_Other_Revisions",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/82/Horror_in_the_museum.jpg",
     "coverImageFile": "covers/the-horror-in-the-museum-and-other-revisions-37.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 38,
@@ -417,7 +446,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Memories_of_the_Space_Age",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8b/Memories_of_the_space_age.jpg",
     "coverImageFile": "covers/memories-of-the-space-age-38.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 39,
@@ -431,7 +461,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Rendezvous_in_Averoigne",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c7/Rendezvous_in_averoigne.jpg",
     "coverImageFile": "covers/a-rendezvous-in-averoigne-39.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 40,
@@ -445,7 +476,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Polyphemus_(book)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/01/Polyphemus_shea.jpg",
     "coverImageFile": "covers/polyphemus-book-40.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 41,
@@ -455,11 +487,12 @@ window.BOOKS = [
     "title": "The Jaguar Hunter",
     "author": "Lucius Shepard",
     "coverArtist": "Jeffrey K. Potter",
-    "publicationDate": "May 1987",
+    "publicationDate": "1987",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Jaguar_Hunter",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e0/Jaguar_hunter.jpg",
     "coverImageFile": "covers/the-jaguar-hunter-41.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 42,
@@ -473,7 +506,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Tales_of_the_Quintana_Roo",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/9/9c/Tales_of_the_quintana_roo.jpg",
     "coverImageFile": "covers/tales-of-the-quintana-roo-42.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 43,
@@ -487,7 +521,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dreams_of_Dark_and_Light%3A_The_Great_Short_Fiction_of_Tanith_Lee",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/9/92/Dreams_of_dark_and_light.jpg",
     "coverImageFile": "covers/dreams-of-dark-and-light-the-great-short-fiction-of-tanith-lee-43.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 44,
@@ -501,7 +536,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dagon_and_Other_Macabre_Tales",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8f/Dagon_first.jpg",
     "coverImageFile": "covers/dagon-and-other-macabre-tales-44.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 45,
@@ -515,7 +551,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/At_the_Mountains_of_Madness_and_Other_Novels",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a0/At_the_mountains_of_madness.jpg",
     "coverImageFile": "covers/at-the-mountains-of-madness-and-other-novels-45.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 46,
@@ -529,7 +566,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Dunwich_Horror_and_Others",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Dunwich_Horror_and_Others_dust_jacket.jpg",
     "coverImageFile": "covers/the-dunwich-horror-and-others-46.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 47,
@@ -543,7 +581,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Lovecraft's_Book",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/Lovecrafts_book.jpg",
     "coverImageFile": "covers/lovecrafts-book-47.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 48,
@@ -557,7 +596,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Who_Made_Stevie_Crye%3F",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/07/Who_made_stevie_crye.jpg",
     "coverImageFile": "covers/who-made-stevie-crye-48.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 49,
@@ -571,7 +611,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Watchers_at_the_Strait_Gate",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fe/Watchers_at_the_strait_gate.jpg",
     "coverImageFile": "covers/watchers-at-the-strait-gate-49.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 50,
@@ -585,7 +626,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/One_Winter_in_Eden",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/39/One_winter_in_eden.jpg",
     "coverImageFile": "covers/one-winter-in-eden-50.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 51,
@@ -595,11 +637,12 @@ window.BOOKS = [
     "title": "The Zanzibar Cat",
     "author": "Joanna Russ",
     "coverArtist": "James C. Christensen",
-    "publicationDate": "October 1983",
+    "publicationDate": "1983",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Zanzibar_Cat",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fe/Zanzibar_cat.jpg",
     "coverImageFile": "covers/the-zanzibar-cat-51.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 52,
@@ -609,11 +652,12 @@ window.BOOKS = [
     "title": "The Wind from a Burning Woman",
     "author": "Greg Bear",
     "coverArtist": "Vincent Di Fate",
-    "publicationDate": "1982",
+    "publicationDate": "1983",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Wind_from_a_Burning_Woman",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5d/Wind_from_a_burning_woman.jpg",
     "coverImageFile": "covers/the-wind-from-a-burning-woman-52.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 53,
@@ -627,7 +671,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_House_of_the_Wolf",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8a/The_House_of_the_Wolf_%28Basil_Copper_novel_-_cover_art%29.jpg",
     "coverImageFile": "covers/the-house-of-the-wolf-53.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 54,
@@ -641,7 +686,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Darkling",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/60/Darkling.jpg",
     "coverImageFile": "covers/the-darkling-54.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 55,
@@ -651,11 +697,12 @@ window.BOOKS = [
     "title": "Blooded on Arachne",
     "author": "Michael Bishop",
     "coverArtist": "Ron Walotsky",
-    "publicationDate": "January 1982",
+    "publicationDate": "1982",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Blooded_on_Arachne",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/bb/Blooded_on_arachne.jpg",
     "coverImageFile": "covers/blooded-on-arachne-55.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 56,
@@ -669,7 +716,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Tales_from_the_Nightside",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/82/Tales_from_the_nightside.jpg",
     "coverImageFile": "covers/tales-from-the-nightside-56.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 57,
@@ -683,7 +731,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Collected_Poems_(Richard_L._Tierney)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/a/ad/Collected_poems_tierney.jpg",
     "coverImageFile": "covers/collected-poems-richard-l-tierney-57.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 58,
@@ -697,7 +746,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Third_Grave",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Third_grave.jpg",
     "coverImageFile": "covers/the-third-grave-58.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 60,
@@ -711,7 +761,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Necropolis_(Copper_novel)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/3a/Necropolis_%28Copper_novel%29.jpg",
     "coverImageFile": "covers/necropolis-copper-novel-60.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 61,
@@ -725,7 +776,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Black_Book_of_Clark_Ashton_Smith",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/03/Black_book_of_CAS.jpg",
     "coverImageFile": "covers/the-black-book-of-clark-ashton-smith-61.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 62,
@@ -739,7 +791,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Princess_of_All_Lands",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c4/Princess_of_all_lands.jpg",
     "coverImageFile": "covers/the-princess-of-all-lands-62.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 63,
@@ -753,7 +806,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/In_the_Mist_and_Other_Uncanny_Encounters",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2a/In_the_Mist_and_Other_Uncanny_Encounters_%28book_cover%29.jpg",
     "coverImageFile": "covers/in-the-mist-and-other-uncanny-encounters-63.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 64,
@@ -767,7 +821,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Half_in_Shadow",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e4/Half_in_shadow.jpg",
     "coverImageFile": "covers/half-in-shadow-64.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 65,
@@ -781,7 +836,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Born_to_Exile",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/22/Born_to_exile.jpg",
     "coverImageFile": "covers/born-to-exile-65.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 66,
@@ -795,7 +851,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/In_Mayan_Splendor",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b9/In_mayan_spledor.jpg",
     "coverImageFile": "covers/in-mayan-splendor-66.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 67,
@@ -809,7 +866,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Horror_at_Oakdeene_and_Others",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/9/92/Horror_at_oakdeene.jpg",
     "coverImageFile": "covers/the-horror-at-oakdeene-and-others-67.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 68,
@@ -823,7 +881,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/And_Afterward%2C_the_Dark",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8b/And_afterward_the_dark.jpg",
     "coverImageFile": "covers/and-afterward-the-dark-68.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 69,
@@ -837,7 +896,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Kecksies_and_Other_Twilight_Tales",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/46/Kecksies.jpg",
     "coverImageFile": "covers/kecksies-and-other-twilight-tales-69.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 70,
@@ -851,7 +911,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Height_of_the_Scream",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5a/Height_of_the_scream.jpg",
     "coverImageFile": "covers/the-height-of-the-scream-70.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 71,
@@ -865,7 +926,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Literary_Swordsmen_and_Sorcerers",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b0/Literary_Swordsmen_and_Sorcerers.jpg",
     "coverImageFile": "covers/literary-swordsmen-and-sorcerers-71.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 72,
@@ -879,7 +941,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dwellers_in_Darkness",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/1/11/Dwellers_in_darkness.jpg",
     "coverImageFile": "covers/dwellers-in-darkness-72.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 73,
@@ -893,7 +956,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Selected_Letters_of_H._P._Lovecraft_V_(1934%E2%80%931937)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e9/SelectedLetters5.jpg",
     "coverImageFile": "covers/selected-letters-of-h-p-lovecraft-v-1934-1937-73.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 74,
@@ -907,7 +971,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Selected_Letters_of_H._P._Lovecraft_IV_(1932%E2%80%931934)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/1/18/SelectedLetters4.jpg",
     "coverImageFile": "covers/selected-letters-of-h-p-lovecraft-iv-1932-1934-74.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 75,
@@ -921,7 +986,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dreams_from_R'lyeh",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d6/Dreams_from_rlyeh.jpg",
     "coverImageFile": "covers/dreams-from-rlyeh-75.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 76,
@@ -935,7 +1001,8 @@ window.BOOKS = [
     "wikipediaUrl": null,
     "coverImageUrl": null,
     "coverImageFile": "covers/the-purcell-papers-76.webp",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 77,
@@ -949,7 +1016,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Nameless_Places",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fb/Nameless_places.jpg",
     "coverImageFile": "covers/nameless-places-77.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 78,
@@ -963,7 +1031,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_House_of_the_Worm",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/House_of_the_worm.jpg",
     "coverImageFile": "covers/the-house-of-the-worm-78.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 79,
@@ -977,7 +1046,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Harrigan's_File",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b1/Harrigans_file.jpg",
     "coverImageFile": "covers/harrigans-file-79.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 80,
@@ -991,7 +1061,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/X%C3%A9lucha_and_Others",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/d/dc/Xelucha.jpg",
     "coverImageFile": "covers/x-lucha-and-others-80.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 81,
@@ -999,13 +1070,14 @@ window.BOOKS = [
     "listTitle": "Howard Phillips Lovecraft: Dreamer on the Nightside",
     "listAuthor": "by Frank Belknap Long (1975)",
     "title": "Howard Phillips Lovecraft: Dreamer on the Nightside",
-    "author": null,
+    "author": "Frank Belknap Long",
     "coverArtist": null,
     "publicationDate": "1975",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Howard_Phillips_Lovecraft%3A_Dreamer_on_the_Nightside",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Frank_Belknap_Long_at_the_Craft_of_the_Horror_Writer_Panel%2C_18_August_1990_%28cropped%29.jpg",
     "coverImageFile": "covers/howard-phillips-lovecraft-dreamer-on-the-nightside-81.webp",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 82,
@@ -1019,7 +1091,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Watchers_Out_of_Time_and_Others",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/3f/Watchers_out_of_time.jpg",
     "coverImageFile": "covers/the-watchers-out-of-time-and-others-82.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 83,
@@ -1033,7 +1106,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Collected_Ghost_Stories",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/89/Collected_ghost_stories.jpg",
     "coverImageFile": "covers/collected-ghost-stories-83.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 84,
@@ -1047,7 +1121,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Beneath_the_Moors",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b7/Beneath_the_moors.jpg",
     "coverImageFile": "covers/beneath-the-moors-84.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 85,
@@ -1061,7 +1136,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Stories_of_Darkness_and_Dread",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a8/Stories_of_darkness_and_dread.jpg",
     "coverImageFile": "covers/stories-of-darkness-and-dread-85.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 86,
@@ -1075,7 +1151,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/From_Evil's_Pillow",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b0/From_evils_pillow.jpg",
     "coverImageFile": "covers/from-evils-pillow-86.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 87,
@@ -1089,7 +1166,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Demons_by_Daylight",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/61/Demons_by_daylight.jpg",
     "coverImageFile": "covers/demons-by-daylight-87.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 88,
@@ -1103,7 +1181,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Rim_of_the_Unknown",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/6a/Rim_of_the_unknow.jpg",
     "coverImageFile": "covers/the-rim-of-the-unknown-88.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 89,
@@ -1117,7 +1196,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Disclosures_in_Scarlet",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/bf/Disclosures_in_scarlet.jpg",
     "coverImageFile": "covers/disclosures-in-scarlet-89.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 90,
@@ -1127,11 +1207,12 @@ window.BOOKS = [
     "title": "The Arkham Collector: Volume I",
     "author": "edited by August Derleth",
     "coverArtist": null,
-    "publicationDate": "1971",
+    "publicationDate": "1972",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Arkham_Collector%3A_Volume_I",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fe/The_Arkham_Collector%2C_Volume_I_book_cover.png",
     "coverImageFile": "covers/the-arkham-collector-volume-i-90.png",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 91,
@@ -1145,7 +1226,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Caller_of_the_Black",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/7/77/Caller_of_the_black.jpg",
     "coverImageFile": "covers/the-caller-of-the-black-91.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 92,
@@ -1159,7 +1241,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Selected_Letters_of_H._P._Lovecraft_III_(1929%E2%80%931931)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/87/SelectedLetters3.jpg",
     "coverImageFile": "covers/selected-letters-of-h-p-lovecraft-iii-1929-1931-92.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 93,
@@ -1169,11 +1252,12 @@ window.BOOKS = [
     "title": "Songs and Sonnets Atlantean",
     "author": "Donald Sidney-Fryer",
     "coverArtist": "Gordon R. Barnett",
-    "publicationDate": "First Series June 16, 1971; Second Series summer 2003; Third Series September 2005; trilogy 2008",
+    "publicationDate": "1971",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Songs_and_Sonnets_Atlantean",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2f/Songs_and_sonnets_atlantean.jpg",
     "coverImageFile": "covers/songs-and-sonnets-atlantean-93.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 95,
@@ -1187,7 +1271,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dark_Things",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Dark_things.jpg",
     "coverImageFile": "covers/dark-things-95.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 96,
@@ -1201,7 +1286,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Eight_Tales",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4f/Eight_tales.jpg",
     "coverImageFile": "covers/eight-tales-96.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 98,
@@ -1215,7 +1301,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Face_in_the_Mirror",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4e/Faceinthemirror.jpg",
     "coverImageFile": "covers/the-face-in-the-mirror-98.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 99,
@@ -1229,7 +1316,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Selected_Poems_(C._A._Smith)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/63/Selected_poems.jpg",
     "coverImageFile": "covers/selected-poems-c-a-smith-99.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 103,
@@ -1243,7 +1331,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Other_Dimensions",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/28/Other_dimensions.jpg",
     "coverImageFile": "covers/other-dimensions-103.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 104,
@@ -1257,7 +1346,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Demons_and_Dinosaurs",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/55/Demons_and_dinosaurs.jpg",
     "coverImageFile": "covers/demons-and-dinosaurs-104.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 105,
@@ -1271,7 +1361,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Thirty_Years_of_Arkham_House%2C_1939%E2%80%9369%3A_A_History_and_Bibliography",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/84/Thirty_Years_of_Arkham_House%2C_1939%E2%80%9369_--_A_History_and_Bibliography_%28book_cover%29.jpg",
     "coverImageFile": "covers/thirty-years-of-arkham-house-1939-69-a-history-and-bibliography-105.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 107,
@@ -1285,7 +1376,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Folsom_Flint_and_Other_Curious_Tales",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e5/Folsom_flint.jpg",
     "coverImageFile": "covers/the-folsom-flint-and-other-curious-tales-107.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 108,
@@ -1295,11 +1387,12 @@ window.BOOKS = [
     "title": "New Tales of the Cthulhu Mythos",
     "author": "Ramsey Campbell",
     "coverArtist": "Jason Van Hollander",
-    "publicationDate": "1980",
+    "publicationDate": "1969",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Cthulhu_Mythos_anthology#New_Tales_of_the_Cthulhu_Mythos",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Tales_of_the_Cthulhu_Mythos.jpg",
     "coverImageFile": "covers/cthulhu-mythos-anthology-108.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 112,
@@ -1313,7 +1406,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Nightmares_and_Daydreams",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8b/Nightmares_and_daydreams.jpg",
     "coverImageFile": "covers/nightmares-and-daydreams-112.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 113,
@@ -1327,7 +1421,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Selected_Letters_of_H._P._Lovecraft_II_(1925%E2%80%931929)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/39/SelectedLetters2.jpg",
     "coverImageFile": "covers/selected-letters-of-h-p-lovecraft-ii-1925-1929-113.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 114,
@@ -1341,7 +1436,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Green_Round",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/bd/Green_round_first.jpg",
     "coverImageFile": "covers/the-green-round-114.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 116,
@@ -1355,7 +1451,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Strange_Gateways",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/52/Strange_gateways.jpg",
     "coverImageFile": "covers/strange-gateways-116.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 117,
@@ -1369,7 +1466,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Three_Tales_of_Horror",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d7/Three_tales_of_horror.jpg",
     "coverImageFile": "covers/three-tales-of-horror-117.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 118,
@@ -1383,7 +1481,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Mind_Parasites",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/55/Mind_parasites.jpg",
     "coverImageFile": "covers/the-mind-parasites-118.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 120,
@@ -1393,11 +1492,12 @@ window.BOOKS = [
     "title": "Travellers by Night",
     "author": "August Derleth",
     "coverArtist": "James Dietrich, design by Gary Gore",
-    "publicationDate": "1964",
+    "publicationDate": "1967",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Travellers_by_Night",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/ec/Travellers_by_night.jpg",
     "coverImageFile": "covers/travellers-by-night-120.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 121,
@@ -1411,7 +1511,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Deep_Waters_(book)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8a/Deep_waters.jpg",
     "coverImageFile": "covers/deep-waters-book-121.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 122,
@@ -1425,7 +1526,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Black_Medicine",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/69/Black_medicine.jpg",
     "coverImageFile": "covers/black-medicine-122.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 123,
@@ -1439,7 +1541,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Colonel_Markesan_and_Less_Pleasant_People",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/9/99/Colonel_markesan.jpg",
     "coverImageFile": "covers/colonel-markesan-and-less-pleasant-people-123.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 124,
@@ -1453,7 +1556,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Dark_Brotherhood_and_Other_Pieces",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c1/Dark_brotherhood.jpg",
     "coverImageFile": "covers/the-dark-brotherhood-and-other-pieces-124.webp",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 125,
@@ -1467,7 +1571,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Strange_Harvest_(book)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5c/Strange_harvest.jpg",
     "coverImageFile": "covers/strange-harvest-book-125.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 126,
@@ -1481,7 +1586,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Something_Breathing",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f1/Something_breathing.jpg",
     "coverImageFile": "covers/something-breathing-126.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 127,
@@ -1495,7 +1601,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Quick_and_the_Dead_(collection)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/1/14/Quick_and_the_dead.jpg",
     "coverImageFile": "covers/the-quick-and-the-dead-collection-127.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 129,
@@ -1509,7 +1616,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Poems_in_Prose_(Smith)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2d/Poems_in_prose.jpg",
     "coverImageFile": "covers/poems-in-prose-smith-129.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 130,
@@ -1519,11 +1627,12 @@ window.BOOKS = [
     "title": "Selected Letters I, 1911-1924",
     "author": "H. P. Lovecraft",
     "coverArtist": "Ronald Rich, Virgil Finlay and Gary Gore",
-    "publicationDate": "1964",
+    "publicationDate": "1965",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Selected_Letters_of_H._P._Lovecraft_I_(1911%E2%80%931924)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/44/SelectedLetters1.jpg",
     "coverImageFile": "covers/selected-letters-of-h-p-lovecraft-i-1911-1924-130.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 131,
@@ -1537,7 +1646,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Tales_of_Science_and_Sorcery",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/07/Tales_of_science_and_sorcery.jpg",
     "coverImageFile": "covers/tales-of-science-and-sorcery-131.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 132,
@@ -1551,7 +1661,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Nightmare_Need",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/1/13/Nightmare_need.jpg",
     "coverImageFile": "covers/nightmare-need-132.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 133,
@@ -1565,7 +1676,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Portraits_in_Moonlight",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/d/dc/Portraits_in_moonlight.jpg",
     "coverImageFile": "covers/portraits-in-moonlight-133.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 135,
@@ -1579,7 +1691,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Over_the_Edge_(anthology)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f1/Over_the_edge.jpg",
     "coverImageFile": "covers/over-the-edge-anthology-135.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 136,
@@ -1593,7 +1706,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Poems_for_Midnight",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a3/Poems_for_midnight.jpg",
     "coverImageFile": "covers/poems-for-midnight-136.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 137,
@@ -1607,7 +1721,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Inhabitant_of_the_Lake_and_Less_Welcome_Tenants",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d2/Inhabitant_of_the_lake.jpg",
     "coverImageFile": "covers/the-inhabitant-of-the-lake-and-less-welcome-tenants-137.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 138,
@@ -1621,7 +1736,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Dark_Man_and_Others",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f2/Dark_man_and_others.jpg",
     "coverImageFile": "covers/the-dark-man-and-others-138.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 139,
@@ -1635,7 +1751,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Mr._George_and_Other_Odd_Persons",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/28/Mr_george.jpg",
     "coverImageFile": "covers/mr-george-and-other-odd-persons-139.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 140,
@@ -1649,7 +1766,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Who_Fears_the_Devil%3F",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d6/Who_fears_the_devil.jpg",
     "coverImageFile": "covers/who-fears-the-devil-140.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 143,
@@ -1663,7 +1781,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Collected_Poems_(H._P._Lovecraft)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Collected_Poems_%28HP_Lovecraft_-_front_cover%29.jpg",
     "coverImageFile": "covers/collected-poems-h-p-lovecraft-143.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 144,
@@ -1677,7 +1796,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Horror_from_the_Hills",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/57/Horror_from_the_hills.jpg",
     "coverImageFile": "covers/the-horror-from-the-hills-144.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 145,
@@ -1691,7 +1811,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/100_Books_by_August_Derleth",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/100_books_by_august_derleth.jpg",
     "coverImageFile": "covers/100-books-by-august-derleth-145.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 146,
@@ -1705,7 +1826,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Trail_of_Cthulhu",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/%22The_Trail_of_Cthulhu%22%2C_by_August_Derleth.jpg",
     "coverImageFile": "covers/the-trail-of-cthulhu-146.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 147,
@@ -1719,7 +1841,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dark_Mind%2C_Dark_Heart",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5c/Dark_mind_dark_heart.jpg",
     "coverImageFile": "covers/dark-mind-dark-heart-147.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 148,
@@ -1733,7 +1856,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Lonesome_Places",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5d/Lonesome_places.jpg",
     "coverImageFile": "covers/lonesome-places-148.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 149,
@@ -1747,7 +1871,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dreams_and_Fancies",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/38/Dreams_and_fancies.jpg",
     "coverImageFile": "covers/dreams-and-fancies-149.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 151,
@@ -1761,7 +1886,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Fire_and_Sleet_and_Candlelight",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4c/Fire_and_sleet_and_candlelight.jpg",
     "coverImageFile": "covers/fire-and-sleet-and-candlelight-151.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 152,
@@ -1775,7 +1901,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Strayers_from_Sheol",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e5/Strayers_from_sheol.jpg",
     "coverImageFile": "covers/strayers-from-sheol-152.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 153,
@@ -1789,7 +1916,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Invaders_from_the_Dark",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/69/Invaders_from_the_dark.jpg",
     "coverImageFile": "covers/invaders-from-the-dark-153.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 154,
@@ -1803,7 +1931,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Pleasant_Dreams%3A_Nightmares",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/9/93/Pleasant_dreams_nightmares.jpg",
     "coverImageFile": "covers/pleasant-dreams-nightmares-154.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 155,
@@ -1817,7 +1946,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Abominations_of_Yondo",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/82/Abominations_of_yondo.JPG",
     "coverImageFile": "covers/the-abominations-of-yondo-155.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 156,
@@ -1831,7 +1961,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Shuttered_Room_and_Other_Pieces",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/ff/Shuttered_room.jpg",
     "coverImageFile": "covers/the-shuttered-room-and-other-pieces-156.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 157,
@@ -1845,7 +1976,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Some_Notes_on_H._P._Lovecraft",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/45/Some_notes_on_hpl.jpg",
     "coverImageFile": "covers/some-notes-on-h-p-lovecraft-157.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 159,
@@ -1859,7 +1991,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Nine_Horrors_and_a_Dream",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/62/Nine_horrors_and_a_dream.jpg",
     "coverImageFile": "covers/nine-horrors-and-a-dream-159.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 160,
@@ -1873,7 +2006,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Mask_of_Cthulhu",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4f/Mask_of_cthulhu.jpg",
     "coverImageFile": "covers/the-mask-of-cthulhu-160.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 161,
@@ -1887,7 +2021,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Spells_and_Philtres",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4d/Spells_and_philtres.jpg",
     "coverImageFile": "covers/spells-and-philtres-161.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 162,
@@ -1897,11 +2032,12 @@ window.BOOKS = [
     "title": "Always Comes Evening",
     "author": "Robert E. Howard",
     "coverArtist": "Frank Utpatel",
-    "publicationDate": "1957; 69 years ago (1957)",
+    "publicationDate": "1957",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Always_Comes_Evening",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/ba/Always_comes_evening.jpg",
     "coverImageFile": "covers/always-comes-evening-162.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 163,
@@ -1915,7 +2051,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Survivor_and_Others",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a1/Survivor_and_others.jpg",
     "coverImageFile": "covers/the-survivor-and-others-163.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 164,
@@ -1929,7 +2066,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Feasting_Dead",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/bc/Feasting_dead.jpg",
     "coverImageFile": "covers/the-feasting-dead-164.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 165,
@@ -1943,7 +2081,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Curse_of_Yig_(book)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/82/Curse_of_yig.jpg",
     "coverImageFile": "covers/the-curse-of-yig-book-165.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 166,
@@ -1957,7 +2096,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Night's_Yawning_Peal%3A_A_Ghostly_Company",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5f/Night%27s_yawning_peal.jpg",
     "coverImageFile": "covers/nights-yawning-peal-a-ghostly-company-166.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 167,
@@ -1971,7 +2111,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Tales_from_Underwood",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c9/Tales_from_underwood.jpg",
     "coverImageFile": "covers/tales-from-underwood-167.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 168,
@@ -1985,7 +2126,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Dark_Chateau",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c1/Dark_chateau.jpg",
     "coverImageFile": "covers/the-dark-chateau-168.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 169,
@@ -1999,7 +2141,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Hornbook_for_Witches",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/61/A_Hornbook_for_Witches_%28cover_art%29.jpg",
     "coverImageFile": "covers/a-hornbook-for-witches-169.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 170,
@@ -2013,7 +2156,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Throne_of_Saturn_(short_story_collection)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/6b/Throne_of_saturn.jpg",
     "coverImageFile": "covers/the-throne-of-saturn-short-story-collection-170.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 175,
@@ -2027,7 +2171,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Something_About_Cats_and_Other_Pieces",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/32/Something_about_cats.jpg",
     "coverImageFile": "covers/something-about-cats-and-other-pieces-175.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 176,
@@ -2041,7 +2186,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Not_Long_for_this_World",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/86/Not_long_for_this_world.jpg",
     "coverImageFile": "covers/not-long-for-this-world-176.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 177,
@@ -2055,7 +2201,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Genius_Loci_and_Other_Tales",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/9/99/Genius_loci.jpg",
     "coverImageFile": "covers/genius-loci-and-other-tales-177.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 182,
@@ -2069,7 +2216,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Roads_(novel)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/6d/Book_Cover_for_%22Roads%22.jpg",
     "coverImageFile": "covers/roads-novel-182.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 183,
@@ -2083,7 +2231,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Fourth_Book_of_Jorkens",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e7/Fourth_book_of_jorkens_first.jpg",
     "coverImageFile": "covers/the-fourth-book-of-jorkens-183.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 184,
@@ -2097,7 +2246,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Web_of_Easter_Island",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fe/Web_of_easter_island.jpg",
     "coverImageFile": "covers/the-web-of-easter-island-184.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 185,
@@ -2111,7 +2261,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Travelling_Grave_and_Other_Stories",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e2/Travelling_grave.jpg",
     "coverImageFile": "covers/the-travelling-grave-and-other-stories-185.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 186,
@@ -2125,7 +2276,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Night's_Black_Agents",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/26/Nights_black_agents.jpg",
     "coverImageFile": "covers/nights-black-agents-186.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 187,
@@ -2139,7 +2291,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Revelations_in_Black",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fb/Revelations_in_black.jpg",
     "coverImageFile": "covers/revelations-in-black-187.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 188,
@@ -2153,7 +2306,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dark_Carnival_(short_story_collection)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d5/Dark_carnival_originall.jpg",
     "coverImageFile": "covers/dark-carnival-short-story-collection-188.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 189,
@@ -2167,7 +2321,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dark_of_the_Moon%3A_Poems_of_Fantasy_and_the_Macabre",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5e/Dark_of_the_moon.jpg",
     "coverImageFile": "covers/dark-of-the-moon-poems-of-fantasy-and-the-macabre-189.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 190,
@@ -2181,7 +2336,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/This_Mortal_Coil_(book)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a9/This_mortal_coil.jpg",
     "coverImageFile": "covers/this-mortal-coil-book-190.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 191,
@@ -2195,7 +2351,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Slan",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/ca/Slan.jpg",
     "coverImageFile": "covers/slan-191.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 192,
@@ -2209,7 +2366,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Clock_Strikes_Twelve",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/45/Clock_strikes_twelve.jpg",
     "coverImageFile": "covers/the-clock-strikes-twelve-192.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 193,
@@ -2223,7 +2381,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Fearful_Pleasures",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/45/Fearful_pleasures.jpg",
     "coverImageFile": "covers/fearful-pleasures-193.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 194,
@@ -2237,7 +2396,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/West_India_Lights",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/ed/West_india_lights.jpg",
     "coverImageFile": "covers/west-india-lights-194.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 195,
@@ -2251,7 +2411,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Skull-Face_and_Others",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c0/Skull_face_and_others.jpg",
     "coverImageFile": "covers/skull-face-and-others-195.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 196,
@@ -2265,7 +2426,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_House_on_the_Borderland_and_Other_Novels",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/57/House_on_the_borderland.jpg",
     "coverImageFile": "covers/the-house-on-the-borderland-and-other-novels-196.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 197,
@@ -2279,7 +2441,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Doll_and_One_Other",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/39/Doll_and_one_other.jpg",
     "coverImageFile": "covers/the-doll-and-one-other-197.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 198,
@@ -2293,7 +2456,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Hounds_of_Tindalos_(book)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/9/9a/Hounds_of_tindalos.jpg",
     "coverImageFile": "covers/the-hounds-of-tindalos-book-198.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 199,
@@ -2307,7 +2471,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Lurker_at_the_Threshold",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/06/Lurker_at_the_threshold.jpg",
     "coverImageFile": "covers/the-lurker-at-the-threshold-199.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 200,
@@ -2321,7 +2486,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Green_Tea_and_Other_Ghost_Stories",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e1/Green_Tea_and_Other_Ghost_Stories.jpg",
     "coverImageFile": "covers/green-tea-and-other-ghost-stories-200.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 201,
@@ -2335,7 +2501,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Witch_House",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/31/Witch_house.jpg",
     "coverImageFile": "covers/witch-house-201.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 202,
@@ -2349,7 +2516,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Opener_of_the_Way",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/07/Opener_of_the_way.jpg",
     "coverImageFile": "covers/the-opener-of-the-way-202.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 203,
@@ -2363,7 +2531,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Something_Near",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4a/Something_near.jpg",
     "coverImageFile": "covers/something-near-203.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 204,
@@ -2377,7 +2546,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Marginalia_(collection)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Marginalia_lovecraft.jpg",
     "coverImageFile": "covers/marginalia-collection-204.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 205,
@@ -2391,7 +2561,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Lost_Worlds_(Smith_collection)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/3e/Lost_Worlds_Smith.jpg",
     "coverImageFile": "covers/lost-worlds-smith-collection-205.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 206,
@@ -2405,7 +2576,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Jumbee_and_Other_Uncanny_Tales",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4e/Jumbee.JPG",
     "coverImageFile": "covers/jumbee-and-other-uncanny-tales-206.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 207,
@@ -2419,7 +2591,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Eye_and_the_Finger",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/Eye_and_the_finger.jpg",
     "coverImageFile": "covers/the-eye-and-the-finger-207.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 208,
@@ -2433,7 +2606,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Beyond_the_Wall_of_Sleep_(collection)",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/40/Beyond_the_wall_of_sleep.jpg",
     "coverImageFile": "covers/beyond-the-wall-of-sleep-collection-208.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 209,
@@ -2447,7 +2621,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Out_of_Space_and_Time",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/%22Out_of_Space_and_Time%22%2C_by_Clark_Ashton_Smith.jpg",
     "coverImageFile": "covers/out-of-space-and-time-209.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 210,
@@ -2461,7 +2636,8 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Someone_in_the_Dark",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f0/Someone_in_the_dark.jpg",
     "coverImageFile": "covers/someone-in-the-dark-210.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
   },
   {
     "id": 211,
@@ -2475,6 +2651,327 @@ window.BOOKS = [
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Outsider_and_Others",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/27/The_Outsider_and_Others_book_cover.jpg",
     "coverImageFile": "covers/the-outsider-and-others-211.jpg",
-    "error": null
+    "error": null,
+    "imprint": "arkham_house"
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "2000s",
+    "listTitle": "The Original Text Solar Pons Omnibus Edition",
+    "listAuthor": "by August Derleth (2000)",
+    "title": "The Original Text Solar Pons Omnibus Edition",
+    "author": "August Derleth",
+    "coverArtist": "Jean-Pierre Cagnat",
+    "publicationDate": "2000",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Original_Text_Solar_Pons_Omnibus_Edition",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/6/66/OTSolarPonsOmnibus.jpg",
+    "coverImageFile": "covers/the-original-text-solar-pons-omnibus-edition-212.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 212
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1990s",
+    "listTitle": "In Lovecraft's Shadow",
+    "listAuthor": "by August Derleth (1998)",
+    "title": "In Lovecraft's Shadow",
+    "author": "August Derleth",
+    "coverArtist": "Stephen E. Fabian",
+    "publicationDate": "1998",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/In_Lovecraft's_Shadow",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/31/In_lovecrafts_shadow.jpg",
+    "coverImageFile": "covers/in-lovecrafts-shadow-213.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 213
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1990s",
+    "listTitle": "The Final Adventures of Solar Pons",
+    "listAuthor": "by August Derleth (1998)",
+    "title": "The Final Adventures of Solar Pons",
+    "author": "August Derleth",
+    "coverArtist": "Jean-Pierre Cagnat",
+    "publicationDate": "1998",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Final_Adventures_of_Solar_Pons",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d2/Final_Adventures_of_Solar_Pons.jpg",
+    "coverImageFile": "covers/the-final-adventures-of-solar-pons-214.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 214
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1980s",
+    "listTitle": "The Solar Pons Omnibus",
+    "listAuthor": "by August Derleth (1982)",
+    "title": "The Solar Pons Omnibus",
+    "author": "August Derleth",
+    "coverArtist": null,
+    "publicationDate": "1982",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Solar_Pons_Omnibus",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f1/The_Solar_Pons_Omnibus.jpg",
+    "coverImageFile": "covers/the-solar-pons-omnibus-215.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 215
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1970s",
+    "listTitle": "Prince Zaleski and Cummings King Monk",
+    "listAuthor": "by M. P. Shiel (1977)",
+    "title": "Prince Zaleski and Cummings King Monk",
+    "author": "M. P. Shiel",
+    "coverArtist": "Joe Wehrle, Jr.",
+    "publicationDate": "1977",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Prince_Zaleski_and_Cummings_King_Monk",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/1/18/Prince_zaleski.jpg",
+    "coverImageFile": "covers/prince-zaleski-and-cummings-king-monk-216.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 216
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1970s",
+    "listTitle": "The Chronicles of Solar Pons",
+    "listAuthor": "by August Derleth (1973)",
+    "title": "The Chronicles of Solar Pons",
+    "author": "August Derleth",
+    "coverArtist": "Frank Utpatel",
+    "publicationDate": "1973",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Chronicles_of_Solar_Pons",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/0f/Chronicles_of_solar_pons.jpg",
+    "coverImageFile": "covers/the-chronicles-of-solar-pons-217.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 217
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1960s",
+    "listTitle": "Number Seven, Queer Street",
+    "listAuthor": "by Margery Lawrence (1969)",
+    "title": "Number Seven, Queer Street",
+    "author": "Margery Lawrence",
+    "coverArtist": "Cecil W Bacon",
+    "publicationDate": "1969",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Number_Seven%2C_Queer_Street",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/bc/Number_seven_queer_street.jpg",
+    "coverImageFile": "covers/number-seven-queer-street-218.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 218
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1960s",
+    "listTitle": "Mr. Fairlies's Final Journey",
+    "listAuthor": "by August Derleth (1968)",
+    "title": "Mr. Fairlie's Final Journey",
+    "author": "August Derleth",
+    "coverArtist": "Frank Utpatel",
+    "publicationDate": "1968",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Mr._Fairlies's_Final_Journey",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c1/Mr_fairlies_final_journey.jpg",
+    "coverImageFile": "covers/mr-fairliess-final-journey-219.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 219
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1960s",
+    "listTitle": "The Adventure of the Unique Dickensians",
+    "listAuthor": "by August Derleth (1968)",
+    "title": "The Adventure of the Unique Dickensians",
+    "author": "August Derleth",
+    "coverArtist": "Frank Utpatel",
+    "publicationDate": "1968",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Adventure_of_the_Unique_Dickensians",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/3e/Adventure_of_the_unique_dickensians.jpg",
+    "coverImageFile": "covers/the-adventure-of-the-unique-dickensians-220.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 220
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1960s",
+    "listTitle": "Wisconsin Murders",
+    "listAuthor": "by August Derleth (1968)",
+    "title": "Wisconsin Murders",
+    "author": "August Derleth",
+    "coverArtist": "Ronald Clyne",
+    "publicationDate": "1968",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Wisconsin_Murders",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/3/39/Wisconsin_murders.jpg",
+    "coverImageFile": "covers/wisconsin-murders-221.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 221
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1960s",
+    "listTitle": "The Exploits of Chevalier Dupin",
+    "listAuthor": "by Michael Harrison (1968)",
+    "title": "The Exploits of the Chevalier Dupin",
+    "author": "Michael Harrison",
+    "coverArtist": "Ronald Clyne",
+    "publicationDate": "1968",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Exploits_of_Chevalier_Dupin",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/2/26/The_Exploits_of_Chevalier_Dupin.jpg",
+    "coverImageFile": "covers/the-exploits-of-chevalier-dupin-222.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 222
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1960s",
+    "listTitle": "A Praed Street Dossier",
+    "listAuthor": "by August Derleth (1968)",
+    "title": "A Praed Street Dossier",
+    "author": "August Derleth",
+    "coverArtist": "Frank Utpatel",
+    "publicationDate": "1968",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/A_Praed_Street_Dossier",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/08/Praed_street_dossier.jpg",
+    "coverImageFile": "covers/a-praed-street-dossier-223.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 223
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1960s",
+    "listTitle": "The Phantom-Fighter",
+    "listAuthor": "by Seabury Quinn (1966)",
+    "title": "The Phantom Fighter",
+    "author": "Seabury Quinn",
+    "coverArtist": "Frank Utpatel",
+    "publicationDate": "1966",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Phantom-Fighter",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/01/Phantom_fighter.jpg",
+    "coverImageFile": "covers/the-phantom-fighter-224.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 224
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1960s",
+    "listTitle": "The Casebook of Solar Pons",
+    "listAuthor": "by August Derleth (1965)",
+    "title": "The Casebook of Solar Pons",
+    "author": "August Derleth",
+    "coverArtist": "Frank Utpatel",
+    "publicationDate": "1965",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Casebook_of_Solar_Pons",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/0/0d/Casebook_of_solar_pons.jpg",
+    "coverImageFile": "covers/the-casebook-of-solar-pons-225.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 225
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1960s",
+    "listTitle": "The Reminiscences of Solar Pons",
+    "listAuthor": "by August Derleth (1961)",
+    "title": "The Reminiscences of Solar Pons",
+    "author": "August Derleth",
+    "coverArtist": "Frank Utpatel",
+    "publicationDate": "1961",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Reminiscences_of_Solar_Pons",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c7/Reminiscences_of_solar_pons.jpg",
+    "coverImageFile": "covers/the-reminiscences-of-solar-pons-226.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 226
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1950s",
+    "listTitle": "The Return of Solar Pons",
+    "listAuthor": "by August Derleth (1958)",
+    "title": "The Return of Solar Pons",
+    "author": "August Derleth",
+    "coverArtist": "Frank Utpatel",
+    "publicationDate": "1958",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Return_of_Solar_Pons",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5a/Return_of_solar_pons.jpg",
+    "coverImageFile": "covers/the-return-of-solar-pons-227.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 227
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1950s",
+    "listTitle": "Three Problems for Solar Pons",
+    "listAuthor": "by August Derleth (1952)",
+    "title": "Three Problems for Solar Pons",
+    "author": "August Derleth",
+    "coverArtist": "Ronald Clyne",
+    "publicationDate": "1952",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Three_Problems_for_Solar_Pons",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/1/1b/Three_problems_for_solar_pons.jpg",
+    "coverImageFile": "covers/three-problems-for-solar-pons-228.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 228
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1950s",
+    "listTitle": "The Memoirs of Solar Pons",
+    "listAuthor": "by August Derleth (1951)",
+    "title": "The Memoirs of Solar Pons",
+    "author": "August Derleth",
+    "coverArtist": "Frank Utpatel",
+    "publicationDate": "1951",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Memoirs_of_Solar_Pons",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/5/58/Memoirs_of_solar_pons.jpg",
+    "coverImageFile": "covers/the-memoirs-of-solar-pons-229.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 229
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1940s",
+    "listTitle": "Carnacki, the Ghost-Finder",
+    "listAuthor": "by William Hope Hodgson (1947)",
+    "title": "Carnacki the Ghost-Finder",
+    "author": "William Hope Hodgson",
+    "coverArtist": null,
+    "publicationDate": "1947",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Carnacki%2C_the_Ghost-Finder",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/ba/Carnacki%2C_the_Ghost-Finder_%28book_cover%29.jpg",
+    "coverImageFile": "covers/carnacki-the-ghost-finder-230.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 230
+  },
+  {
+    "imprint": "mycroft_moran",
+    "decade": "1940s",
+    "listTitle": "\"In Re: Sherlock Holmes\"--The Adventures of Solar Pons",
+    "listAuthor": "- (a.k.a. Regarding Sherlock Holmes: The Adventures of Solar Pons) - (in the UK: The Adventures of Solar Pons), by August Derleth (1945)",
+    "title": "\"In Re: Sherlock Holmes\" -- The Adventures of Solar Pons",
+    "author": "August Derleth",
+    "coverArtist": null,
+    "publicationDate": "1945",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/In_Re%3A_Sherlock_Holmes",
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fb/In_Re_Sherlock_Holmes.jpg",
+    "coverImageFile": "covers/in-re-sherlock-holmes-231.jpg",
+    "hidden": false,
+    "error": null,
+    "id": 231
   }
 ];

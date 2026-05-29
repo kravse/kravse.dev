@@ -45,7 +45,7 @@ window.MY_COLLECTION = [
     "title": "Mask of Cthulhu",
     "author": "August Dereleth",
     "year": "1958",
-    "status": "order"
+    "status": "shelf"
   },
   {
     "title": "Abominations of Yondo",
@@ -72,12 +72,6 @@ window.MY_COLLECTION = [
     "status": "shelf"
   },
   {
-    "title": "The Horror From The Hills",
-    "author": "Frank Belknap Long",
-    "year": "1963",
-    "status": "shelf"
-  },
-  {
     "title": "The Trail of Cthulhu",
     "author": "August Derleth",
     "year": "1962",
@@ -86,6 +80,12 @@ window.MY_COLLECTION = [
   {
     "title": "The Dunwich Horror and Others",
     "author": "H. P. Lovecraft",
+    "year": "1963",
+    "status": "shelf"
+  },
+  {
+    "title": "The Horror From The Hills",
+    "author": "Frank Belknap Long",
     "year": "1963",
     "status": "shelf"
   },
@@ -219,7 +219,7 @@ window.MY_COLLECTION = [
     "title": "New Tales of the Cthulhu Mythos",
     "author": "Ramsey Campbell (Ed.)",
     "year": "1980",
-    "status": "order"
+    "status": "shelf"
   },
   {
     "title": "Dreams of Dark and Light",

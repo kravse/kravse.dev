@@ -87,7 +87,7 @@
 
 .book-detail-nav {
   position: absolute;
-  top: 50%;
+  top: 45%;
   z-index: 2;
   width: 2.75rem;
   height: 2.75rem;
@@ -379,6 +379,10 @@ body.book-detail-open {
 @media (max-width: 640px) {
   .book-detail-cover {
     width: min(17rem, calc(100% - 8rem));
+  }
+
+  .book-detail-nav {
+    top: 42%;
   }
 
   .book-detail-body .title {

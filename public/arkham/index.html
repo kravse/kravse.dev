@@ -1254,13 +1254,24 @@
         .stats-filters {
           order: 1;
           display: grid;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1fr);
           gap: 0.4rem;
           width: 100%;
         }
 
+        .stats-filters--two {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
         .stats-filters .hidden-stat {
           grid-column: 1 / -1;
+        }
+
+        .stats-filters .mycroft-stat {
+          padding-left: 0.35rem;
+          padding-right: 0.35rem;
+          font-size: 0.66rem;
+          letter-spacing: 0.03em;
         }
 
         .stat-showing {
@@ -1313,6 +1324,10 @@
 
         .card-bottom-row {
           padding-top: 0.15rem;
+        }
+
+        .card .want-btn-readonly {
+          cursor: default;
         }
 
         .card-wiki-btn {
@@ -1848,7 +1863,7 @@
         const filters = [
           `<button type="button" class="stat owned-stat stat-toggle${collectionOnly ? " active" : ""}" id="collection-filter-toggle" aria-pressed="${collectionOnly}">COLLECTION</button>`,
           hasMycroft
-            ? `<button type="button" class="stat stat-toggle${mycroftOnly ? " active" : ""}" id="mycroft-filter-toggle" aria-pressed="${mycroftOnly}">MYCROFT &amp; MORAN</button>`
+            ? `<button type="button" class="stat mycroft-stat stat-toggle${mycroftOnly ? " active" : ""}" id="mycroft-filter-toggle" aria-pressed="${mycroftOnly}">MYCROFT &amp; MORAN</button>`
             : "",
           `<button type="button" class="stat want-stat stat-toggle${wantOnly ? " active" : ""}" id="want-filter-toggle" aria-pressed="${wantOnly}">${wantLabel}</button>`,
           hiddenCount
@@ -1860,7 +1875,7 @@
 
         stats.innerHTML = `
           <span class="stat stat-showing">SHOWING ${visible.length}/${total}</span>
-          <div class="stats-filters">${filters}</div>
+          <div class="stats-filters${hasMycroft ? "" : " stats-filters--two"}">${filters}</div>
         `;
       }
 
@@ -2045,19 +2060,26 @@
       `;
       }
 
-      function renderWantButton(book) {
+      function renderWantButton(book, { interactive = true } = {}) {
         if (findCollectionMatch(book)) {
           return "";
         }
 
         const wanted = isWanted(book);
+        const label = wanted ? "Wanted" : "Want";
+        const className = `want-btn${wanted ? " active" : ""}${interactive ? "" : " want-btn-readonly"}`;
+
+        if (!interactive) {
+          return `<span class="${className}">${label}</span>`;
+        }
+
         return `
         <button
           type="button"
-          class="want-btn${wanted ? " active" : ""}"
+          class="${className}"
           data-book-id="${book.id}"
           aria-pressed="${wanted}"
-        >${wanted ? "Wanted" : "Want"}</button>
+        >${label}</button>
       `;
       }
 
@@ -2104,7 +2126,9 @@
         const coverActions = renderCoverActions(book);
 
         const wikiButton = renderWikiButton(book.wikipediaUrl);
-        const wantButton = renderWantButton(book);
+        const wantButton = renderWantButton(book, {
+          interactive: !isMobileViewport(),
+        });
         const ownedBadge = owned
           ? `<span class="owned-badge">${owned.status === "order" ? "On order" : "Collection"}</span>`
           : "";
@@ -2451,7 +2475,7 @@
         }
 
         const wantButton = event.target.closest(".want-btn");
-        if (wantButton) {
+        if (wantButton && !isMobileViewport()) {
           event.preventDefault();
           event.stopPropagation();
           toggleWant(Number(wantButton.dataset.bookId));

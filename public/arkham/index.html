@@ -1110,12 +1110,16 @@
         const wantButton = renderWantButton(book);
         const bottomRow = renderCardBottomRow(wantButton, wikiButton, ownedBadge);
 
+        const descriptionHtml = book.description?.trim()
+          ? `<div class="book-detail-description">${escapeHtml(book.description)}</div>`
+          : `<div class="book-detail-description book-detail-description--empty" aria-hidden="true"></div>`;
+
         bookDetailBody.innerHTML = `
         ${hiddenBadge}
         <h2 class="title" id="book-detail-title">${book.title || "Untitled"}</h2>
         ${book.publicationDate ? `<div class="date">${book.publicationDate}</div>` : ""}
         <div class="book-detail-meta">${renderBookMetaHtml(book)}</div>
-        ${renderBookDescriptionHtml(book)}
+        ${descriptionHtml}
       `;
         if (bookDetailActions) {
           bookDetailActions.innerHTML = bottomRow;
@@ -1125,6 +1129,12 @@
         document.body.classList.add("book-detail-open");
         if (bookDetailScroll) {
           bookDetailScroll.scrollTop = 0;
+        }
+        const detailDescription = bookDetailBody.querySelector(
+          ".book-detail-description",
+        );
+        if (detailDescription) {
+          detailDescription.scrollTop = 0;
         }
         updateDetailNav();
       }

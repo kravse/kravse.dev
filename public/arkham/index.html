@@ -356,10 +356,12 @@
       const headerLogo = document.getElementById("header-logo");
       const headerFiltersToggle = document.getElementById("header-filters-toggle");
       const readOnly = window.READ_ONLY === true;
+      const COLLECTION_LOCAL = window.COLLECTION_LOCAL === true;
       const LOGO_ARKHAM = "images/arkham-house.jpg";
       const LOGO_MYCROFT = "images/Mycroft_moran.png";
       const SORT_STORAGE_KEY = "arkham-sort";
       const WANT_STORAGE_KEY = "arkham-want-list";
+      const COLLECTION_STORAGE_KEY = "arkham-collection";
       const HEADER_FILTERS_STORAGE_KEY = "arkham-header-filters-expanded";
       const SORT_MODES = new Set(["default", "date-desc", "date-asc", "title"]);
       let collection = [];
@@ -371,6 +373,7 @@
       let mycroftOnly = false;
       let wantOnly = false;
       let wantIds = new Set();
+      let collectionIds = new Set();
       let headerFiltersExpanded = true;
       let detailBookId = null;
 
@@ -506,6 +509,17 @@
         return null;
       }
 
+      function getCollectionItem(book) {
+        if (COLLECTION_LOCAL) {
+          return collectionIds.has(book.id) ? { status: "shelf" } : null;
+        }
+        return findCollectionMatch(book);
+      }
+
+      function isInCollection(book) {
+        return getCollectionItem(book) != null;
+      }
+
       function bookCoversCollectionItem(book, item) {
         const bookYear = parseYear(book.publicationDate);
         const candidates = [book.title, book.listTitle].filter(Boolean);
@@ -525,12 +539,21 @@
         const eligible = books.filter(
           (book) => !isDeleted(book) && (includeHidden || !book.hidden),
         );
+        if (COLLECTION_LOCAL) {
+          return eligible.filter((book) => collectionIds.has(book.id)).length;
+        }
         return collection.filter((item) =>
           eligible.some((book) => bookCoversCollectionItem(book, item)),
         ).length;
       }
 
       async function loadCollection() {
+        if (COLLECTION_LOCAL) {
+          collection = [];
+          loadCollectionIds();
+          return;
+        }
+
         try {
           const response = await fetch("my_collection/my_collection.csv");
           if (response.ok) {
@@ -640,6 +663,37 @@
         }
       }
 
+      function loadCollectionIds() {
+        try {
+          const saved = localStorage.getItem(COLLECTION_STORAGE_KEY);
+          if (!saved) {
+            collectionIds = new Set();
+            return;
+          }
+          const parsed = JSON.parse(saved);
+          if (!Array.isArray(parsed)) {
+            collectionIds = new Set();
+            return;
+          }
+          collectionIds = new Set(
+            parsed.map((id) => Number(id)).filter((id) => Number.isFinite(id)),
+          );
+        } catch (_) {
+          collectionIds = new Set();
+        }
+      }
+
+      function saveCollectionIds() {
+        try {
+          localStorage.setItem(
+            COLLECTION_STORAGE_KEY,
+            JSON.stringify([...collectionIds].sort((a, b) => a - b)),
+          );
+        } catch (_) {
+          // localStorage unavailable
+        }
+      }
+
       function isWanted(book) {
         return wantIds.has(book.id);
       }
@@ -653,8 +707,31 @@
           wantIds.delete(id);
         } else {
           wantIds.add(id);
+          if (COLLECTION_LOCAL && collectionIds.has(id)) {
+            collectionIds.delete(id);
+            saveCollectionIds();
+          }
         }
         saveWantList();
+        render();
+        if (!bookDetailDialog.hidden) {
+          openBookDetail(detailBookId);
+        }
+      }
+
+      function toggleCollection(bookId) {
+        const id = Number(bookId);
+        if (!Number.isFinite(id)) {
+          return;
+        }
+        if (collectionIds.has(id)) {
+          collectionIds.delete(id);
+        } else {
+          collectionIds.add(id);
+          wantIds.delete(id);
+          saveWantList();
+        }
+        saveCollectionIds();
         render();
         if (!bookDetailDialog.hidden) {
           openBookDetail(detailBookId);
@@ -665,6 +742,13 @@
         const showHidden = showHiddenInput.checked;
         return getActiveBooks().filter(
           (book) => (showHidden || !book.hidden) && isWanted(book),
+        ).length;
+      }
+
+      function getCollectionCount() {
+        const showHidden = showHiddenInput.checked;
+        return getActiveBooks().filter(
+          (book) => (showHidden || !book.hidden) && isInCollection(book),
         ).length;
       }
 
@@ -712,6 +796,14 @@
       function getStatTotal(all) {
         const showHidden = showHiddenInput.checked;
         if (collectionOnly) {
+          if (COLLECTION_LOCAL) {
+            return all.filter(
+              (book) =>
+                !isDeleted(book) &&
+                (showHidden || !book.hidden) &&
+                isInCollection(book),
+            ).length;
+          }
           return collection.length;
         }
         return all.filter((book) => showHidden || !book.hidden).length;
@@ -731,8 +823,12 @@
         );
         const wantCount = getWantCount();
         const wantLabel = wantCount ? `WANT (${wantCount})` : "WANT";
+        const collectionCount = COLLECTION_LOCAL ? getCollectionCount() : 0;
+        const collectionLabel = collectionCount
+          ? `COLLECTION (${collectionCount})`
+          : "COLLECTION";
         const filters = [
-          `<button type="button" class="stat owned-stat stat-toggle${collectionOnly ? " active" : ""}" id="collection-filter-toggle" aria-pressed="${collectionOnly}">COLLECTION</button>`,
+          `<button type="button" class="stat owned-stat stat-toggle${collectionOnly ? " active" : ""}" id="collection-filter-toggle" aria-pressed="${collectionOnly}">${collectionLabel}</button>`,
           hasMycroft
             ? `<button type="button" class="stat mycroft-stat stat-toggle${mycroftOnly ? " active" : ""}" id="mycroft-filter-toggle" aria-pressed="${mycroftOnly}">MYCROFT &amp; MORAN</button>`
             : "",
@@ -758,7 +854,7 @@
             hiddenOnly ? book.hidden : showHidden || !book.hidden,
           )
           .filter((book) => !mycroftOnly || book.imprint === "mycroft_moran")
-          .filter((book) => !collectionOnly || findCollectionMatch(book))
+          .filter((book) => !collectionOnly || isInCollection(book))
           .filter((book) => !wantOnly || isWanted(book))
           .filter((book) => matchesSearch(book, query));
       }
@@ -1078,15 +1174,43 @@
       }
 
       function renderCardWantBadge(book) {
-        if (findCollectionMatch(book) || !isWanted(book)) {
+        if (isInCollection(book) || !isWanted(book)) {
           return "";
         }
 
         return `<span class="want-btn active want-badge">Wanted</span>`;
       }
 
+      function renderCollectionButton(book) {
+        if (!COLLECTION_LOCAL) {
+          return "";
+        }
+
+        const collected = isInCollection(book);
+        const label = collected ? "Collection" : "Collect";
+        const className = `collection-btn${collected ? " active" : ""}`;
+
+        return `
+        <button
+          type="button"
+          class="${className}"
+          data-book-id="${book.id}"
+          aria-pressed="${collected}"
+        >${label}</button>
+      `;
+      }
+
+      function renderOwnedBadge(book) {
+        const owned = getCollectionItem(book);
+        if (!owned) {
+          return "";
+        }
+
+        return `<span class="owned-badge">${owned.status === "order" ? "On order" : "Collection"}</span>`;
+      }
+
       function renderWantButton(book) {
-        if (findCollectionMatch(book)) {
+        if (isInCollection(book)) {
           return "";
         }
 
@@ -1159,17 +1283,15 @@
       };
 
       function renderCard(book) {
-        const owned = findCollectionMatch(book);
-        const ownedClass = owned ? " owned" : "";
+        const inCollection = isInCollection(book);
+        const ownedClass = inCollection ? " owned" : "";
         const hiddenClass = book.hidden ? " hidden-book" : "";
         const imageHtml = renderCover(book, book.coverCacheKey);
         const coverActions = renderCoverActions(book);
 
         const imprintBadge = renderImprintBadge(book, "card");
         const wantBadge = renderCardWantBadge(book);
-        const ownedBadge = owned
-          ? `<span class="owned-badge">${owned.status === "order" ? "On order" : "Collection"}</span>`
-          : "";
+        const ownedBadge = renderOwnedBadge(book);
         const bottomRow = renderCardBottomRow(
           imprintBadge,
           wantBadge,
@@ -1365,10 +1487,6 @@
         refreshDetailToolbar(book);
 
         bookDetailCover.innerHTML = renderCover(book, book.coverCacheKey);
-        const owned = findCollectionMatch(book);
-        const ownedBadge = owned
-          ? `<span class="owned-badge">${owned.status === "order" ? "On order" : "Collection"}</span>`
-          : "";
         const hiddenBadge = book.hidden
           ? `<span class="hidden-badge">Hidden</span>`
           : "";
@@ -1382,7 +1500,15 @@
           .filter(Boolean)
           .join("");
         const wantButton = renderWantButton(book);
-        const bottomRow = renderCardBottomRow("", wantButton, linkButtons, ownedBadge);
+        const collectionControl = COLLECTION_LOCAL
+          ? renderCollectionButton(book)
+          : renderOwnedBadge(book);
+        const bottomRow = renderCardBottomRow(
+          "",
+          wantButton,
+          linkButtons,
+          collectionControl,
+        );
 
         const metaHtml = renderBookMetaHtml(book);
         const descriptionHtml = book.description?.trim()
@@ -1695,8 +1821,16 @@
           return;
         }
 
+        const collectionButton = event.target.closest(".collection-btn");
+        if (collectionButton) {
+          event.preventDefault();
+          event.stopPropagation();
+          toggleCollection(Number(collectionButton.dataset.bookId));
+          return;
+        }
+
         const wantButton = event.target.closest(".want-btn");
-        if (!wantButton) {
+        if (!wantButton || wantButton.classList.contains("want-badge")) {
           return;
         }
         event.preventDefault();

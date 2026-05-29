@@ -156,16 +156,16 @@ window.BOOK_EDITS = {
     "hidden": true
   },
   "429": {
-    "hidden": true
+    "coverImageFile": "covers/the-horror-in-the-museum-and-other-revisions-429.jpg"
   },
   "430": {
-    "hidden": true
+    "coverImageFile": "covers/dagon-and-other-macabre-tales-430.jpg"
   },
   "431": {
-    "hidden": true
+    "coverImageFile": "covers/at-the-mountains-of-madness-and-other-novels-431.jpg"
   },
   "432": {
-    "hidden": true
+    "coverImageFile": "covers/the-dunwich-horror-and-others-432.webp"
   },
   "433": {
     "hidden": true

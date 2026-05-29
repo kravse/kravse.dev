@@ -1,0 +1,115 @@
+.edit-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.edit-dialog[hidden] {
+  display: none;
+}
+
+.edit-dialog-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 10, 14, 0.72);
+  backdrop-filter: blur(4px);
+}
+
+.edit-dialog-panel {
+  position: relative;
+  width: min(24rem, 100%);
+  max-height: calc(100vh - 2rem);
+  overflow: auto;
+  padding: 1rem 1rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(23, 26, 33, 0.98);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.45);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+.edit-dialog-panel h2 {
+  margin: 0 0 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.edit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.edit-field input[type="text"],
+.edit-field input[type="url"],
+.edit-field input[type="file"] {
+  font: inherit;
+  font-size: 0.82rem;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.55rem 0.7rem;
+}
+
+.edit-field input[type="file"] {
+  padding: 0.45rem 0.55rem;
+  font-size: 0.76rem;
+}
+
+.edit-dialog-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.edit-dialog-actions-right {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-dialog-actions button {
+  font: inherit;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  padding: 0.45rem 0.8rem;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+}
+
+.edit-dialog-actions button[type="submit"] {
+  background: rgba(201, 162, 39, 0.18);
+  border-color: rgba(210, 178, 128, 0.35);
+  color: #e8d4a8;
+}
+
+.edit-delete-btn {
+  color: #efb4b4;
+  border-color: rgba(200, 120, 120, 0.35);
+  background: rgba(120, 40, 40, 0.14);
+}
+
+.edit-delete-btn:hover:not(:disabled) {
+  color: #ffd6d6;
+  border-color: rgba(220, 120, 120, 0.5);
+  background: rgba(140, 45, 45, 0.22);
+}
+
+.edit-dialog-actions button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+

@@ -347,11 +347,16 @@
       .stats {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         gap: 0.75rem;
         margin-top: 1rem;
         font-family: ui-sans-serif, system-ui, sans-serif;
         font-size: 0.85rem;
         color: var(--muted);
+      }
+
+      .stats-filters {
+        display: contents;
       }
 
       .stat,
@@ -1044,11 +1049,30 @@
         }
 
         .stats {
+          display: flex;
+          flex-direction: column;
+          gap: 0.45rem;
+          margin-top: 0.65rem;
+          font-size: 0.72rem;
+        }
+
+        .stats-filters {
+          order: 1;
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 0.4rem;
-          margin-top: 0.65rem;
-          font-size: 0.72rem;
+          width: 100%;
+        }
+
+        .stats-filters .hidden-stat {
+          grid-column: 1 / -1;
+        }
+
+        .stat-showing {
+          order: 2;
+          width: 100%;
+          text-align: center;
+          display: block;
         }
 
         .stat,
@@ -1554,16 +1578,22 @@
         const hiddenCount = all.filter((book) => book.hidden).length;
         const total = getStatTotal(all);
         const hasMycroft = all.some((book) => book.imprint === "mycroft_moran");
-        stats.innerHTML = [
-          `<span class="stat">showing ${visible.length}/${total}</span>`,
+        const filters = [
+          `<button type="button" class="stat owned-stat stat-toggle${collectionOnly ? " active" : ""}" id="collection-filter-toggle" aria-pressed="${collectionOnly}">collection</button>`,
           hasMycroft
             ? `<button type="button" class="stat stat-toggle${mycroftOnly ? " active" : ""}" id="mycroft-filter-toggle" aria-pressed="${mycroftOnly}">Mycroft &amp; Moran</button>`
             : "",
-          `<button type="button" class="stat owned-stat stat-toggle${collectionOnly ? " active" : ""}" id="collection-filter-toggle" aria-pressed="${collectionOnly}">collection</button>`,
           hiddenCount
             ? `<button type="button" class="stat hidden-stat stat-toggle${hiddenOnly ? " active" : ""}" id="hidden-filter-toggle" aria-pressed="${hiddenOnly}">${hiddenCount} hidden</button>`
             : "",
-        ].join("");
+        ]
+          .filter(Boolean)
+          .join("");
+
+        stats.innerHTML = `
+          <span class="stat stat-showing">showing ${visible.length}/${total}</span>
+          <div class="stats-filters">${filters}</div>
+        `;
       }
 
       function getVisibleBooks() {

@@ -26,11 +26,10 @@
               height="72"
             />
             <div class="header-titles">
-              <h1>Arkham House</h1>
+              <h1 id="page-title">Arkham House</h1>
               <p class="subtitle" id="page-subtitle">
                 A publishing house of horror and weird fiction—founded in 1939
-                to rescue Lovecraft from the pulps and keep the uncanny in
-                print.
+                to rescue Lovecraft from the pulps.
               </p>
             </div>
           </div>
@@ -327,6 +326,7 @@
       const showHiddenWrap = document.getElementById("show-hidden-wrap");
       const showHiddenInput = document.getElementById("show-hidden");
       const pageSubtitle = document.getElementById("page-subtitle");
+      const pageTitle = document.getElementById("page-title");
       const headerLogo = document.getElementById("header-logo");
       const headerFiltersToggle = document.getElementById("header-filters-toggle");
       const readOnly = window.READ_ONLY === true;
@@ -955,10 +955,14 @@
       }
 
       function updateHeaderLogo() {
-        if (!headerLogo) {
-          return;
+        if (headerLogo) {
+          headerLogo.src = mycroftOnly ? LOGO_MYCROFT : LOGO_ARKHAM;
         }
-        headerLogo.src = mycroftOnly ? LOGO_MYCROFT : LOGO_ARKHAM;
+        const title = mycroftOnly ? "Mycroft & Moran" : "Arkham House";
+        if (pageTitle) {
+          pageTitle.textContent = title;
+        }
+        document.title = title;
       }
 
       function render() {
@@ -989,13 +993,13 @@
               "Viewing hidden books — click the stat again to show all books";
           } else if (mycroftOnly) {
             pageSubtitle.textContent =
-              "An imprint for weird detective fiction—founded in 1945 to house August Derleth's Solar Pons and other pastiche mysteries.";
+              "An imprint for weird detective fiction—founded in 1945 to house August Derleth's Solar Pons.";
           } else if (wantOnly) {
             pageSubtitle.textContent =
               "Viewing your want list — click the stat again to show all books";
           } else {
             pageSubtitle.textContent =
-              "A publishing house of horror and weird fiction—founded in 1939 to rescue Lovecraft from the pulps and keep the uncanny in print.";
+              "A publishing house of horror and weird fiction—founded in 1939 to rescue Lovecraft from the pulps.";
           }
         }
 

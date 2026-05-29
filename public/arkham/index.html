@@ -725,7 +725,7 @@
             ? `<button type="button" class="stat mycroft-stat stat-toggle${mycroftOnly ? " active" : ""}" id="mycroft-filter-toggle" aria-pressed="${mycroftOnly}">MYCROFT &amp; MORAN</button>`
             : "",
           `<button type="button" class="stat want-stat stat-toggle${wantOnly ? " active" : ""}" id="want-filter-toggle" aria-pressed="${wantOnly}">${wantLabel}</button>`,
-          hiddenCount
+          hiddenCount && serveEnabled
             ? `<button type="button" class="stat hidden-stat stat-toggle${hiddenOnly ? " active" : ""}" id="hidden-filter-toggle" aria-pressed="${hiddenOnly}">HIDDEN</button>`
             : "",
         ]
@@ -1174,6 +1174,7 @@
       async function checkServeSupport() {
         if (readOnly) {
           serveEnabled = false;
+          hiddenOnly = false;
           showHiddenWrap.hidden = true;
           helpAnchor.hidden = true;
           return;
@@ -1184,6 +1185,10 @@
           serveEnabled = response.ok;
         } catch (_) {
           serveEnabled = false;
+        }
+
+        if (!serveEnabled) {
+          hiddenOnly = false;
         }
 
         showHiddenWrap.hidden = !serveEnabled;

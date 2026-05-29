@@ -1387,7 +1387,7 @@ window.BOOKS = [
     "title": "New Tales of the Cthulhu Mythos",
     "author": "Ramsey Campbell",
     "coverArtist": "Jason Van Hollander",
-    "publicationDate": "1969",
+    "publicationDate": "1980",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Cthulhu_Mythos_anthology#New_Tales_of_the_Cthulhu_Mythos",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Tales_of_the_Cthulhu_Mythos.jpg",
     "coverImageFile": "covers/cthulhu-mythos-anthology-108.jpg",

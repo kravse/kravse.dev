@@ -19,6 +19,11 @@
         --owned-border: rgba(210, 178, 128, 0.55);
         --owned-glow: rgba(201, 162, 39, 0.18);
         --owned-body: rgba(212, 184, 132, 0.1);
+        --want-bg: rgba(72, 168, 118, 0.22);
+        --want-bg-deep: rgba(40, 120, 82, 0.14);
+        --want-border: rgba(120, 200, 150, 0.55);
+        --want-glow: rgba(72, 168, 118, 0.2);
+        --want-body: rgba(72, 168, 118, 0.1);
       }
 
       * {
@@ -84,6 +89,30 @@
 
       body.viewing-hidden .subtitle {
         color: #c4c9d4;
+      }
+
+      body.viewing-want {
+        background: radial-gradient(circle at top, #142820 0%, #0a100e 58%);
+      }
+
+      body.viewing-want header {
+        border-bottom-color: rgba(120, 200, 150, 0.38);
+        background: rgba(16, 28, 22, 0.94);
+        box-shadow:
+          inset 0 1px 0 rgba(168, 232, 196, 0.08),
+          0 8px 28px rgba(72, 168, 118, 0.12);
+      }
+
+      body.viewing-want .subtitle {
+        color: #b8e8c8;
+      }
+
+      body.viewing-want main {
+        background: linear-gradient(
+          180deg,
+          rgba(72, 168, 118, 0.05) 0%,
+          transparent 12rem
+        );
       }
 
       .header-top {
@@ -353,6 +382,8 @@
         font-family: ui-sans-serif, system-ui, sans-serif;
         font-size: 0.85rem;
         color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
       }
 
       .stats-filters {
@@ -365,6 +396,8 @@
         border: 1px solid var(--border);
         border-radius: 999px;
         padding: 0.35rem 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
       }
 
       .stat-toggle {
@@ -410,6 +443,21 @@
         box-shadow:
           0 0 0 1px rgba(154, 163, 178, 0.12),
           inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      }
+
+      .stat.want-stat {
+        color: #a8dcc0;
+        border-color: rgba(120, 200, 150, 0.28);
+        background: rgba(72, 168, 118, 0.08);
+      }
+
+      .stat.want-stat.stat-toggle.active {
+        color: #d8f5e4;
+        border-color: rgba(120, 200, 150, 0.62);
+        background: rgba(72, 168, 118, 0.22);
+        box-shadow:
+          0 0 0 1px rgba(72, 168, 118, 0.18),
+          inset 0 1px 0 rgba(255, 255, 255, 0.07);
       }
 
       main {
@@ -469,6 +517,44 @@
         border-top: 1px solid rgba(210, 178, 128, 0.16);
       }
 
+      .card.wanted {
+        position: relative;
+        background:
+          linear-gradient(
+            180deg,
+            var(--want-bg) 0%,
+            rgba(16, 28, 22, 0.55) 100%
+          ),
+          linear-gradient(135deg, var(--want-bg-deep), rgba(23, 26, 33, 0.95));
+        border-color: var(--want-border);
+        box-shadow:
+          inset 0 1px 0 rgba(168, 232, 196, 0.12),
+          0 0 0 1px rgba(120, 200, 150, 0.1),
+          0 8px 28px var(--want-glow);
+      }
+
+      .card.wanted::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at top right,
+          rgba(168, 232, 196, 0.14),
+          transparent 55%
+        );
+        pointer-events: none;
+      }
+
+      .card.wanted .cover-wrap {
+        background: rgba(72, 168, 118, 0.08);
+        box-shadow: inset 0 0 0 1px rgba(120, 200, 150, 0.12);
+      }
+
+      .card.wanted .card-body {
+        background: var(--want-body);
+        border-top: 1px solid rgba(120, 200, 150, 0.16);
+      }
+
       .owned-badge {
         display: inline-block;
         margin-bottom: 0;
@@ -500,8 +586,59 @@
         min-height: 1.25rem;
       }
 
+      .card-bottom-left {
+        gap: 0.35rem;
+        flex-wrap: wrap;
+      }
+
       .card-bottom-right {
         margin-left: auto;
+        gap: 0.35rem;
+      }
+
+      .want-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.12rem 0.42rem;
+        border-radius: 999px;
+        border: 1px solid rgba(120, 200, 150, 0.35);
+        background: rgba(72, 168, 118, 0.1);
+        color: #a8dcc0;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-size: 0.52rem;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition:
+          color 0.15s ease,
+          border-color 0.15s ease,
+          background 0.15s ease;
+      }
+
+      .want-btn:hover {
+        color: #d8f5e4;
+        border-color: rgba(120, 200, 150, 0.5);
+        background: rgba(72, 168, 118, 0.18);
+      }
+
+      .want-btn.active {
+        color: #d8f5e4;
+        border-color: rgba(120, 200, 150, 0.62);
+        background: rgba(72, 168, 118, 0.28);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+
+      .card-bottom-row .owned-badge,
+      .card-bottom-row .want-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.52rem;
+        padding: 0.12rem 0.42rem;
+        margin-bottom: 0;
+        letter-spacing: 0.03em;
       }
 
       .card-wiki-btn {
@@ -804,6 +941,7 @@
 
       .book-detail-body {
         width: min(100%, 22rem);
+        flex: 1;
         display: flex;
         flex-direction: column;
         gap: 0.45rem;
@@ -840,6 +978,46 @@
 
       .book-detail-body .card-footer {
         margin-top: 0.35rem;
+      }
+
+      .book-detail-body .card-bottom-row {
+        margin-top: auto;
+        width: 100%;
+        padding-top: 0.5rem;
+      }
+
+      .book-detail-body .card-bottom-left,
+      .book-detail-body .card-bottom-right {
+        display: flex;
+        align-items: center;
+      }
+
+      .book-detail-body .card-bottom-right {
+        gap: 0.35rem;
+        margin-left: auto;
+      }
+
+      .book-detail-body .card-bottom-row .book-detail-wiki-btn {
+        margin-top: 0;
+      }
+
+      .book-detail-body .want-btn {
+        min-height: 2.25rem;
+        padding: 0.35rem 0.7rem;
+        font-size: 0.72rem;
+      }
+
+      .book-detail-body .hidden-badge {
+        align-self: flex-start;
+      }
+
+      .book-detail-body .owned-badge {
+        display: inline-flex;
+        align-items: center;
+        min-height: 2.25rem;
+        padding: 0.35rem 0.7rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.04em;
       }
 
       .book-detail-wiki-btn {
@@ -1059,7 +1237,7 @@
         .stats-filters {
           order: 1;
           display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
+          grid-template-columns: repeat(3, minmax(0, 1fr));
           gap: 0.4rem;
           width: 100%;
         }
@@ -1121,13 +1299,10 @@
         }
 
         .card-wiki-btn {
-          width: 1.15rem;
-          height: 1.15rem;
-          font-size: 0.72rem;
+          display: none;
         }
 
-        .owned-badge,
-        .hidden-badge {
+        .card-body .hidden-badge {
           font-size: 0.42rem;
           padding: 0.08rem 0.22rem;
           margin-bottom: 0.05rem;
@@ -1389,6 +1564,7 @@
       const LOGO_ARKHAM = "images/arkham-house.jpg";
       const LOGO_MYCROFT = "images/Mycroft_moran.png";
       const SORT_STORAGE_KEY = "arkham-sort";
+      const WANT_STORAGE_KEY = "arkham-want-list";
       const SORT_MODES = new Set(["default", "date-desc", "date-asc", "title"]);
       let collection = [];
       let serveEnabled = false;
@@ -1396,6 +1572,8 @@
       let collectionOnly = false;
       let hiddenOnly = false;
       let mycroftOnly = false;
+      let wantOnly = false;
+      let wantIds = new Set();
 
       books.forEach((book) => {
         if (book.hidden === undefined) {
@@ -1528,6 +1706,65 @@
         }
       }
 
+      function loadWantList() {
+        try {
+          const saved = localStorage.getItem(WANT_STORAGE_KEY);
+          if (!saved) {
+            wantIds = new Set();
+            return;
+          }
+          const parsed = JSON.parse(saved);
+          if (!Array.isArray(parsed)) {
+            wantIds = new Set();
+            return;
+          }
+          wantIds = new Set(
+            parsed.map((id) => Number(id)).filter((id) => Number.isFinite(id)),
+          );
+        } catch (_) {
+          wantIds = new Set();
+        }
+      }
+
+      function saveWantList() {
+        try {
+          localStorage.setItem(
+            WANT_STORAGE_KEY,
+            JSON.stringify([...wantIds].sort((a, b) => a - b)),
+          );
+        } catch (_) {
+          // localStorage unavailable
+        }
+      }
+
+      function isWanted(book) {
+        return wantIds.has(book.id);
+      }
+
+      function toggleWant(bookId) {
+        const id = Number(bookId);
+        if (!Number.isFinite(id)) {
+          return;
+        }
+        if (wantIds.has(id)) {
+          wantIds.delete(id);
+        } else {
+          wantIds.add(id);
+        }
+        saveWantList();
+        render();
+        if (!bookDetailDialog.hidden && isMobileViewport()) {
+          openBookDetail(id);
+        }
+      }
+
+      function getWantCount() {
+        const showHidden = showHiddenInput.checked;
+        return books.filter(
+          (book) => (showHidden || !book.hidden) && isWanted(book),
+        ).length;
+      }
+
       function onSortChange() {
         saveSortPreference();
         render();
@@ -1578,20 +1815,23 @@
         const hiddenCount = all.filter((book) => book.hidden).length;
         const total = getStatTotal(all);
         const hasMycroft = all.some((book) => book.imprint === "mycroft_moran");
+        const wantCount = getWantCount();
+        const wantLabel = wantCount ? `WANT (${wantCount})` : "WANT";
         const filters = [
-          `<button type="button" class="stat owned-stat stat-toggle${collectionOnly ? " active" : ""}" id="collection-filter-toggle" aria-pressed="${collectionOnly}">collection</button>`,
+          `<button type="button" class="stat owned-stat stat-toggle${collectionOnly ? " active" : ""}" id="collection-filter-toggle" aria-pressed="${collectionOnly}">COLLECTION</button>`,
           hasMycroft
-            ? `<button type="button" class="stat stat-toggle${mycroftOnly ? " active" : ""}" id="mycroft-filter-toggle" aria-pressed="${mycroftOnly}">Mycroft &amp; Moran</button>`
+            ? `<button type="button" class="stat stat-toggle${mycroftOnly ? " active" : ""}" id="mycroft-filter-toggle" aria-pressed="${mycroftOnly}">MYCROFT &amp; MORAN</button>`
             : "",
+          `<button type="button" class="stat want-stat stat-toggle${wantOnly ? " active" : ""}" id="want-filter-toggle" aria-pressed="${wantOnly}">${wantLabel}</button>`,
           hiddenCount
-            ? `<button type="button" class="stat hidden-stat stat-toggle${hiddenOnly ? " active" : ""}" id="hidden-filter-toggle" aria-pressed="${hiddenOnly}">${hiddenCount} hidden</button>`
+            ? `<button type="button" class="stat hidden-stat stat-toggle${hiddenOnly ? " active" : ""}" id="hidden-filter-toggle" aria-pressed="${hiddenOnly}">HIDDEN</button>`
             : "",
         ]
           .filter(Boolean)
           .join("");
 
         stats.innerHTML = `
-          <span class="stat stat-showing">showing ${visible.length}/${total}</span>
+          <span class="stat stat-showing">SHOWING ${visible.length}/${total}</span>
           <div class="stats-filters">${filters}</div>
         `;
       }
@@ -1605,6 +1845,7 @@
           )
           .filter((book) => !mycroftOnly || book.imprint === "mycroft_moran")
           .filter((book) => !collectionOnly || findCollectionMatch(book))
+          .filter((book) => !wantOnly || isWanted(book))
           .filter((book) => matchesSearch(book, query));
       }
 
@@ -1776,15 +2017,31 @@
       `;
       }
 
-      function renderCardBottomRow(wikiButton, ownedBadge) {
-        if (!wikiButton && !ownedBadge) {
+      function renderWantButton(book) {
+        if (findCollectionMatch(book)) {
+          return "";
+        }
+
+        const wanted = isWanted(book);
+        return `
+        <button
+          type="button"
+          class="want-btn${wanted ? " active" : ""}"
+          data-book-id="${book.id}"
+          aria-pressed="${wanted}"
+        >${wanted ? "Wanted" : "Want"}</button>
+      `;
+      }
+
+      function renderCardBottomRow(wantButton, wikiButton, ownedBadge) {
+        if (!wantButton && !wikiButton && !ownedBadge) {
           return "";
         }
 
         return `
         <div class="card-bottom-row">
           <div class="card-bottom-left">${wikiButton}</div>
-          <div class="card-bottom-right">${ownedBadge}</div>
+          <div class="card-bottom-right">${[wantButton, ownedBadge].filter(Boolean).join("")}</div>
         </div>
       `;
       }
@@ -1819,17 +2076,20 @@
         const coverActions = renderCoverActions(book);
 
         const wikiButton = renderWikiButton(book.wikipediaUrl);
+        const wantButton = renderWantButton(book);
         const ownedBadge = owned
-          ? `<span class="owned-badge">${owned.status === "order" ? "On order" : "In collection"}</span>`
+          ? `<span class="owned-badge">${owned.status === "order" ? "On order" : "Collection"}</span>`
           : "";
-        const bottomRow = renderCardBottomRow(wikiButton, ownedBadge);
+        const bottomRow = renderCardBottomRow(wantButton, wikiButton, ownedBadge);
 
         const hiddenBadge = book.hidden
           ? `<span class="hidden-badge">Hidden</span>`
           : "";
 
+        const wantedClass = isWanted(book) ? " wanted" : "";
+
         return `
-        <article class="card${ownedClass}${hiddenClass}" data-book-id="${book.id}">
+        <article class="card${ownedClass}${wantedClass}${hiddenClass}" data-book-id="${book.id}">
           <div class="cover-wrap">
             ${coverActions}
             ${imageHtml}
@@ -1858,11 +2118,15 @@
         updateHeaderLogo();
         document.body.classList.toggle(
           "viewing-collection",
-          collectionOnly && !hiddenOnly && !mycroftOnly,
+          collectionOnly && !hiddenOnly && !mycroftOnly && !wantOnly,
         );
         document.body.classList.toggle(
           "viewing-hidden",
-          hiddenOnly && !collectionOnly && !mycroftOnly,
+          hiddenOnly && !collectionOnly && !mycroftOnly && !wantOnly,
+        );
+        document.body.classList.toggle(
+          "viewing-want",
+          wantOnly && !collectionOnly && !hiddenOnly && !mycroftOnly,
         );
         if (pageSubtitle) {
           if (collectionOnly && hiddenOnly) {
@@ -1877,6 +2141,9 @@
           } else if (mycroftOnly) {
             pageSubtitle.textContent =
               "Viewing Mycroft & Moran — click the stat again to show all books";
+          } else if (wantOnly) {
+            pageSubtitle.textContent =
+              "Viewing your want list — click the stat again to show all books";
           } else {
             pageSubtitle.textContent =
               "Bibliography gallery scraped from Wikipedia";
@@ -1899,6 +2166,10 @@
             message = searchInput.value.trim()
               ? "No Mycroft & Moran books match your search."
               : "No Mycroft & Moran books to show.";
+          } else if (wantOnly) {
+            message = searchInput.value.trim()
+              ? "No wanted books match your search."
+              : "Your want list is empty — click Want on a book to add it.";
           }
           grid.innerHTML = `<div class="empty">${message}</div>`;
           return;
@@ -1942,7 +2213,7 @@
         bookDetailCover.innerHTML = renderCover(book, book.coverCacheKey);
         const owned = findCollectionMatch(book);
         const ownedBadge = owned
-          ? `<span class="owned-badge">${owned.status === "order" ? "On order" : "In collection"}</span>`
+          ? `<span class="owned-badge">${owned.status === "order" ? "On order" : "Collection"}</span>`
           : "";
         const hiddenBadge = book.hidden
           ? `<span class="hidden-badge">Hidden</span>`
@@ -1951,14 +2222,15 @@
           book.wikipediaUrl,
           "book-detail-wiki-btn",
         );
+        const wantButton = renderWantButton(book);
+        const bottomRow = renderCardBottomRow(wantButton, wikiButton, ownedBadge);
 
         bookDetailBody.innerHTML = `
         ${hiddenBadge}
-        ${ownedBadge}
         <h2 class="title" id="book-detail-title">${book.title || "Untitled"}</h2>
         ${book.publicationDate ? `<div class="date">${book.publicationDate}</div>` : ""}
         <div class="book-detail-meta">${renderBookMetaHtml(book)}</div>
-        ${wikiButton}
+        ${bottomRow}
       `;
 
         bookDetailDialog.hidden = false;
@@ -2150,6 +2422,14 @@
           return;
         }
 
+        const wantButton = event.target.closest(".want-btn");
+        if (wantButton) {
+          event.preventDefault();
+          event.stopPropagation();
+          toggleWant(Number(wantButton.dataset.bookId));
+          return;
+        }
+
         const card = event.target.closest(".card");
         if (card && isMobileViewport()) {
           openBookDetail(Number(card.dataset.bookId));
@@ -2157,6 +2437,15 @@
       });
 
       bookDetailCloseBtn.addEventListener("click", closeBookDetail);
+      bookDetailDialog.addEventListener("click", (event) => {
+        const wantButton = event.target.closest(".want-btn");
+        if (!wantButton) {
+          return;
+        }
+        event.preventDefault();
+        event.stopPropagation();
+        toggleWant(Number(wantButton.dataset.bookId));
+      });
       bookDetailDialog
         .querySelectorAll("[data-close-detail]")
         .forEach((element) => {
@@ -2226,6 +2515,7 @@
       sortSelect.addEventListener("change", onSortChange);
       showHiddenInput.addEventListener("change", render);
 
+      loadWantList();
       restoreSortPreference();
 
       stats.addEventListener("click", (event) => {
@@ -2241,6 +2531,11 @@
         }
         if (event.target.closest("#mycroft-filter-toggle")) {
           mycroftOnly = !mycroftOnly;
+          render();
+          return;
+        }
+        if (event.target.closest("#want-filter-toggle")) {
+          wantOnly = !wantOnly;
           render();
         }
       });

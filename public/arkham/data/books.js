@@ -13,7 +13,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield."
+    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield.",
+    "hidden": true
   },
   {
     "id": 232,
@@ -29,7 +30,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": null
+    "description": null,
+    "hidden": true
   },
   {
     "id": 233,
@@ -45,7 +47,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": null
+    "description": null,
+    "hidden": true
   },
   {
     "id": 234,
@@ -61,7 +64,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": null
+    "description": null,
+    "hidden": true
   },
   {
     "id": 235,
@@ -77,7 +81,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": null
+    "description": null,
+    "hidden": true
   },
   {
     "id": 236,
@@ -93,7 +98,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": null
+    "description": null,
+    "hidden": true
   },
   {
     "id": 237,
@@ -109,7 +115,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": null
+    "description": null,
+    "hidden": true
   },
   {
     "id": 428,
@@ -123,9 +130,10 @@ window.BOOKS = [
     "publicationDate": "2008",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Shunned_House",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/The_Shunned_House.jpg",
-    "coverImageFile": "covers/the-shunned-house-8.jpg",
+    "coverImageFile": "covers/the-shunned-house-238.png",
     "error": null,
-    "description": "\"The Shunned House\" is a horror fiction novelette by American author H. P. Lovecraft, written on October 16–19, 1924. It was first published in the October 1937 issue of Weird Tales."
+    "description": "\"The Shunned House\" is a horror fiction novelette by American author H. P. Lovecraft, written on October 16–19, 1924. It was first published in the October 1937 issue of Weird Tales.",
+    "hidden": true
   },
   {
     "id": 239,
@@ -243,7 +251,8 @@ window.BOOKS = [
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Book_of_the_dead_price.jpg",
     "coverImageFile": "covers/book-of-the-dead-memoir-15.jpg",
     "error": null,
-    "description": "Book of the Dead: Friends of Yesteryear: Fictioneers & Others is a collection of memoirs by author E. Hoffmann Price. It was published in 2001 by Arkham House in an edition of approximately 4,000 copies. The book contains memoirs of several writers of the pulp magazine era. Also included are several appreciations of Price by other authors."
+    "description": "Book of the Dead: Friends of Yesteryear: Fictioneers & Others is a collection of memoirs by author E. Hoffmann Price. It was published in 2001 by Arkham House in an edition of approximately 4,000 copies. The book contains memoirs of several writers of the pulp magazine era. Also included are several appreciations of Price by other authors.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/370614.Book_of_the_Dead"
   },
   {
     "id": 246,
@@ -571,19 +580,20 @@ window.BOOKS = [
   {
     "id": 265,
     "imprint": "arkham_house",
-    "decade": "1980s",
+    "decade": "1990s",
     "listTitle": "Tales of the Cthulhu Mythos",
     "listAuthor": "by H. P. Lovecraft and Divers Hands (1989)",
     "title": "Tales of the Cthulhu Mythos",
     "author": "H. P. Lovecraft and others",
     "coverArtist": "Lee Brown Coye",
-    "publicationDate": "1989",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/Tales_of_the_Cthulhu_Mythos%3A_Golden_Anniversary_Anthology",
+    "publicationDate": "1990",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cthulhu_Mythos_anthology#Tales_of_the_Cthulhu_Mythos:_Golden_Anniversary_Anthology",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Tales_of_the_Cthulhu_Mythos.jpg",
-    "coverImageFile": "covers/tales-of-the-cthulhu-mythos-golden-anniversary-anthology-35.jpg",
+    "coverImageFile": "covers/tales-of-the-cthulhu-mythos-golden-anniversary-anthology-265.jpg",
     "error": null,
-    "description": "A Cthulhu Mythos anthology is a type of short story collection that contains stories written in, or related to, the Cthulhu Mythos genre of horror fiction launched by H. P. Lovecraft. Such anthologies have helped to define and popularize the genre.",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/36320.Tales_of_the_Cthulhu_Mythos"
+    "description": "Arkham House released a revised edition of Tales of the Cthulhu Mythos in November 1990, edited by Jim Turner with a substantially different selection of stories, reflecting the editor's disdain for \"Mythos pastiches in which eccentric New England recluses utter the right incantations in the wrong books and are promptly eaten by a giant frog named Cthulhu.\"  It was released in an edition of 7,015 copies.\n\nTurner eliminates some authors from the earlier edition (totalling four stories, those by Wade, Shea and two by Lumley) --while still suggesting that \"a few of the earliest pieces in this volume ...now seem like pop-cultural kitsch.\"\n\nThe added seven stories, he writes, are from \"the relative handful of successful works that have been influenced by the Cthulhu Mythos...exemplifying the darkly enduring power of H. P. Lovecraft over a disparate group of writers who have made their own inimitable contributions to the Mythos.\"",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/36320.Tales_of_the_Cthulhu_Mythos",
+    "coverEditPath": "covers/tales-of-the-cthulhu-mythos-golden-anniversary-anthology-265.jpg"
   },
   {
     "id": 266,
@@ -614,10 +624,11 @@ window.BOOKS = [
     "publicationDate": "1989",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Horror_in_the_Museum_and_Other_Revisions",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/82/Horror_in_the_museum.jpg",
-    "coverImageFile": "covers/the-horror-in-the-museum-and-other-revisions-37.jpg",
+    "coverImageFile": "covers/the-horror-in-the-museum-and-other-revisions-429.jpg",
     "error": null,
     "description": "The Horror in the Museum and Other Revisions is a collection of stories revised or ghostwritten by American author H. P. Lovecraft. It was originally published in 1970 by Arkham House in an edition of 4,058 copies. The dustjacket of the first edition features art by Gahan Wilson.\n\nThe collection was revised in 1989 by S. T. Joshi adding an introduction by Joshi, correcting the texts and expanding the contents.\n\nIn 2007, Del Rey published a trade paperback version with a new introduction by Stephen Jones, and a brief biography of Lovecraft at the end.\n\nThe revised version of Lovecraft's revisions includes Henry S. Whitehead's \"The Trap\" but not the other two stories by Whitehead in which Lovecraft had a hand (\"Cassius\" and \"Bothon\"). The revised version also includes two collaborations by Lovecraft with Robert H. Barlow, but not the other tales on which they worked together, of which there are four or five. Sonia Greene's \"Four O'Clock\" is omitted from the revised version, S.T. Joshi having determined that this tale is not properly a part of the Lovecraft corpus; the story is entirely Sonia's, Lovecraft having simply made a few suggestions as to its prose style.",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/1157900.The_Horror_in_the_Museum"
+    "goodreadsUrl": "https://www.goodreads.com/book/show/1157900.The_Horror_in_the_Museum",
+    "coverEditPath": "covers/the-horror-in-the-museum-and-other-revisions-429.jpg"
   },
   {
     "id": 268,
@@ -733,10 +744,11 @@ window.BOOKS = [
     "publicationDate": "1986",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dagon_and_Other_Macabre_Tales",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8f/Dagon_first.jpg",
-    "coverImageFile": "covers/dagon-and-other-macabre-tales-44.jpg",
+    "coverImageFile": "covers/dagon-and-other-macabre-tales-430.jpg",
     "error": null,
     "description": "Dagon and Other Macabre Tales is a collection of stories by American author H. P. Lovecraft, which also includes his essay on weird fiction, \"Supernatural Horror in Literature\". It was originally published in 1965 by Arkham House in an edition of 3,471 copies. Unlike some other first editions of Lovecraft collections issued by Arkham House in the mid-sixties, the true first edition is bound with head- and tailbands.\n\nThe collection was revised in 1986 by S.T. Joshi, replacing the introduction by August Derleth for one by Joshi and another by T. E. D. Klein. The bulk of the tales were also reordered chronologically, while some tales were moved to appendices. It was released in an edition of 4,023 copies, designated a 'corrected 5th printing'. This revised edition was read by Gordon Gould for the American Foundation for the Blind in 1987.",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/102575.Dagon_and_Other_Macabre_Tales"
+    "goodreadsUrl": "https://www.goodreads.com/book/show/102575.Dagon_and_Other_Macabre_Tales",
+    "coverEditPath": "covers/dagon-and-other-macabre-tales-430.jpg"
   },
   {
     "id": 431,
@@ -750,10 +762,11 @@ window.BOOKS = [
     "publicationDate": "1985",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/At_the_Mountains_of_Madness_and_Other_Novels",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a0/At_the_mountains_of_madness.jpg",
-    "coverImageFile": "covers/at-the-mountains-of-madness-and-other-novels-45.jpg",
+    "coverImageFile": "covers/at-the-mountains-of-madness-and-other-novels-431.jpg",
     "error": null,
     "description": "At the Mountains of Madness and Other Novels is a collection of stories by American author H. P. Lovecraft. It was originally published in 1964 by Arkham House in an edition of 3,552 copies. The true first edition has no head- or tailbands and features a green dustjacket (as depicted right). (Later states of the dustjacket are red and orange.)\n\nThe collection was revised and the text restored in 1985 by S. T. Joshi, replacing the introduction by August Derleth for one by Joshi and another by James Turner. The 1985 edition was published in an edition of 3,990 copies and designated a \"corrected 5th printing\".",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/32768.At_the_Mountains_of_Madness_and_Other_Novels"
+    "goodreadsUrl": "https://www.goodreads.com/book/show/32768.At_the_Mountains_of_Madness_and_Other_Novels",
+    "coverEditPath": "covers/at-the-mountains-of-madness-and-other-novels-431.jpg"
   },
   {
     "id": 432,
@@ -767,10 +780,11 @@ window.BOOKS = [
     "publicationDate": "1985",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Dunwich_Horror_and_Others",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Dunwich_Horror_and_Others_dust_jacket.jpg",
-    "coverImageFile": "covers/the-dunwich-horror-and-others-46.jpg",
+    "coverImageFile": "covers/the-dunwich-horror-and-others-432.webp",
     "error": null,
     "description": "The Dunwich Horror and Others is a collection of fantasy, horror and science fiction short stories by American author H. P. Lovecraft. It was originally published in 1963 by Arkham House in an edition of 3,133 copies.\n\nThe true first edition is not bound with head- and tailbands, and the true first-state dustjacket carries a price of $5.00 (not $6.50 as on later printings). (Reportedly some copies lack head and tailbands, indicating the true first edition, but bear the $6.50 price on the dustjacket, suggesting that the publisher ran out of first-edition dustjackets before they ran out of first-edition books, so they raised the price to $6.50, sold the remaining first-edition volumes in second-state jackets, and then started reprinting the book).\n\nThe collection was revised in 1985 by S.T. Joshi, replacing the introduction by August Derleth for one by Joshi (\"A Note on the Texts\") and another by Robert Bloch (\"Heritage of Horror\"). This edition, designated a \"corrected sixth printing\", was published in an edition of 4,124 copies. Bloch's Introduction was reprinted here from its first appearance in The Best of H. P. Lovecraft: Bloodcurdling Tales of Horror and the Macabre.",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/63213.The_Dunwich_Horror_and_Others"
+    "goodreadsUrl": "https://www.goodreads.com/book/show/63213.The_Dunwich_Horror_and_Others",
+    "coverEditPath": "covers/the-dunwich-horror-and-others-432.webp"
   },
   {
     "id": 277,
@@ -982,16 +996,17 @@ window.BOOKS = [
     "decade": "1980s",
     "listTitle": "New Tales of the Cthulhu Mythos",
     "listAuthor": "edited by Ramsey Campbell (1980)",
-    "title": "Tales of the Cthulhu Mythos",
-    "author": "H. P. Lovecraft and others",
+    "title": "New Tales of the Cthulhu Mythos",
+    "author": "Ramsey Campbell (Ed.)",
     "coverArtist": "Lee Brown Coye",
     "publicationDate": "1980",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/New_Tales_of_the_Cthulhu_Mythos",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Tales_of_the_Cthulhu_Mythos.jpg",
-    "coverImageFile": "covers/tales-of-the-cthulhu-mythos-golden-anniversary-anthology-35.jpg",
+    "coverImageFile": "covers/new-tales-of-the-cthulhu-mythos-289.jpg",
     "error": null,
-    "description": "A Cthulhu Mythos anthology is a type of short story collection that contains stories written in, or related to, the Cthulhu Mythos genre of horror fiction launched by H. P. Lovecraft. Such anthologies have helped to define and popularize the genre.",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/36320.Tales_of_the_Cthulhu_Mythos"
+    "description": "New Tales of the Cthulhu Mythos was edited by Ramsey Campbell and published by Arkham House in 1980 in an edition of 3,647 copies. In his introduction, Campbell noted that \"in recent years the Mythos at times has seemed in danger of becoming conventionalized,\" despite the fact that \"Lovecraft's intention and achievement was precisely to avoid the predictability and resultant lack of terror which beset the conventional macabre fiction of his day.\" Therefore, Campbell wrote, \"in this anthology I have tended to favor less familiar treatments or uses of the Mythos.... They contain few erudite occultists, decaying towns, or stylistic pastiches.... Indeed, one of our tales hints at the ultimate event of the Mythos without ever referring to the traditional names.\"\n\nOne story in the book is an expansion, by Martin S. Warnes, of Lovecraft's fragment \"The Book\".",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/36320.Tales_of_the_Cthulhu_Mythos",
+    "coverEditPath": "covers/new-tales-of-the-cthulhu-mythos-289.jpg"
   },
   {
     "id": 290,
@@ -1272,15 +1287,16 @@ window.BOOKS = [
     "listTitle": "The Purcell Papers",
     "listAuthor": ": four stories from the original collection (The Purcell Papers), along with nine other Le Fanu short stories and a pastiche of Le Fanu, \"The Churchyard Yew,\" written by August Derleth using Le Fanu's name as a pseudonym.",
     "title": "The Purcell Papers",
-    "author": null,
-    "coverArtist": null,
-    "publicationDate": null,
-    "wikipediaUrl": null,
+    "author": "Frank Belknap Long",
+    "coverArtist": "Frank Utpatel",
+    "publicationDate": "1975",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Purcell_Papers",
     "coverImageUrl": null,
-    "coverImageFile": null,
+    "coverImageFile": "covers/the-purcell-papers-306.webp",
     "error": null,
     "description": null,
-    "goodreadsUrl": "https://www.goodreads.com/book/show/309714.The_Purcell_Papers"
+    "goodreadsUrl": "https://www.goodreads.com/book/show/309714.The_Purcell_Papers",
+    "coverEditPath": "covers/the-purcell-papers-306.webp"
   },
   {
     "id": 307,
@@ -1584,7 +1600,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I"
+    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I",
+    "hidden": true
   },
   {
     "id": 325,
@@ -1634,7 +1651,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I"
+    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I",
+    "hidden": true
   },
   {
     "id": 327,
@@ -1684,7 +1702,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I"
+    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I",
+    "hidden": true
   },
   {
     "id": 267,
@@ -1698,7 +1717,7 @@ window.BOOKS = [
     "publicationDate": "1970",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Horror_in_the_Museum_and_Other_Revisions",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/82/Horror_in_the_museum.jpg",
-    "coverImageFile": "covers/the-horror-in-the-museum-and-other-revisions-37.jpg",
+    "coverImageFile": null,
     "error": null,
     "description": "The Horror in the Museum and Other Revisions is a collection of stories revised or ghostwritten by American author H. P. Lovecraft. It was originally published in 1970 by Arkham House in an edition of 4,058 copies. The dustjacket of the first edition features art by Gahan Wilson.\n\nThe collection was revised in 1989 by S. T. Joshi adding an introduction by Joshi, correcting the texts and expanding the contents.\n\nIn 2007, Del Rey published a trade paperback version with a new introduction by Stephen Jones, and a brief biography of Lovecraft at the end.\n\nThe revised version of Lovecraft's revisions includes Henry S. Whitehead's \"The Trap\" but not the other two stories by Whitehead in which Lovecraft had a hand (\"Cassius\" and \"Bothon\"). The revised version also includes two collaborations by Lovecraft with Robert H. Barlow, but not the other tales on which they worked together, of which there are four or five. Sonia Greene's \"Four O'Clock\" is omitted from the revised version, S.T. Joshi having determined that this tale is not properly a part of the Lovecraft corpus; the story is entirely Sonia's, Lovecraft having simply made a few suggestions as to its prose style.",
     "goodreadsUrl": "https://www.goodreads.com/book/show/1157900.The_Horror_in_the_Museum"
@@ -1717,7 +1736,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I"
+    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I",
+    "hidden": true
   },
   {
     "id": 329,
@@ -1784,7 +1804,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I"
+    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I",
+    "hidden": true
   },
   {
     "id": 332,
@@ -1815,10 +1836,11 @@ window.BOOKS = [
     "publicationDate": "1969",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Tales_of_the_Cthulhu_Mythos",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7e/Tales_of_the_Cthulhu_Mythos.jpg",
-    "coverImageFile": "covers/cthulhu-mythos-anthology-108.jpg",
+    "coverImageFile": "covers/tales-of-the-cthulhu-mythos-333.jpg",
     "error": null,
-    "description": "A Cthulhu Mythos anthology is a type of short story collection that contains stories written in, or related to, the Cthulhu Mythos genre of horror fiction launched by H. P. Lovecraft. Such anthologies have helped to define and popularize the genre.",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/36320.Tales_of_the_Cthulhu_Mythos"
+    "description": "Tales of the Cthulhu Mythos, edited by writer August Derleth and published by Arkham House in 1969, is considered the first Cthulhu Mythos anthology. It contained two stories by Lovecraft, a number of reprints of pieces written by members of Lovecraft's circle of correspondents, and several new tales written for the collection by a new generation of Cthulhu Mythos writers.  It was published in an edition of 4,024 copies.\n\nDerleth prefaced the collection with \"The Cthulhu Mythos\", an outline of his (sometimes controversial) views on the development and content of the Mythos. In this introduction, Derleth prematurely declared the genre to be dead--\"for certainly the Mythos as an inspiration for new fiction is hardly likely to afford readers with enough that is new and sufficiently different in execution to create a continuing and growing demand\".\n\nLin Carter later wrote that Tales of the Cthulhu Mythos \"marked the beginning of a new era in the history of the Mythos for many reasons, and one of the most important was that it introduced a number of new writers in the Mythos.\"",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/36320.Tales_of_the_Cthulhu_Mythos",
+    "coverEditPath": "covers/tales-of-the-cthulhu-mythos-333.jpg"
   },
   {
     "id": 437,
@@ -1834,7 +1856,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I"
+    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I",
+    "hidden": true
   },
   {
     "id": 438,
@@ -1850,7 +1873,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I"
+    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I",
+    "hidden": true
   },
   {
     "id": 439,
@@ -1866,7 +1890,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I"
+    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I",
+    "hidden": true
   },
   {
     "id": 334,
@@ -1933,7 +1958,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I"
+    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I",
+    "hidden": true
   },
   {
     "id": 337,
@@ -1966,7 +1992,8 @@ window.BOOKS = [
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d7/Three_tales_of_horror.jpg",
     "coverImageFile": "covers/three-tales-of-horror-117.jpg",
     "error": null,
-    "description": "3 Tales of Horror is an illustrated collection of stories by American author H. P. Lovecraft. Initially announced under the title Three Arkham Tales, it was released in 1967 by Arkham House in an edition of 1,522 copies. The book includes 15 drawings by American artist Lee Brown Coye."
+    "description": "3 Tales of Horror is an illustrated collection of stories by American author H. P. Lovecraft. Initially announced under the title Three Arkham Tales, it was released in 1967 by Arkham House in an edition of 1,522 copies. The book includes 15 drawings by American artist Lee Brown Coye.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/5743125-three-tales-of-horror"
   },
   {
     "id": 339,
@@ -1999,7 +2026,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I"
+    "description": "The Arkham Collector was an American fantasy, horror fiction and poetry magazine first published in Summer 1967. The magazine, edited by August Derleth, was the second of two magazines published by Arkham House, the other being the Arkham Sampler. Each issue of The Arkham Collector had an approximate print run of 2,500 copies. Its headquarters was in Sauk City, Wisconsin.\n\nThe Arkham Collector published news of upcoming Arkham House publications, items of associational interest, fiction and poetry. The magazine published work by H. P. Lovecraft, Clark Ashton Smith, Carl Jacobi, Joseph Payne Brennan, Brian Lumley, Gary Myers and others. Issue 10, Summer 1971, included the first published story by Alan Dean Foster. The magazine ran for ten issues and suspended publication following Derleth's death on July 4, 1971.\n\nA hardbound volume in an edition of 676 copies (issued without dustjacket), collecting the entire run of ten issues, was published by Arkham House in 1971. See: The_Arkham_Collector:_Volume_I",
+    "hidden": true
   },
   {
     "id": 340,
@@ -2032,7 +2060,8 @@ window.BOOKS = [
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8a/Deep_waters.jpg",
     "coverImageFile": "covers/deep-waters-book-121.jpg",
     "error": null,
-    "description": "Deep Waters is a collection of short stories by British writer William Hope Hodgson published in 1967 by Arkham House in an edition of 2,556 copies, the second of the author's books to be published by Arkham. The stories are primarily set in the Sargasso Sea."
+    "description": "Deep Waters is a collection of short stories by British writer William Hope Hodgson published in 1967 by Arkham House in an edition of 2,556 copies, the second of the author's books to be published by Arkham. The stories are primarily set in the Sargasso Sea.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/20705405-deep-waters"
   },
   {
     "id": 342,
@@ -2116,7 +2145,8 @@ window.BOOKS = [
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f1/Something_breathing.jpg",
     "coverImageFile": "covers/something-breathing-126.jpg",
     "error": null,
-    "description": "Something Breathing is a collection of poems by Stanley McNail. It was released in 1965 by Arkham House in an edition of 500 copies. It was the author's only book to be published by Arkham House. The book was printed in England by Villiers for Arkham House and is bound in green cloth rather than the distinctive gold printing on black binding of most Arkham House publications."
+    "description": "Something Breathing is a collection of poems by Stanley McNail. It was released in 1965 by Arkham House in an edition of 500 copies. It was the author's only book to be published by Arkham House. The book was printed in England by Villiers for Arkham House and is bound in green cloth rather than the distinctive gold printing on black binding of most Arkham House publications.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/3602733-something-breathing"
   },
   {
     "id": 347,
@@ -2147,7 +2177,7 @@ window.BOOKS = [
     "publicationDate": "1965",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Dagon_and_Other_Macabre_Tales",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8f/Dagon_first.jpg",
-    "coverImageFile": "covers/dagon-and-other-macabre-tales-44.jpg",
+    "coverImageFile": null,
     "error": null,
     "description": "Dagon and Other Macabre Tales is a collection of stories by American author H. P. Lovecraft, which also includes his essay on weird fiction, \"Supernatural Horror in Literature\". It was originally published in 1965 by Arkham House in an edition of 3,471 copies. Unlike some other first editions of Lovecraft collections issued by Arkham House in the mid-sixties, the true first edition is bound with head- and tailbands.\n\nThe collection was revised in 1986 by S.T. Joshi, replacing the introduction by August Derleth for one by Joshi and another by T. E. D. Klein. The bulk of the tales were also reordered chronologically, while some tales were moved to appendices. It was released in an edition of 4,023 copies, designated a 'corrected 5th printing'. This revised edition was read by Gordon Gould for the American Foundation for the Blind in 1987.",
     "goodreadsUrl": "https://www.goodreads.com/book/show/102575.Dagon_and_Other_Macabre_Tales"
@@ -2249,7 +2279,7 @@ window.BOOKS = [
     "publicationDate": "1964",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/At_the_Mountains_of_Madness_and_Other_Novels",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a0/At_the_mountains_of_madness.jpg",
-    "coverImageFile": "covers/at-the-mountains-of-madness-and-other-novels-45.jpg",
+    "coverImageFile": null,
     "error": null,
     "description": "At the Mountains of Madness and Other Novels is a collection of stories by American author H. P. Lovecraft. It was originally published in 1964 by Arkham House in an edition of 3,552 copies. The true first edition has no head- or tailbands and features a green dustjacket (as depicted right). (Later states of the dustjacket are red and orange.)\n\nThe collection was revised and the text restored in 1985 by S. T. Joshi, replacing the introduction by August Derleth for one by Joshi and another by James Turner. The 1985 edition was published in an edition of 3,990 copies and designated a \"corrected 5th printing\".",
     "goodreadsUrl": "https://www.goodreads.com/book/show/32768.At_the_Mountains_of_Madness_and_Other_Novels"
@@ -2368,9 +2398,11 @@ window.BOOKS = [
     "publicationDate": "1963",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Autobiography%3A_Some_Notes_on_a_Nonentity",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/9/9e/Nonentity.jpg",
-    "coverImageFile": "covers/autobiography-some-notes-on-a-nonentity-141.jpg",
+    "coverImageFile": "covers/autobiography-some-notes-on-a-nonentity-359.jpg",
     "error": null,
-    "description": "Autobiography: Some Notes on a Nonentity is an autobiographical essay by American author H. P. Lovecraft. It was released in 1963 by Arkham House in an edition of 500 copies. The essay was originally included in Beyond the Wall of Sleep. This reprinting includes annotations by August Derleth. More recently it has been reprinted in the books Lord of a Visible World: An Autobiography in Letters edited by S. T. Joshi and David E. Schultz (2000), and Collected Essays, Volume 5: Philosophy; Autobiography & Miscellany edited by S. T. Joshi (2006)."
+    "description": "Autobiography: Some Notes on a Nonentity is an autobiographical essay by American author H. P. Lovecraft. It was released in 1963 by Arkham House in an edition of 500 copies. The essay was originally included in Beyond the Wall of Sleep. This reprinting includes annotations by August Derleth. More recently it has been reprinted in the books Lord of a Visible World: An Autobiography in Letters edited by S. T. Joshi and David E. Schultz (2000), and Collected Essays, Volume 5: Philosophy; Autobiography & Miscellany edited by S. T. Joshi (2006).",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/29865383-autobiography-some-notes-on-a-nonentity",
+    "coverEditPath": "covers/autobiography-some-notes-on-a-nonentity-359.jpg"
   },
   {
     "id": 276,
@@ -2384,7 +2416,7 @@ window.BOOKS = [
     "publicationDate": "1963",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Dunwich_Horror_and_Others",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Dunwich_Horror_and_Others_dust_jacket.jpg",
-    "coverImageFile": "covers/the-dunwich-horror-and-others-46.jpg",
+    "coverImageFile": null,
     "error": null,
     "description": "The Dunwich Horror and Others is a collection of fantasy, horror and science fiction short stories by American author H. P. Lovecraft. It was originally published in 1963 by Arkham House in an edition of 3,133 copies.\n\nThe true first edition is not bound with head- and tailbands, and the true first-state dustjacket carries a price of $5.00 (not $6.50 as on later printings). (Reportedly some copies lack head and tailbands, indicating the true first edition, but bear the $6.50 price on the dustjacket, suggesting that the publisher ran out of first-edition dustjackets before they ran out of first-edition books, so they raised the price to $6.50, sold the remaining first-edition volumes in second-state jackets, and then started reprinting the book).\n\nThe collection was revised in 1985 by S.T. Joshi, replacing the introduction by August Derleth for one by Joshi (\"A Note on the Texts\") and another by Robert Bloch (\"Heritage of Horror\"). This edition, designated a \"corrected sixth printing\", was published in an edition of 4,124 copies. Bloch's Introduction was reprinted here from its first appearance in The Best of H. P. Lovecraft: Bloodcurdling Tales of Horror and the Macabre.",
     "goodreadsUrl": "https://www.goodreads.com/book/show/63213.The_Dunwich_Horror_and_Others"
@@ -2511,18 +2543,20 @@ window.BOOKS = [
   {
     "id": 238,
     "imprint": "arkham_house",
-    "decade": "1960s",
+    "decade": "2000s",
     "listTitle": "The Shunned House",
     "listAuthor": "by H. P. Lovecraft (1961)",
-    "title": "The Shunned House",
-    "author": "H. P. Lovecraft",
+    "title": "The Shunned House Facsimile",
+    "author": "H. P. Lovecraft and Robert Weinberg",
     "coverArtist": null,
-    "publicationDate": "1961",
+    "publicationDate": "2008",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Shunned_House",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/The_Shunned_House.jpg",
-    "coverImageFile": "covers/the-shunned-house-150.jpg",
+    "coverImageFile": "covers/the-shunned-house-238.png",
     "error": null,
-    "description": "\"The Shunned House\" is a horror fiction novelette by American author H. P. Lovecraft, written on October 16–19, 1924. It was first published in the October 1937 issue of Weird Tales."
+    "description": "\"The Shunned House\" is a horror fiction novelette by American author H. P. Lovecraft, written on October 16–19, 1924. It was first published in the October 1937 issue of Weird Tales.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/8507286-the-shunned-house",
+    "coverEditPath": "covers/the-shunned-house-238.png"
   },
   {
     "id": 367,
@@ -2623,7 +2657,8 @@ window.BOOKS = [
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/ff/Shuttered_room.jpg",
     "coverImageFile": "covers/the-shuttered-room-and-other-pieces-156.jpg",
     "error": null,
-    "description": "The Shuttered Room and Other Pieces is an anthology of fantasy and horror short stories, essays and memoirs by American author H. P. Lovecraft and others. It was released in 1959 by Arkham House in an edition of 2,527 copies and was the fifth collection of Lovecraft's work to be released by Arkham House. August Derleth, the owner of Arkham House, and an admirer and literary executor to Lovecraft, edited the collection and wrote the title story, \"The Shuttered Room\", as well as another story, \"The Fisherman of Falcon Point\" from lines of story ideas left by Lovecraft after his death. Derleth billed himself as a \"posthumous collaborator\".\n\nAlthough most copies of this volume have the usual Holliston Black Novilex binding used by Arkham House at this period, there are reportedly some copies (possibly a few dozen) with less sturdy \"board\" covers made of a softer material and without the dustjacket. These may constitute a variant state of the volume."
+    "description": "The Shuttered Room and Other Pieces is an anthology of fantasy and horror short stories, essays and memoirs by American author H. P. Lovecraft and others. It was released in 1959 by Arkham House in an edition of 2,527 copies and was the fifth collection of Lovecraft's work to be released by Arkham House. August Derleth, the owner of Arkham House, and an admirer and literary executor to Lovecraft, edited the collection and wrote the title story, \"The Shuttered Room\", as well as another story, \"The Fisherman of Falcon Point\" from lines of story ideas left by Lovecraft after his death. Derleth billed himself as a \"posthumous collaborator\".\n\nAlthough most copies of this volume have the usual Holliston Black Novilex binding used by Arkham House at this period, there are reportedly some copies (possibly a few dozen) with less sturdy \"board\" covers made of a softer material and without the dustjacket. These may constitute a variant state of the volume.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/10049265-the-shuttered-room-and-other-pieces"
   },
   {
     "id": 373,
@@ -2639,7 +2674,8 @@ window.BOOKS = [
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/4/45/Some_notes_on_hpl.jpg",
     "coverImageFile": "covers/some-notes-on-h-p-lovecraft-157.jpg",
     "error": null,
-    "description": "Some Notes on H. P. Lovecraft is a collection of biographical notes about H. P. Lovecraft by writer August Derleth. It was released in 1959 by Arkham House in an edition of 1,044 copies."
+    "description": "Some Notes on H. P. Lovecraft is a collection of biographical notes about H. P. Lovecraft by writer August Derleth. It was released in 1959 by Arkham House in an edition of 1,044 copies.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/5743580-some-notes-on-h-p-lovecraft"
   },
   {
     "id": 374,
@@ -2656,7 +2692,8 @@ window.BOOKS = [
     "coverImageFile": "covers/arkham-house-the-first-20-years-158.png",
     "error": null,
     "description": "Arkham House was an American publishing house specializing in weird fiction. It was founded in Sauk City, Wisconsin, in 1939 by August Derleth and Donald Wandrei to publish hardcover collections of H. P. Lovecraft's best works, which had previously been published only in pulp magazines. The company's name is derived from Lovecraft's fictional New England city, Arkham, Massachusetts. Arkham House editions are noted for the quality of their printing and binding. The printer's mark for Arkham House was designed by Frank Utpatel.",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/22734482-thirty-years-of-arkham-house-1939-1969"
+    "goodreadsUrl": "https://www.goodreads.com/book/show/22734482-thirty-years-of-arkham-house-1939-1969",
+    "deleted": true
   },
   {
     "id": 375,
@@ -2723,7 +2760,8 @@ window.BOOKS = [
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/b/ba/Always_comes_evening.jpg",
     "coverImageFile": "covers/always-comes-evening-162.jpg",
     "error": null,
-    "description": "Always Comes Evening is a collection of poems by Robert E. Howard. It was released in 1957 and was the author's second book to be published by Arkham House. It was released in an edition of 636 copies. The publication was subsidized by Howard's literary executor, Glenn Lord who compiled the poems.\n\nThe volume exists in two states. 536 copies had the title and Howard's name running from bottom to top of the spine, as done in Europe. When the error was discovered during the printing process, the last 100 copies were made American-style with the title and Howard's name running from top to bottom."
+    "description": "Always Comes Evening is a collection of poems by Robert E. Howard. It was released in 1957 and was the author's second book to be published by Arkham House. It was released in an edition of 636 copies. The publication was subsidized by Howard's literary executor, Glenn Lord who compiled the poems.\n\nThe volume exists in two states. 536 copies had the title and Howard's name running from bottom to top of the spine, as done in Europe. When the error was discovered during the printing process, the last 100 copies were made American-style with the title and Howard's name running from top to bottom.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/1512252.Always_Comes_Evening"
   },
   {
     "id": 379,
@@ -2875,7 +2913,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield."
+    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield.",
+    "hidden": true
   },
   {
     "id": 421,
@@ -2891,7 +2930,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield."
+    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield.",
+    "hidden": true
   },
   {
     "id": 422,
@@ -2907,7 +2947,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield."
+    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield.",
+    "hidden": true
   },
   {
     "id": 423,
@@ -2923,7 +2964,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield."
+    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield.",
+    "hidden": true
   },
   {
     "id": 387,
@@ -2990,7 +3032,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield."
+    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield.",
+    "hidden": true
   },
   {
     "id": 425,
@@ -3006,7 +3049,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield."
+    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield.",
+    "hidden": true
   },
   {
     "id": 426,
@@ -3022,7 +3066,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield."
+    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield.",
+    "hidden": true
   },
   {
     "id": 427,
@@ -3038,7 +3083,8 @@ window.BOOKS = [
     "coverImageUrl": null,
     "coverImageFile": null,
     "error": null,
-    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield."
+    "description": "The Arkham Sampler was an American fantasy and horror fiction magazine first published in Winter 1948. The headquarters was in Sauk City, Wisconsin. The magazine, edited by August Derleth, was the first of two magazines published by Arkham House. It was published on a quarterly basis. The cover design was prepared by Ronald Clyne and was printed in alternating colors for the eight quarterly issues. Each issue had a print run of 1,200 copies with the exception of the Winter 1949 \"All Science-Fiction Issue\", of which 2,000 copies were printed. The Autumn 1949 issue was the last edition of the magazine.\n\nThe Arkham Sampler published fiction, poetry, reviews, letters, articles and bibliographic data. The magazine published original works by H. P. Lovecraft, Ray Bradbury, Robert E. Howard, Theodore Sturgeon, A. E. van Vogt, Robert Bloch and others. Other writers featured in the magazine include Anthony Boucher, Everett F. Bleiler, Martin Gardner, Carl Jacobi, David H. Keller, Fritz Leiber, Frank Belknap Long, E. Hoffmann Price, Vincent Starrett, Jules Verne and H. Russell Wakefield.",
+    "hidden": true
   },
   {
     "id": 390,
@@ -3156,7 +3202,8 @@ window.BOOKS = [
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/d/d5/Dark_carnival_originall.jpg",
     "coverImageFile": "covers/dark-carnival-short-story-collection-188.jpg",
     "error": null,
-    "description": "Dark Carnival is a short story collection by American writer Ray Bradbury, first published October 1947 by Arkham House. It was his debut book, and many of the stories were reprinted elsewhere."
+    "description": "Dark Carnival is a short story collection by American writer Ray Bradbury, first published October 1947 by Arkham House. It was his debut book, and many of the stories were reprinted elsewhere.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/1794059.Dark_Carnival"
   },
   {
     "id": 397,
@@ -3427,7 +3474,8 @@ window.BOOKS = [
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Marginalia_lovecraft.jpg",
     "coverImageFile": "covers/marginalia-collection-204.jpg",
     "error": null,
-    "description": "Marginalia is a collection of Fantasy, Horror and Science fiction short stories, essays, biography and poetry by and about the American author H. P. Lovecraft. It was released in 1944 and was the third collection of Lovecraft's work published by Arkham House. 2,035 copies were printed.\n\nThe contents of this volume were selected by August Derleth and Donald Wandrei. The dust-jacket art is a reproduction of Virgil Finlay's illustration for Lovecraft's story \"The Shunned House.\""
+    "description": "Marginalia is a collection of Fantasy, Horror and Science fiction short stories, essays, biography and poetry by and about the American author H. P. Lovecraft. It was released in 1944 and was the third collection of Lovecraft's work published by Arkham House. 2,035 copies were printed.\n\nThe contents of this volume were selected by August Derleth and Donald Wandrei. The dust-jacket art is a reproduction of Virgil Finlay's illustration for Lovecraft's story \"The Shunned House.\"",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/5743058-marginalia"
   },
   {
     "id": 413,
@@ -3546,7 +3594,7 @@ window.BOOKS = [
     "coverImageFile": "covers/the-outsider-and-others-211.jpg",
     "error": null,
     "description": "The Outsider and Others is a collection of stories by American writer H. P. Lovecraft. It was released in 1939 and was the first book published by Arkham House. 1,268 copies were printed. It went out of print early in 1944 and has never been reprinted.\n\nThe volume takes its name from the Lovecraft short story \"The Outsider\"; The Outsider and Other Stories was Lovecraft's preferred title for a short story collection considered, but never issued, by Farnsworth Wright. The stories for this volume were selected by August Derleth and Donald Wandrei. The dust jacket art was a montage of drawings by Virgil Finlay for Weird Tales magazine, of which only one or two had originally illustrated Lovecraft stories.\n\nE. F. Bleiler describes the collection's publication as \"the beginning of serious specialist publishing of fantastic fiction in America\".",
-    "goodreadsUrl": "https://www.goodreads.com/book/show/176155"
+    "goodreadsUrl": "https://www.goodreads.com/book/show/11399579-the-outsider-and-others"
   },
   {
     "imprint": "mycroft_moran",
@@ -3596,7 +3644,8 @@ window.BOOKS = [
     "coverImageFile": "covers/the-final-adventures-of-solar-pons-214.jpg",
     "error": null,
     "id": 214,
-    "description": "The Final Adventures of Solar Pons is a collection of detective science fiction short stories by author August Derleth. It was released in 1998 by Mycroft & Moran. It is a collection of Derleth's Solar Pons stories which are pastiches of the Sherlock Holmes tales of Arthur Conan Doyle."
+    "description": "The Final Adventures of Solar Pons is a collection of detective science fiction short stories by author August Derleth. It was released in 1998 by Mycroft & Moran. It is a collection of Derleth's Solar Pons stories which are pastiches of the Sherlock Holmes tales of Arthur Conan Doyle.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/879503.The_Final_Adventures_of_Solar_Pons"
   },
   {
     "imprint": "mycroft_moran",
@@ -3646,7 +3695,8 @@ window.BOOKS = [
     "coverImageFile": "covers/the-chronicles-of-solar-pons-217.jpg",
     "error": null,
     "id": 217,
-    "description": "The Chronicles of Solar Pons is a collection of detective fiction short stories by author August Derleth. It is the sixth volume in the series of Derleth's Solar Pons short stories, and was released in 1973 by Mycroft & Moran in an edition of 4,176 copies."
+    "description": "The Chronicles of Solar Pons is a collection of detective fiction short stories by author August Derleth. It is the sixth volume in the series of Derleth's Solar Pons short stories, and was released in 1973 by Mycroft & Moran in an edition of 4,176 copies.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/879500.The_Chronicles_of_Solar_Pons"
   },
   {
     "imprint": "mycroft_moran",
@@ -3662,7 +3712,8 @@ window.BOOKS = [
     "coverImageFile": "covers/number-seven-queer-street-218.jpg",
     "error": null,
     "id": 218,
-    "description": "Number Seven, Queer Street is a collection of supernatural detective short stories by author Margery Lawrence. It was first published by Robert Hale in the United Kingdom in 1945. The first United States edition was published in 1969 by Mycroft & Moran in an edition of 2,027 copies and omits the last two stories. The stories are about Lawrence's supernatural detective Miles Pennoyer."
+    "description": "Number Seven, Queer Street is a collection of supernatural detective short stories by author Margery Lawrence. It was first published by Robert Hale in the United Kingdom in 1945. The first United States edition was published in 1969 by Mycroft & Moran in an edition of 2,027 copies and omits the last two stories. The stories are about Lawrence's supernatural detective Miles Pennoyer.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/10009178-number-seven-queer-street"
   },
   {
     "imprint": "mycroft_moran",
@@ -3695,7 +3746,8 @@ window.BOOKS = [
     "coverImageFile": "covers/the-adventure-of-the-unique-dickensians-220.jpg",
     "error": null,
     "id": 220,
-    "description": "\"The Adventure of the Unique Dickensians\" is a detective fiction short story by American writer August Derleth. It was released in 1968 by Mycroft & Moran in an edition of 2,012 copies. The 38-page chapbook is illustrated by Frank Utpatel.\n\nOf the Mycroft and Moran edition, 35 copies were bound in black cloth printed in gilt on the spine and front board, likely by collector/publisher Gerry de la Ree and distributed thus probably during the 1980s. The bound copies bear a label affixed to the inside front pastedown with a statement of the copy number, e.g. \"#6 of 35 bound copies.\"\n\nThe story is part of Derleth's Solar Pons series of pastiches of the Sherlock Holmes tales of Arthur Conan Doyle. It is a Christmas story about Ebenezer Snawley, an eccentric collector of Dickensiana who dresses in 19th-century clothing and is harassed by a man who bawls street cries near his dwelling.\n\nThe story was eventually collected in The Chronicles of Solar Pons."
+    "description": "\"The Adventure of the Unique Dickensians\" is a detective fiction short story by American writer August Derleth. It was released in 1968 by Mycroft & Moran in an edition of 2,012 copies. The 38-page chapbook is illustrated by Frank Utpatel.\n\nOf the Mycroft and Moran edition, 35 copies were bound in black cloth printed in gilt on the spine and front board, likely by collector/publisher Gerry de la Ree and distributed thus probably during the 1980s. The bound copies bear a label affixed to the inside front pastedown with a statement of the copy number, e.g. \"#6 of 35 bound copies.\"\n\nThe story is part of Derleth's Solar Pons series of pastiches of the Sherlock Holmes tales of Arthur Conan Doyle. It is a Christmas story about Ebenezer Snawley, an eccentric collector of Dickensiana who dresses in 19th-century clothing and is harassed by a man who bawls street cries near his dwelling.\n\nThe story was eventually collected in The Chronicles of Solar Pons.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/7023279-the-adventure-of-the-unique-dickensians"
   },
   {
     "imprint": "mycroft_moran",
@@ -3711,7 +3763,8 @@ window.BOOKS = [
     "coverImageFile": "covers/wisconsin-murders-221.jpg",
     "error": null,
     "id": 221,
-    "description": "Wisconsin Murders is a collection of true crime accounts written by author August Derleth. It was released in 1968 by Mycroft & Moran in an edition of 1,958 copies. The stories detail sixteen cases of sudden death in Wisconsin for 1842 to 1926. Three of the accounts had appeared previously in American Weekly and Saint Mystery Magazine."
+    "description": "Wisconsin Murders is a collection of true crime accounts written by author August Derleth. It was released in 1968 by Mycroft & Moran in an edition of 1,958 copies. The stories detail sixteen cases of sudden death in Wisconsin for 1842 to 1926. Three of the accounts had appeared previously in American Weekly and Saint Mystery Magazine.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/32767235-wisconsin-murders"
   },
   {
     "imprint": "mycroft_moran",
@@ -3727,7 +3780,8 @@ window.BOOKS = [
     "coverImageFile": "covers/the-exploits-of-chevalier-dupin-222.jpg",
     "error": null,
     "id": 222,
-    "description": "The Exploits of the Chevalier Dupin is a collection of detective short stories by author Michael Harrison. It was released in 1968 by Mycroft & Moran in an edition of 1,917 copies. The stories are pastiches of the C. Auguste Dupin stories of Edgar Allan Poe. The stories were first published in Ellery Queen's Mystery Magazine.\n\nThere is an expanded UK edition by a different publisher which adds a further five stories This appeared under the title Murder in the Rue Royale and Further Exploits of the Chevalier Dupin, (UK: Tom Stacey, 1972). Both editions contain the introduction by Ellery Queen, and the non-fiction piece on Dupin by Harrison."
+    "description": "The Exploits of the Chevalier Dupin is a collection of detective short stories by author Michael Harrison. It was released in 1968 by Mycroft & Moran in an edition of 1,917 copies. The stories are pastiches of the C. Auguste Dupin stories of Edgar Allan Poe. The stories were first published in Ellery Queen's Mystery Magazine.\n\nThere is an expanded UK edition by a different publisher which adds a further five stories This appeared under the title Murder in the Rue Royale and Further Exploits of the Chevalier Dupin, (UK: Tom Stacey, 1972). Both editions contain the introduction by Ellery Queen, and the non-fiction piece on Dupin by Harrison.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/2510273.The_Exploits_of_Chevalier_Dupin"
   },
   {
     "imprint": "mycroft_moran",
@@ -3743,7 +3797,8 @@ window.BOOKS = [
     "coverImageFile": "covers/a-praed-street-dossier-223.jpg",
     "error": null,
     "id": 223,
-    "description": "A Praed Street Dossier is a collection of detective fiction short stories, essays and marginalia by author August Derleth. It was released in 1968 by Mycroft & Moran in an edition of 2,904 copies and was illustrated by Frank Utpatel. It was an associational collection to Derleth's Solar Pons series of pastiches of the Sherlock Holmes tales of Arthur Conan Doyle. The two science fiction stories, \"The Adventure of the Snitch in Time\" and \"The Adventure of the Ball of Nostradamus\", written with Mack Reynolds, were originally published in The Magazine of Fantasy and Science Fiction.\n\nAn earlier edition of the volume was released by Peter Ruber's Candlelight Press: Ms Praed Street Papers. Issued in stiff pictorial wrappers only, with dustjacket, it featured the same Frank Utpatel dustjacket artwork as the later Mycroft & Moran edition. Praed Street Papers begins with an Introduction by Peter Ruber that describes a weekend spent with August Derleth and ends with \"a Tentative Chronology of Solar Pons\" based on the Robert Pattrick Chronology. (Robert Pattrick, a Pontine scholar of the first order, had nearly completed a chronology of Derleth’s Solar Pons cases when he died in 1960. August Derleth made a few revisions to “complete it” and it was included in The Reminiscences of Solar Pons. Pattrick's Chronology only addressed adventures chronicled in the book collections and not those included in magazines).\n\nPraed Street Papers includes essays 1-4 that were reprinted in A Praed Street Dossier. The fictional \"From the Notebooks of Dr Lyndon Parker\" is included, but without \"The Adventure of the Bookseller's Clerk.\" It also includes a section called \"The Pictured Pons\" which features comic-strip versions of \"The Adventure of the Limping Man\" and \"The Adventure of the Missing tenants.\" Frank Utpatel tried the pictured strips in the 1930s, but after two rejections gave up the project. Derleth suggests that the essential flaw in the strip was \"its extreme wordiness and lack of action.\""
+    "description": "A Praed Street Dossier is a collection of detective fiction short stories, essays and marginalia by author August Derleth. It was released in 1968 by Mycroft & Moran in an edition of 2,904 copies and was illustrated by Frank Utpatel. It was an associational collection to Derleth's Solar Pons series of pastiches of the Sherlock Holmes tales of Arthur Conan Doyle. The two science fiction stories, \"The Adventure of the Snitch in Time\" and \"The Adventure of the Ball of Nostradamus\", written with Mack Reynolds, were originally published in The Magazine of Fantasy and Science Fiction.\n\nAn earlier edition of the volume was released by Peter Ruber's Candlelight Press: Ms Praed Street Papers. Issued in stiff pictorial wrappers only, with dustjacket, it featured the same Frank Utpatel dustjacket artwork as the later Mycroft & Moran edition. Praed Street Papers begins with an Introduction by Peter Ruber that describes a weekend spent with August Derleth and ends with \"a Tentative Chronology of Solar Pons\" based on the Robert Pattrick Chronology. (Robert Pattrick, a Pontine scholar of the first order, had nearly completed a chronology of Derleth’s Solar Pons cases when he died in 1960. August Derleth made a few revisions to “complete it” and it was included in The Reminiscences of Solar Pons. Pattrick's Chronology only addressed adventures chronicled in the book collections and not those included in magazines).\n\nPraed Street Papers includes essays 1-4 that were reprinted in A Praed Street Dossier. The fictional \"From the Notebooks of Dr Lyndon Parker\" is included, but without \"The Adventure of the Bookseller's Clerk.\" It also includes a section called \"The Pictured Pons\" which features comic-strip versions of \"The Adventure of the Limping Man\" and \"The Adventure of the Missing tenants.\" Frank Utpatel tried the pictured strips in the 1930s, but after two rejections gave up the project. Derleth suggests that the essential flaw in the strip was \"its extreme wordiness and lack of action.\"",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/13641587-a-praed-street-dossier"
   },
   {
     "imprint": "mycroft_moran",
@@ -3793,7 +3848,8 @@ window.BOOKS = [
     "coverImageFile": "covers/the-reminiscences-of-solar-pons-226.jpg",
     "error": null,
     "id": 226,
-    "description": "The Reminiscences of Solar Pons is a collection of detective fiction short stories by author August Derleth. It was released in 1961 by Mycroft & Moran in an edition of 2,052 copies. It was the fifth collection of Derleth's Solar Pons stories which are pastiches of the Sherlock Holmes tales of Arthur Conan Doyle."
+    "description": "The Reminiscences of Solar Pons is a collection of detective fiction short stories by author August Derleth. It was released in 1961 by Mycroft & Moran in an edition of 2,052 copies. It was the fifth collection of Derleth's Solar Pons stories which are pastiches of the Sherlock Holmes tales of Arthur Conan Doyle.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/6052605-the-reminiscences-of-solar-pons"
   },
   {
     "imprint": "mycroft_moran",
@@ -3826,7 +3882,8 @@ window.BOOKS = [
     "coverImageFile": "covers/three-problems-for-solar-pons-228.jpg",
     "error": null,
     "id": 228,
-    "description": "Three Problems for Solar Pons is a collection of detective fiction short stories by American writer August Derleth. It was released in 1952 by Mycroft & Moran in an edition of 996 copies. It was the third collection of Derleth's Solar Pons stories which are pastiches of the Sherlock Holmes tales of Arthur Conan Doyle. The book was intended as an interim collection and all the stories are reprinted in The Return of Solar Pons. Because of the low print run, it is the scarcest Mycroft & Moran book.\n\nThe dustjacket was by artist Ronald Clyne."
+    "description": "Three Problems for Solar Pons is a collection of detective fiction short stories by American writer August Derleth. It was released in 1952 by Mycroft & Moran in an edition of 996 copies. It was the third collection of Derleth's Solar Pons stories which are pastiches of the Sherlock Holmes tales of Arthur Conan Doyle. The book was intended as an interim collection and all the stories are reprinted in The Return of Solar Pons. Because of the low print run, it is the scarcest Mycroft & Moran book.\n\nThe dustjacket was by artist Ronald Clyne.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/10041771-three-problems-for-solar-pons"
   },
   {
     "imprint": "mycroft_moran",
@@ -3842,7 +3899,8 @@ window.BOOKS = [
     "coverImageFile": "covers/the-memoirs-of-solar-pons-229.jpg",
     "error": null,
     "id": 229,
-    "description": "The Memoirs of Solar Pons is a collection of detective fiction short stories by American writer August Derleth. It was released in 1951 by Mycroft & Moran in an edition of 2,038 copies. It was the second collection of Derleth's Solar Pons stories which are pastiches of the Sherlock Holmes tales of Arthur Conan Doyle.\n\nThis volume of the Solar Pons series was also sold for book club publication. In 1951 Unicorn Mystery Book Club (New York) issued an omnibus including Memoirs of Solar Pons (alongside The Beautiful Stranger by Bernice Carey, Fish Lane by Louis Corkill, and Hangman’s Hat by Paul Ernst). The Unicorn omnibuses were edited (apparently anonymously) by Hans Stefan Santesson. Memoirs was the only volume of the Solar Pons series to be published as a book club edition as well as by Arkham House."
+    "description": "The Memoirs of Solar Pons is a collection of detective fiction short stories by American writer August Derleth. It was released in 1951 by Mycroft & Moran in an edition of 2,038 copies. It was the second collection of Derleth's Solar Pons stories which are pastiches of the Sherlock Holmes tales of Arthur Conan Doyle.\n\nThis volume of the Solar Pons series was also sold for book club publication. In 1951 Unicorn Mystery Book Club (New York) issued an omnibus including Memoirs of Solar Pons (alongside The Beautiful Stranger by Bernice Carey, Fish Lane by Louis Corkill, and Hangman’s Hat by Paul Ernst). The Unicorn omnibuses were edited (apparently anonymously) by Hans Stefan Santesson. Memoirs was the only volume of the Solar Pons series to be published as a book club edition as well as by Arkham House.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/1831257.The_Memoirs_of_Solar_Pons"
   },
   {
     "imprint": "mycroft_moran",
@@ -3858,7 +3916,8 @@ window.BOOKS = [
     "coverImageFile": "covers/carnacki-the-ghost-finder-230.jpg",
     "error": null,
     "id": 230,
-    "description": "Carnacki the Ghost-Finder is a collection of occult detective short stories by English writer William Hope Hodgson, featuring the titular protagonist. It was first published in 1913 by the English publisher Eveleigh Nash. In 1947, a new edition of 3,050 copies was published by Mycroft & Moran and included three additional stories (the last three listed below). In 1951 Ellery Queen covered the Mycroft & Moran version as No. 53 in Queen's Quorum: A History of the Detective-Crime Short Story As Revealed by the 100 Most Important Books Published in this Field Since 1845.\n\nFor several decades subsequent to the Mycroft and Moran edition, Carnacki collections routinely if not always contained all nine stories. Project Gutenberg Ebook #10832 (2004) contains only the first six stories, however, and arranges them in sequence of their 1910 and 1912 magazine publication. Some other publications follow Project Gutenberg, perhaps using its text."
+    "description": "Carnacki the Ghost-Finder is a collection of occult detective short stories by English writer William Hope Hodgson, featuring the titular protagonist. It was first published in 1913 by the English publisher Eveleigh Nash. In 1947, a new edition of 3,050 copies was published by Mycroft & Moran and included three additional stories (the last three listed below). In 1951 Ellery Queen covered the Mycroft & Moran version as No. 53 in Queen's Quorum: A History of the Detective-Crime Short Story As Revealed by the 100 Most Important Books Published in this Field Since 1845.\n\nFor several decades subsequent to the Mycroft and Moran edition, Carnacki collections routinely if not always contained all nine stories. Project Gutenberg Ebook #10832 (2004) contains only the first six stories, however, and arranges them in sequence of their 1910 and 1912 magazine publication. Some other publications follow Project Gutenberg, perhaps using its text.",
+    "goodreadsUrl": "https://www.goodreads.com/book/show/345563.Carnacki_the_Ghost_Finder"
   },
   {
     "imprint": "mycroft_moran",
@@ -3867,7 +3926,7 @@ window.BOOKS = [
     "listAuthor": "- (a.k.a. Regarding Sherlock Holmes: The Adventures of Solar Pons) - (in the UK: The Adventures of Solar Pons), by August Derleth (1945)",
     "title": "\"In Re: Sherlock Holmes\" -- The Adventures of Solar Pons",
     "author": "August Derleth",
-    "coverArtist": null,
+    "coverArtist": "Ronald Clyne",
     "publicationDate": "1945",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/In_Re%3A_Sherlock_Holmes",
     "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fb/In_Re_Sherlock_Holmes.jpg",

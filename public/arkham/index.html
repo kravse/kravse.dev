@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/attribution.css" />
+    <link rel="stylesheet" href="css/settings.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/edit-dialog.css" />
     <link rel="stylesheet" href="css/book-detail.css" />
@@ -73,52 +75,6 @@
               <circle cx="9" cy="14" r="1.35" fill="currentColor" />
             </svg>
           </button>
-          <div class="help-anchor" id="help-anchor">
-          <button
-            id="serve-help-btn"
-            class="serve-help-btn"
-            type="button"
-            aria-label="How to run locally"
-            aria-expanded="false"
-            aria-controls="serve-help-popover"
-            title="How to run locally"
-          >
-            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-              <circle
-                cx="10"
-                cy="10"
-                r="7.25"
-                stroke="currentColor"
-                stroke-width="1.5"
-              />
-              <path
-                d="M10 9.1V14"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-              <circle cx="10" cy="6.35" r="0.85" fill="currentColor" />
-            </svg>
-          </button>
-          <div id="serve-help-popover" class="help-popover" hidden>
-            <p>
-              To enable uploads, hiding books, and other features, run the local
-              server from the project folder:
-            </p>
-            <p><code>npm run serve</code></p>
-            <p>
-              Then open
-              <a id="serve-help-url" href="http://localhost:8742"
-                >http://localhost:8742</a
-              >
-            </p>
-            <p>
-              Hover a cover to edit a book, hide it, or upload a custom cover
-              image. Hidden books stay out of the gallery unless you turn on
-              <strong>Show hidden</strong>.
-            </p>
-          </div>
-        </div>
         </div>
       </div>
       <div class="controls">
@@ -143,10 +99,10 @@
           <div class="sort-control">
             <label class="sort-label" for="sort">Sort</label>
             <select id="sort" aria-label="Sort books">
-              <option value="default">Bibliography order</option>
-              <option value="date-desc">Newest first</option>
               <option value="date-asc" selected>Oldest first</option>
-              <option value="title">Title A–Z</option>
+              <option value="date-desc">Newest first</option>
+              <option value="title-asc">Title A–Z</option>
+              <option value="title-desc">Title Z–A</option>
             </select>
           </div>
           <label class="show-hidden-toggle" id="show-hidden-wrap" hidden>
@@ -157,6 +113,207 @@
       </div>
       <div class="stats" id="stats"></div>
     </header>
+
+    <footer class="attribution-bar">
+      <button
+        id="settings-btn"
+        class="bar-icon-btn settings-btn"
+        type="button"
+        aria-label="Settings"
+        aria-expanded="false"
+        aria-controls="settings-dialog"
+        title="Settings"
+      >
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path
+            d="M10 12.2a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4Z"
+            stroke="currentColor"
+            stroke-width="1.5"
+          />
+          <path
+            d="M10 3.6v1.55M10 14.85v1.55M4.95 5.45l1.1 1.1M13.95 13.45l1.1 1.1M3.65 10h1.55M14.8 10h1.55M5.45 14.95l1.1-1.1M13.45 6.95l1.1-1.1"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <div class="attribution-bar-end">
+        <p class="attribution-bar-note">
+          Bibliography and descriptions excerpted from English Wikipedia (CC
+          BY-SA 4.0).
+        </p>
+        <button
+          id="attribution-btn"
+          class="bar-icon-btn attribution-btn"
+          type="button"
+          aria-label="Wikipedia attribution and data sources"
+          aria-expanded="false"
+          aria-controls="attribution-dialog"
+          title="Wikipedia attribution"
+        >
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle
+              cx="10"
+              cy="10"
+              r="7.25"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <path
+              d="M10 9.1V14"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+            <circle cx="10" cy="6.35" r="0.85" fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+    </footer>
+
+    <div id="settings-dialog" class="settings-dialog" hidden>
+      <div class="settings-dialog-backdrop" data-close-settings></div>
+      <div
+        class="settings-dialog-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="settings-dialog-title"
+      >
+        <button
+          type="button"
+          id="settings-close"
+          class="settings-close"
+          aria-label="Close settings"
+        >
+          &times;
+        </button>
+        <h2 id="settings-dialog-title">Settings</h2>
+        <fieldset class="settings-collection-options">
+          <legend class="visually-hidden">Collection source</legend>
+          <label class="settings-collection-option">
+            <input
+              type="radio"
+              name="collection-source"
+              id="collection-source-sample"
+              value="sample"
+            />
+            Use sample collection
+          </label>
+          <label class="settings-collection-option">
+            <input
+              type="radio"
+              name="collection-source"
+              id="collection-source-own"
+              value="own"
+            />
+            Use my own collection
+          </label>
+        </fieldset>
+        <p class="settings-collection-hint">
+          Your own collection is saved in this browser. Switching to the sample
+          does not erase it.
+        </p>
+      </div>
+    </div>
+
+    <div id="attribution-dialog" class="attribution-dialog" hidden>
+      <div class="attribution-dialog-backdrop" data-close-attribution></div>
+      <div
+        class="attribution-dialog-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="attribution-dialog-title"
+      >
+        <button
+          type="button"
+          id="attribution-close"
+          class="attribution-close"
+          aria-label="Close attribution"
+        >
+          &times;
+        </button>
+        <h2 id="attribution-dialog-title">Wikipedia attribution</h2>
+        <p>
+          Bibliography rows, publication dates, cover images, and book
+          descriptions were gathered from English Wikipedia and related
+          Wikimedia projects. Text was excerpted, reformatted, and combined
+          into this catalog; it may differ from the live articles. Each book’s
+          <strong>W</strong> link opens the Wikipedia article used for that
+          entry when one is listed.
+        </p>
+
+        <h3 class="attribution-dialog-subhead">Source pages</h3>
+        <ul>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Arkham_House"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Arkham House</a
+            >
+            — bibliography source
+          </li>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Mycroft_%26_Moran"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Mycroft &amp; Moran</a
+            >
+            — imprint bibliography source
+          </li>
+        </ul>
+
+        <h3 class="attribution-dialog-subhead">Text (CC BY-SA 4.0)</h3>
+        <p>
+          Wikipedia text is used under the
+          <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Creative Commons Attribution-ShareAlike 4.0 International
+            License</a
+          >
+          (CC BY-SA 4.0). Attribution is given by linking to the source
+          articles above and on each book card. <strong>Changes:</strong> text
+          here is not a verbatim copy; it was extracted and edited for this
+          gallery.
+        </p>
+        <p>
+          If you reuse Wikipedia-derived text from this site, you must credit
+          the original Wikipedia article(s), link to CC BY-SA 4.0, note that the
+          material was modified, and license your derivative under the same
+          license (ShareAlike). See
+          <a
+            href="https://en.wikipedia.org/wiki/Wikipedia:Reusing_Wikipedia_content"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Wikipedia:Reusing Wikipedia content</a
+          >
+          and the
+          <a
+            href="https://foundation.wikimedia.org/wiki/Terms_of_Use/en"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Wikimedia Terms of Use</a
+          >
+          for official guidance.
+        </p>
+
+        <h3 class="attribution-dialog-subhead">Images</h3>
+        <p>
+          Cover images may come from Wikipedia, Wikimedia Commons, or other
+          sources (such as Open Library).
+        </p>
+
+        <p class="attribution-dialog-disclaimer">
+          This is a personal catalog project and is not affiliated with Arkham
+          House, Wikipedia, or the Wikimedia Foundation. This notice is not legal
+          advice.
+        </p>
+      </div>
+    </div>
 
     <main>
       <div class="grid" id="grid"></div>
@@ -303,7 +460,7 @@
       </button>
     </div>
 
-    <script>window.READ_ONLY = true;</script>
+    <script>window.READ_ONLY = true; window.DEFAULT_COLLECTION_SOURCE = 'sample';</script>
   <script src="my_collection/collection.js"></script>
     <script src="data/books.js"></script>
     <script src="data/edits.js"></script>
@@ -345,10 +502,17 @@
         "book-detail-toolbar-start",
       );
       const bookDetailImprint = document.getElementById("book-detail-imprint");
-      const serveHelpBtn = document.getElementById("serve-help-btn");
-      const serveHelpPopover = document.getElementById("serve-help-popover");
-      const serveHelpUrl = document.getElementById("serve-help-url");
-      const helpAnchor = document.getElementById("help-anchor");
+      const settingsBtn = document.getElementById("settings-btn");
+      const settingsDialog = document.getElementById("settings-dialog");
+      const settingsCloseBtn = document.getElementById("settings-close");
+      const collectionSourceSampleInput = document.getElementById(
+        "collection-source-sample",
+      );
+      const collectionSourceOwnInput =
+        document.getElementById("collection-source-own");
+      const attributionBtn = document.getElementById("attribution-btn");
+      const attributionDialog = document.getElementById("attribution-dialog");
+      const attributionCloseBtn = document.getElementById("attribution-close");
       const showHiddenWrap = document.getElementById("show-hidden-wrap");
       const showHiddenInput = document.getElementById("show-hidden");
       const pageSubtitle = document.getElementById("page-subtitle");
@@ -356,14 +520,19 @@
       const headerLogo = document.getElementById("header-logo");
       const headerFiltersToggle = document.getElementById("header-filters-toggle");
       const readOnly = window.READ_ONLY === true;
-      const COLLECTION_LOCAL = window.COLLECTION_LOCAL === true;
       const LOGO_ARKHAM = "images/arkham-house.jpg";
       const LOGO_MYCROFT = "images/Mycroft_moran.png";
       const SORT_STORAGE_KEY = "arkham-sort";
       const WANT_STORAGE_KEY = "arkham-want-list";
       const COLLECTION_STORAGE_KEY = "arkham-collection";
+      const COLLECTION_SOURCE_KEY = "arkham-collection-source";
       const HEADER_FILTERS_STORAGE_KEY = "arkham-header-filters-expanded";
-      const SORT_MODES = new Set(["default", "date-desc", "date-asc", "title"]);
+      const SORT_MODES = new Set([
+        "date-desc",
+        "date-asc",
+        "title-asc",
+        "title-desc",
+      ]);
       let collection = [];
       let serveEnabled = false;
       let serveEditDeltas = false;
@@ -374,8 +543,51 @@
       let wantOnly = false;
       let wantIds = new Set();
       let collectionIds = new Set();
+      let collectionSource = "sample";
       let headerFiltersExpanded = true;
       let detailBookId = null;
+
+      function useOwnCollection() {
+        return collectionSource === "own";
+      }
+
+      function defaultCollectionSource() {
+        const fromBuild = window.DEFAULT_COLLECTION_SOURCE;
+        if (fromBuild === "own" || fromBuild === "sample") {
+          return fromBuild;
+        }
+        return readOnly ? "own" : "sample";
+      }
+
+      function restoreCollectionSourcePreference() {
+        try {
+          const saved = localStorage.getItem(COLLECTION_SOURCE_KEY);
+          if (saved === "sample" || saved === "own") {
+            collectionSource = saved;
+            return;
+          }
+        } catch (_) {
+          // localStorage unavailable
+        }
+        collectionSource = defaultCollectionSource();
+      }
+
+      function saveCollectionSourcePreference() {
+        try {
+          localStorage.setItem(COLLECTION_SOURCE_KEY, collectionSource);
+        } catch (_) {
+          // localStorage unavailable
+        }
+      }
+
+      function syncSettingsCollectionRadios() {
+        if (collectionSourceSampleInput) {
+          collectionSourceSampleInput.checked = collectionSource === "sample";
+        }
+        if (collectionSourceOwnInput) {
+          collectionSourceOwnInput.checked = collectionSource === "own";
+        }
+      }
 
       books.forEach((book) => {
         if (book.hidden === undefined) {
@@ -510,7 +722,7 @@
       }
 
       function getCollectionItem(book) {
-        if (COLLECTION_LOCAL) {
+        if (useOwnCollection()) {
           return collectionIds.has(book.id) ? { status: "shelf" } : null;
         }
         return findCollectionMatch(book);
@@ -539,7 +751,7 @@
         const eligible = books.filter(
           (book) => !isDeleted(book) && (includeHidden || !book.hidden),
         );
-        if (COLLECTION_LOCAL) {
+        if (useOwnCollection()) {
           return eligible.filter((book) => collectionIds.has(book.id)).length;
         }
         return collection.filter((item) =>
@@ -548,9 +760,8 @@
       }
 
       async function loadCollection() {
-        if (COLLECTION_LOCAL) {
+        if (useOwnCollection()) {
           collection = [];
-          loadCollectionIds();
           return;
         }
 
@@ -574,8 +785,15 @@
       function restoreSortPreference() {
         try {
           const saved = localStorage.getItem(SORT_STORAGE_KEY);
-          if (saved && SORT_MODES.has(saved)) {
-            sortSelect.value = saved;
+          const legacy = { default: "date-asc", title: "title-asc" };
+          const mode =
+            saved && SORT_MODES.has(saved)
+              ? saved
+              : saved && legacy[saved]
+                ? legacy[saved]
+                : null;
+          if (mode) {
+            sortSelect.value = mode;
           }
         } catch (_) {
           // localStorage unavailable
@@ -707,7 +925,7 @@
           wantIds.delete(id);
         } else {
           wantIds.add(id);
-          if (COLLECTION_LOCAL && collectionIds.has(id)) {
+          if (useOwnCollection() && collectionIds.has(id)) {
             collectionIds.delete(id);
             saveCollectionIds();
           }
@@ -720,6 +938,9 @@
       }
 
       function toggleCollection(bookId) {
+        if (!useOwnCollection()) {
+          return;
+        }
         const id = Number(bookId);
         if (!Number.isFinite(id)) {
           return;
@@ -759,9 +980,14 @@
 
       function sortBooks(list, mode) {
         const copy = [...list];
-        if (mode === "title") {
+        if (mode === "title-asc" || mode === "title") {
           return copy.sort((a, b) =>
             (a.title || "").localeCompare(b.title || ""),
+          );
+        }
+        if (mode === "title-desc") {
+          return copy.sort((a, b) =>
+            (b.title || "").localeCompare(a.title || ""),
           );
         }
         if (mode === "date-desc" || mode === "date-asc") {
@@ -774,7 +1000,14 @@
             return mode === "date-desc" ? yearB - yearA : yearA - yearB;
           });
         }
-        return copy.sort((a, b) => a.id - b.id);
+        return copy.sort((a, b) => {
+          const yearA = parseSortYear(a.publicationDate);
+          const yearB = parseSortYear(b.publicationDate);
+          if (yearA == null && yearB == null) return 0;
+          if (yearA == null) return 1;
+          if (yearB == null) return -1;
+          return yearA - yearB;
+        });
       }
 
       function matchesSearch(book, query) {
@@ -796,7 +1029,7 @@
       function getStatTotal(all) {
         const showHidden = showHiddenInput.checked;
         if (collectionOnly) {
-          if (COLLECTION_LOCAL) {
+          if (useOwnCollection()) {
             return all.filter(
               (book) =>
                 !isDeleted(book) &&
@@ -823,7 +1056,7 @@
         );
         const wantCount = getWantCount();
         const wantLabel = wantCount ? `WANT (${wantCount})` : "WANT";
-        const collectionCount = COLLECTION_LOCAL ? getCollectionCount() : 0;
+        const collectionCount = useOwnCollection() ? getCollectionCount() : 0;
         const collectionLabel = collectionCount
           ? `COLLECTION (${collectionCount})`
           : "COLLECTION";
@@ -1182,7 +1415,7 @@
       }
 
       function renderCollectionButton(book) {
-        if (!COLLECTION_LOCAL) {
+        if (!useOwnCollection()) {
           return "";
         }
 
@@ -1378,7 +1611,9 @@
           if (collectionOnly) {
             message = searchInput.value.trim()
               ? "No books in your collection match your search."
-              : "No books in your collection to show (they may all be hidden).";
+              : useOwnCollection()
+                ? "Your collection is empty — open a book and tap Collect to add it."
+                : "No books in your collection to show.";
           } else if (hiddenOnly) {
             message = searchInput.value.trim()
               ? "No hidden books match your search."
@@ -1450,7 +1685,6 @@
           serveEnabled = false;
           hiddenOnly = false;
           showHiddenWrap.hidden = true;
-          helpAnchor.hidden = true;
           return;
         }
 
@@ -1500,7 +1734,7 @@
           .filter(Boolean)
           .join("");
         const wantButton = renderWantButton(book);
-        const collectionControl = COLLECTION_LOCAL
+        const collectionControl = useOwnCollection()
           ? renderCollectionButton(book)
           : renderOwnedBadge(book);
         const bottomRow = renderCardBottomRow(
@@ -1592,6 +1826,45 @@
         editingBookId = null;
         editDialog.hidden = true;
         editBookForm.reset();
+      }
+
+      function openSettingsDialog() {
+        syncSettingsCollectionRadios();
+        settingsDialog.hidden = false;
+        settingsBtn.setAttribute("aria-expanded", "true");
+        settingsCloseBtn.focus();
+      }
+
+      function closeSettingsDialog() {
+        settingsDialog.hidden = true;
+        settingsBtn.setAttribute("aria-expanded", "false");
+      }
+
+      async function onCollectionSourceChange(next) {
+        if (next !== "sample" && next !== "own") {
+          return;
+        }
+        if (collectionSource === next) {
+          return;
+        }
+        collectionSource = next;
+        saveCollectionSourcePreference();
+        await loadCollection();
+        render();
+        if (!bookDetailDialog.hidden && detailBookId) {
+          openBookDetail(detailBookId);
+        }
+      }
+
+      function openAttributionDialog() {
+        attributionDialog.hidden = false;
+        attributionBtn.setAttribute("aria-expanded", "true");
+        attributionCloseBtn.focus();
+      }
+
+      function closeAttributionDialog() {
+        attributionDialog.hidden = true;
+        attributionBtn.setAttribute("aria-expanded", "false");
       }
 
       async function deleteBook() {
@@ -1851,24 +2124,42 @@
         element.addEventListener("click", closeEditDialog);
       });
 
-      if (window.location.protocol !== "file:") {
-        serveHelpUrl.textContent = window.location.origin;
-        serveHelpUrl.href = window.location.origin;
-      }
-
-      serveHelpBtn.addEventListener("click", (event) => {
-        event.stopPropagation();
-        const isOpen = !serveHelpPopover.hidden;
-        serveHelpPopover.hidden = isOpen;
-        serveHelpBtn.setAttribute("aria-expanded", String(!isOpen));
+      settingsBtn.addEventListener("click", () => {
+        if (settingsDialog.hidden) {
+          openSettingsDialog();
+        } else {
+          closeSettingsDialog();
+        }
       });
 
-      document.addEventListener("click", (event) => {
-        if (serveHelpPopover.hidden || event.target.closest(".help-anchor")) {
-          return;
+      settingsCloseBtn.addEventListener("click", closeSettingsDialog);
+      settingsDialog.querySelectorAll("[data-close-settings]").forEach((element) => {
+        element.addEventListener("click", closeSettingsDialog);
+      });
+
+      collectionSourceSampleInput.addEventListener("change", () => {
+        if (collectionSourceSampleInput.checked) {
+          onCollectionSourceChange("sample");
         }
-        serveHelpPopover.hidden = true;
-        serveHelpBtn.setAttribute("aria-expanded", "false");
+      });
+
+      collectionSourceOwnInput.addEventListener("change", () => {
+        if (collectionSourceOwnInput.checked) {
+          onCollectionSourceChange("own");
+        }
+      });
+
+      attributionBtn.addEventListener("click", () => {
+        if (attributionDialog.hidden) {
+          openAttributionDialog();
+        } else {
+          closeAttributionDialog();
+        }
+      });
+
+      attributionCloseBtn.addEventListener("click", closeAttributionDialog);
+      attributionDialog.querySelectorAll("[data-close-attribution]").forEach((element) => {
+        element.addEventListener("click", closeAttributionDialog);
       });
 
       document.addEventListener("keydown", (event) => {
@@ -1892,9 +2183,12 @@
           closeEditDialog();
           return;
         }
-        if (event.key === "Escape" && !serveHelpPopover.hidden) {
-          serveHelpPopover.hidden = true;
-          serveHelpBtn.setAttribute("aria-expanded", "false");
+        if (event.key === "Escape" && !settingsDialog.hidden) {
+          closeSettingsDialog();
+          return;
+        }
+        if (event.key === "Escape" && !attributionDialog.hidden) {
+          closeAttributionDialog();
         }
       });
 
@@ -1920,6 +2214,8 @@
       showHiddenInput.addEventListener("change", render);
 
       loadWantList();
+      restoreCollectionSourcePreference();
+      loadCollectionIds();
       loadHeaderFiltersPreference();
       updateHeaderFiltersState();
       restoreSortPreference();

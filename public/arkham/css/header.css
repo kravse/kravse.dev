@@ -315,10 +315,12 @@ input[type="search"]::-webkit-search-cancel-button {
   background: rgba(201, 162, 39, 0.12);
 }
 
-.stat.owned-stat {
-  color: #e8d4a8;
-  border-color: rgba(210, 178, 128, 0.28);
-  background: rgba(201, 162, 39, 0.08);
+.stat-showing {
+  font-size: 0.8rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  white-space: nowrap;
 }
 
 .stat.owned-stat.stat-toggle:hover {
@@ -336,10 +338,10 @@ input[type="search"]::-webkit-search-cancel-button {
     inset 0 1px 0 rgba(255, 255, 255, 0.07);
 }
 
-.stat.hidden-stat {
-  color: #c4c9d4;
-  border-color: rgba(154, 163, 178, 0.28);
-  background: rgba(154, 163, 178, 0.08);
+.stat.hidden-stat.stat-toggle:hover {
+  color: #e8eaed;
+  border-color: rgba(154, 163, 178, 0.42);
+  background: rgba(154, 163, 178, 0.1);
 }
 
 .stat.hidden-stat.stat-toggle.active {
@@ -349,12 +351,6 @@ input[type="search"]::-webkit-search-cancel-button {
   box-shadow:
     0 0 0 1px rgba(154, 163, 178, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
-}
-
-.stat.want-stat {
-  color: #a8dcc0;
-  border-color: rgba(120, 200, 150, 0.28);
-  background: rgba(72, 168, 118, 0.08);
 }
 
 .stat.want-stat.stat-toggle.active {
@@ -370,5 +366,20 @@ input[type="search"]::-webkit-search-cancel-button {
   color: #c4ebd4;
   border-color: rgba(120, 200, 150, 0.42);
   background: rgba(72, 168, 118, 0.14);
+}
+
+.stat.mycroft-stat.stat-toggle:hover {
+  color: #c8d8f0;
+  border-color: rgba(120, 160, 210, 0.42);
+  background: rgba(72, 112, 168, 0.14);
+}
+
+.stat.mycroft-stat.stat-toggle.active {
+  color: #e0ebf8;
+  border-color: rgba(140, 180, 230, 0.62);
+  background: rgba(72, 112, 168, 0.24);
+  box-shadow:
+    0 0 0 1px rgba(72, 112, 168, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
 }
 

@@ -43,11 +43,26 @@
   min-height: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 0 1rem max(1.5rem, env(safe-area-inset-bottom, 0px));
+  padding: 0 1rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+
+.book-detail-actions {
+  flex-shrink: 0;
+  width: 100%;
+  padding: 0.75rem 1rem max(1rem, env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid rgba(42, 49, 64, 0.85);
+  background: rgba(12, 14, 18, 0.96);
+  backdrop-filter: blur(8px);
+}
+
+.book-detail-actions .card-bottom-row {
+  width: min(100%, 22rem);
+  margin: 0 auto;
+  padding-top: 0;
 }
 
 .book-detail-close {
@@ -148,7 +163,6 @@
 
 .book-detail-body {
   width: min(100%, 22rem);
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
@@ -185,9 +199,6 @@
 
 .book-detail-description {
   width: 100%;
-  max-height: min(12rem, 32vh);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
   margin: 0.15rem 0 0;
   padding: 0.65rem 0.75rem;
   border-radius: 8px;
@@ -201,42 +212,29 @@
   white-space: pre-wrap;
 }
 
-.book-detail-body .card-footer {
-  margin-top: 0.35rem;
-}
 
-.book-detail-body .card-bottom-row {
-  margin-top: auto;
-  width: 100%;
-  padding-top: 0.5rem;
-}
-
-.book-detail-body .card-bottom-left,
-.book-detail-body .card-bottom-right {
+.book-detail-actions .card-bottom-left,
+.book-detail-actions .card-bottom-right {
   display: flex;
   align-items: center;
 }
 
-.book-detail-body .card-bottom-right {
+.book-detail-actions .card-bottom-right {
   gap: 0.35rem;
   margin-left: auto;
 }
 
-.book-detail-body .card-bottom-row .book-detail-wiki-btn {
+.book-detail-actions .book-detail-wiki-btn {
   margin-top: 0;
 }
 
-.book-detail-body .want-btn {
+.book-detail-actions .want-btn {
   min-height: 2.25rem;
   padding: 0.35rem 0.7rem;
   font-size: 0.72rem;
 }
 
-.book-detail-body .hidden-badge {
-  align-self: flex-start;
-}
-
-.book-detail-body .owned-badge {
+.book-detail-actions .owned-badge {
   display: inline-flex;
   align-items: center;
   min-height: 2.25rem;
@@ -249,7 +247,6 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0.65rem;
   width: 2.25rem;
   height: 2.25rem;
   border: 1px solid rgba(210, 178, 128, 0.35);
@@ -271,6 +268,10 @@
   background: rgba(201, 162, 39, 0.24);
   border-color: rgba(224, 196, 148, 0.5);
   color: #fff3d6;
+}
+
+.book-detail-body .hidden-badge {
+  align-self: flex-start;
 }
 
 body.book-detail-open {
@@ -296,8 +297,19 @@ body.book-detail-open {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    padding: 0.5rem 1.5rem 1.5rem;
+    padding: 0.5rem 1.5rem 1rem;
     gap: 1.5rem;
+  }
+
+  .book-detail-actions {
+    padding: 0.85rem 1.5rem max(1.25rem, env(safe-area-inset-bottom, 0px));
+    background: var(--panel);
+    border-top-color: var(--border);
+  }
+
+  .book-detail-actions .card-bottom-row {
+    width: 100%;
+    max-width: none;
   }
 
   .book-detail-cover {
@@ -318,7 +330,7 @@ body.book-detail-open {
   }
 
   .book-detail-description {
-    max-height: min(11rem, 30vh);
+    max-height: none;
   }
 
   .book-detail-nav {

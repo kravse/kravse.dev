@@ -28,7 +28,9 @@
             <div class="header-titles">
               <h1>Arkham House</h1>
               <p class="subtitle" id="page-subtitle">
-                Bibliography gallery scraped from Wikipedia
+                A publishing house of horror and weird fiction—founded in 1939
+                to rescue Lovecraft from the pulps and keep the uncanny in
+                print.
               </p>
             </div>
           </div>
@@ -265,6 +267,7 @@
           <div class="book-detail-cover" id="book-detail-cover"></div>
           <div class="book-detail-body" id="book-detail-body"></div>
         </div>
+        <div class="book-detail-actions" id="book-detail-actions"></div>
       </div>
       <button
         type="button"
@@ -315,6 +318,7 @@
       const bookDetailNextBtn = document.getElementById("book-detail-next");
       const bookDetailCover = document.getElementById("book-detail-cover");
       const bookDetailBody = document.getElementById("book-detail-body");
+      const bookDetailActions = document.getElementById("book-detail-actions");
       const bookDetailScroll = document.getElementById("book-detail-scroll");
       const serveHelpBtn = document.getElementById("serve-help-btn");
       const serveHelpPopover = document.getElementById("serve-help-popover");
@@ -652,7 +656,7 @@
           .join("");
 
         stats.innerHTML = `
-          <span class="stat stat-showing">SHOWING ${visible.length}/${total}</span>
+          <span class="stat-showing">Showing ${visible.length} of ${total}</span>
           <div class="stats-filters${hasMycroft ? "" : " stats-filters--two"}">${filters}</div>
         `;
       }
@@ -985,13 +989,13 @@
               "Viewing hidden books — click the stat again to show all books";
           } else if (mycroftOnly) {
             pageSubtitle.textContent =
-              "Viewing Mycroft & Moran — click the stat again to show all books";
+              "An imprint for weird detective fiction—founded in 1945 to house August Derleth's Solar Pons and other pastiche mysteries.";
           } else if (wantOnly) {
             pageSubtitle.textContent =
               "Viewing your want list — click the stat again to show all books";
           } else {
             pageSubtitle.textContent =
-              "Bibliography gallery scraped from Wikipedia";
+              "A publishing house of horror and weird fiction—founded in 1939 to rescue Lovecraft from the pulps and keep the uncanny in print.";
           }
         }
 
@@ -1112,8 +1116,10 @@
         ${book.publicationDate ? `<div class="date">${book.publicationDate}</div>` : ""}
         <div class="book-detail-meta">${renderBookMetaHtml(book)}</div>
         ${renderBookDescriptionHtml(book)}
-        ${bottomRow}
       `;
+        if (bookDetailActions) {
+          bookDetailActions.innerHTML = bottomRow;
+        }
 
         bookDetailDialog.hidden = false;
         document.body.classList.add("book-detail-open");
@@ -1128,6 +1134,9 @@
         bookDetailDialog.hidden = true;
         bookDetailCover.innerHTML = "";
         bookDetailBody.innerHTML = "";
+        if (bookDetailActions) {
+          bookDetailActions.innerHTML = "";
+        }
         if (bookDetailPrevBtn) {
           bookDetailPrevBtn.hidden = true;
         }

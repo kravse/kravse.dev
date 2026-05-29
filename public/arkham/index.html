@@ -1384,16 +1384,21 @@
         const wantButton = renderWantButton(book);
         const bottomRow = renderCardBottomRow("", wantButton, linkButtons, ownedBadge);
 
+        const metaHtml = renderBookMetaHtml(book);
         const descriptionHtml = book.description?.trim()
           ? `<div class="book-detail-description">${escapeHtml(book.description)}</div>`
           : `<div class="book-detail-description book-detail-description--empty" aria-hidden="true"></div>`;
 
+        const detailDateHtml = book.publicationDate
+          ? `<span class="date"> (${escapeHtml(book.publicationDate)})</span>`
+          : "";
         bookDetailBody.innerHTML = `
         ${hiddenBadge}
-        <h2 class="title" id="book-detail-title">${book.title || "Untitled"}</h2>
-        ${book.publicationDate ? `<div class="date">${book.publicationDate}</div>` : ""}
-        <div class="book-detail-meta">${renderBookMetaHtml(book)}</div>
-        ${descriptionHtml}
+        <h2 class="title" id="book-detail-title">${escapeHtml(book.title || "Untitled")}${detailDateHtml}</h2>
+        <div class="book-detail-scroll-block">
+          <div class="book-detail-meta">${metaHtml}</div>
+          ${descriptionHtml}
+        </div>
       `;
         if (bookDetailActions) {
           bookDetailActions.innerHTML = bottomRow;
@@ -1404,11 +1409,11 @@
         if (bookDetailScroll) {
           bookDetailScroll.scrollTop = 0;
         }
-        const detailDescription = bookDetailBody.querySelector(
-          ".book-detail-description",
+        const detailScrollBlock = bookDetailBody.querySelector(
+          ".book-detail-scroll-block",
         );
-        if (detailDescription) {
-          detailDescription.scrollTop = 0;
+        if (detailScrollBlock) {
+          detailScrollBlock.scrollTop = 0;
         }
         updateDetailNav();
       }

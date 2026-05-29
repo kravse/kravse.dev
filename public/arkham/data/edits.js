@@ -35,6 +35,9 @@ window.BOOK_EDITS = {
   "230": {
     "goodreadsUrl": "https://www.goodreads.com/book/show/345563.Carnacki_the_Ghost_Finder"
   },
+  "231": {
+    "coverArtist": "Ronald Clyne"
+  },
   "232": {
     "hidden": true
   },

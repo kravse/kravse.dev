@@ -33,9 +33,29 @@
 .book-detail-toolbar {
   flex-shrink: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
   padding: max(0.85rem, env(safe-area-inset-top, 0px)) 0.85rem 0.35rem;
   z-index: 2;
+}
+
+.book-detail-imprint {
+  min-width: 0;
+}
+
+.book-detail-imprint .imprint-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.7rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1;
+  border-radius: 999px;
 }
 
 .book-detail-scroll {
@@ -52,15 +72,17 @@
 .book-detail-actions {
   flex-shrink: 0;
   width: 100%;
-  padding: 0.75rem 1rem max(1rem, env(safe-area-inset-bottom, 0px));
+  padding: 0.75rem max(0.85rem, env(safe-area-inset-left, 0px))
+    max(1rem, env(safe-area-inset-bottom, 0px))
+    max(0.85rem, env(safe-area-inset-right, 0px));
   border-top: 1px solid rgba(42, 49, 64, 0.85);
   background: rgba(12, 14, 18, 0.96);
   backdrop-filter: blur(8px);
 }
 
 .book-detail-actions .card-bottom-row {
-  width: min(100%, 22rem);
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding-top: 0;
 }
 
@@ -235,9 +257,14 @@
   align-items: center;
 }
 
+.book-detail-actions .card-bottom-left {
+  justify-content: flex-start;
+}
+
 .book-detail-actions .card-bottom-right {
   gap: 0.35rem;
   margin-left: auto;
+  justify-content: flex-end;
 }
 
 .book-detail-actions .book-detail-wiki-btn {

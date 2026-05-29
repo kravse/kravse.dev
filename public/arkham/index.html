@@ -255,6 +255,7 @@
         aria-labelledby="book-detail-title"
       >
         <div class="book-detail-toolbar">
+          <div id="book-detail-imprint" class="book-detail-imprint"></div>
           <button
             type="button"
             id="book-detail-close"
@@ -332,6 +333,7 @@
       const bookDetailBody = document.getElementById("book-detail-body");
       const bookDetailActions = document.getElementById("book-detail-actions");
       const bookDetailScroll = document.getElementById("book-detail-scroll");
+      const bookDetailImprint = document.getElementById("book-detail-imprint");
       const serveHelpBtn = document.getElementById("serve-help-btn");
       const serveHelpPopover = document.getElementById("serve-help-popover");
       const serveHelpUrl = document.getElementById("serve-help-url");
@@ -936,18 +938,31 @@
       `;
       }
 
-      function renderWantButton(book, { interactive = true } = {}) {
+      function renderImprintBadge(book, placement = "cover") {
+        const isMycroft = book.imprint === "mycroft_moran";
+        const label = isMycroft ? "MM" : "AH";
+        const title = isMycroft ? "Mycroft & Moran" : "Arkham House";
+        const imprintClass = isMycroft ? "imprint-badge--mm" : "imprint-badge--ah";
+
+        return `<span class="imprint-badge imprint-badge--${placement} ${imprintClass}" title="${title}" aria-label="${title}">${label}</span>`;
+      }
+
+      function renderCardWantBadge(book) {
+        if (findCollectionMatch(book) || !isWanted(book)) {
+          return "";
+        }
+
+        return `<span class="want-btn active want-badge">Wanted</span>`;
+      }
+
+      function renderWantButton(book) {
         if (findCollectionMatch(book)) {
           return "";
         }
 
         const wanted = isWanted(book);
         const label = wanted ? "Wanted" : "Want";
-        const className = `want-btn${wanted ? " active" : ""}${interactive ? "" : " want-btn-readonly"}`;
-
-        if (!interactive) {
-          return `<span class="${className}">${label}</span>`;
-        }
+        const className = `want-btn${wanted ? " active" : ""}`;
 
         return `
         <button
@@ -959,15 +974,14 @@
       `;
       }
 
-      function renderCardBottomRow(wantButton, wikiButton, ownedBadge) {
-        if (!wantButton && !wikiButton && !ownedBadge) {
-          return "";
-        }
+      function renderCardBottomRow(imprintBadge, wantBadge, wikiButton, ownedBadge) {
+        const left = [imprintBadge, wikiButton].filter(Boolean).join("");
+        const right = [wantBadge, ownedBadge].filter(Boolean).join("");
 
         return `
         <div class="card-bottom-row">
-          <div class="card-bottom-left">${wikiButton}</div>
-          <div class="card-bottom-right">${[wantButton, ownedBadge].filter(Boolean).join("")}</div>
+          <div class="card-bottom-left">${left}</div>
+          <div class="card-bottom-right">${right}</div>
         </div>
       `;
       }
@@ -1001,14 +1015,17 @@
         const imageHtml = renderCover(book, book.coverCacheKey);
         const coverActions = renderCoverActions(book);
 
-        const wikiButton = renderWikiButton(book.wikipediaUrl);
-        const wantButton = renderWantButton(book, {
-          interactive: !isMobileViewport(),
-        });
+        const imprintBadge = renderImprintBadge(book, "card");
+        const wantBadge = renderCardWantBadge(book);
         const ownedBadge = owned
           ? `<span class="owned-badge">${owned.status === "order" ? "On order" : "Collection"}</span>`
           : "";
-        const bottomRow = renderCardBottomRow(wantButton, wikiButton, ownedBadge);
+        const bottomRow = renderCardBottomRow(
+          imprintBadge,
+          wantBadge,
+          "",
+          ownedBadge,
+        );
 
         const hiddenBadge = book.hidden
           ? `<span class="hidden-badge">Hidden</span>`
@@ -1101,7 +1118,7 @@
           } else if (wantOnly) {
             message = searchInput.value.trim()
               ? "No wanted books match your search."
-              : "Your want list is empty — click Want on a book to add it.";
+              : "Your want list is empty — open a book and tap Want to add it.";
           }
           grid.innerHTML = `<div class="empty">${message}</div>`;
           if (!bookDetailDialog.hidden && detailBookId) {
@@ -1172,10 +1189,6 @@
         showHiddenWrap.hidden = !serveEnabled;
       }
 
-      function isMobileViewport() {
-        return window.matchMedia("(max-width: 640px)").matches;
-      }
-
       function openBookDetail(bookId) {
         const book = books.find((entry) => entry.id === bookId);
         if (!book || isDeleted(book)) {
@@ -1183,6 +1196,10 @@
         }
 
         detailBookId = bookId;
+
+        if (bookDetailImprint) {
+          bookDetailImprint.innerHTML = renderImprintBadge(book, "detail");
+        }
 
         bookDetailCover.innerHTML = renderCover(book, book.coverCacheKey);
         const owned = findCollectionMatch(book);
@@ -1197,7 +1214,7 @@
           "book-detail-wiki-btn",
         );
         const wantButton = renderWantButton(book);
-        const bottomRow = renderCardBottomRow(wantButton, wikiButton, ownedBadge);
+        const bottomRow = renderCardBottomRow("", wantButton, wikiButton, ownedBadge);
 
         const descriptionHtml = book.description?.trim()
           ? `<div class="book-detail-description">${escapeHtml(book.description)}</div>`
@@ -1233,6 +1250,9 @@
         bookDetailDialog.hidden = true;
         bookDetailCover.innerHTML = "";
         bookDetailBody.innerHTML = "";
+        if (bookDetailImprint) {
+          bookDetailImprint.innerHTML = "";
+        }
         if (bookDetailActions) {
           bookDetailActions.innerHTML = "";
         }
@@ -1471,15 +1491,7 @@
           return;
         }
 
-        if (event.target.closest(".card-wiki-btn, .book-detail-wiki-btn")) {
-          return;
-        }
-
-        const wantButton = event.target.closest(".want-btn");
-        if (wantButton && !isMobileViewport()) {
-          event.preventDefault();
-          event.stopPropagation();
-          toggleWant(Number(wantButton.dataset.bookId));
+        if (event.target.closest(".book-detail-wiki-btn")) {
           return;
         }
 

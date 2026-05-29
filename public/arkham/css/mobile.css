@@ -202,12 +202,12 @@
   }
 
   .card-body {
-    padding: 0.35rem 0.3rem 0.45rem;
+    padding: 0.35rem 0.3rem 0.38rem;
     gap: 0.15rem;
   }
 
   .title {
-    font-size: 0.58rem;
+    font-size: 0.85rem;
     line-height: 1.2;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -216,7 +216,7 @@
   }
 
   .date {
-    font-size: 0.52rem;
+    font-size: 0.66rem;
   }
 
   .card-body .meta {
@@ -224,15 +224,12 @@
   }
 
   .card-bottom-row {
-    padding-top: 0.15rem;
+    padding-top: 0.2rem;
   }
 
-  .card .want-btn-readonly {
-    cursor: default;
-  }
-
-  .card-wiki-btn {
-    display: none;
+  .card-bottom-left,
+  .card-bottom-right {
+    min-height: 0;
   }
 
   .card-body .hidden-badge {

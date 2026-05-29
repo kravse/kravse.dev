@@ -197,6 +197,10 @@
             <input id="edit-wikipedia-url" name="wikipediaUrl" type="url" />
           </label>
           <label class="edit-field">
+            Goodreads URL
+            <input id="edit-goodreads-url" name="goodreadsUrl" type="url" />
+          </label>
+          <label class="edit-field">
             Description
             <textarea
               id="edit-description"
@@ -255,7 +259,9 @@
         aria-labelledby="book-detail-title"
       >
         <div class="book-detail-toolbar">
-          <div id="book-detail-imprint" class="book-detail-imprint"></div>
+          <div id="book-detail-toolbar-start" class="book-detail-toolbar-start">
+            <div id="book-detail-imprint" class="book-detail-imprint"></div>
+          </div>
           <button
             type="button"
             id="book-detail-close"
@@ -323,6 +329,8 @@
       );
       const editWikipediaUrlInput =
         document.getElementById("edit-wikipedia-url");
+      const editGoodreadsUrlInput =
+        document.getElementById("edit-goodreads-url");
       const editDescriptionInput = document.getElementById("edit-description");
       const editCoverFileInput = document.getElementById("edit-cover-file");
       const bookDetailDialog = document.getElementById("book-detail-dialog");
@@ -333,6 +341,9 @@
       const bookDetailBody = document.getElementById("book-detail-body");
       const bookDetailActions = document.getElementById("book-detail-actions");
       const bookDetailScroll = document.getElementById("book-detail-scroll");
+      const bookDetailToolbarStart = document.getElementById(
+        "book-detail-toolbar-start",
+      );
       const bookDetailImprint = document.getElementById("book-detail-imprint");
       const serveHelpBtn = document.getElementById("serve-help-btn");
       const serveHelpPopover = document.getElementById("serve-help-popover");
@@ -353,6 +364,7 @@
       const SORT_MODES = new Set(["default", "date-desc", "date-asc", "title"]);
       let collection = [];
       let serveEnabled = false;
+      let serveEditDeltas = false;
       let editingBookId = null;
       let collectionOnly = false;
       let hiddenOnly = false;
@@ -814,7 +826,11 @@
       </svg>
     `;
 
-      function renderEditButton(book) {
+      function isViewingOnDevServer() {
+        return !readOnly && window.location.protocol !== "file:";
+      }
+
+      function renderEditButton(book, className = "edit-book-btn") {
         if (!serveEnabled) {
           return "";
         }
@@ -822,12 +838,62 @@
         return `
         <button
           type="button"
-          class="edit-book-btn"
+          class="${className} edit-book-btn"
           data-book-id="${book.id}"
           aria-label="Edit ${book.title || "this book"}"
           title="Edit book"
         >${editIcon}</button>
       `;
+      }
+
+      function renderDetailEditButton(book) {
+        if (!isViewingOnDevServer()) {
+          return "";
+        }
+
+        const title = serveEnabled
+          ? "Edit book"
+          : "Edit book (waiting for server…)";
+
+        return `
+        <button
+          type="button"
+          class="book-detail-edit-btn"
+          data-book-id="${book.id}"
+          aria-label="Edit ${book.title || "this book"}"
+          title="${title}"
+          ${serveEnabled ? "" : "disabled"}
+        >${editIcon}</button>
+      `;
+      }
+
+      function refreshDetailToolbar(book) {
+        if (!book) {
+          return;
+        }
+
+        if (bookDetailImprint) {
+          bookDetailImprint.innerHTML = renderImprintBadge(book, "detail");
+        }
+
+        if (bookDetailToolbarStart) {
+          bookDetailToolbarStart
+            .querySelectorAll(".book-detail-edit-btn")
+            .forEach((element) => element.remove());
+          const editBtn = renderDetailEditButton(book);
+          if (editBtn) {
+            bookDetailToolbarStart.insertAdjacentHTML("beforeend", editBtn);
+          }
+        }
+      }
+
+      function refreshDetailToolbarIfOpen() {
+        if (bookDetailDialog.hidden || !detailBookId) {
+          return;
+        }
+
+        const book = books.find((entry) => entry.id === detailBookId);
+        refreshDetailToolbar(book);
       }
 
       const hideIcon = `
@@ -852,6 +918,70 @@
           aria-label="Open on Wikipedia"
           title="Wikipedia"
         >W</a>
+      `;
+      }
+
+      function getAuthorLastName(book) {
+        const author = getDisplayAuthor(book);
+        if (!author) {
+          return null;
+        }
+        const suffixes = new Set(["jr", "jr.", "sr", "sr.", "ii", "iii", "iv"]);
+        const parts = author.trim().split(/\s+/);
+        while (parts.length > 1 && suffixes.has(parts[parts.length - 1].toLowerCase())) {
+          parts.pop();
+        }
+        return parts.length
+          ? parts[parts.length - 1].replace(/[,.]+$/, "")
+          : null;
+      }
+
+      function getGoodreadsSearchUrl(book) {
+        const query = [(book.title || book.listTitle || "").trim(), getAuthorLastName(book)]
+          .filter(Boolean)
+          .join(" ")
+          .trim();
+        if (!query) {
+          return null;
+        }
+        const params = new URLSearchParams({
+          utf8: "✓",
+          q: query,
+          search_type: "books",
+        });
+        return `https://www.goodreads.com/search?${params}`;
+      }
+
+      function getGoodreadsLinkForBook(book) {
+        const savedUrl = resolveGoodreadsUrl(book);
+        if (savedUrl) {
+          return { url: savedUrl, search: false };
+        }
+        const searchUrl = getGoodreadsSearchUrl(book);
+        if (!searchUrl) {
+          return null;
+        }
+        return { url: searchUrl, search: true };
+      }
+
+      function renderGoodreadsButton(link, className = "card-goodreads-btn") {
+        if (!link?.url) {
+          return "";
+        }
+
+        const searchClass = link.search ? ` ${className}--search` : "";
+        const label = link.search ? "Search on Goodreads" : "Open on Goodreads";
+        const title = link.search ? "Search Goodreads" : "Goodreads";
+
+        return `
+        <a
+          class="${className}${searchClass}"
+          href="${link.url}"
+          target="_blank"
+          rel="noopener"
+          aria-label="${label}"
+          title="${title}"
+        >G</a>
       `;
       }
 
@@ -974,8 +1104,13 @@
       `;
       }
 
-      function renderCardBottomRow(imprintBadge, wantBadge, wikiButton, ownedBadge) {
-        const left = [imprintBadge, wikiButton].filter(Boolean).join("");
+      function renderCardBottomRow(
+        imprintBadge,
+        wantBadge,
+        linkButtons,
+        ownedBadge,
+      ) {
+        const left = [imprintBadge, linkButtons].filter(Boolean).join("");
         const right = [wantBadge, ownedBadge].filter(Boolean).join("");
 
         return `
@@ -988,6 +1123,21 @@
 
       function renderCoverActions(book) {
         return `${renderHideButton(book)}${renderEditButton(book)}`;
+      }
+
+      function resolveGoodreadsUrl(book) {
+        const key = String(book.id);
+        const edit = window.BOOK_EDITS?.[key];
+        if (
+          edit != null &&
+          Object.prototype.hasOwnProperty.call(edit, "goodreadsUrl")
+        ) {
+          const fromEdit = (edit.goodreadsUrl || "").trim();
+          return fromEdit || null;
+        }
+        const scraped = (window.BOOKS || []).find((entry) => entry.id === book.id);
+        const fromData = (scraped?.goodreadsUrl || "").trim();
+        return fromData || null;
       }
 
       window.tryCoverFallback = function (img) {
@@ -1130,6 +1280,8 @@
         grid.innerHTML = visible.map(renderCard).join("");
 
         if (!bookDetailDialog.hidden && detailBookId) {
+          const detailBook = books.find((entry) => entry.id === detailBookId);
+          refreshDetailToolbar(detailBook);
           updateDetailNav();
         }
       }
@@ -1183,8 +1335,15 @@
         try {
           const response = await fetch("/api/health");
           serveEnabled = response.ok;
+          if (serveEnabled) {
+            const payload = await response.json();
+            serveEditDeltas = payload.editDeltas === true;
+          } else {
+            serveEditDeltas = false;
+          }
         } catch (_) {
           serveEnabled = false;
+          serveEditDeltas = false;
         }
 
         if (!serveEnabled) {
@@ -1192,6 +1351,7 @@
         }
 
         showHiddenWrap.hidden = !serveEnabled;
+        refreshDetailToolbarIfOpen();
       }
 
       function openBookDetail(bookId) {
@@ -1202,9 +1362,7 @@
 
         detailBookId = bookId;
 
-        if (bookDetailImprint) {
-          bookDetailImprint.innerHTML = renderImprintBadge(book, "detail");
-        }
+        refreshDetailToolbar(book);
 
         bookDetailCover.innerHTML = renderCover(book, book.coverCacheKey);
         const owned = findCollectionMatch(book);
@@ -1214,12 +1372,17 @@
         const hiddenBadge = book.hidden
           ? `<span class="hidden-badge">Hidden</span>`
           : "";
-        const wikiButton = renderWikiButton(
-          book.wikipediaUrl,
-          "book-detail-wiki-btn",
-        );
+        const linkButtons = [
+          renderWikiButton(book.wikipediaUrl, "book-detail-wiki-btn"),
+          renderGoodreadsButton(
+            getGoodreadsLinkForBook(book),
+            "book-detail-goodreads-btn",
+          ),
+        ]
+          .filter(Boolean)
+          .join("");
         const wantButton = renderWantButton(book);
-        const bottomRow = renderCardBottomRow("", wantButton, wikiButton, ownedBadge);
+        const bottomRow = renderCardBottomRow("", wantButton, linkButtons, ownedBadge);
 
         const descriptionHtml = book.description?.trim()
           ? `<div class="book-detail-description">${escapeHtml(book.description)}</div>`
@@ -1258,6 +1421,11 @@
         if (bookDetailImprint) {
           bookDetailImprint.innerHTML = "";
         }
+        if (bookDetailToolbarStart) {
+          bookDetailToolbarStart
+            .querySelectorAll(".book-detail-edit-btn")
+            .forEach((element) => element.remove());
+        }
         if (bookDetailActions) {
           bookDetailActions.innerHTML = "";
         }
@@ -1282,6 +1450,7 @@
         editCoverArtistInput.value = book.coverArtist || "";
         editPublicationDateInput.value = book.publicationDate || "";
         editWikipediaUrlInput.value = book.wikipediaUrl || "";
+        editGoodreadsUrlInput.value = resolveGoodreadsUrl(book) || "";
         editDescriptionInput.value = book.description || "";
         editCoverFileInput.value = "";
         editDialog.hidden = false;
@@ -1339,14 +1508,6 @@
         }
       }
 
-      function syncEditField(edit, field, value) {
-        if (value) {
-          edit[field] = value;
-        } else {
-          delete edit[field];
-        }
-      }
-
       function applyEditResponseToBook(bookId, payload) {
         const book = books.find((entry) => entry.id === bookId);
         if (!book) {
@@ -1360,6 +1521,7 @@
         book.decade =
           payload.decade ?? decadeFromYear(parseYear(book.publicationDate));
         book.wikipediaUrl = payload.wikipediaUrl;
+        book.goodreadsUrl = payload.goodreadsUrl;
         if (Object.prototype.hasOwnProperty.call(payload, "description")) {
           book.description = payload.description || null;
         }
@@ -1370,20 +1532,12 @@
         }
 
         const key = String(bookId);
-        const edit = { ...(window.BOOK_EDITS[key] || {}) };
-        edit.title = payload.title;
-        syncEditField(edit, "author", payload.author);
-        syncEditField(edit, "coverArtist", payload.coverArtist);
-        syncEditField(edit, "publicationDate", payload.publicationDate);
-        syncEditField(edit, "decade", book.decade);
-        syncEditField(edit, "wikipediaUrl", payload.wikipediaUrl);
-        if (Object.prototype.hasOwnProperty.call(payload, "description")) {
-          syncEditField(edit, "description", payload.description);
+        const storedEdit = payload.edit || {};
+        if (Object.keys(storedEdit).length) {
+          window.BOOK_EDITS[key] = { ...storedEdit };
+        } else {
+          delete window.BOOK_EDITS[key];
         }
-        if (payload.coverImageFile) {
-          edit.coverImageFile = payload.coverImageFile;
-        }
-        window.BOOK_EDITS[key] = edit;
       }
 
       async function saveBookEdits(event) {
@@ -1393,6 +1547,14 @@
         }
 
         editSaveBtn.disabled = true;
+
+        if (serveEnabled && !serveEditDeltas) {
+          window.alert(
+            "Restart npm run serve so edits save only changed fields (not the whole form).",
+          );
+          editSaveBtn.disabled = false;
+          return;
+        }
 
         try {
           const formData = new FormData();
@@ -1409,6 +1571,10 @@
           formData.append(
             "wikipediaUrl",
             sanitizeUrlInput(editWikipediaUrlInput.value),
+          );
+          formData.append(
+            "goodreadsUrl",
+            sanitizeGoodreadsUrlInput(editGoodreadsUrlInput.value),
           );
           formData.append(
             "description",
@@ -1462,10 +1628,7 @@
             throw new Error(payload.error || "Could not update book");
           }
 
-          const book = books.find((entry) => entry.id === bookId);
-          if (book) {
-            book.hidden = payload.hidden;
-          }
+          applyEditResponseToBook(bookId, payload);
           render();
         } catch (error) {
           console.error(error);
@@ -1496,7 +1659,10 @@
           return;
         }
 
-        if (event.target.closest(".book-detail-wiki-btn")) {
+        if (
+          event.target.closest(".book-detail-wiki-btn") ||
+          event.target.closest(".book-detail-goodreads-btn")
+        ) {
           return;
         }
 
@@ -1516,6 +1682,14 @@
         navigateDetail(1);
       });
       bookDetailDialog.addEventListener("click", (event) => {
+        const editButton = event.target.closest(".book-detail-edit-btn");
+        if (editButton) {
+          event.preventDefault();
+          event.stopPropagation();
+          openEditDialog(Number(editButton.dataset.bookId));
+          return;
+        }
+
         const wantButton = event.target.closest(".want-btn");
         if (!wantButton) {
           return;
@@ -1646,6 +1820,7 @@
             collectionOnly = false;
           }
           render();
+          return;
         }
       });
 

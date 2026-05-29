@@ -40,8 +40,59 @@
   z-index: 2;
 }
 
+.book-detail-toolbar-start {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
 .book-detail-imprint {
   min-width: 0;
+}
+
+.book-detail-edit-btn {
+  position: static;
+  top: auto;
+  right: auto;
+  left: auto;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(15, 17, 21, 0.92);
+  color: rgba(232, 234, 237, 0.85);
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+  backdrop-filter: none;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.book-detail-edit-btn svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  display: block;
+}
+
+.book-detail-edit-btn:hover,
+.book-detail-edit-btn:focus-visible {
+  color: #f3efe4;
+  border-color: rgba(210, 178, 128, 0.4);
+  background: rgba(201, 162, 39, 0.18);
+}
+
+.book-detail-edit-btn:disabled {
+  opacity: 0.55;
+  cursor: wait;
 }
 
 .book-detail-imprint .imprint-badge {
@@ -259,6 +310,7 @@
 
 .book-detail-actions .card-bottom-left {
   justify-content: flex-start;
+  gap: 0.35rem;
 }
 
 .book-detail-actions .card-bottom-right {
@@ -267,7 +319,8 @@
   justify-content: flex-end;
 }
 
-.book-detail-actions .book-detail-wiki-btn {
+.book-detail-actions .book-detail-wiki-btn,
+.book-detail-actions .book-detail-goodreads-btn {
   margin-top: 0;
 }
 
@@ -311,6 +364,38 @@
   background: rgba(201, 162, 39, 0.24);
   border-color: rgba(224, 196, 148, 0.5);
   color: #fff3d6;
+}
+
+.book-detail-goodreads-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid rgba(120, 168, 120, 0.4);
+  border-radius: 999px;
+  background: rgba(72, 120, 72, 0.2);
+  color: #b8e0b8;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.book-detail-goodreads-btn:hover {
+  background: rgba(72, 120, 72, 0.32);
+  border-color: rgba(160, 210, 160, 0.55);
+  color: #e0f4e0;
+}
+
+.book-detail-goodreads-btn--search {
+  border-style: dashed;
+  opacity: 0.88;
 }
 
 .book-detail-body .hidden-badge {

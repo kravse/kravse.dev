@@ -96,6 +96,22 @@ function insertTextAtSelection(element, text) {
   element.setSelectionRange(pos, pos);
 }
 
+function sanitizeGoodreadsUrlInput(value) {
+  const url = sanitizeUrlInput(value);
+  if (!url) {
+    return "";
+  }
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    if (!host.endsWith("goodreads.com")) {
+      return "";
+    }
+  } catch {
+    return "";
+  }
+  return url;
+}
+
 function sanitizeEditFieldPaste(event) {
   const html = event.clipboardData?.getData("text/html");
   if (!html || !looksLikeHtml(html)) {
@@ -107,7 +123,9 @@ function sanitizeEditFieldPaste(event) {
     ? htmlToPlainText(html)
     : event.target.name === "wikipediaUrl"
       ? sanitizeUrlInput(html)
-      : sanitizeSingleLineText(html);
+      : event.target.name === "goodreadsUrl"
+        ? sanitizeGoodreadsUrlInput(html)
+        : sanitizeSingleLineText(html);
   insertTextAtSelection(event.target, cleaned);
 }
 

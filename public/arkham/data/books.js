@@ -421,7 +421,7 @@ window.BOOKS = [
   },
   {
     "id": 37,
-    "decade": "1980s",
+    "decade": "1970s",
     "listTitle": "The Horror in the Museum and Other Revisions",
     "listAuthor": "by H. P. Lovecraft (1989)",
     "title": "The Horror in the Museum and Other Revisions",
@@ -526,7 +526,7 @@ window.BOOKS = [
   },
   {
     "id": 44,
-    "decade": "1980s",
+    "decade": "1960s",
     "listTitle": "Dagon and Other Macabre Tales",
     "listAuthor": "by H. P. Lovecraft (1986)",
     "title": "Dagon and Other Macabre Tales",
@@ -541,7 +541,7 @@ window.BOOKS = [
   },
   {
     "id": 45,
-    "decade": "1980s",
+    "decade": "1960s",
     "listTitle": "At the Mountains of Madness and Other Novels",
     "listAuthor": "by H. P. Lovecraft (1985)",
     "title": "At the Mountains of Madness and Other Novels",
@@ -556,7 +556,7 @@ window.BOOKS = [
   },
   {
     "id": 46,
-    "decade": "1980s",
+    "decade": "1960s",
     "listTitle": "The Dunwich Horror and Others",
     "listAuthor": "by H. P. Lovecraft (1985)",
     "title": "The Dunwich Horror and Others",
@@ -1381,7 +1381,7 @@ window.BOOKS = [
   },
   {
     "id": 108,
-    "decade": "1960s",
+    "decade": "1980s",
     "listTitle": "Tales of the Cthulhu Mythos",
     "listAuthor": "by H. P. Lovecraft and Others (1969)",
     "title": "New Tales of the Cthulhu Mythos",

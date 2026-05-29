@@ -1790,6 +1790,17 @@
         return match ? match[0] : null;
       }
 
+      function decadeFromYear(year) {
+        const value = parseInt(year, 10);
+        if (!value) {
+          return null;
+        }
+        if (value < 1940) {
+          return String(value);
+        }
+        return `${Math.floor(value / 10) * 10}s`;
+      }
+
       function parseCollection(csvText) {
         return csvText
           .trim()
@@ -2565,6 +2576,7 @@
             book.author = payload.author;
             book.coverArtist = payload.coverArtist;
             book.publicationDate = payload.publicationDate;
+            book.decade = payload.decade ?? decadeFromYear(parseYear(book.publicationDate));
             book.wikipediaUrl = payload.wikipediaUrl;
             if (payload.coverImageFile) {
               book.coverImageFile = payload.coverImageFile;

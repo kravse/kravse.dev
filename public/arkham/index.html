@@ -881,9 +881,26 @@
         width: 100%;
         height: 100%;
         max-height: 100dvh;
+        overflow: hidden;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .book-detail-toolbar {
+        flex-shrink: 0;
+        display: flex;
+        justify-content: flex-end;
+        padding: max(0.85rem, env(safe-area-inset-top, 0px)) 0.85rem 0.35rem;
+        z-index: 2;
+      }
+
+      .book-detail-scroll {
+        flex: 1;
+        min-height: 0;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
-        padding: 3.5rem 1rem 1.5rem;
+        padding: 0 1rem max(1.5rem, env(safe-area-inset-bottom, 0px));
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -891,13 +908,9 @@
       }
 
       .book-detail-close {
-        position: fixed;
-        top: 0.85rem;
-        right: 0.85rem;
-        z-index: 2;
         width: 2.75rem;
         height: 2.75rem;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         padding: 0;
@@ -905,10 +918,14 @@
         border-radius: 999px;
         background: rgba(15, 17, 21, 0.92);
         color: #f3efe4;
-        font-size: 1.85rem;
-        line-height: 1;
         cursor: pointer;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      }
+
+      .book-detail-close svg {
+        width: 1.1rem;
+        height: 1.1rem;
+        display: block;
       }
 
       .book-detail-cover {
@@ -1511,16 +1528,27 @@
         aria-modal="true"
         aria-labelledby="book-detail-title"
       >
-        <button
-          type="button"
-          id="book-detail-close"
-          class="book-detail-close"
-          aria-label="Close book details"
-        >
-          &times;
-        </button>
-        <div class="book-detail-cover" id="book-detail-cover"></div>
-        <div class="book-detail-body" id="book-detail-body"></div>
+        <div class="book-detail-toolbar">
+          <button
+            type="button"
+            id="book-detail-close"
+            class="book-detail-close"
+            aria-label="Close book details"
+          >
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path
+                d="M5 5 15 15M15 5 5 15"
+                stroke="currentColor"
+                stroke-width="1.75"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="book-detail-scroll">
+          <div class="book-detail-cover" id="book-detail-cover"></div>
+          <div class="book-detail-body" id="book-detail-body"></div>
+        </div>
       </div>
     </div>
 

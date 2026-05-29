@@ -1,4 +1,7 @@
 window.BOOK_EDITS = {
+  "181": {
+    "hidden": true
+  },
   "232": {
     "hidden": true
   },
@@ -53,6 +56,9 @@ window.BOOK_EDITS = {
     "coverArtist": "Frank Utpatel",
     "author": "Frank Belknap Long",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/The_Purcell_Papers"
+  },
+  "324": {
+    "hidden": true
   },
   "333": {
     "title": "Tales of the Cthulhu Mythos",

@@ -105,6 +105,9 @@ window.BOOK_EDITS = {
   "427": {
     "hidden": true
   },
+  "428": {
+    "hidden": true
+  },
   "429": {
     "hidden": true
   },

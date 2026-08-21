@@ -1,13 +1,17 @@
 <template>
-  <button class="unstyled" @mouseenter="msg && msgs[msg] && setMessage()" @mouseleave="eraseMessage()">
+  <button
+    class="unstyled"
+    @mouseenter="msg && msgs[msg] && setMessage()"
+    @mouseleave="eraseMessage()"
+  >
     <slot></slot>
   </button>
 </template>
 <script>
-import Vue from 'vue';
+import Vue from "vue";
 export default Vue.extend({
-  name: 'notify-item',
-  data () {
+  name: "notify-item",
+  data() {
     return {
       msgs: {
         vue: `Vue (pronounced /vjuː/, like view) is a progressive JavaScript framework for building user interfaces.`,
@@ -19,6 +23,7 @@ export default Vue.extend({
         slackbots: `Slack Apps are interactive apps built with Slack's Event & Web APIs.`,
         browserExtensions: `Browser extensions are small programs that add new features to your browser and personalize your browsing experience.`,
         cloudflareWorkers: `CloudFlare workers are snippets of serverless code that run in between the browser and webhost.`,
+        d1: `D1 is a relational database for the modern web.`,
         discgolf: `Disc golf is a flying disc sport in which players throw a disc at a target; it is played using rules similar to golf.`,
         webpack: `Webpack is a static module bundler for modern JavaScript applications.`,
         netlify: `Netlify is a service that automates the deployment of static bundles. It's great for sites built using the JAM Stack (JavaScript, APIs and Markup).`,
@@ -39,24 +44,22 @@ export default Vue.extend({
         postgres: `PostgreSQL is a free and open-source relational database management system.`,
         eightball: `Eightball is a comic book by Daniel Clowes and published by Fantagraphics Books. It ran from 1989 to 2004.`,
         hate: `Hate is a comic book by writer-artist Peter Bagge. First published by Fantagraphics in 1990 it ran for 30 issues, and was one of the best-selling alternative comics of the 1990s.`,
-        blackhole: `Black Hole is a twelve-issue horror comic book written and illustrated by Charles Burns.`
-      }
-    }
+        blackhole: `Black Hole is a twelve-issue horror comic book written and illustrated by Charles Burns.`,
+      },
+    };
   },
   props: {
-    msg: String
+    msg: String,
   },
-  computed: {
-  },
+  computed: {},
   methods: {
-    setMessage: function () {
-      this.$store.dispatch('updateNotification', this.msgs[this.msg])
+    setMessage: function() {
+      this.$store.dispatch("updateNotification", this.msgs[this.msg]);
     },
-    eraseMessage: function (){
-      this.$store.dispatch('updateNotification', '')
-    }
-  }
+    eraseMessage: function() {
+      this.$store.dispatch("updateNotification", "");
+    },
+  },
 });
 </script>
 <style scoped src="./notify-item.styl" lang="stylus"></style>
-

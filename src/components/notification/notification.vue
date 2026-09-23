@@ -1,5 +1,5 @@
 <template>
-  <div id="notification">
+  <div id="notification" :class="[promptInject ? 'shifted' : '']">
     <transition name="fade">
       <div :class="['notification-inner', centered ? 'centered': '']" v-if="notification">
         <p class="text">{{notification}}</p>
@@ -21,6 +21,9 @@ export default Vue.extend({
     },
     notification: function () {
       return this.$store.state.notification
+    },
+    promptInject: function () {
+      return this.$store.state.promptInject
     }
   }
 });

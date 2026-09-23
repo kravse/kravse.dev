@@ -1,13 +1,14 @@
 @import '~@/assets/styles/mixins'
 @import '~@/assets/styles/variables'
 
-@keyframes caret
-  50%
-    border-color: transparent
-
 .home
   max-width: $mid-width
   width: 100%
+
+  .title-section
+    display: flex
+    justify-content: flex-start
+    align-items: center
 
   &.stuck
     height: 100vh

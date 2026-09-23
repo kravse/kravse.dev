@@ -7,10 +7,10 @@
     >
       <div class="inner">
         <div class="hero">
-          <h1 class="h0">Jared Krause</h1>
+          <h1 class="h0 title-section">Jared Krause <prompt-inject /></h1>
           <code class="code h2">
             <notify-item msg="title">{{ typedTitle }}</notify-item>
-            <span :class="[blink ? 'blink' : '', 'cursor']"></span>
+            <span :class="[blinking ? 'blink' : '', 'cursor']"></span>
             <span class="spacer">&nbsp;</span>
           </code>
         </div>
@@ -314,6 +314,8 @@ import notify from "@/components/notify-item/notify-item.vue";
 import workHistory from "@/views/work-history/work-history.vue";
 import skills from "./assets/skills";
 
+import promptinject from "@/components/prompt-inject/prompt-inject.vue";
+
 export default Vue.extend({
   name: "Home",
   data() {
@@ -336,8 +338,13 @@ export default Vue.extend({
   components: {
     "notify-item": notify,
     "work-history": workHistory,
+    "prompt-inject": promptinject,
   },
-  computed: {},
+  computed: {
+    blinking: function() {
+      return this.blink && !this.$store.state.promptInject;
+    },
+  },
   created: function() {
     this.blink = true;
     setTimeout(() => {
@@ -350,7 +357,11 @@ export default Vue.extend({
       let i = 0;
       let currentString = this.typingExperience[i];
       const interval = setInterval(() => {
-        if (this.typedTitle.length < currentString.length) {
+        if (this.$store.state.promptInject) {
+          clearInterval(interval);
+          this.typedTitle = this.titleText;
+          this.blink = true;
+        } else if (this.typedTitle.length < currentString.length) {
           this.typedTitle = currentString.slice(0, this.typedTitle.length + 1);
         } else if (this.typedTitle.length > currentString.length) {
           this.typedTitle = this.typedTitle.slice(

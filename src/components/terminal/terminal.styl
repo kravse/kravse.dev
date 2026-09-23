@@ -1,0 +1,195 @@
+@import '~@/assets/styles/mixins'
+@import '~@/assets/styles/variables'
+
+#terminal
+  width: 100%
+  min-height: 0
+  display: grid
+  grid-template-rows: 0fr
+  // Ignored until the panel below turns this fixed, so crossing the
+  // breakpoint changes no animatable value.
+  left: 0 - $terminal-width
+  transition: grid-template-rows 0.4s cubic-bezier(.74, .06, .4, .92)
+
+  +media('min-lg')
+    position: fixed
+    top: 0
+    z-index: 4
+    display: block
+    width: $terminal-width
+    height: 100vh
+    transition: left 0.4s cubic-bezier(.74, .06, .4, .92)
+
+  &.open
+    grid-template-rows: 1fr
+    left: 0
+
+  .mask
+    overflow: hidden
+    min-height: 0
+    background: $bg-terminal
+
+    +media('min-lg')
+      height: 100%
+
+    +media('min-lg-tall')
+      display: flex
+      flex-direction: column
+
+  .tabs
+    display: flex
+    background: darken($bg-terminal, 55%)
+    font-family: $title-font
+    font-size: 0.7em
+
+    +media('xs')
+      font-size: 0.85em
+
+  .tab
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    flex: 1
+    min-width: 0
+    padding: 5px 30px
+    border-top: 2px solid transparent
+    color: lighten($bg-terminal, 70%)
+
+    +media('xs')
+      padding: 5px 16px
+
+    +media('min-lg')
+      padding: 5px 16px
+
+    & + .tab
+      border-left: 1px solid lighten($bg-terminal, 20%)
+
+    // On large screens this session drops down to become the bottom pane.
+    &.extra
+      +media('sm')
+        display: none
+
+      +media('min-lg')
+        display: none
+
+    &.active
+      background: $bg-terminal
+      border-top-color: $coral
+
+      .name
+        color: $light-text
+
+    .dot
+      position: absolute
+      left: 12px
+      width: 6px
+      height: 6px
+      border-radius: 50%
+      background: $sky
+
+    .name
+      min-width: 0
+      text-align: center
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+
+    .key
+      position: absolute
+      right: 12px
+
+      +media('xs')
+        display: none
+
+      +media('min-lg')
+        display: none
+
+  .screen
+    padding: 18px 12px 20px
+    font-family: $title-font
+    font-size: 0.8em
+    text-align: left
+
+    +media('md')
+      font-size: 0.9em
+
+    +media('xs')
+      font-size: 1em
+
+    +media('min-lg-tall')
+      flex: 2
+      min-height: 0
+      overflow: auto
+
+  .pane
+    display: none
+
+    +media('min-lg-tall')
+      display: flex
+      flex-direction: column
+      flex: 1
+      background: darken($bg-terminal, 20%)
+
+    .tab
+      justify-content: flex-start
+      padding-left: 12px
+
+    .name
+      text-align: left
+
+    .close
+      flex-shrink: 0
+      margin-right: 10px
+
+  .line
+    color: $light-text
+    line-height: 1.5em
+    margin: 0
+
+  .path
+    color: $coral
+    font-weight: 700
+
+  // Real ls fills columns downwards and drops to one per line when narrow,
+  // which is what multicol does for free.
+  .listing
+    color: $mint
+    column-width: 22ch
+    column-gap: 2ch
+
+    span
+      display: block
+      white-space: nowrap
+
+  .comment
+    color: lighten($bg-terminal, 72%)
+
+  .tag
+    color: $sky
+
+  .attr
+    color: $light-accent
+
+  .indent
+    padding-left: 2ch
+    max-width: 80ch
+
+  .output
+    visibility: hidden
+
+    &.done
+      visibility: visible
+
+  .cursor
+    display: inline-block
+    height: 1.2em
+    margin: -0.1em 0 0 0.1em
+    vertical-align: middle
+    border-right: .5em solid
+    color: $coral
+
+    &.blink
+      animation: caret .5s step-end infinite alternate
+
+dump_media_cache()

@@ -8,7 +8,13 @@
   left: 0
   display: flex
   justify-content: center
+  overflow: hidden
   border: 10px solid transparent
+  transition: left 0.4s cubic-bezier(.74, .06, .4, .92)
+
+  &.shifted
+    +media('min-lg')
+      left: $terminal-width
 
   .notification-inner
     position: relative

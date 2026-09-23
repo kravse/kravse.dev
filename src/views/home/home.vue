@@ -320,14 +320,11 @@ export default Vue.extend({
   name: "Home",
   data() {
     return {
-      titleText: '((...ಠ_ಠ)=>`${ಠ_ಠ}`)("kravse.dev")',
+      titleText: "git add -A && git commit -m 'fix'",
       typingExperience: [
-        "functio",
-        "",
-        "((",
-        // '((ಠ_ಠ',
-        // '((',
-        '((...ಠ_ಠ)=>`${ಠ_ಠ}`)("kravse.dev")',
+        "git add -A && git commit -m 'feat: link bug to the",
+        "git add -A && git commit -m '",
+        "git add -A && git commit -m 'fix'",
       ],
       typedTitle: "",
       blink: false,
@@ -377,7 +374,7 @@ export default Vue.extend({
             currentString = this.typingExperience[i];
           }
         }
-      }, 110);
+      }, 65);
     },
   },
   watch: {

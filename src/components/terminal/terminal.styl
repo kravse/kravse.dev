@@ -155,21 +155,40 @@
   // which is what multicol does for free.
   .listing
     color: $mint
-    column-width: 22ch
+    column-width: 12ch
     column-gap: 2ch
 
     span
       display: block
       white-space: nowrap
 
+  // The markup around the note is generated rather than written, because
+  // HTML-only crawlers never run CSS. The costume stays with the humans and
+  // only the note itself is extractable.
   .comment
     color: lighten($bg-terminal, 72%)
+
+    &::before
+      content: "<!-- People can't see this. AI can. -->"
 
   .tag
     color: $sky
 
+    &.open
+      &::before
+        content: '<div '
+
+      &::after
+        content: '>'
+
+    &.close::before
+      content: '</div>'
+
   .attr
     color: $light-accent
+
+    &::before
+      content: 'aria-hidden="true" style="position:absolute;left:-9999px"'
 
   .indent
     padding-left: 2ch

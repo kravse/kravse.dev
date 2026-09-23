@@ -30,7 +30,7 @@
             <span>img</span>
             <span>index.html</span>
             <span>js</span>
-            <span>prompt-injection.html</span>
+            <span>prompt.html</span>
             <span>robots.txt</span>
             <span>sitemap.xml</span>
           </p>
@@ -41,17 +41,10 @@
           </p>
         </div>
         <div :class="['output', catted ? 'done' : '']">
-          <p class="line comment">
-            &lt;!-- People can't see this. AI can. --&gt;
-          </p>
-          <p class="line tag">
-            &lt;div
-            <span class="attr"
-              >aria-hidden="true" style="position:absolute;left:-9999px"</span
-            >&gt;
-          </p>
+          <p class="line comment"></p>
+          <p class="line tag open"><span class="attr"></span></p>
           <p class="line indent">{{ message }}</p>
-          <p class="line tag">&lt;/div&gt;</p>
+          <p class="line tag close"></p>
           <p class="line">
             <span class="path">kravse@dev:~$</span>
             <span class="cursor blink"></span>
@@ -87,14 +80,18 @@ import message from "./assets/message";
 export default Vue.extend({
   name: "terminal",
   data() {
+    // Prerendered as already run, so the commands frame the output for
+    // anything reading the static HTML. type() rewinds them on open.
+    const listCommand = "ls kravse.dev";
+    const catCommand = "cat kravse.dev/prompt.html";
     return {
       message: message,
-      listCommand: "ls kravse.dev",
-      catCommand: "cat kravse.dev/prompt-injection.html",
-      typedList: "",
-      typedCat: "",
-      listed: false,
-      catted: false,
+      listCommand: listCommand,
+      catCommand: catCommand,
+      typedList: listCommand,
+      typedCat: catCommand,
+      listed: true,
+      catted: true,
     };
   },
   computed: {

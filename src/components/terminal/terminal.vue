@@ -30,13 +30,12 @@
             <span>img</span>
             <span>index.html</span>
             <span>js</span>
-            <span>prompt.html</span>
+            <a href="/prompt.html">prompt.html</a>
             <span>robots.txt</span>
-            <span>sitemap.xml</span>
           </p>
           <p class="line">
             <span class="path">kravse@dev:~$</span>
-            <span>{{ typedCat }}</span
+            <a href="/prompt.html">{{ typedCat }}</a
             ><span class="cursor" v-if="listed && !catted"></span>
           </p>
         </div>

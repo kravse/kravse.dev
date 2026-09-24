@@ -5,13 +5,21 @@
         <div class="slide">
           <div class="copy">
             <h2 class="h0">Work History</h2>
-            <h3 class="h2">Sr. Software Developer at Cohere AI</h3>
+            <h3 class="h2">Sr. Software Developer at Cohere</h3>
             <h5>2021 - Present</h5>
             <ul>
-              <li><p>Senior Full Stack Software Developer responsible for web apps, API, and SDKs.</p></li>
-              <li><p>Building interactive web UIs and websites with TypeScript, React, and Svelte.</p></li>
-              <li><p>Building scalable backend APIs with Go and Postgres.</p></li>
-              <li><p>Built the Cohere Node.js SDK.</p></li>
+              <li><p>Hired as a Senior Frontend Developer and moved into senior backend work across the
+              platform, its APIs and its SDKs.</p></li>
+              <li><p>Building North, Cohere's enterprise AI agent platform, with a focus on role based
+              access control, audit trails and compliance workflows.</p></li>
+              <li><p>Built the North admin application from its first commit and own it end to end, in
+              Python with Reflex, FastAPI and Postgres.</p></li>
+              <li><p>Maintain the North admin APIs and the Python and TypeScript SDKs built on top of them.</p></li>
+              <li><p>Previously built the supporting APIs behind cohere.com and the model dashboard with
+              Go and Postgres: billing and payments, API keys, account lifecycle and the model catalog.</p></li>
+              <li><p>Built interactive web UIs with TypeScript, React and Svelte, and the Cohere Node.js SDK.</p></li>
+              <li><p>Interview and hire developers, and help set technical direction on frameworks, build
+              tools and architecture.</p></li>
             </ul>
             <h3 class="h2">Sr. Web Developer at TunnelBear</h3>
             <h5>2017 - 2021</h5>

@@ -18,15 +18,18 @@
           <h2>Hi!</h2>
           <p>I'm a full stack developer currently living in Toronto.</p>
           <p>
-            I create modern interactive web applications that serve millions of
-            users a month with <notify-item msg="react">React</notify-item> and
-            Next.js, <notify-item msg="vue">Vue.js</notify-item>,
-            <notify-item msg="svelte">Svelte</notify-item>, and of course
-            <notify-item msg="typescript">TypeScript</notify-item>.
+            These days I work on agentic AI platforms for Cohere. I build top to
+            bottom: frontend, backend and everything in between. My work lets
+            companies use AI on their own data, securely and privately.
           </p>
           <p>
-            I also build and maintain backends and APIs with
-            <notify-item msg="go">Go</notify-item>,
+            On the frontend I create interactive web applications that serve
+            millions of users a month with
+            <notify-item msg="react">React</notify-item> and Next.js,
+            <notify-item msg="vue">Vue.js</notify-item>,
+            <notify-item msg="svelte">Svelte</notify-item>, and of course
+            <notify-item msg="typescript">TypeScript</notify-item>. On the
+            backend it's <notify-item msg="go">Go</notify-item>,
             <notify-item msg="node">Node.js</notify-item> and
             <notify-item msg="python">Python</notify-item>. Occasionally I work
             on
@@ -38,10 +41,6 @@
             I &lt;3 <notify-item msg="js">JavaScript</notify-item>, so I tend to
             tinker with open source projects in my spare time, building fun
             little tools, games, or even just websites that make me laugh.
-          </p>
-          <p>
-            I've also got experience leading teams and love to mentor junior
-            developers.
           </p>
           <!--p>If you want to chat, you can email me at <a :href="`mailto:ja` + `red@k` + `ravs` + `e.dev`">{{`jar` + `ed@` + `krav` + `se.dev`}}</a>.</p-->
         </section>
@@ -82,15 +81,36 @@
           <div class="clump">
             <h3>Work</h3>
             <h5 class="standard-color">
+              <strong>Cohere North</strong><br class="xs" />
+              [<a target="_blank" href="https://cohere.com/north"
+                >cohere.com/north</a
+              >]
+            </h5>
+            <p class="sm">
+              I'm a senior full stack software developer on North, Cohere's
+              enterprise AI agent platform. My work centres on the systems that
+              make it safe to run inside a large organization: role based access
+              control and permissions, audit trails, and compliance review
+              flows. I own the admin application end to end, built in
+              <notify-item msg="python">Python</notify-item> with Reflex on top
+              of FastAPI and <notify-item msg="postgres">Postgres</notify-item>,
+              and I maintain the admin APIs along with the
+              <notify-item msg="typescript">TypeScript</notify-item> and Python
+              <notify-item msg="sdk">SDKs</notify-item> that expose them to
+              customers.
+            </p>
+            <h5 class="standard-color">
               <strong>Cohere Platform</strong><br class="xs" />
               [<a target="_blank" href="https://cohere.com">cohere.com</a>,
-              <a target="_blank" href="https://dashboard.cohere.ai"
+              <a target="_blank" href="https://dashboard.cohere.com"
                 >dashboard.cohere.ai</a
               >]
             </h5>
             <p class="sm">
-              I'm a senior full stack software developer on the team behind the
-              Cohere Platform. My responsibilities are divided between three key
+              I joined Cohere as a senior frontend developer and helped build
+              both the team and the platform behind cohere.com and the model
+              playground, interviewing and hiring developers and making the
+              calls on the stack we built everything on. The work spanned three
               products: web applications (<notify-item msg="svelte"
                 >Svelte</notify-item
               >, <notify-item msg="react">React</notify-item>, &
@@ -98,11 +118,10 @@
               endpoints (<notify-item msg="go">Go</notify-item>,
               <notify-item msg="postgres">Postgres</notify-item>) and SDKs
               (<notify-item msg="node">Node.js</notify-item>,
-              <notify-item msg="python">Python</notify-item>). In combination,
-              these products provide Cohere users with unprecedented access to
-              AI and Natural Language Processing, allowing them to build
-              software that can understand the meaning, sentiment, and intent of
-              the words humans use.
+              <notify-item msg="python">Python</notify-item>). Over time, I
+              moved from frontend into backend work, building the supporting
+              APIs and services behind the dashboard: billing and payments, API
+              keys, account lifecycle, as well as the model catalog.
             </p>
             <h5 class="standard-color">
               <strong>TunnelBear Website</strong><br class="xs" />
@@ -201,15 +220,15 @@
             </h5>
             <p class="sm">
               I collect <notify-item msg="arkham">Arkham House</notify-item> and
-              Mycroft & Moran books. I was pretty frustrated
-              trying to find ways to track my collection and explore the catalog,
-              so I built Arkham Collector to help me. It was a process of scraping, 
-              parsing, cataloging, and then displaying the data in a way that was easy 
-              to organize and search. It lets me classify books as "owned", or "ordered", 
-              and I'm able to construct and organize a want list. It's built with vanilla JavaScript and a Node build step that
+              Mycroft & Moran books. I was pretty frustrated trying to find ways
+              to track my collection and explore the catalog, so I built Arkham
+              Collector to help me. It was a process of scraping, parsing,
+              cataloging, and then displaying the data in a way that was easy to
+              organize and search. It lets me classify books as "owned", or
+              "ordered", and I'm able to construct and organize a want list.
+              It's built with vanilla JavaScript and a Node build step that
               scrapes the bibliography from Wikipedia and generates the static
               site.
-              
             </p>
             <h5 class="standard-color">
               <strong>Fantasy Falcon</strong><br class="xs" />
@@ -297,15 +316,19 @@
             >.
           </p>
           <p>
-            I really enjoy indie and alt comics, stuff like
-            <notify-item msg="eightball">Eightball</notify-item>,
-            <notify-item msg="blackhole">Black Hole</notify-item>, or
-            <notify-item msg="hate">Hate</notify-item>.
+            I love to read, my favourites are currently I'm enjoying
+            <notify-item msg="vonnegut">Vonnegut</notify-item>,
+            <notify-item msg="carver">Carver</notify-item>, and
+            <notify-item msg="garcia">García Márquez</notify-item>. Anything
+            speculative or weird is also a big plus. I also adore stuff like
+            <notify-item msg="eightball">Eightball</notify-item> and
+            <notify-item msg="blackhole">Black Hole</notify-item>.
           </p>
           <p>
-            I'm a <notify-item msg="street">street photographer</notify-item>. I
-            love to take candid and documentary photos. I've got a portfolio of
-            my work up at
+            For a long time I was a
+            <notify-item msg="street">street photographer</notify-item>. I loved
+            to take candid and documentary photos. I've got a portfolio of my
+            work up at
             <a target="_blank" href="https://www.kravse.com">kravse.com</a>.
           </p>
           <p>

@@ -41,9 +41,11 @@ export default Vue.extend({
         upperdb: `Upper/db is a productive data access layer (DAL) for Go.`,
         postgres: `PostgreSQL is a free and open-source relational database management system.`,
         eightball: `Eightball is a comic book by Daniel Clowes and published by Fantagraphics Books. It ran from 1989 to 2004.`,
-        hate: `Hate is a comic book by writer-artist Peter Bagge. First published by Fantagraphics in 1990 it ran for 30 issues, and was one of the best-selling alternative comics of the 1990s.`,
         blackhole: `Black Hole is a twelve-issue horror comic book written and illustrated by Charles Burns.`,
         arkham: `Arkham House was an American publishing house specializing in weird fiction. It was founded in Sauk City, Wisconsin, in 1939 to publish hardcover works, which had previously been published only in pulp magazines. `,
+        carver: `...`,
+        garcia: `Aureliano, Aureliano, Aureliano, Aureliano, Aureliano, Aureliano...`,
+        vonnegut: `So it goes.`,
       },
     };
   },

@@ -71,7 +71,9 @@
               A presentation I did with my friend Adam Dawson on hacks and
               attacks in the rapidly growing NLP and LLM space, as well as
               common API use-cases for these AI technologies and how security is
-              evolving within the space.
+              evolving within the space. This site even has a small prompt
+              injection demo. If you want to see it just click on the bug beside
+              my name at the top.
             </p>
           </div>
         </section>

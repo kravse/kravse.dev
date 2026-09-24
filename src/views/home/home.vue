@@ -9,7 +9,7 @@
         <div class="hero">
           <h1 class="h0 title-section">Jared Krause <prompt-inject /></h1>
           <code class="code h2">
-            <notify-item msg="title">{{ typedTitle }}</notify-item>
+            {{ typedTitle }}
             <span :class="[blinking ? 'blink' : '', 'cursor']"></span>
             <span class="spacer">&nbsp;</span>
           </code>

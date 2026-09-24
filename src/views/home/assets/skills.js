@@ -1,58 +1,51 @@
 export const skills = {
-  "frameworks": [
+  languages: ["Python", "TypeScript", "Go", "SQL", "JavaScript"],
+  frameworks: [
     "React & Next.js",
-    "Vue.js",
     "Reflex.dev",
+    "FastAPI",
     "Svelte & Sveltekit",
-    "Angular",
-    "Backbone",
-    "Drupal"
-  ],
-  "buildTools": [
-    "WebPack",
-    "Babel",
-    "Unix",
-    "Git",
-    "RVM",
-    "npm",
-    "Bower",
-    "Gulp",
-    "Grunt",
-    "MAMP"
-  ],
-  "frontEnd": [
-    "HTML5",
-    "SASS/SCSS/Stylus",
-    "TypeScript",
-    "WordPress",
-    "jQuery",
-    "Tailwind",
-    "Bootstrap",
-    "Foundation"
-  ],
-  "backEnd": [
-    "Go",
-    "Python",
-    "SQL & Postgres",
-    "Node.js",
+    "Vue.js",
     "Express",
-    "PHP"
   ],
-  "hosting": [
+  frontEnd: [
+    "Tailwind",
+    "TanStack Query",
+    "SASS/SCSS/Stylus",
+    "Storybook",
+    "Vite",
+  ],
+  backEnd: [
+    "SQLAlchemy & Alembic",
+    "Pydantic",
+    "Postgres",
+    "Redis",
+    "OpenFGA",
+    "OpenAPI & Fern",
+    "OAuth & JWT",
+    "SCIM",
+  ],
+  tooling: [
+    "pnpm & Turborepo",
+    "Vitest",
+    "Playwright",
+    "pytest",
+    "Testcontainers",
+    "Ruff & Pyright",
+    "uv & Poetry",
+    "Webpack",
+    "Git",
+  ],
+  platform: [
+    "Docker",
+    "Kubernetes & Helm",
+    "GitHub Actions",
+    "Cloudflare Workers & D1",
+    "AWS",
     "Netlify",
     "Vercel",
-    "Cloudflare",
-    "Cloud SQL",
-    "AWS",
-    "Ghost",
-    "Shopify"
+    "Sentry",
   ],
-  "design": [
-    "Sketch",
-    "Figma",
-    "Photoshop",
-    "Zeplin"
-  ]
-}
+};
 
-export default skills
+export default skills;

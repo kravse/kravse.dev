@@ -24,7 +24,6 @@ export default Vue.extend({
         browserExtensions: `Browser extensions are small programs that add new features to your browser and personalize your browsing experience.`,
         cloudflareWorkers: `CloudFlare workers are snippets of serverless code that run in between the browser and webhost.`,
         d1: `D1 is a relational database for the modern web.`,
-        discgolf: `Disc golf is a flying disc sport in which players throw a disc at a target; it is played using rules similar to golf.`,
         webpack: `Webpack is a static module bundler for modern JavaScript applications.`,
         netlify: `Netlify is a service that automates the deployment of static bundles. It's great for sites built using the JAM Stack (JavaScript, APIs and Markup).`,
         babel: `Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.`,
@@ -44,6 +43,7 @@ export default Vue.extend({
         eightball: `Eightball is a comic book by Daniel Clowes and published by Fantagraphics Books. It ran from 1989 to 2004.`,
         hate: `Hate is a comic book by writer-artist Peter Bagge. First published by Fantagraphics in 1990 it ran for 30 issues, and was one of the best-selling alternative comics of the 1990s.`,
         blackhole: `Black Hole is a twelve-issue horror comic book written and illustrated by Charles Burns.`,
+        arkham: `Arkham House was an American publishing house specializing in weird fiction. It was founded in Sauk City, Wisconsin, in 1939 to publish hardcover works, which had previously been published only in pulp magazines. `,
       },
     };
   },

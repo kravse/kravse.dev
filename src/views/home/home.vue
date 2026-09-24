@@ -158,7 +158,7 @@
               [<a target="_blank" href="https://filmfroggies.com"
                 >filmfroggies.com</a
               >,
-              <a target="_blank" href="https://github.com/kravse/movie-lister"
+              <a target="_blank" href="https://github.com/kravse/filmfroggies"
                 >Github</a
               >]
             </h5>
@@ -189,14 +189,27 @@
               with the Cohere API in their own applications.
             </p>
             <h5 class="standard-color">
-              <strong>The Good Winds</strong><br class="xs" />
-              [<a target="_blank" href="https://www.thegoodwinds.com">Website</a
+              <strong>Arkham Collector</strong><br class="xs" />
+              [<a target="_blank" href="https://arkhamcollector.org"
+                >arkhamcollector.org</a
+              >,
+              <a
+                target="_blank"
+                href="https://github.com/kravse/arkham-collector"
+                >Github</a
               >]
             </h5>
             <p class="sm">
-              The Good Winds is a website and app that helps users plan their
-              <notify-item msg="discgolf">Disc Golf</notify-item> sessions
-              despite changing weather conditions. Built with Vue.js and Python.
+              I collect <notify-item msg="arkham">Arkham House</notify-item> and
+              Mycroft & Moran books. I was pretty frustrated
+              trying to find ways to track my collection and explore the catalog,
+              so I built Arkham Collector to help me. It was a process of scraping, 
+              parsing, cataloging, and then displaying the data in a way that was easy 
+              to organize and search. It lets me classify books as "owned", or "ordered", 
+              and I'm able to construct and organize a want list. It's built with vanilla JavaScript and a Node build step that
+              scrapes the bibliography from Wikipedia and generates the static
+              site.
+              
             </p>
             <h5 class="standard-color">
               <strong>Fantasy Falcon</strong><br class="xs" />
